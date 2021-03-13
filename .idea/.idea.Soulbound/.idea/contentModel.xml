@@ -323,6 +323,9 @@
               <e p="SaveFileUI.cs" t="Include" />
               <e p="SaveMenuUI.cs" t="Include" />
             </e>
+            <e p="Settings Menu" t="Include">
+              <e p="SettingsMenuUI.cs" t="Include" />
+            </e>
             <e p="ShowHideUI.cs" t="Include" />
             <e p="TakeDamageEvent.cs" t="Include" />
             <e p="TargetHealthDisplay.cs" t="Include" />
