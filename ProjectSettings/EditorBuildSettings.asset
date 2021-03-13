@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 611946c734d80c8438b668f2e14fe369
+  - enabled: 1
+    path: Assets/Scenes/Small Valley.unity
+    guid: afe51a2a8a963844386f2eaf21691764
+  - enabled: 1
+    path: Assets/Scenes/Collapsed Cave.unity
+    guid: f231b08676931ff42aa9fb5b0d72c2f6
   m_configObjects: {}
