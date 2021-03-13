@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{18808f0f-6e84-46fd-82a2-091867299bc2}">
+		<property name="assetPath">
+			<value>SFX/Weapons/Melee/Sword/Equip/Sword hits another sword 7.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.99616780045351472</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8436132c-d2b8-4a7d-9717-042f5584752c}</destination>
+		</relationship>
+	</object>
+</objects>

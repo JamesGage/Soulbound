@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f05ce71f-1bf5-4550-85f9-18fe6b66a1d5}">
+		<property name="assetPath">
+			<value>SFX/Weapons/Bows/Attack/bow_crossbow_arrow_draw_slide2_04.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.70999999999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8436132c-d2b8-4a7d-9717-042f5584752c}</destination>
+		</relationship>
+	</object>
+</objects>

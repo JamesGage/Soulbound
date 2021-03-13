@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{5abef24b-7e8f-4767-971d-503f743f40c4}">
+		<property name="assetPath">
+			<value>SFX/Weapons/Bows/Attack/Pulling string back (Bow) 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.50666666666666671</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8436132c-d2b8-4a7d-9717-042f5584752c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ae865d4c-0ad9-4198-aebb-39735b04c03b}">
+		<property name="assetPath">
+			<value>SFX/Character/Female/Combat/Death/Death 4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.6137868480725623</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8436132c-d2b8-4a7d-9717-042f5584752c}</destination>
+		</relationship>
+	</object>
+</objects>

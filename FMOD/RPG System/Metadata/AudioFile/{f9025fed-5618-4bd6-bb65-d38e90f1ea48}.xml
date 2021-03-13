@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f9025fed-5618-4bd6-bb65-d38e90f1ea48}">
+		<property name="assetPath">
+			<value>SFX/Ambient/Pickup/foley_object_grab_pickup_05.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.44479166666666664</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8436132c-d2b8-4a7d-9717-042f5584752c}</destination>
+		</relationship>
+	</object>
+</objects>

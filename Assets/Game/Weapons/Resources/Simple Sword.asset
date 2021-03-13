@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33944617472b46cc9189ccec3bb6a820, type: 3}
+  m_Name: Simple Sword
+  m_EditorClassIdentifier: 
+  itemID: c2c7b2b9-965b-4ea1-a038-5f22de2d7316
+  displayName: Simple Sword
+  _displayNameColor: {r: 0.13163051, g: 0.9622642, b: 0.19823858, a: 1}
+  description: Has a bit of rust on the blade.
+  icon: {fileID: 21300000, guid: 15211a0cfb4fbde49aa1eeede2a403c8, type: 3}
+  pickup: {fileID: 8189180268357642860, guid: 3093b936660aec24f90abb3d2b8ffd11, type: 3}
+  stackable: 0
+  _goldValue: 0
+  isGold: 0
+  allowedEquipLocation: 5
+  _equippedPrefab: {fileID: 4263859535763257474, guid: 44e0b93368062de4b96b3066339172f3, type: 3}
+  _animOverride: {fileID: 22100000, guid: 1f55313a58a2f784f8098cf5bc904aaf, type: 2}
+  _weaponDamage: 2
+  _weaponPercentageBonus: 0
+  _weaponRange: 2
+  _isRightHanded: 1
+  _projectile: {fileID: 0}
+  _damageType: 0
+  equipSFX: event:/SFX/Weapons/Melee/Sword_Equip
+  attackStartSFX: 
+  attackMidSFX: event:/SFX/Weapons/Melee/Sword_AttackMid
+  attackEndSFX: 
+  hitSFX: event:/SFX/Weapons/Melee/Sword_Hit
+  missSFX: event:/SFX/Weapons/Miss
+  blockSFX: event:/SFX/Weapons/Melee/Sword_Block
+  critSFX: event:/SFX/Weapons/Melee/Sword_Crit

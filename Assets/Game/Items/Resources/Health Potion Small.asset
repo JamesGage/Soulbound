@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1f74360ae6441aaab916b7ecdd510d, type: 3}
+  m_Name: Health Potion Small
+  m_EditorClassIdentifier: 
+  itemID: 12c0539e-aab1-4cea-8855-20f41fb6dc4f
+  displayName: Health Potion (Small)
+  _displayNameColor: {r: 0.13163051, g: 0.9622642, b: 0.19823858, a: 1}
+  description: Increase current health by +5.
+  icon: {fileID: 21300000, guid: 9e54a146e64f40149a04094618559ce7, type: 3}
+  pickup: {fileID: 813604151754665848, guid: 9925259900ddd92469637711a9f83eda, type: 3}
+  stackable: 1
+  _goldValue: 0
+  isGold: 0
+  equipSFX: event:/SFX/Ambient/Pickup/Pickup_Bottle
+  consumable: 1
+  comsumeSFX: event:/SFX/Items/Potions/Potion_Drink
+  _modifier: 5

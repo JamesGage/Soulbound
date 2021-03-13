@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33944617472b46cc9189ccec3bb6a820, type: 3}
+  m_Name: Simple Bow
+  m_EditorClassIdentifier: 
+  itemID: 359ae85a-8cc6-4cc6-ac8d-9d2d78450811
+  displayName: Simple Bow
+  _displayNameColor: {r: 0.13163051, g: 0.9622642, b: 0.19823858, a: 1}
+  description: Looks a bit worn
+  icon: {fileID: 21300000, guid: eb9dacc5edc8fdc4dbba58aef5f792ab, type: 3}
+  pickup: {fileID: 1089507613554027509, guid: 9f464474cdc57034f83c8ca1c0d2cc7a, type: 3}
+  stackable: 0
+  _goldValue: 0
+  isGold: 0
+  equipSFX: event:/SFX/Weapons/Bows/Bow_Equip
+  allowedEquipLocation: 5
+  _equippedPrefab: {fileID: 1281007043042331088, guid: d7450984d4260d24ab9c0c299732dba8, type: 3}
+  _animOverride: {fileID: 22100000, guid: 2615ed0e9d17233409e9b6c37d9b9473, type: 2}
+  _weaponDamage: 2
+  _weaponPercentageBonus: 0
+  _weaponRange: 10
+  _isRightHanded: 0
+  _projectile: {fileID: 6206652454154147562, guid: 37124f0bf6679db45a50e43173dab8fb, type: 3}
+  _damageType: 0
+  attackStartSFX: event:/SFX/Weapons/Bows/Bow_AttackStart
+  attackMidSFX: event:/SFX/Weapons/Bows/Bow_AttackMid
+  attackEndSFX: event:/SFX/Weapons/Bows/Bow_AttackEnd
+  hitSFX: event:/SFX/Weapons/Arrows/Arrow_Hit
+  missSFX: event:/SFX/Weapons/Miss
+  blockSFX: event:/SFX/Weapons/Arrows/Arrow_Block
+  critSFX: event:/SFX/Weapons/Arrows/Arrow_Crit

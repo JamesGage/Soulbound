@@ -1,0 +1,433 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7749288583668142108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: a5ad3600-b719-4645-ad0b-c4b691438e05
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: No worries, let me know as soon as you do.
+  _children: []
+  _rect:
+    serializedVersion: 2
+    x: 871
+    y: 468
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and: []
+--- !u!114 &-6171931071589349042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: d59036f4-215a-404b-bd5f-a9f53f8d17e2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: Hello there traveler!
+  _children:
+  - ad01253b-0f8a-4c2d-a099-f9fddc02c625
+  - ddf02ac0-48b1-446c-afa8-ec5c12986242
+  - 24702839-673b-478c-8720-6bed34cb0b06
+  - 24fa9982-2d91-4644-a9d3-30e6c33ee796
+  _rect:
+    serializedVersion: 2
+    x: 80
+    y: 211
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and: []
+--- !u!114 &-6158483754196412267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: 70406549-943d-4c85-a122-40816debab3d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: "Just up the road a ways. Hopefully, bandits didn\u2019t get to it."
+  _children:
+  - dc6d3dce-aaec-482f-88f6-8747f6492ef6
+  _rect:
+    serializedVersion: 2
+    x: 840
+    y: 89
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and: []
+--- !u!114 &-3106167816320201499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: 1f579bd1-dc68-4ca4-a2fb-077421ea14ab
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: "That\u2019s a shame. If you find the bandits that did this to my wagon,
+    they might still have my goods. The goods are yours if you find them."
+  _children: []
+  _rect:
+    serializedVersion: 2
+    x: 868
+    y: 640
+    width: 200
+    height: 100
+  _onEnterAction: 5
+  _onExitAction: 1
+  _condition:
+    and: []
+--- !u!114 &-2298017320934010940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: 38a2766a-7e4b-4937-b63e-cf4d126316a7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  _text: I found your Wagon.
+  _children:
+  - 1f579bd1-dc68-4ca4-a2fb-077421ea14ab
+  _rect:
+    serializedVersion: 2
+    x: 584
+    y: 643
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 2
+  _condition:
+    and:
+    - or:
+      - predicate: 4
+        parameters:
+        - Find My Wagon
+        - Locate Wagon
+        negate: 0
+--- !u!114 &-1099679557132729498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: ddf02ac0-48b1-446c-afa8-ec5c12986242
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: Have you found my stolen wagon?
+  _children:
+  - 184f21a7-50b3-4bba-afc5-deca6442dad0
+  - 38a2766a-7e4b-4937-b63e-cf4d126316a7
+  _rect:
+    serializedVersion: 2
+    x: 331
+    y: 518
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Find My Wagon
+        negate: 0
+    - or:
+      - predicate: 2
+        parameters:
+        - Find My Wagon
+        negate: 1
+--- !u!114 &-295130995663695612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: ad01253b-0f8a-4c2d-a099-f9fddc02c625
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: Can you help me find my stolen wagon?
+  _children:
+  - d4182907-667f-49e9-86e7-4134eecec387
+  - cbc9daba-eafa-4fae-8931-4dd1afa903e7
+  _rect:
+    serializedVersion: 2
+    x: 341
+    y: 211
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Find My Wagon
+        negate: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46571f7deaf49ba99bbc897374916e7, type: 3}
+  m_Name: Find My Wagon
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -6171931071589349042}
+  - {fileID: -295130995663695612}
+  - {fileID: 7898470246374593858}
+  - {fileID: 4773187140074323652}
+  - {fileID: -6158483754196412267}
+  - {fileID: 8039070469596993552}
+  - {fileID: -1099679557132729498}
+  - {fileID: 8944549451845775948}
+  - {fileID: -2298017320934010940}
+  - {fileID: -3106167816320201499}
+  - {fileID: 533767129339791699}
+  - {fileID: -7749288583668142108}
+  - {fileID: 455144185527233797}
+  _newNodeOffset: {x: 250, y: 0}
+--- !u!114 &455144185527233797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: 24fa9982-2d91-4644-a9d3-30e6c33ee796
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: "You found the bandits, good for you. I won\u2019t ask if you found my goods
+    or not, they are yours to keep if you did."
+  _children: []
+  _rect:
+    serializedVersion: 2
+    x: 342
+    y: 1020
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Bad Bandits
+        negate: 0
+    - or:
+      - predicate: 2
+        parameters:
+        - Bad Bandits
+        negate: 0
+      - predicate: 4
+        parameters:
+        - Bad Bandits
+        - Clear Bandits
+        negate: 0
+    - or:
+      - predicate: 2
+        parameters:
+        - Find My Wagon
+        negate: 0
+--- !u!114 &533767129339791699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: 24702839-673b-478c-8720-6bed34cb0b06
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: Thanks for your help. If you find the bandits that did this to my wagon,
+    they might still have my goods. The goods are yours if you find them.
+  _children: []
+  _rect:
+    serializedVersion: 2
+    x: 344
+    y: 853
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Bad Bandits
+        negate: 0
+    - or:
+      - predicate: 2
+        parameters:
+        - Find My Wagon
+        negate: 0
+    - or:
+      - predicate: 2
+        parameters:
+        - Bad Bandits
+        negate: 1
+--- !u!114 &4773187140074323652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: cbc9daba-eafa-4fae-8931-4dd1afa903e7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  _text: Sure, where did you see it last?
+  _children:
+  - 70406549-943d-4c85-a122-40816debab3d
+  _rect:
+    serializedVersion: 2
+    x: 590
+    y: 89
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and: []
+--- !u!114 &7898470246374593858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: d4182907-667f-49e9-86e7-4134eecec387
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  _text: Depends, how much is it worth to you?
+  _children:
+  - dc6d3dce-aaec-482f-88f6-8747f6492ef6
+  _rect:
+    serializedVersion: 2
+    x: 582
+    y: 332
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and: []
+--- !u!114 &8039070469596993552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: dc6d3dce-aaec-482f-88f6-8747f6492ef6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: "I can\u2019t pay much, but I did have some trade goods in the wagon, they
+    are yours if you find it."
+  _children: []
+  _rect:
+    serializedVersion: 2
+    x: 1108
+    y: 230
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 1
+  _condition:
+    and: []
+--- !u!114 &8944549451845775948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: 184f21a7-50b3-4bba-afc5-deca6442dad0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  _text: Not yet.
+  _children:
+  - a5ad3600-b719-4645-ad0b-c4b691438e05
+  _rect:
+    serializedVersion: 2
+    x: 586
+    y: 520
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and:
+    - or:
+      - predicate: 4
+        parameters:
+        - Find My Wagon
+        - Locate Wagon
+        negate: 1
