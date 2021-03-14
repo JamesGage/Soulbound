@@ -15,13 +15,13 @@ MonoBehaviour:
   Path: event:/SFX/Movement/Footsteps/Footsteps
   guid: 91e5a4d6b236c3428c4f6553d25e092e
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 7886357999903176950}
-  - {fileID: 348351596864645240}
+  - {fileID: 4020834238478072262}
+  - {fileID: 4986937186897418600}
   MinDistance: 0.2
   MaxDistance: 8
   Length: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Unarmed_Hit
   guid: 8cf16fdb3001e74f8bf56ddd42b51907
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -63,7 +63,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Bag/Bag_Closed
   guid: 2b0d080a2eedd441b3f9ebf0ed298a91
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -71,6 +71,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-7528432947412087156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Soulbound/Build/Desktop/Master.bank
+  Name: Master
+  lastModified: 637513320208713576
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7441821311654985721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +104,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Quest/Quest_Recieved
   guid: 686a26a13e81ed4ea49e7af630dca059
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -109,7 +127,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Menu/MouseOverOption
   guid: 7fe62f96bc8b46468031104d73fd411b
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -132,7 +150,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Quest/QuestLog_Open
   guid: d2c2abaf7315b345bcaa545d708614c8
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -155,7 +173,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Sword_AttackMid
   guid: 3f0ee88abc9b3e4b869a0c9d0a624acd
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -178,7 +196,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Pickup/Pickup_Coin
   guid: f8afc9e089bf3e4fb6dfeeecaf1f8623
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -201,7 +219,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Unarmed_Block
   guid: f59f4602534a324e9b00d27ecc28cbe8
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -224,7 +242,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Bows/Bow_Equip
   guid: 68ad142c69094e4d822ec6faeed916f1
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -232,6 +250,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 281
+--- !u!114 &-3788857606006665261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3281927368848481201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,7 +285,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Sword_Equip
   guid: 9eb44e0c5a44fc41abb7de9456aede1c
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -270,7 +308,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Menu/MouseOverButton
   guid: fe9fcfffd3e8494d9d067516d91dc353
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -293,7 +331,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Fire/Campfire
   guid: 2b116be5703bf04293de5dc526bc48ed
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -316,7 +354,7 @@ MonoBehaviour:
   Path: event:/SFX/Character/Male/Combat/Male_Death
   guid: d24fb8a46580ef429a2b7c9a384afd13
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -324,6 +362,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 50
   Length: 0
+--- !u!114 &-2618711498825862933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-2534227428550130228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +397,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Arrows/Arrow_Hit
   guid: 4deca2286f02d74cbfcface306e35f9d
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -362,7 +420,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Pickup/Pickup_Bottle
   guid: c4206e57bf1d1b4aa45b91e1c1481723
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -385,7 +443,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Spells/Fireball_Block
   guid: e967d8ee5a4c85418877a2f07fed630d
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -408,7 +466,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Pickup/Pickup_General
   guid: 1f72cea48b4d244f9288656454b4acc8
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -431,7 +489,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Spells/Fireball_AttackEnd
   guid: b55d3019f923b548b6d6e6d32817319d
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -454,7 +512,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Spells/Fireball_Crit
   guid: 9ce334fbbe8f7b4bae4b96ac542998f6
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -477,7 +535,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Menu/MouseClickButton
   guid: 6aca6de01c11f849909e5734cfe9fb4e
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -500,7 +558,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Unarmed_Attack
   guid: b1555d9132c1a04db7511a55d6dacaaa
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -508,6 +566,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1079810796962948187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-897569517367036088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +601,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Unarmed_Crit
   guid: 55accbea1ec14646918d88b941327a01
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -546,7 +624,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Quest/QuestLog_Close
   guid: c56e4108364141409b0cba16069d5d12
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -569,7 +647,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Buff/Buff_LevelUp
   guid: 52565846a5a3d64d8b1988b5049a798b
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -592,7 +670,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Bows/Bow_AttackStart
   guid: 2329e796bc8dbd49bebee6cdd0077a0f
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -615,7 +693,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Menu/NextButton
   guid: e495830ee53a384ab89c3b6dbcc4371f
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -636,8 +714,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 8888618109857998531}
-  - {fileID: 4412961731260380222}
+  - {fileID: 3805074605827639084}
+  - {fileID: -7528432947412087156}
   EditorEvents:
   - {fileID: 2364944534201418977}
   - {fileID: 1461431870994017911}
@@ -688,10 +766,10 @@ MonoBehaviour:
   - {fileID: -3024170774826962908}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   StringsBanks:
-  - {fileID: 8888618109857998531}
-  stringsBankWriteTime: 637499499274817739
+  - {fileID: 3805074605827639084}
+  stringsBankWriteTime: 637513320208913030
   cacheVersion: 5
 --- !u!114 &348351596864645240
 MonoBehaviour:
@@ -712,7 +790,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &832718058693203218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -728,7 +806,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Bag/Bag_Open
   guid: 4937fd3694414142b5821ba2d9157960
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -751,7 +829,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Nature/Water_River
   guid: 0cb7bb446f20f141be66c3f887d4098f
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -759,6 +837,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5456
+--- !u!114 &1887755810176270612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &2181872686817646467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +872,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Spells/Fireball_Hit
   guid: 5a45803a460ba6458f81475c0ef580ba
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -782,6 +880,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &2230288662009771880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &2364944534201418977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,7 +915,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Arrows/Arrow_Block
   guid: 0b5583de85b45b4e94b36f8df49bfbae
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -820,7 +938,7 @@ MonoBehaviour:
   Path: event:/SFX/Items/Potions/Potion_Drink
   guid: 1aa223a9e3ed994dbd6019e194c1365c
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -843,7 +961,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Quest/Objective_Complete
   guid: f098c6234b04bf4dbf1320a9181a82c7
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -851,6 +969,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3524376109623988306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &3654185576968356905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -866,7 +1004,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Spells/Fireball_AttackStart
   guid: 5cf8d94738da204abf9e32191330e4dd
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -874,6 +1012,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 639
+--- !u!114 &3805074605827639084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Soulbound/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  lastModified: 637513320208913030
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 3234
+  Exists: 1
 --- !u!114 &3820548362373980985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,7 +1047,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Bows/Bow_AttackMid
   guid: 222d7dd0fe9ab045adb73e8200a2a5d3
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -897,6 +1055,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 506
+--- !u!114 &4020834238478072262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &4270562313216167687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,7 +1090,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Sword_Block
   guid: bb6051039e8e9143a5ae627393e6d04c
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -937,7 +1115,7 @@ MonoBehaviour:
   lastModified: 637499499274608071
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &4428541280221540041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -953,7 +1131,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Arrows/Arrow_Crit
   guid: c5c974a335dcd24cad02c860b2d23b0d
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -976,7 +1154,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Sword_Hit
   guid: 4568b7ca09670f43b4a6ad5548b9bb99
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -984,6 +1162,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 480
+--- !u!114 &4986937186897418600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &5050119909432751258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,7 +1197,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Nature/Water_Waterfall
   guid: 69835502e7b34a4d96e9a67dc4186aad
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1022,7 +1220,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Bows/Bow_AttackEnd
   guid: 53976504704f854bb5b5cc36777d075a
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1045,7 +1243,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/Menu/ExitButton
   guid: 40fe2ecfc6ab284f93090955c1927364
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1068,7 +1266,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambient/Quest/Quest_Complete
   guid: 2ebf27ccae4ad44a918dd83eb7eac1e2
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1091,7 +1289,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Spells/Fireball_Equip
   guid: 3f60023a3d5760439422c7cd90b8a876
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1114,7 +1312,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Miss
   guid: cf63e25462fab341a7cf9a0f7be563cd
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1137,7 +1335,7 @@ MonoBehaviour:
   Path: event:/SFX/Weapons/Melee/Sword_Crit
   guid: fabba3d5cbb44c42a5b0ccd378e11fc1
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1160,7 +1358,7 @@ MonoBehaviour:
   Path: event:/SFX/Character/Male/Combat/Male_TakeDamage
   guid: 48376e88f013b447995d02585ea3b39d
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1183,7 +1381,7 @@ MonoBehaviour:
   Path: event:/Music/Music_Adventure
   guid: e8c937217ef9a84ba80b9cef66450105
   Banks:
-  - {fileID: 4412961731260380222}
+  - {fileID: -7528432947412087156}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1210,7 +1408,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8888618109857998531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,4 +1428,4 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 3102
-  Exists: 1
+  Exists: 0

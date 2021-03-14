@@ -2,19 +2,145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.bank" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.bank.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.strings.bank" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Master.strings.bank.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/022288D4.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/06AD0D88.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/0B496AC3.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/101CC380.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/137198B1.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/16919B42.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/18AEBF6C.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/1BC4ECEB.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/1F5172BC.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/1F9CD202.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/23EA759B.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/2A6094D8.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/30FC2272.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/32ADF84E.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/35A8A3A9.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/379E71D8.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/40DFBD9A.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/43F0E491.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/46214A5D.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/4627AA40.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/4A391A68.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/4A5C9F1E.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/4A779FF0.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/4B9AC077.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/514DAC75.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/540C5EFD.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/5F7061B7.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/60F99AB2.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/69A3E5E2.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/6B17E1BE.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/6B597B69.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/6EA423D5.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/711F06A6.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/72AEB562.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/749C4D19.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/799EC1CD.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/8064E1D8.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/88AC16C0.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/890D94A1.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/897895B0.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/8E58729A.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/8EC0A5C8.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/9666B503.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/9BFEEF30.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/9C97F30D.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/A0E34637.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/A1461D50.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/A23BE033.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/A5F7C143.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/A8FCC2F9.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/A97C1B36.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/A984A795.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/AB11250C.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/AFBA7A9E.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/B0170855.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/B86CD499.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/B8A8187F.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/B8D23069.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/BCBCD86D.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/BE590D22.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/BF88C913.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/C021922B.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/C3DD6235.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/C66AAFF5.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/D080CA83.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/D285C994.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/D841C44B.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/D9B9C1BB.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/D9BADCAF.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/DED0DDAE.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/DFB5B71F.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/E0CFD435.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/E470C924.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/E705C923.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/E9CFE2CE.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/F0CC1876.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/F0FD3620.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/F1625BA5.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/F48E218D.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/F4B0DE45.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/FF43DAF6.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Group/{1642c05a-4a1b-4458-bed6-6639c1e88712}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Group/{3a2413c3-66ad-4e39-a6cb-aea4dce0b760}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Group/{d3721c7d-ed9b-4181-aee8-696dbd15dd61}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Settings/Dropdown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Settings/Dropdown.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/SettingsMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/SettingsMenuUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{02469ff5-4a53-4e32-9b00-d27ecc28cbe8}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{02469ff5-4a53-4e32-9b00-d27ecc28cbe8}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{02558369-b3e7-4d4a-96e9-a67dc4186aad}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{02558369-b3e7-4d4a-96e9-a67dc4186aad}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{035160bb-8e9e-4391-a5ae-627393e6d04c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{035160bb-8e9e-4391-a5ae-627393e6d04c}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{04659753-4f70-4b85-b5b5-cc36777d075a}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{04659753-4f70-4b85-b5b5-cc36777d075a}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{08416ec5-4136-4041-9b0c-ba16069d5d12}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{08416ec5-4136-4041-9b0c-ba16069d5d12}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{0a080d2b-ed2e-41d4-b3f9-ebf0ed298a91}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{0a080d2b-ed2e-41d4-b3f9-ebf0ed298a91}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{0c4eb49e-445a-41fc-abb7-de9456aede1c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{0c4eb49e-445a-41fc-abb7-de9456aede1c}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{0e8395e4-3ae5-4a38-b89c-3b6dbcc4371f}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{0e8395e4-3ae5-4a38-b89c-3b6dbcc4371f}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{19305db5-23f9-48b5-b6d6-e6d32817319d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{19305db5-23f9-48b5-b6d6-e6d32817319d}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{2137c9e8-f97e-4ba8-a80b-9cef66450105}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{2137c9e8-f97e-4ba8-a80b-9cef66450105}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{23c698f0-044b-4dbf-bf13-20a9181a82c7}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{23c698f0-044b-4dbf-bf13-20a9181a82c7}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{28a2ec4d-026f-4cd7-bfcf-ace306e35f9d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{28a2ec4d-026f-4cd7-bfcf-ace306e35f9d}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{2c14ad68-0969-4d4e-822e-c6faeed916f1}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{2c14ad68-0969-4d4e-822e-c6faeed916f1}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{36fd3749-4194-4241-b582-1ba2d9157960}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{36fd3749-4194-4241-b582-1ba2d9157960}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{3a02603f-573d-4360-9422-c7cd90b8a876}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{3a02603f-573d-4360-9422-c7cd90b8a876}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{3a80455a-0b46-45a6-8f81-475c0ef580ba}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{3a80455a-0b46-45a6-8f81-475c0ef580ba}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{44bbb70c-206f-41f1-be66-c3f887d4098f}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{44bbb70c-206f-41f1-be66-c3f887d4098f}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{46585652-a3a5-4dd6-8b19-88b5049a798b}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{46585652-a3a5-4dd6-8b19-88b5049a798b}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{47d9f85c-da38-4a20-bf9e-32191330e4dd}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{47d9f85c-da38-4a20-bf9e-32191330e4dd}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{54e263cf-fa62-41b3-a7cf-9a0f7be563cd}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{54e263cf-fa62-41b3-a7cf-9a0f7be563cd}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{576e20c4-1dbf-4a1b-a45b-91e1c1481723}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{576e20c4-1dbf-4a1b-a45b-91e1c1481723}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{886e3748-13f0-47b4-995d-02585ea3b39d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{886e3748-13f0-47b4-995d-02585ea3b39d}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{8ae80e3f-9bbc-4b3e-869a-0c9d0a624acd}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{8ae80e3f-9bbc-4b3e-869a-0c9d0a624acd}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{915d55b1-c132-4da0-b751-1a55d6dacaaa}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{915d55b1-c132-4da0-b751-1a55d6dacaaa}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{962fe67f-8bbc-4646-8031-104d73fd411b}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{962fe67f-8bbc-4646-8031-104d73fd411b}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{96e72923-8dbc-49bd-bebe-e6cdd0077a0f}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{96e72923-8dbc-49bd-bebe-e6cdd0077a0f}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a1266a68-813e-4eed-a49e-7af630dca059}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a1266a68-813e-4eed-a49e-7af630dca059}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a374c9c5-dc35-4cd2-ad02-c860b2d23b0d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a374c9c5-dc35-4cd2-ad02-c860b2d23b0d}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a4b84fd2-8065-42ef-9a2b-7c9a384afd13}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a4b84fd2-8065-42ef-9a2b-7c9a384afd13}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a4ce721f-4d8b-4f24-9288-656454b4acc8}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a4ce721f-4d8b-4f24-9288-656454b4acc8}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a923a21a-ede3-4d99-bd60-19e194c1365c}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a923a21a-ede3-4d99-bd60-19e194c1365c}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{afabc2d2-1573-45b3-bcaa-545d708614c8}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{afabc2d2-1573-45b3-bcaa-545d708614c8}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{cab76845-6709-430f-b4a6-ad5548b9bb99}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{cab76845-6709-430f-b4a6-ad5548b9bb99}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{cc27bf2e-4aae-4ad4-918d-d83eb7eac1e2}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{cc27bf2e-4aae-4ad4-918d-d83eb7eac1e2}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{cf2efe40-abc6-4f28-9309-0955c1927364}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{cf2efe40-abc6-4f28-9309-0955c1927364}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{d07d2d22-9afe-45b0-adb7-3e8200a2a5d3}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{d07d2d22-9afe-45b0-adb7-3e8200a2a5d3}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{d5a3bbfa-b4cb-424c-a5b0-ccd378e11fc1}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{d5a3bbfa-b4cb-424c-a5b0-ccd378e11fc1}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{d6a4e591-36b2-42c3-8c4f-6553d25e092e}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{d6a4e591-36b2-42c3-8c4f-6553d25e092e}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{db6ff18c-0130-4fe7-8bf5-6ddd42b51907}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{db6ff18c-0130-4fe7-8bf5-6ddd42b51907}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{de83550b-b485-4e5b-94b3-6f8df49bfbae}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{de83550b-b485-4e5b-94b3-6f8df49bfbae}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{e06dca6a-111c-49f8-909e-5734cfe9fb4e}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{e06dca6a-111c-49f8-909e-5734cfe9fb4e}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{e0c9aff8-bf89-4f3e-b6df-eeecaf1f8623}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{e0c9aff8-bf89-4f3e-b6df-eeecaf1f8623}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{e56b112b-3b70-42f0-93de-5dc526bc48ed}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{e56b112b-3b70-42f0-93de-5dc526bc48ed}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{eacbac55-c11e-4646-918d-88b941327a01}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{eacbac55-c11e-4646-918d-88b941327a01}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{eed867e9-4c5a-4185-8877-a2f07fed630d}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{eed867e9-4c5a-4185-8877-a2f07fed630d}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{fb34e39c-8fbe-4b7b-ae4b-96ac542998f6}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{fb34e39c-8fbe-4b7b-ae4b-96ac542998f6}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{ffcf9ffe-e8d3-4d49-9d06-7516d91dc353}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{ffcf9ffe-e8d3-4d49-9d06-7516d91dc353}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +214,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615608807353</updated>
       <workItem from="1615608822031" duration="855000" />
-      <workItem from="1615747289754" duration="3690000" />
+      <workItem from="1615747289754" duration="5198000" />
     </task>
     <servers />
   </component>
