@@ -8,7 +8,7 @@ namespace UI.Settings_Menu
     {
         [SerializeField] string _busPath;
         [SerializeField] Slider _slider;
-        
+
         private Bus _bus;
 
         private void Awake()
