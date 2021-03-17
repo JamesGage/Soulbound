@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/AudioSliderUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/AudioSliderUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/Portal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/Portal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/Portal.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/Portal.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,9 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/SettingsMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/AudioSliderUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/Portal.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -79,6 +85,7 @@
       <updated>1615608807353</updated>
       <workItem from="1615608822031" duration="855000" />
       <workItem from="1615747289754" duration="10436000" />
+      <workItem from="1616018480410" duration="2652000" />
     </task>
     <servers />
   </component>

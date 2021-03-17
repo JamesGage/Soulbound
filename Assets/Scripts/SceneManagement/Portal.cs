@@ -17,14 +17,10 @@ namespace RPG.SceneManagement
         [Tooltip("X = Fade Out time. Y = Fade In time.")]
         [SerializeField] Vector2 _fadeTime = new Vector2(1f, 0.5f);
 
-        private PlayerController _oldPlayerController;
-        private PlayerController _newPlayerController;
-        
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
             {
-                _oldPlayerController = other.GetComponent<PlayerController>();
                 StartCoroutine(Transition());
             }
         }
@@ -35,7 +31,6 @@ namespace RPG.SceneManagement
             
             Fader fader = FindObjectOfType<Fader>();
             SavingWrapper saveWrapper = FindObjectOfType<SavingWrapper>();
-            _oldPlayerController.enabled = false;
 
             yield return fader.FadeOut(_fadeTime.x);
             
@@ -44,15 +39,17 @@ namespace RPG.SceneManagement
             yield return SceneManager.LoadSceneAsync(_sceneToLoad);
             
             saveWrapper.Load();
-            
+
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
-            _newPlayerController.enabled = false;
+            
+            yield return new WaitForSeconds(1f);
+            
+            saveWrapper.DeleteFile();
 
             yield return fader.FadeIn(_fadeTime.y);
             saveWrapper.Save();
-
-            _newPlayerController.enabled = true;
+            
             Destroy(gameObject);
         }
 
@@ -72,7 +69,6 @@ namespace RPG.SceneManagement
         private void UpdatePlayer(Portal otherPortal)
         {
             var player = GameObject.FindWithTag("Player");
-            _newPlayerController = player.GetComponent<PlayerController>();
             player.GetComponent<NavMeshAgent>().Warp(otherPortal._spawnPoint.position);
             player.transform.rotation = otherPortal._spawnPoint.rotation;
         }

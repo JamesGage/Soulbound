@@ -39,10 +39,14 @@ namespace RPG.SceneManagement
             _savingSystem.Save(_saveFile);
         }
 
-        public void Delete()
+        public void DeleteFile()
+        {
+            _savingSystem.DeleteFile(_saveFile);
+        }
+        
+        public void DeleteAll()
         {
             GetComponent<SavingSystem>().DeleteAll();
-            print("Save file deleted");
         }
 
         public void SetSaveFileName(string fileName)

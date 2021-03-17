@@ -26,6 +26,14 @@ namespace RPG.Saving
             RestoreState(LoadFile(saveFile));
         }
 
+        public void DeleteFile(string saveFile)
+        {
+            if (FindSavedGames() != null)
+            {
+                File.Delete(saveFile);
+            }
+        }
+        
         public void DeleteAll()
         {
             if (FindSavedGames() != null)
