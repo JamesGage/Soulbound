@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33944617472b46cc9189ccec3bb6a820, type: 3}
+  m_Name: Epic Sword
+  m_EditorClassIdentifier: 
+  itemID: 8698c50c-cfc6-4de6-93fd-1347311cf24d
+  displayName: Epic Sword
+  _displayNameColor: {r: 0.4617857, g: 0.22316661, b: 0.8018868, a: 1}
+  description: This blade is EPIC!
+  icon: {fileID: 21300000, guid: db4c0e2534521ba4694d156202c85236, type: 3}
+  pickup: {fileID: 8189180268357642860, guid: db5b1ba3e4140da49a792de79b37d782, type: 3}
+  stackable: 0
+  _goldValue: 500
+  isGold: 0
+  equipSFX: event:/SFX/Weapons/Melee/Sword_Equip
+  allowedEquipLocation: 5
+  _equippedPrefab: {fileID: 4263859535763257474, guid: f0cfa2a7004d9eb48b1428c30ea28859, type: 3}
+  _animOverride: {fileID: 22100000, guid: 1f55313a58a2f784f8098cf5bc904aaf, type: 2}
+  _weaponDamage: 10
+  _weaponPercentageBonus: 200
+  _weaponRange: 2
+  _isRightHanded: 1
+  _projectile: {fileID: 0}
+  _damageType: 0
+  attackStartSFX: 
+  attackMidSFX: event:/SFX/Weapons/Melee/Sword_AttackMid
+  attackEndSFX: 
+  hitSFX: event:/SFX/Weapons/Melee/Sword_Hit
+  missSFX: event:/SFX/Weapons/Miss
+  blockSFX: event:/SFX/Weapons/Melee/Sword_Block
+  critSFX: event:/SFX/Weapons/Melee/Sword_Crit

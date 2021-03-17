@@ -1659,7 +1659,7 @@ PrefabInstance:
     - target: {fileID: -2015446017253110992, guid: d2578b852e7fe6e42842ac029ef0b658, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: df05eb5a7dc3f1f47aa4042671a108b3, type: 2}
+      objectReference: {fileID: 11400000, guid: 41f904f2048d4234ea59e3a29e0bd9b5, type: 2}
     - target: {fileID: 1774812209201130283, guid: d2578b852e7fe6e42842ac029ef0b658, type: 3}
       propertyPath: uniqueIdentifier
       value: 812b233a-98f5-4da2-9072-b2a2bf2e5d54
@@ -1710,7 +1710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5721968024916974379, guid: d2578b852e7fe6e42842ac029ef0b658, type: 3}
       propertyPath: m_Name
-      value: Fireball Pickup
+      value: Epic Sword Pickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2578b852e7fe6e42842ac029ef0b658, type: 3}
@@ -10954,7 +10954,7 @@ PrefabInstance:
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3518498089541038727, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.500061
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 3518498089574980093, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: m_SizeDelta.y

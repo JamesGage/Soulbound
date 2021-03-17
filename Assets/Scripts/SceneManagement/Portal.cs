@@ -45,7 +45,7 @@ namespace RPG.SceneManagement
             
             yield return new WaitForSeconds(1f);
             
-            saveWrapper.DeleteFile();
+            //saveWrapper.DeleteFile();
 
             yield return fader.FadeIn(_fadeTime.y);
             saveWrapper.Save();
