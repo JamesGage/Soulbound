@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6842934693435297478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaae5105e264fa6a7a177f712693c4b, type: 3}
+  m_Name: a9edd4f8-4bda-475d-ad92-fdc90ded61cd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  _text: Hello there, take a look at my wears. Let me know if anything catches your
+    eye.
+  _children: []
+  _rect:
+    serializedVersion: 2
+    x: 230
+    y: 286
+    width: 200
+    height: 100
+  _onEnterAction: 0
+  _onExitAction: 0
+  _condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d46571f7deaf49ba99bbc897374916e7, type: 3}
+  m_Name: Weapon Dealer
+  m_EditorClassIdentifier: 
+  _nodes:
+  - {fileID: -6842934693435297478}
+  _newNodeOffset: {x: 250, y: 0}
