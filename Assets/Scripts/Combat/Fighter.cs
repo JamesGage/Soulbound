@@ -1,4 +1,5 @@
-﻿using RPG.Core;
+﻿using System;
+using RPG.Core;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Saving;
@@ -6,6 +7,7 @@ using RPG.Attributes;
 using RPG.Inventories;
 using RPG.Stats;
 using RPG.Utils;
+using Random = UnityEngine.Random;
 
 namespace RPG.Combat
 {
@@ -15,7 +17,7 @@ namespace RPG.Combat
 
         [Range(1, 25)]
         [SerializeField] int _baseArmor;
-        [Range(0f, 5f)]
+        [Range(0.1f, 2f)]
         [SerializeField] float attackSpeed = 1f;
 
         [SerializeField] WeaponConfig _defaultWeapon = null;
@@ -37,8 +39,16 @@ namespace RPG.Combat
         private Animator _anim;
         private ActionScheduler _actionScheduler;
         private BaseStats _baseStats;
-        
+
         #endregion
+
+        private void OnEnable()
+        {
+            if (_equipment)
+            {
+                _equipment.onEquipmentUpdated += UpdateWeapon;
+            }
+        }
 
         private void Awake()
         {
@@ -49,11 +59,6 @@ namespace RPG.Combat
             _currentWeaponConfig = _defaultWeapon;
             _currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
             _equipment = GetComponent<Equipment>();
-
-            if (_equipment)
-            {
-                _equipment.onEquipmentUpdated += UpdateWeapon;
-            }
         }
 
         private Weapon SetupDefaultWeapon()
@@ -91,7 +96,7 @@ namespace RPG.Combat
         {
             transform.LookAt(_target.transform);
 
-            if (_timeSinceLastAttack > attackSpeed)
+            if (_timeSinceLastAttack > 1 / attackSpeed)
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
