@@ -23,6 +23,7 @@ namespace RPG.Combat
 
         private void FindTarget()
         {
+            if (_fighter.GetTarget() != null && !_fighter.GetTarget().IsDead()) return;
             RaycastHit[] hits = Physics.SphereCastAll(transform.position, _fighter.GetCurrentWeapon().Range(), Vector3.up, 0);
             foreach (var hit in hits)
             {

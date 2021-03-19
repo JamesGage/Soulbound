@@ -1,5 +1,4 @@
-﻿using System;
-using RPG.Core;
+﻿using RPG.Core;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Saving;
@@ -132,7 +131,7 @@ namespace RPG.Combat
             {
                 _isCritical = true;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
-                return damage * 2;
+                return (int)damage * 2;
             }
             
             attack += _hitChanceModifer;
@@ -140,14 +139,14 @@ namespace RPG.Combat
             {
                 _isCritical = false;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
-                return damage;
+                return (int)damage;
             }
 
             if (_baseArmor == attack)
             {
                 _isCritical = false;
                 _hitDamageType = DamageType.Block;
-                return damage / 2;
+                return (int)damage / 2;
             }
             
             _isCritical = false;

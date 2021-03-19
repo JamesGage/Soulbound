@@ -6,6 +6,7 @@
         NPC,
         Grunt,
         Archer,
-        Mage
+        Mage,
+        Dummy
     }
 }

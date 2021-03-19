@@ -77,9 +77,9 @@ namespace RPG.Stats
             return _currentLevel.value;
         }
 
-        public int GetStat(Stat stat)
+        public float GetStat(Stat stat)
         {
-            return _progression.GetStat(stat, _characterClass, GetLevel()) * (int)(1 + GetPercentageModifier(stat)/100) + GetAddativeMoifier(stat);
+            return _progression.GetStat(stat, _characterClass, GetLevel()) + (GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat));
         }
 
         public int GetMaxExperience()

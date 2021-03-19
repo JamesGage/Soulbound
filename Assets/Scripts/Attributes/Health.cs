@@ -17,7 +17,7 @@ namespace RPG.Attributes
         [FMODUnity.EventRef] public string deathSFX = "";
         [FMODUnity.EventRef] public string takeDamageSFX = "";
 
-        LazyValue<int> _health;
+        LazyValue<float> _health;
         private bool _isDead;
         private ActionScheduler _actionScheduler;
         private BaseStats _baseStats;
@@ -32,10 +32,10 @@ namespace RPG.Attributes
             _actionScheduler = GetComponent<ActionScheduler>();
             _baseStats = GetComponent<BaseStats>();
 
-            _health = new LazyValue<int>(GetInitialHealth);
+            _health = new LazyValue<float>(GetInitialHealth);
         }
 
-        private int GetInitialHealth()
+        private float GetInitialHealth()
         {
             return _baseStats.GetStat(Stat.Health);
         }
@@ -74,7 +74,7 @@ namespace RPG.Attributes
 
         public int MaxHealth()
         {
-            return _baseStats.GetStat(Stat.Health);
+            return (int)_baseStats.GetStat(Stat.Health);
         }
         
         public bool IsDead()
@@ -109,14 +109,14 @@ namespace RPG.Attributes
                 onHealthChanged.Invoke();
         }
 
-        public int GetHealth()
+        public float GetHealth()
         {
             return _health.value;
         }
 
         public float GetFraction()
         {
-            return (float)_health.value / (float)_baseStats.GetStat(Stat.Health);
+            return _health.value / _baseStats.GetStat(Stat.Health);
         }
 
         private void Die()
@@ -133,12 +133,12 @@ namespace RPG.Attributes
             Experience experience = instigator.GetComponent<Experience>();
             if (experience == null) return;
             
-            experience.GainExperience(_baseStats.GetStat(Stat.ExperienceReward));
+            experience.GainExperience((int)_baseStats.GetStat(Stat.ExperienceReward));
         }
 
         private void onLevelUp()
         {
-            _health.value = _baseStats.GetStat(Stat.Health);
+            _health.value = (int)_baseStats.GetStat(Stat.Health);
             if(onHealthChanged != null)
                 onHealthChanged.Invoke();
         }
