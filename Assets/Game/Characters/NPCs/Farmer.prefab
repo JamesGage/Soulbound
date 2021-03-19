@@ -247,6 +247,10 @@ PrefabInstance:
       value: 1367600d-b1bb-425e-b17b-a6eacd86777f
       objectReference: {fileID: 0}
     - target: {fileID: 9193036788310790925, guid: 5a0326831b64bfe4e996d1a32ec9fbf5, type: 3}
+      propertyPath: _baseStats
+      value: 
+      objectReference: {fileID: 11400000, guid: 79b43613b78321f47a28fa22b9f03e4c, type: 2}
+    - target: {fileID: 9193036788310790925, guid: 5a0326831b64bfe4e996d1a32ec9fbf5, type: 3}
       propertyPath: _characterClass
       value: 1
       objectReference: {fileID: 0}

@@ -7,7 +7,7 @@ namespace RPG.UI
 {
     public class LevelDisplay : MonoBehaviour
     {
-        private BaseStats _baseStats;
+        /*private BaseStats _baseStats;
         private TMP_Text _levelText;
 
         private void Awake()
@@ -35,6 +35,6 @@ namespace RPG.UI
         private void UpdateLevel()
         {
             _levelText.text = "Level: " + _baseStats.GetLevel();
-        }
+        }*/
     }
 }

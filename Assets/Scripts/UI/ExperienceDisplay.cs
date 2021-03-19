@@ -8,7 +8,7 @@ namespace RPG.UI
 {
     public class ExperienceDisplay : MonoBehaviour
     {
-        [SerializeField] TMP_Text _levelText;
+        /*[SerializeField] TMP_Text _levelText;
         
         private Experience _experience;
         private BaseStats _baseStats;
@@ -42,6 +42,6 @@ namespace RPG.UI
         {
             _experienceBar.fillAmount = (float) _experience.GetExperience() / (float)_baseStats.GetMaxExperience();
             _levelText.text = _baseStats.GetLevel().ToString();
-        }
+        }*/
     }
 }

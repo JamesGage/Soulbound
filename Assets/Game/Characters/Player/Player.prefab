@@ -165,6 +165,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentGold: 0
+--- !u!114 &5438348971279438332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968763298227037891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdabd344f84d468fa8bb434b57746da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8029642082349966675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _baseArmor: 16
-  attackSpeed: 1
   _defaultWeapon: {fileID: 11400000, guid: 75e037045c3b07c41b425e7ab0ab4154, type: 2}
   _rightHandTransform: {fileID: 4656559062928748635}
   _leftHandTransform: {fileID: 4656559062928835305}
@@ -238,18 +249,6 @@ MonoBehaviour:
   _maxDrops: 0
   _guaranteedDrops: []
   potentialDrops: []
---- !u!114 &5438348971279438332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7968763298227037891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdabd344f84d468fa8bb434b57746da5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4656559062928454413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,6 +600,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: _baseStats
+      value: 
+      objectReference: {fileID: 11400000, guid: 99353f5d5c2d2164fa0f02bbeddf97d3, type: 2}
     - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: _levelUpEffect
       value: 

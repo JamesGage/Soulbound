@@ -37,19 +37,7 @@ namespace RPG.Attributes
 
         private float GetInitialHealth()
         {
-            return _baseStats.GetStat(Stat.Health);
-        }
-
-        private void OnEnable()
-        {
-            if(_baseStats != null)
-                _baseStats.onLevelUp += onLevelUp;
-        }
-
-        private void OnDisable()
-        {
-            if(_baseStats != null)
-                _baseStats.onLevelUp -= onLevelUp;
+            return 5 * _baseStats.GetStat(Stat.Vitality);
         }
 
         private void Start()
@@ -74,7 +62,7 @@ namespace RPG.Attributes
 
         public int MaxHealth()
         {
-            return (int)_baseStats.GetStat(Stat.Health);
+            return (int)_baseStats.GetStat(Stat.Vitality);
         }
         
         public bool IsDead()
@@ -95,7 +83,6 @@ namespace RPG.Attributes
                 OnDieEvent?.Invoke();
                 if(onDeath != null)
                     onDeath.Invoke();
-                AwardExperience(instigator);
             }
             else if(damage > 0)
                 FMODUnity.RuntimeManager.PlayOneShot(takeDamageSFX, transform.position);
@@ -116,7 +103,7 @@ namespace RPG.Attributes
 
         public float GetFraction()
         {
-            return _health.value / _baseStats.GetStat(Stat.Health);
+            return _health.value / _baseStats.GetStat(Stat.Vitality);
         }
 
         private void Die()
@@ -127,22 +114,7 @@ namespace RPG.Attributes
             _anim.SetTrigger("die");
             _actionScheduler.CancelCurrentAction();
         }
-        
-        private void AwardExperience(GameObject instigator)
-        {
-            Experience experience = instigator.GetComponent<Experience>();
-            if (experience == null) return;
-            
-            experience.GainExperience((int)_baseStats.GetStat(Stat.ExperienceReward));
-        }
 
-        private void onLevelUp()
-        {
-            _health.value = (int)_baseStats.GetStat(Stat.Health);
-            if(onHealthChanged != null)
-                onHealthChanged.Invoke();
-        }
-        
 
         #region Save
 

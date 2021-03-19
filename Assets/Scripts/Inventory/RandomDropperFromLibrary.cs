@@ -7,7 +7,7 @@ namespace RPG.Inventory
 {
     public class RandomDropperFromLibrary : ItemDropper
     {
-        [Tooltip("How far can the pickups be scattered from the dropper")]
+        /*[Tooltip("How far can the pickups be scattered from the dropper")]
         [SerializeField] float _scatterDistance = 1f;
         [SerializeField] DropLibrary _dropLibrary;
 
@@ -42,6 +42,6 @@ namespace RPG.Inventory
             }
             
             return transform.position;
-        }
+        }*/
     }
 }

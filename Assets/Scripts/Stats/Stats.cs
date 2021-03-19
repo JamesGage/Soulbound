@@ -2,11 +2,13 @@
 {
     public enum Stat
     {
-        Health,
-        ExperienceReward,
-        ExperienceToLevelup,
-        Damage,
-        MovementSpeed,
-        AttackSpeed
+        Vitality,
+        Strength,
+        Accuracy,
+        Speed,
+        Intellect,
+        Wisdom,
+        Diplomacy,
+        Charm
     }
 }

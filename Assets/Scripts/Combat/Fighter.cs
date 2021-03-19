@@ -93,7 +93,7 @@ namespace RPG.Combat
         {
             transform.LookAt(_target.transform);
 
-            if (_timeSinceLastAttack > 1 / _baseStats.GetStat(Stat.AttackSpeed))
+            if (_timeSinceLastAttack > 1 / _baseStats.GetStat(Stat.Speed))
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
@@ -104,7 +104,7 @@ namespace RPG.Combat
         {
             _anim.ResetTrigger("stopAttack");
             _anim.SetTrigger("attack");
-            _anim.speed = _baseStats.GetStat(Stat.AttackSpeed);
+            _anim.speed = _baseStats.GetStat(Stat.Speed);
         }
 
         //Animation Event
@@ -126,7 +126,7 @@ namespace RPG.Combat
         private int CalculateAttack()
         {
             var attack = Random.Range(Mathf.RoundToInt(_hitChanceRange.x), Mathf.RoundToInt(_hitChanceRange.y));
-            var damage = _baseStats.GetStat(Stat.Damage);
+            var damage = _baseStats.GetStat(Stat.Strength);
             if (attack == _hitChanceRange.y - 1)
             {
                 _isCritical = true;

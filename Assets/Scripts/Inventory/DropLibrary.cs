@@ -7,7 +7,7 @@ namespace RPG.Inventory
     [CreateAssetMenu(menuName = ("RPG/Inventory/Drop Library"))]
     public class DropLibrary : ScriptableObject
     {
-        [SerializeField] DropConfig[] potentialDrops;
+        /*[SerializeField] DropConfig[] potentialDrops;
         [SerializeField] float[] _dropChancePercentage;
         [SerializeField] int[] _minDrops;
         [SerializeField] int[] _maxDrops;
@@ -117,6 +117,6 @@ namespace RPG.Inventory
             }
 
             return values[level - 1];
-        }
+        }*/
     }
 }
