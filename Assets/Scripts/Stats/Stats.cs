@@ -5,6 +5,8 @@
         Health,
         ExperienceReward,
         ExperienceToLevelup,
-        Damage
+        Damage,
+        MovementSpeed,
+        AttackSpeed
     }
 }

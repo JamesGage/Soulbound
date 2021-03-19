@@ -1,6 +1,7 @@
 ﻿using RPG.Core;
 using RPG.Saving;
 using RPG.Attributes;
+using RPG.Stats;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,6 +19,7 @@ namespace RPG.Movement
         private ActionScheduler _actionScheduler;
         private Health _health;
         private Ground.GroundType _groundType;
+        private BaseStats _baseStats;
 
         private void Awake()
         {
@@ -25,6 +27,7 @@ namespace RPG.Movement
             _anim = GetComponent<Animator>();
             _actionScheduler = GetComponent<ActionScheduler>();
             _health = GetComponent<Health>();
+            _baseStats = GetComponent<BaseStats>();
         }
 
         private void Update()
@@ -62,8 +65,8 @@ namespace RPG.Movement
         public void MoveTo(Vector3 destination, float speedFraction)
         {
             _navAgent.destination = destination;
-            _navAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
-            _anim.speed = maxSpeed / 6;
+            _navAgent.speed = _baseStats.GetStat(Stat.MovementSpeed) * Mathf.Clamp01(speedFraction);
+            _anim.speed = _baseStats.GetStat(Stat.MovementSpeed) / 6;
             _navAgent.isStopped = false;
         }
 
