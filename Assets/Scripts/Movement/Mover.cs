@@ -63,6 +63,7 @@ namespace RPG.Movement
         {
             _navAgent.destination = destination;
             _navAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
+            _anim.speed = maxSpeed / 6;
             _navAgent.isStopped = false;
         }
 

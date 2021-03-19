@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseTime.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PauseTime.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/PolygonAdventure/Models/Characters/Adventure Character.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/PolygonAdventure/Models/Characters/Adventure Character.controller.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Farmer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Farmer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Packs/PolygonAdventure/Models/Characters/Character.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Packs/PolygonAdventure/Models/Characters/Character.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/PauseTime.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -91,7 +92,8 @@
       <updated>1615608807353</updated>
       <workItem from="1615608822031" duration="855000" />
       <workItem from="1615747289754" duration="10436000" />
-      <workItem from="1616018480410" duration="4652000" />
+      <workItem from="1616018480410" duration="5246000" />
+      <workItem from="1616116895949" duration="2369000" />
     </task>
     <servers />
   </component>

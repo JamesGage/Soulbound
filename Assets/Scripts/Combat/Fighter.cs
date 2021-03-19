@@ -16,7 +16,7 @@ namespace RPG.Combat
         [Range(1, 25)]
         [SerializeField] int _baseArmor;
         [Range(0f, 5f)]
-        [SerializeField] float timeBetweenAttack = 1f;
+        [SerializeField] float attackSpeed = 1f;
 
         [SerializeField] WeaponConfig _defaultWeapon = null;
         [SerializeField] Transform _rightHandTransform = null;
@@ -71,7 +71,11 @@ namespace RPG.Combat
             _timeSinceLastAttack += Time.deltaTime;
             
             if (_target == null) return;
-            if (_target.IsDead()) return;
+            if (_target.IsDead())
+            {
+                _anim.SetTrigger("stopAttack");
+                return;
+            }
             if (!IsInRange(_target.transform))
             {
                 _mover.MoveTo(_target.transform.position, 1f);
@@ -86,8 +90,8 @@ namespace RPG.Combat
         private void AttackBehavior()
         {
             transform.LookAt(_target.transform);
-            
-            if (_timeSinceLastAttack > timeBetweenAttack)
+
+            if (_timeSinceLastAttack > attackSpeed)
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
@@ -98,6 +102,7 @@ namespace RPG.Combat
         {
             _anim.ResetTrigger("stopAttack");
             _anim.SetTrigger("attack");
+            _anim.speed = attackSpeed;
         }
 
         //Animation Event
