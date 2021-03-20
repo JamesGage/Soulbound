@@ -13168,6 +13168,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5800075209032448995, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: _stats._vitality
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6043878781822979813, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: m_fontAsset
       value: 

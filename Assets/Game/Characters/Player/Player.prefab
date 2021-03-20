@@ -74,19 +74,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &269117841466568936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7968763298227037891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b33e948bbf4f569f1535dbb5db5a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _experiencePoints: 0
 --- !u!114 &470415821151586295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,24 +218,6 @@ MonoBehaviour:
   _leftHandTransform: {fileID: 4656559062928835305}
   _hitChanceRange: {x: 0, y: 21}
   _hitChanceModifer: 10
---- !u!114 &9214667012837731427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7968763298227037891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3e582cdeb94a03b147154908de561b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scatterDistance: 2
-  _dropChancePercentage: 0
-  _minDrops: 0
-  _maxDrops: 0
-  _guaranteedDrops: []
-  potentialDrops: []
 --- !u!1001 &4656559062928454413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,7 +572,7 @@ PrefabInstance:
     - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: _baseStats
       value: 
-      objectReference: {fileID: 11400000, guid: 99353f5d5c2d2164fa0f02bbeddf97d3, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: _levelUpEffect
       value: 

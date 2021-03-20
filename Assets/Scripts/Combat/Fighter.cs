@@ -93,7 +93,7 @@ namespace RPG.Combat
         {
             transform.LookAt(_target.transform);
 
-            if (_timeSinceLastAttack > 1 / _baseStats.GetStat(Stat.Speed))
+            if (_timeSinceLastAttack > 1 / _baseStats.GetStat(Stat.AttackSpeed))
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
@@ -104,7 +104,7 @@ namespace RPG.Combat
         {
             _anim.ResetTrigger("stopAttack");
             _anim.SetTrigger("attack");
-            _anim.speed = _baseStats.GetStat(Stat.Speed);
+            _anim.speed = _baseStats.GetStat(Stat.AttackSpeed);
         }
 
         //Animation Event
