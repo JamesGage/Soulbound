@@ -14,15 +14,9 @@ namespace RPG.Combat
     {
         #region Variables
 
-        [Range(1, 25)]
-        [SerializeField] int _baseArmor;
-
         [SerializeField] WeaponConfig _defaultWeapon = null;
         [SerializeField] Transform _rightHandTransform = null;
         [SerializeField] Transform _leftHandTransform = null;
-        [SerializeField] Vector2 _hitChanceRange = new Vector2(0, 21);
-        [Range(0, 15)]
-        [SerializeField] int _hitChanceModifer;
 
         WeaponConfig _currentWeaponConfig;
         LazyValue<Weapon> _currentWeapon;
@@ -125,25 +119,39 @@ namespace RPG.Combat
 
         private int CalculateAttack()
         {
-            var attack = Random.Range(Mathf.RoundToInt(_hitChanceRange.x), Mathf.RoundToInt(_hitChanceRange.y));
+            var attack = Random.Range(1, 101);
             var damage = _baseStats.GetStat(Stat.Strength);
-            if (attack == _hitChanceRange.y - 1)
+            if (attack >= 100 - _baseStats.GetStat(Stat.Accuracy))
             {
                 _isCritical = true;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
                 return (int)damage * 2;
             }
             
-            attack += _hitChanceModifer;
-            if (_baseArmor < attack)
+            attack += (int)_baseStats.GetStat(Stat.Accuracy);
+            if (_target.GetComponent<BaseStats>().GetStat(Stat.Speed) < attack)
             {
+                if (_target.GetComponent<BaseStats>().GetStat(Stat.Speed) < attack / 2f)
+                {
+                    _isCritical = false;
+                    _hitDamageType = _currentWeaponConfig.GetDamageType();
+                    return (int)damage + (int)(damage / 2f);
+                }
+                
                 _isCritical = false;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
                 return (int)damage;
             }
 
-            if (_baseArmor == attack)
+            if (_target.GetComponent<BaseStats>().GetStat(Stat.Speed) > attack)
             {
+                if (_target.GetComponent<BaseStats>().GetStat(Stat.Speed) / 2f > attack)
+                {
+                    _isCritical = false;
+                    _hitDamageType = DamageType.Miss;
+                    return 0;
+                }
+                
                 _isCritical = false;
                 _hitDamageType = DamageType.Block;
                 return (int)damage / 2;

@@ -21,34 +21,34 @@ namespace RPG.Stats
             {
                 case Stat.Vitality:
                     var vitalityMultiplier = _stats._vitality + 1;
-                    return _stats._vitality * vitalityMultiplier + _stats._vitalityStart * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._vitality * vitalityMultiplier + _stats._vitalityStart * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Strength:
                     var strengthMultiplier = _stats._strength + 1;
-                    return _stats._strength * strengthMultiplier * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._strength * strengthMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Accuracy:
                     var accuracyMultiplier = _stats._accuracy + 1;
-                    return _stats._accuracy * accuracyMultiplier * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._accuracy * accuracyMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Speed:
                     var speedMultiplier = _stats._speed + _stats._speedStart;
-                    return _stats._speed * speedMultiplier * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._speed * speedMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.MoveSpeed:
                     var moveSpeedMultiplier = _stats._speed * 0.1f;
-                    return _stats._speed * moveSpeedMultiplier + _stats._speedBase * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._speed * moveSpeedMultiplier + _stats._speedBase * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.AttackSpeed:
                     var attackSpeedMultiplier = _stats._speed * 0.1f;
-                    return _stats._speed * attackSpeedMultiplier  * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._speed * attackSpeedMultiplier  * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Intellect:
                     var intellectMultiplier = _stats._intellect + 1;
-                    return _stats._intellect * intellectMultiplier * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._intellect * intellectMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Wisdom:
                     var wisdomMultiplier = _stats._wisdom + 1;
-                    return _stats._wisdom * wisdomMultiplier * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._wisdom * wisdomMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Diplomacy:
                     var diplomacyMultiplier = _stats._diplomacy + 1;
-                    return _stats._diplomacy * diplomacyMultiplier * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._diplomacy * diplomacyMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Charm:
                     var charmMultiplier = _stats._charm + 1;
-                    return _stats._charm * charmMultiplier * GetPercentageModifier(stat)/100 + GetAddativeMoifier(stat);
+                    return _stats._charm * charmMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
             }
 
             return 0;
@@ -115,9 +115,9 @@ namespace RPG.Stats
                 }
             }
 
-            if (total < 1f) return 1f;
+            if (total <= 1f) return 1f;
             
-            return total;
+            return total / 100f;
         }
 
         public object CaptureState()
