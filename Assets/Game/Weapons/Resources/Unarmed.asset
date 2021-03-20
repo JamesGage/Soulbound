@@ -19,16 +19,21 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 227a04f41786ab94382c52d4350fd472, type: 3}
   pickup: {fileID: 0}
   stackable: 0
+  _goldValue: 0
+  isGold: 0
+  equipSFX: 
   allowedEquipLocation: 5
   _equippedPrefab: {fileID: 0}
   _animOverride: {fileID: 0}
   _weaponDamage: 1
+  _weaponPercentageBonus: 0
   _weaponRange: 1
   _isRightHanded: 1
   _projectile: {fileID: 0}
   _damageType: 0
-  equipSFX: 
-  attackSFX: event:/SFX/Weapons/Melee/Unarmed_Attack
+  attackStartSFX: 
+  attackMidSFX: 
+  attackEndSFX: 
   hitSFX: event:/SFX/Weapons/Melee/Unarmed_Hit
   missSFX: event:/SFX/Weapons/Miss
   blockSFX: event:/SFX/Weapons/Melee/Unarmed_Block

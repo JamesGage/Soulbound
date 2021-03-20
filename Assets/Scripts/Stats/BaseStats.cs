@@ -29,14 +29,14 @@ namespace RPG.Stats
                     var accuracyMultiplier = _stats._accuracy + 1;
                     return _stats._accuracy * accuracyMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Speed:
-                    var speedMultiplier = _stats._speed + _stats._speedStart;
-                    return _stats._speed * speedMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
+                    var speedMultiplier = _stats._speed;
+                    return _stats._speed * speedMultiplier + _stats._speedStart * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.MoveSpeed:
                     var moveSpeedMultiplier = _stats._speed * 0.1f;
                     return _stats._speed * moveSpeedMultiplier + _stats._speedBase * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.AttackSpeed:
                     var attackSpeedMultiplier = _stats._speed * 0.1f;
-                    return _stats._speed * attackSpeedMultiplier  * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
+                    return _stats._speed * attackSpeedMultiplier + 1 * GetPercentageModifier(stat) + GetAddativeMoifier(stat);
                 case Stat.Intellect:
                     var intellectMultiplier = _stats._intellect + 1;
                     return _stats._intellect * intellectMultiplier * GetPercentageModifier(stat) + GetAddativeMoifier(stat);

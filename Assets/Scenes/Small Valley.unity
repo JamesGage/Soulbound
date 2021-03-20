@@ -15252,6 +15252,10 @@ PrefabInstance:
       propertyPath: _characterClass
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7791067811453310588, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
+      propertyPath: _stats._vitalityStart
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7936780662584882924, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
       propertyPath: m_Enabled
       value: 1

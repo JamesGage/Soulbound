@@ -87,7 +87,7 @@ namespace RPG.Combat
         {
             transform.LookAt(_target.transform);
 
-            if (_timeSinceLastAttack > 1 / _baseStats.GetStat(Stat.AttackSpeed))
+            if (_timeSinceLastAttack > _baseStats.GetStat(Stat.AttackSpeed))
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
@@ -125,6 +125,7 @@ namespace RPG.Combat
             {
                 _isCritical = true;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
+                print("Crit");
                 return (int)damage * 2;
             }
             
@@ -135,11 +136,13 @@ namespace RPG.Combat
                 {
                     _isCritical = false;
                     _hitDamageType = _currentWeaponConfig.GetDamageType();
-                    return (int)damage + (int)(damage / 2f);
+                    print("Good Hit");
+                    return (int)damage;
                 }
                 
                 _isCritical = false;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
+                print("Hit");
                 return (int)damage;
             }
 
@@ -149,16 +152,19 @@ namespace RPG.Combat
                 {
                     _isCritical = false;
                     _hitDamageType = DamageType.Miss;
+                    print("Miss");
                     return 0;
                 }
                 
                 _isCritical = false;
                 _hitDamageType = DamageType.Block;
+                print("Block");
                 return (int)damage / 2;
             }
             
             _isCritical = false;
             _hitDamageType = DamageType.Miss;
+            print("Miss");
             return 0;
         }
 
