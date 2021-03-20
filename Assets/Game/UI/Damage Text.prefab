@@ -69,8 +69,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 100
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ae7c1f01098908549a74fb9b564c5bb6, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: ae7c1f01098908549a74fb9b564c5bb6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.9
+  m_fontSize: 57.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -259,7 +259,7 @@ MonoBehaviour:
   hasOnPlay: 0
   hasOnUpdate: 0
   hasOnStepComplete: 0
-  hasOnComplete: 1
+  hasOnComplete: 0
   hasOnTweenCreated: 0
   hasOnRewind: 0
   onStart:
@@ -277,9 +277,9 @@ MonoBehaviour:
   onComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2091717476478656300}
+      - m_Target: {fileID: 7827639217534826751}
         m_TargetAssemblyTypeName: RPG.UI.DestroyObject, Assembly-CSharp
-        m_MethodName: Destroy
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -367,6 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1256753001366889902}
+  - component: {fileID: 1039402834733557163}
   m_Layer: 0
   m_Name: Damage Text
   m_TagString: Untagged
@@ -389,6 +390,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1039402834733557163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827639217534826751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc83a0f7cd2c49ff845635d7f3ce6311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeToDestroy: 0.5
 --- !u!1 &9173505243872721946
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,8 +545,6 @@ MonoBehaviour:
   _missText: MISS
   _missColor: {r: 0.6792453, g: 0.6142903, b: 0.49661803, a: 1}
   _damageColor: {r: 0.6509434, g: 0.0521983, b: 0.0521983, a: 1}
-  _blockText: BLOCK
   _blockColor: {r: 0.3490566, g: 0.21569064, b: 0.295637, a: 1}
-  _criticalText: CRIT
   _criticalColor: {r: 1, g: 0.6554496, b: 0, a: 1}
   _healColor: {r: 0.048415814, g: 0.6037736, b: 0.29036373, a: 1}

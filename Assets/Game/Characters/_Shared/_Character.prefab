@@ -164,12 +164,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7d3f05b38143c29728d4cb759899e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startingLevel: 1
-  _characterClass: 0
-  _progression: {fileID: 11400000, guid: 0b52aab98c84b034a9e14f505e0d3d58, type: 2}
-  _levelUpEffect: {fileID: 0}
-  shouldUseModifiers: 0
-  levelUpSFX: event:/SFX/Ambient/Buff/Buff_LevelUp
+  _characterType: 0
+  _stats:
+    _vitality: 0
+    _vitalityStart: 10
+    _strength: 0
+    _accuracy: 0
+    _speed: 0
+    _speedStart: 10
+    _speedBase: 6
+    _intellect: 0
+    _wisdom: 0
+    _diplomacy: 0
+    _charm: 0
 --- !u!114 &7432532089349530410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +203,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _takeDamageEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 747760852703945594}
+        m_TargetAssemblyTypeName: RPG.UI.TextSpawner, Assembly-CSharp
+        m_MethodName: SpawnDamage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnDieEvent:
     m_PersistentCalls:
       m_Calls: []

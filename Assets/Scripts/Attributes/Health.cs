@@ -17,7 +17,7 @@ namespace RPG.Attributes
         [FMODUnity.EventRef] public string deathSFX = "";
         [FMODUnity.EventRef] public string takeDamageSFX = "";
 
-        LazyValue<float> _health;
+        LazyValue<int> _health;
         private bool _isDead;
         private ActionScheduler _actionScheduler;
         private BaseStats _baseStats;
@@ -32,12 +32,12 @@ namespace RPG.Attributes
             _actionScheduler = GetComponent<ActionScheduler>();
             _baseStats = GetComponent<BaseStats>();
 
-            _health = new LazyValue<float>(GetInitialHealth);
+            _health = new LazyValue<int>(GetInitialHealth);
         }
 
-        private float GetInitialHealth()
+        private int GetInitialHealth()
         {
-            return _baseStats.GetStat(Stat.Vitality);
+            return Mathf.RoundToInt(_baseStats.GetStat(Stat.Vitality));
         }
 
         private void Start()
@@ -60,9 +60,9 @@ namespace RPG.Attributes
             }
         }
 
-        public float MaxHealth()
+        public int MaxHealth()
         {
-            return _baseStats.GetStat(Stat.Vitality);
+            return Mathf.RoundToInt(_baseStats.GetStat(Stat.Vitality));
         }
         
         public bool IsDead()
@@ -89,7 +89,7 @@ namespace RPG.Attributes
             _takeDamageEvent.Invoke(damage, damageType, isCritical, weapon);
         }
 
-        public void Heal(float healthRestored)
+        public void Heal(int healthRestored)
         {
             _health.value = Mathf.Min(_health.value + healthRestored, MaxHealth());
             if(onHealthChanged != null)

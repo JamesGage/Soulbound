@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using FMODUnity;
 using RPG.Attributes;
 using RPG.Inventories;
 using RPG.Stats;
@@ -14,8 +13,8 @@ namespace RPG.Combat
 
         [SerializeField] Weapon _equippedPrefab;
         [SerializeField] AnimatorOverrideController _animOverride;
-        [SerializeField] int _weaponDamage = 2;
-        [SerializeField] float _weaponPercentageBonus = 0f;
+        [SerializeField] int _damageAddative = 2;
+        [SerializeField] float _damagePercentage = 0f;
         [SerializeField] float _weaponRange = 2f;
         [SerializeField] bool _isRightHanded = true;
         [SerializeField] Projectile _projectile = null;
@@ -99,16 +98,6 @@ namespace RPG.Combat
             return handTransform;
         }
 
-        public int GetDamage()
-        {
-            return _weaponDamage;
-        }
-
-        public float GetPercentageBonus()
-        {
-            return _weaponPercentageBonus;
-        }
-
         public float Range()
         {
             return _weaponRange;
@@ -136,7 +125,7 @@ namespace RPG.Combat
         {
             if (stat == Stat.Strength)
             {
-                yield return _weaponDamage;
+                yield return _damageAddative;
             }
         }
 
@@ -144,7 +133,7 @@ namespace RPG.Combat
         {
             if (stat == Stat.Strength)
             {
-                yield return _weaponPercentageBonus;
+                yield return _damagePercentage;
             }
         }
     }

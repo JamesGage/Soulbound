@@ -37,7 +37,7 @@ namespace RPG.UI
                 FMODUnity.RuntimeManager.PlayOneShot(weapon.blockSFX, transform.position);
                 return;
             }
-            if (damage > 0)
+            if (damage >= 0)
             {
                 _text.text = damage.ToString();
                 _text.color = _damageColor;

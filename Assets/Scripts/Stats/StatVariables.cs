@@ -27,7 +27,8 @@ namespace RPG.Stats
         [Range(1, 100)]
         [Tooltip("Starting value for how hard this character is to hit")]
         public int _speedStart = 10;
-        [HideInInspector]
+        [Tooltip("Controls how fast a character moves.")]
+        [Range(0, 10)]
         public float _speedBase = 6;
         
         [Range(0, _statRangeMax)]
