@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/Archer EASY.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/Archer EASY.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/Grunt EASY.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/Grunt EASY.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/NPC.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/NPC.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/Player.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Stats/Player.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStatsSO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStatsSO.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Farmer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Farmer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Weapons Dealer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Weapons Dealer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/DropLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/DropLibrary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropperFromLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropperFromLibrary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStatsSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStatsSO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ExperienceDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ExperienceDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LevelDisplay.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +35,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AutoAttack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
@@ -69,9 +44,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ExperienceDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/LevelDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStatsSO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStatsSO.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -136,7 +113,7 @@
       <workItem from="1615747289754" duration="10436000" />
       <workItem from="1616018480410" duration="5246000" />
       <workItem from="1616116895949" duration="7812000" />
-      <workItem from="1616180955741" duration="8790000" />
+      <workItem from="1616180955741" duration="17038000" />
     </task>
     <servers />
   </component>

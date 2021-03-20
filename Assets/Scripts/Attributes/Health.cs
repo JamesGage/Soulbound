@@ -37,7 +37,7 @@ namespace RPG.Attributes
 
         private float GetInitialHealth()
         {
-            return 5 * _baseStats.GetStat(Stat.Vitality);
+            return _baseStats.GetStat(Stat.Vitality);
         }
 
         private void Start()
@@ -60,9 +60,9 @@ namespace RPG.Attributes
             }
         }
 
-        public int MaxHealth()
+        public float MaxHealth()
         {
-            return (int)_baseStats.GetStat(Stat.Vitality);
+            return _baseStats.GetStat(Stat.Vitality);
         }
         
         public bool IsDead()
@@ -89,7 +89,7 @@ namespace RPG.Attributes
             _takeDamageEvent.Invoke(damage, damageType, isCritical, weapon);
         }
 
-        public void Heal(int healthRestored)
+        public void Heal(float healthRestored)
         {
             _health.value = Mathf.Min(_health.value + healthRestored, MaxHealth());
             if(onHealthChanged != null)
