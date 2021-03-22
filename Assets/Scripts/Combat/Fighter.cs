@@ -127,7 +127,6 @@ namespace RPG.Combat
             {
                 _isCritical = true;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
-                print("Attack: " + attack + " / Damage: " + damage * 2);
                 return damage * 2;
             }
             
@@ -136,7 +135,6 @@ namespace RPG.Combat
             {
                 _isCritical = false;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
-                print("Attack: " + attack + " / Damage: " + damage);
                 return damage;
             }
             
@@ -145,7 +143,6 @@ namespace RPG.Combat
             {
                 _isCritical = false;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
-                print("Attack: " + attack + " / Damage: " + damage * 0.75f);
                 return Mathf.RoundToInt(damage * 0.75f);
             }
             
@@ -154,14 +151,12 @@ namespace RPG.Combat
             {
                 _isCritical = false;
                 _hitDamageType = DamageType.Block;
-                print("Attack: " + attack + " / Damage: " + damage * 0.5f);
                 return Mathf.RoundToInt(damage * 0.5f);
             }
 
             //Miss
             _isCritical = false;
             _hitDamageType = DamageType.Miss;
-            print("Attack: " + attack + " / Miss");
             return 0;
         }
 

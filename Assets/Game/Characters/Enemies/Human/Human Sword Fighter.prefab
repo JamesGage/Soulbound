@@ -89,19 +89,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
       propertyPath: _stats._vitality
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
-      propertyPath: _stats._speedBase
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: _stats._speedBase
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
       propertyPath: _stats._speedStart
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
       propertyPath: _stats._vitalityStart
-      value: 100
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6911104319925713889, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
       propertyPath: _baseArmor

@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
       propertyPath: _stats._accuracy
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
       propertyPath: _stats._speedBase

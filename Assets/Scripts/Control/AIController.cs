@@ -1,13 +1,15 @@
-﻿using RPG.Combat;
+﻿using System.Collections.Generic;
+using RPG.Combat;
 using RPG.Core;
 using RPG.Attributes;
 using RPG.Movement;
+using RPG.Stats;
 using RPG.Utils;
 using UnityEngine;
 
 namespace RPG.Control
 {
-    public class AIController : MonoBehaviour
+    public class AIController : MonoBehaviour, IModifierProvider
     {
         #region Variables
 
@@ -176,6 +178,16 @@ namespace RPG.Control
         {
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, chaseDistance);
+        }
+
+        public IEnumerable<int> GetAddativeModifiers(Stat stat)
+        {
+            return _fighter.GetCurrentWeapon().GetAddativeModifiers(stat);
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            return _fighter.GetCurrentWeapon().GetPercentageModifiers(stat);
         }
     }
 }

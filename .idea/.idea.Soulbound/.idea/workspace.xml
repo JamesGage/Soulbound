@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DestroyOnComplete.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DestroyOnComplete.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Farmer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Farmer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Weapons Dealer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Weapons Dealer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/_Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/_Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Damage Text.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Damage Text.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +47,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TakeDamageEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -128,7 +117,8 @@
       <workItem from="1616018480410" duration="5246000" />
       <workItem from="1616116895949" duration="7812000" />
       <workItem from="1616180955741" duration="22478000" />
-      <workItem from="1616252426655" duration="9283000" />
+      <workItem from="1616252426655" duration="9883000" />
+      <workItem from="1616375009627" duration="2881000" />
     </task>
     <servers />
   </component>
