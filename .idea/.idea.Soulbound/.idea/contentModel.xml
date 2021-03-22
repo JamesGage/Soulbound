@@ -280,11 +280,20 @@
           <e p="Stats" t="Include">
             <e p="BaseStats.cs" t="Include" />
             <e p="CharacterType.cs" t="Include" />
-            <e p="Experience.cs" t="Include" />
             <e p="IModifierProvider.cs" t="Include" />
-            <e p="Progression.cs" t="Include" />
+            <e p="Stat.cs" t="Include" />
+            <e p="StatAccuracy.cs" t="Include" />
+            <e p="StatAttackSpeed.cs" t="Include" />
+            <e p="StatCharm.cs" t="Include" />
+            <e p="StatDiplomacy.cs" t="Include" />
+            <e p="StatIntellect.cs" t="Include" />
+            <e p="StatMoveSpeed.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
+            <e p="StatSpeed.cs" t="Include" />
+            <e p="StatStrength.cs" t="Include" />
             <e p="StatVariables.cs" t="Include" />
+            <e p="StatVitality.cs" t="Include" />
+            <e p="StatWisdom.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="DamageText.cs" t="Include" />

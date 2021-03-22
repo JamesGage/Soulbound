@@ -1,6 +1,6 @@
 ﻿namespace RPG.Stats
 {
-    public enum Stat
+    public enum Stats
     {
         Vitality,
         Strength,

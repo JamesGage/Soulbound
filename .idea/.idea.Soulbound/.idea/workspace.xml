@@ -2,12 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatAccuracy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatAccuracy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatAttackSpeed.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatAttackSpeed.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatCharm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatCharm.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatDiplomacy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatDiplomacy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatIntellect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatIntellect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatMoveSpeed.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatMoveSpeed.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatSpeed.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatSpeed.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatStrength.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatStrength.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatVitality.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatWisdom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatWisdom.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Experience.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Experience.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/IModifierProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/IModifierProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +72,29 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/LevelDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStatsSO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/DestroyOnComplete.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TakeDamageEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatAccuracy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatVitality.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatVariables.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatStrength.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatSpeed.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatMoveSpeed.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatIntellect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatWisdom.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatDiplomacy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatCharm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatAttackSpeed.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -118,7 +161,8 @@
       <workItem from="1616116895949" duration="7812000" />
       <workItem from="1616180955741" duration="22478000" />
       <workItem from="1616252426655" duration="9883000" />
-      <workItem from="1616375009627" duration="2881000" />
+      <workItem from="1616375009627" duration="3221000" />
+      <workItem from="1616434588337" duration="8130000" />
     </task>
     <servers />
   </component>

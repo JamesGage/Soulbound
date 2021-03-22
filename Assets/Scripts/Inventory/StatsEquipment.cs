@@ -5,28 +5,28 @@ namespace RPG.Inventories
 {
     public class StatsEquipment : Equipment, IModifierProvider
     {
-        public IEnumerable<int> GetAddativeModifiers(Stat stat)
+        public IEnumerable<int> GetAddativeModifiers(Stats.Stats stats)
         {
             foreach (var slot in GetAllPopulatedSlots())
             {
                 var item = GetItemInSlot(slot) as IModifierProvider;
                 if(item == null) continue;
 
-                foreach (var modifier in item.GetAddativeModifiers(stat))
+                foreach (var modifier in item.GetAddativeModifiers(stats))
                 {
                     yield return modifier;
                 }
             }
         }
 
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        public IEnumerable<float> GetPercentageModifiers(Stats.Stats stats)
         {
             foreach (var slot in GetAllPopulatedSlots())
             {
                 var item = GetItemInSlot(slot) as IModifierProvider;
                 if(item == null) continue;
 
-                foreach (var modifier in item.GetPercentageModifiers(stat))
+                foreach (var modifier in item.GetPercentageModifiers(stats))
                 {
                     yield return modifier;
                 }
