@@ -1,5 +1,5 @@
-﻿using RPG.Attributes;
-using RPG.Inventories;
+﻿using RPG.Inventories;
+using RPG.Stats;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

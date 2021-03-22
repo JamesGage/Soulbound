@@ -1,6 +1,5 @@
 ﻿using RPG.Core;
 using RPG.Saving;
-using RPG.Attributes;
 using RPG.Stats;
 using UnityEngine;
 using UnityEngine.AI;
@@ -9,7 +8,7 @@ namespace RPG.Movement
 {
     public class Mover : MonoBehaviour, IAction, ISaveable
     {
-        [SerializeField] float maxSpeed = 6f;
+        [SerializeField] float _baseSpeed = 6f;
         [SerializeField] private float maxNavPathLength = 25f;
         
         [FMODUnity.EventRef] public string footstepSFX = "";
@@ -65,8 +64,8 @@ namespace RPG.Movement
         public void MoveTo(Vector3 destination, float speedFraction)
         {
             _navAgent.destination = destination;
-            _navAgent.speed = _baseStats.GetStat(Stats.Stats.MoveSpeed) * Mathf.Clamp01(speedFraction);
-            _anim.speed = _baseStats.GetStat(Stats.Stats.MoveSpeed) / 6;
+            _navAgent.speed = _baseStats.GetStat(Stats.Stats.Speed) * _baseStats.GetStat(Stats.Stats.Speed) * 0.1f + _baseSpeed * Mathf.Clamp01(speedFraction);
+            _anim.speed = 1 + _baseStats.GetStat(Stats.Stats.Speed) * 0.1f;
             _navAgent.isStopped = false;
         }
 

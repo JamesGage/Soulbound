@@ -1,8 +1,8 @@
 ﻿using System;
 using UnityEngine;
 using RPG.Movement;
-using RPG.Attributes;
 using RPG.Inventories;
+using RPG.Stats;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using RPG.Saving;
 using UnityEngine;
 
@@ -9,7 +10,9 @@ namespace RPG.Stats
         #region Variables
 
         [SerializeField] CharacterType _characterType;
-        [SerializeField] StatVariables _stats;
+        [SerializeField] Stat[] _stats;
+        
+        private Dictionary<Stats, int> _statsLookup = new Dictionary<Stats, int>();
 
         public event Action OnStatsChanged;
 
@@ -17,7 +20,20 @@ namespace RPG.Stats
         
         public float GetStat(Stats stats)
         {
-            return _stats.statsLookup[stats] * GetPercentageModifier(stats) + GetAddativeMoifier(stats);
+            return _statsLookup[stats] * GetPercentageModifier(stats) + GetAddativeMoifier(stats);
+        }
+        
+        public void SetStat(Stats statType, int statValue)
+        {
+            foreach (var stat in _stats)
+            {
+                if(stat.GetStatType() != statType) continue;
+                
+                stat.SetStatValue(statValue);
+                break;
+            }
+            
+            Initialize();
         }
 
         public CharacterType GetCharacterType()
@@ -25,7 +41,16 @@ namespace RPG.Stats
             return _characterType;
         }
         
-        
+        private void Initialize()
+        {
+            _statsLookup.Clear();
+
+            foreach (var stat in _stats)
+            {
+                _statsLookup.Add(stat.GetStatType(), stat.GetStatValue());
+            }
+        }
+
         private int GetAddativeMoifier(Stats stats)
         {
             var total = 0;
@@ -63,7 +88,8 @@ namespace RPG.Stats
 
         public void RestoreState(object state)
         {
-            _stats = (StatVariables) state;
+            _stats = (Stat[])state;
+            
             OnStatsChanged?.Invoke();
         }
     }

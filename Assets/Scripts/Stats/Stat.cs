@@ -3,21 +3,30 @@
 namespace RPG.Stats
 {
     [System.Serializable]
-    public abstract class Stat : MonoBehaviour
-    { 
-        public virtual float GetStat()
+    public class Stat
+    {
+        [SerializeField] Stats _statType;
+        [Range(1, 5)]
+        [SerializeField] int _statValue = 1;
+        
+        public int GetStatValue()
         {
-            return 0;
+            return _statValue * _statValue;
         }
 
-        public virtual void SetStat(int value)
+        public void SetStatValue(int value)
         {
-            
+            _statValue = value;
         }
 
-        public virtual Stats GetStatType()
+        public Stats GetStatType()
         {
-            return Stats.Vitality;
+            return _statType;
+        }
+        
+        public void SetStatType(Stats statType)
+        {
+            _statType = statType;
         }
     }
 }

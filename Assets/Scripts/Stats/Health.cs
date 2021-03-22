@@ -2,16 +2,17 @@
 using RPG.Combat;
 using RPG.Core;
 using RPG.Saving;
-using RPG.Stats;
 using RPG.UI;
 using RPG.Utils;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace RPG.Attributes
+namespace RPG.Stats
 {
     public class Health : MonoBehaviour, ISaveable
     {
+        [Range(1, 100)]
+        [SerializeField] private int _startingHealth = 5;
         [SerializeField] private TakeDamageEvent _takeDamageEvent;
         public UnityEvent OnDieEvent = null;
         [FMODUnity.EventRef] public string deathSFX = "";
@@ -37,7 +38,7 @@ namespace RPG.Attributes
 
         private int GetInitialHealth()
         {
-            return Mathf.RoundToInt(_baseStats.GetStat(Stats.Stats.Vitality));
+            return Mathf.RoundToInt(_baseStats.GetStat(Stats.Vitality)) + _startingHealth;
         }
 
         private void Start()
@@ -62,7 +63,7 @@ namespace RPG.Attributes
 
         public int MaxHealth()
         {
-            return Mathf.RoundToInt(_baseStats.GetStat(Stats.Stats.Vitality));
+            return Mathf.RoundToInt(_baseStats.GetStat(Stats.Vitality)) + _startingHealth;
         }
         
         public bool IsDead()
@@ -103,7 +104,7 @@ namespace RPG.Attributes
 
         public float GetFraction()
         {
-            return _health.value / _baseStats.GetStat(Stats.Stats.Vitality);
+            return _health.value / _baseStats.GetStat(Stats.Vitality) + _startingHealth;
         }
 
         private void Die()

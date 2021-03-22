@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using RPG.Attributes;
 using RPG.Saving;
+using RPG.Stats;
 using UnityEngine;
 using UnityEngine.Events;
 

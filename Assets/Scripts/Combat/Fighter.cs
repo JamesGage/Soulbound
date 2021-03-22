@@ -2,7 +2,6 @@
 using UnityEngine;
 using RPG.Movement;
 using RPG.Saving;
-using RPG.Attributes;
 using RPG.Inventories;
 using RPG.Stats;
 using RPG.Utils;
@@ -87,7 +86,7 @@ namespace RPG.Combat
         {
             transform.LookAt(_target.transform);
 
-            if (_timeSinceLastAttack > _baseStats.GetStat(Stats.Stats.AttackSpeed))
+            if (_timeSinceLastAttack > _baseStats.GetStat(Stats.Stats.Speed) + (_baseStats.GetStat(Stats.Stats.Speed) * 0.1f));
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
@@ -98,7 +97,7 @@ namespace RPG.Combat
         {
             _anim.ResetTrigger("stopAttack");
             _anim.SetTrigger("attack");
-            _anim.speed = _baseStats.GetStat(Stats.Stats.AttackSpeed);
+            _anim.speed = _baseStats.GetStat(Stats.Stats.Speed);
         }
 
         //Animation Event

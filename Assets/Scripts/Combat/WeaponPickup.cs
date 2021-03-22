@@ -1,7 +1,7 @@
 ﻿using System.Collections;
-using RPG.Attributes;
 using RPG.Control;
 using RPG.Saving;
+using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using RPG.Attributes;
 using RPG.Inventories;
 using RPG.Stats;
 using UnityEngine;
@@ -14,7 +13,7 @@ namespace RPG.Combat
         [SerializeField] Weapon _equippedPrefab;
         [SerializeField] AnimatorOverrideController _animOverride;
         [SerializeField] int _damageAddative = 2;
-        [SerializeField] float _damagePercentage = 0f;
+        [SerializeField] float _damagePercentage = 100f;
         [SerializeField] float _weaponRange = 2f;
         [SerializeField] bool _isRightHanded = true;
         [SerializeField] Projectile _projectile = null;
