@@ -38,7 +38,7 @@ namespace RPG.Stats
 
         private int GetInitialHealth()
         {
-            return Mathf.RoundToInt(_baseStats.GetStat(Stats.Vitality)) + _startingHealth;
+            return Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Vitality)) + _startingHealth;
         }
 
         private void Start()
@@ -63,7 +63,7 @@ namespace RPG.Stats
 
         public int MaxHealth()
         {
-            return Mathf.RoundToInt(_baseStats.GetStat(Stats.Vitality)) + _startingHealth;
+            return Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Vitality)) + _startingHealth;
         }
         
         public bool IsDead()
@@ -104,7 +104,7 @@ namespace RPG.Stats
 
         public float GetFraction()
         {
-            return _health.value / _baseStats.GetStat(Stats.Vitality) + _startingHealth;
+            return (float)_health.value / (float)MaxHealth();
         }
 
         private void Die()

@@ -120,17 +120,17 @@ namespace RPG.Combat
             projectileInstance.SetTarget(target, instigator, calculatedDamage, damageType, isCritical, this);
         }
 
-        public IEnumerable<int> GetAddativeModifiers(Stats.Stats stats)
+        public IEnumerable<int> GetAddativeModifiers(Stats.StatTypes statTypes)
         {
-            if (stats == Stats.Stats.Strength)
+            if (statTypes == Stats.StatTypes.Strength)
             {
                 yield return _damageAddative;
             }
         }
 
-        public IEnumerable<float> GetPercentageModifiers(Stats.Stats stats)
+        public IEnumerable<float> GetPercentageModifiers(Stats.StatTypes statTypes)
         {
-            if (stats == Stats.Stats.Strength)
+            if (statTypes == Stats.StatTypes.Strength)
             {
                 yield return _damagePercentage;
             }

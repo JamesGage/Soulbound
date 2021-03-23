@@ -13,26 +13,26 @@ namespace RPG.Inventories
             [System.Serializable]
             struct Modifier
             {
-                public Stats.Stats stats;
+                public Stats.StatTypes statTypes;
                 public float value;
             }
 
-            public IEnumerable<int> GetAddativeModifiers(Stats.Stats stats)
+            public IEnumerable<int> GetAddativeModifiers(Stats.StatTypes statTypes)
             {
                 foreach (var modifier in addativeModifiers)
                 {
-                    if (modifier.stats == stats)
+                    if (modifier.statTypes == statTypes)
                     {
                         yield return (int)modifier.value;
                     }
                 }
             }
 
-            public IEnumerable<float> GetPercentageModifiers(Stats.Stats stats)
+            public IEnumerable<float> GetPercentageModifiers(Stats.StatTypes statTypes)
             {
                 foreach (var modifier in percentageModifiers)
                 {
-                    if (modifier.stats == stats)
+                    if (modifier.statTypes == statTypes)
                     {
                         yield return (int)modifier.value;
                     }

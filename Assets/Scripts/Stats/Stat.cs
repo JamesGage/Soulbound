@@ -5,7 +5,7 @@ namespace RPG.Stats
     [System.Serializable]
     public class Stat
     {
-        [SerializeField] Stats _statType;
+        [SerializeField] StatTypes _statType;
         [Range(1, 5)]
         [SerializeField] int _statValue = 1;
         
@@ -19,12 +19,12 @@ namespace RPG.Stats
             _statValue = value;
         }
 
-        public Stats GetStatType()
+        public StatTypes GetStatType()
         {
             return _statType;
         }
         
-        public void SetStatType(Stats statType)
+        public void SetStatType(StatTypes statType)
         {
             _statType = statType;
         }

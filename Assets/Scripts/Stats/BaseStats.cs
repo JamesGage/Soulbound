@@ -12,22 +12,27 @@ namespace RPG.Stats
         [SerializeField] CharacterType _characterType;
         [SerializeField] Stat[] _stats;
         
-        private Dictionary<Stats, int> _statsLookup = new Dictionary<Stats, int>();
+        private Dictionary<StatTypes, int> _statsLookup = new Dictionary<StatTypes, int>();
 
         public event Action OnStatsChanged;
 
         #endregion
-        
-        public float GetStat(Stats stats)
+
+        private void Awake()
         {
-            return _statsLookup[stats] * GetPercentageModifier(stats) + GetAddativeMoifier(stats);
+            Initialize();
+        }
+
+        public float GetStat(StatTypes statTypes)
+        {
+            return _statsLookup[statTypes] * GetPercentageModifier(statTypes) + GetAddativeMoifier(statTypes);
         }
         
-        public void SetStat(Stats statType, int statValue)
+        public void SetStat(StatTypes statTypeType, int statValue)
         {
             foreach (var stat in _stats)
             {
-                if(stat.GetStatType() != statType) continue;
+                if(stat.GetStatType() != statTypeType) continue;
                 
                 stat.SetStatValue(statValue);
                 break;
@@ -47,16 +52,18 @@ namespace RPG.Stats
 
             foreach (var stat in _stats)
             {
+                if(_statsLookup.ContainsKey(stat.GetStatType())) continue;
+                
                 _statsLookup.Add(stat.GetStatType(), stat.GetStatValue());
             }
         }
 
-        private int GetAddativeMoifier(Stats stats)
+        private int GetAddativeMoifier(StatTypes statTypes)
         {
             var total = 0;
             foreach (var provider in GetComponents<IModifierProvider>())
             {
-                foreach (var modifier in provider.GetAddativeModifiers(stats))
+                foreach (var modifier in provider.GetAddativeModifiers(statTypes))
                 {
                     total += modifier;
                 }
@@ -65,12 +72,12 @@ namespace RPG.Stats
             return total;
         }
         
-        private float GetPercentageModifier(Stats stats)
+        private float GetPercentageModifier(StatTypes statTypes)
         {
             var total = 0f;
             foreach (var provider in GetComponents<IModifierProvider>())
             {
-                foreach (var modifier in provider.GetPercentageModifiers(stats))
+                foreach (var modifier in provider.GetPercentageModifiers(statTypes))
                 {
                     total += modifier;
                 }
