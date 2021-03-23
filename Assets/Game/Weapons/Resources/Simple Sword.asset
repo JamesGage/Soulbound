@@ -21,16 +21,16 @@ MonoBehaviour:
   stackable: 0
   _goldValue: 0
   isGold: 0
+  equipSFX: event:/SFX/Weapons/Melee/Sword_Equip
   allowedEquipLocation: 5
   _equippedPrefab: {fileID: 4263859535763257474, guid: 44e0b93368062de4b96b3066339172f3, type: 3}
   _animOverride: {fileID: 22100000, guid: 1f55313a58a2f784f8098cf5bc904aaf, type: 2}
-  _weaponDamage: 2
-  _weaponPercentageBonus: 0
+  _damageAddative: 2
+  _damagePercentage: 100
   _weaponRange: 2
   _isRightHanded: 1
   _projectile: {fileID: 0}
   _damageType: 0
-  equipSFX: event:/SFX/Weapons/Melee/Sword_Equip
   attackStartSFX: 
   attackMidSFX: event:/SFX/Weapons/Melee/Sword_AttackMid
   attackEndSFX: 

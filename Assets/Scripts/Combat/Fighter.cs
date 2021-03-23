@@ -118,11 +118,12 @@ namespace RPG.Combat
 
         private int CalculateAttack()
         {
-            var attack = Random.Range(1, 101) + (int)_baseStats.GetStat(Stats.StatTypes.Accuracy);
-            var damage = Mathf.RoundToInt(_baseStats.GetStat(Stats.StatTypes.Strength));
+            var attack = Random.Range(1, 101) + (int)_baseStats.GetStat(StatTypes.Accuracy);
+            var damage = Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Strength));
+            var speed = _target.GetComponent<BaseStats>().GetStat(StatTypes.Speed);
 
             //Critical
-            if (attack >= 100 && attack > _target.GetComponent<BaseStats>().GetStat(StatTypes.Speed) * 2f)
+            if (attack >= 100 && attack > speed * 2f)
             {
                 _isCritical = true;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
@@ -130,7 +131,7 @@ namespace RPG.Combat
             }
             
             //Good Hit
-            if (attack >= _target.GetComponent<BaseStats>().GetStat(StatTypes.Speed) * 1.25f)
+            if (attack >= speed * 1.25f)
             {
                 _isCritical = false;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
@@ -138,7 +139,7 @@ namespace RPG.Combat
             }
             
             //Hit
-            if (attack >= _target.GetComponent<BaseStats>().GetStat(StatTypes.Speed))
+            if (attack >= speed)
             {
                 _isCritical = false;
                 _hitDamageType = _currentWeaponConfig.GetDamageType();
@@ -146,7 +147,7 @@ namespace RPG.Combat
             }
             
             //Block
-            if (attack >= _target.GetComponent<BaseStats>().GetStat(StatTypes.Speed) * 0.5f)
+            if (attack >= speed * 0.5f)
             {
                 _isCritical = false;
                 _hitDamageType = DamageType.Block;

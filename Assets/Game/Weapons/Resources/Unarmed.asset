@@ -25,8 +25,8 @@ MonoBehaviour:
   allowedEquipLocation: 5
   _equippedPrefab: {fileID: 0}
   _animOverride: {fileID: 0}
-  _weaponDamage: 1
-  _weaponPercentageBonus: 0
+  _damageAddative: 2
+  _damagePercentage: 100
   _weaponRange: 1
   _isRightHanded: 1
   _projectile: {fileID: 0}
