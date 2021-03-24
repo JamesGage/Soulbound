@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 12c0539e-aab1-4cea-8855-20f41fb6dc4f
   displayName: Health Potion (Small)
   _displayNameColor: {r: 0.13163051, g: 0.9622642, b: 0.19823858, a: 1}
-  description: Increase current health by +5.
+  description: Restores up to 20% of Max Health.
   icon: {fileID: 21300000, guid: 9e54a146e64f40149a04094618559ce7, type: 3}
   pickup: {fileID: 813604151754665848, guid: 9925259900ddd92469637711a9f83eda, type: 3}
   stackable: 1
@@ -24,4 +24,4 @@ MonoBehaviour:
   equipSFX: event:/SFX/Ambient/Pickup/Pickup_Bottle
   consumable: 1
   comsumeSFX: event:/SFX/Items/Potions/Potion_Drink
-  _modifier: 5
+  _modifier: 20

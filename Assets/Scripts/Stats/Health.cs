@@ -61,7 +61,7 @@ namespace RPG.Stats
             }
         }
 
-        public int MaxHealth()
+        public float MaxHealth()
         {
             return Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Vitality)) + _startingHealth;
         }
@@ -90,9 +90,9 @@ namespace RPG.Stats
             _takeDamageEvent.Invoke(damage, damageType, isCritical, weapon);
         }
 
-        public void Heal(int healthRestored)
+        public void Heal(float healthRestored)
         {
-            _health.value = Mathf.Min(_health.value + healthRestored, MaxHealth());
+            _health.value = Mathf.RoundToInt(Mathf.Min(_health.value + (MaxHealth() * (healthRestored/100f)), MaxHealth()));
             if(onHealthChanged != null)
                 onHealthChanged.Invoke();
         }

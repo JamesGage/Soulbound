@@ -32,7 +32,6 @@ namespace RPG.UI
             if (Mathf.Approximately(_healthComponent.GetFraction(), 0)
                 || Mathf.Approximately(_healthComponent.GetFraction(), 1))
             {
-                print(_healthComponent.GetFraction());
                 _rootCanvas.enabled = false;
                 return;
             }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace RPG.Stats
 {
-    public class BaseStats : MonoBehaviour, ISaveable
+    public class BaseStats : MonoBehaviour
     {
         #region Variables
 
@@ -86,18 +86,6 @@ namespace RPG.Stats
             if (total <= 1f) return 1f;
             
             return total / 100f;
-        }
-
-        public object CaptureState()
-        {
-            return _stats;
-        }
-
-        public void RestoreState(object state)
-        {
-            _stats = (Stat[])state;
-            
-            OnStatsChanged?.Invoke();
         }
     }
 }
