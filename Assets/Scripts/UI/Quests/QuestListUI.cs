@@ -33,6 +33,7 @@ namespace UI.Quests
             {
                 var uiInstance = Instantiate(_questPrefab, transform);
                 uiInstance.Setup(status, _questInfoMenu);
+                uiInstance.gameObject.GetComponent<QuestTooltipSpawner>().enabled = false;
             }
             
         }
