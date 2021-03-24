@@ -1,6 +1,8 @@
 ﻿using RPG.Questing;
+using RPG.UI;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UI.Quests
 {
@@ -8,14 +10,18 @@ namespace UI.Quests
     {
         [SerializeField] TextMeshProUGUI _title;
         [SerializeField] TextMeshProUGUI _progress;
+        [SerializeField] Button _button;
 
         private QuestStatus _status;
+        private QuestInfoUI _questInfo;
         
-        public void Setup(QuestStatus status)
+        public void Setup(QuestStatus status, QuestInfoUI questInfo)
         {
-            this._status = status;
+            _status = status;
+            _questInfo = questInfo;
             _title.text = status.GetQuest().GetTitle();
             _progress.text = status.GetCompletedCount() + "/" + status.GetQuest().GetobjectiveCount();
+            _button.onClick.AddListener(SetInfo);
             
             if (status.IsComplete())
             {
@@ -28,6 +34,11 @@ namespace UI.Quests
         public QuestStatus GetQuestStatus()
         {
             return _status;
+        }
+
+        private void SetInfo()
+        {
+            _questInfo.SetInfo(_status);
         }
     }
 }

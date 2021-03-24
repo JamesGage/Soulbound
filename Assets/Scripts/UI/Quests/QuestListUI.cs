@@ -1,4 +1,5 @@
 ﻿using RPG.Questing;
+using RPG.UI;
 using UnityEngine;
 
 namespace UI.Quests
@@ -6,6 +7,7 @@ namespace UI.Quests
     public class QuestListUI : MonoBehaviour
     {
         [SerializeField] QuestItemUI _questPrefab;
+        [SerializeField] QuestInfoUI _questInfoMenu;
 
         private QuestList _questList;
 
@@ -30,7 +32,7 @@ namespace UI.Quests
             foreach (var status in _questList.GetStatuses())
             {
                 var uiInstance = Instantiate(_questPrefab, transform);
-                uiInstance.Setup(status);
+                uiInstance.Setup(status, _questInfoMenu);
             }
             
         }

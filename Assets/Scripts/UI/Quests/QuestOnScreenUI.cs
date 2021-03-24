@@ -53,7 +53,7 @@ namespace UI.Quests
                 }
 
                 ActiveState(true);
-                uiInstance.Setup(status);
+                uiInstance.Setup(status, null);
             }
             
         }
