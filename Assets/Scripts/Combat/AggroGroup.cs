@@ -27,7 +27,7 @@ namespace RPG.Combat
         {
             foreach (var enemy in _enemies)
             {
-                enemy.onDeath += EnemyDeath;
+                enemy.OnDeath += EnemyDeath;
             }
         }
 
@@ -35,7 +35,7 @@ namespace RPG.Combat
         {
             foreach (var enemy in _enemies)
             {
-                enemy.onDeath += EnemyDeath;
+                enemy.OnDeath += EnemyDeath;
             }
         }
 

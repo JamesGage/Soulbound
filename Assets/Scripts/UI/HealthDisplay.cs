@@ -25,13 +25,13 @@ namespace RPG.UI
         
         private void OnEnable()
         {
-            _health.onHealthChanged += UpdateHealth;
+            _health.OnHealthChanged += UpdateHealth;
             _equipment.onEquipmentUpdated += UpdateHealth;
         }
         
         private void OnDisable()
         {
-            _health.onHealthChanged -= UpdateHealth;
+            _health.OnHealthChanged -= UpdateHealth;
             _equipment.onEquipmentUpdated -= UpdateHealth;
         }
 

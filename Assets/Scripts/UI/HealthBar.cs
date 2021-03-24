@@ -19,12 +19,12 @@ namespace RPG.UI
 
         private void OnEnable()
         {
-            _healthComponent.onHealthChanged += UpdateHealthBar;
+            _healthComponent.OnHealthChanged += UpdateHealthBar;
         }
         
         private void OnDisable()
         {
-            _healthComponent.onHealthChanged += UpdateHealthBar;
+            _healthComponent.OnHealthChanged += UpdateHealthBar;
         }
 
         private void UpdateHealthBar()

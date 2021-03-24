@@ -70,17 +70,17 @@ namespace RPG.Control
 
         private void CheckSpecialAbilityKeys()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Q))
                 _actionStore.Use(0, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.W))
                 _actionStore.Use(1, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if (Input.GetKeyDown(KeyCode.E))
                 _actionStore.Use(2, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha4))
+            if (Input.GetKeyDown(KeyCode.Alpha1))
                 _actionStore.Use(3, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha5))
+            if (Input.GetKeyDown(KeyCode.Alpha2))
                 _actionStore.Use(4, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha6))
+            if (Input.GetKeyDown(KeyCode.Alpha3))
                 _actionStore.Use(5, gameObject);
         }
 

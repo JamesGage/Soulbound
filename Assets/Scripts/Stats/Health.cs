@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using RPG.Combat;
 using RPG.Core;
 using RPG.Saving;
@@ -24,8 +25,9 @@ namespace RPG.Stats
         private BaseStats _baseStats;
         private Animator _anim;
         
-        public event Action onHealthChanged;
-        public event Action onDeath;
+        public event Action OnHealthChanged;
+        public event Action OnDeath;
+        public event Action OnPlayerDeath;
 
         private void Awake()
         {
@@ -53,14 +55,6 @@ namespace RPG.Stats
             }
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.H) && gameObject.CompareTag("Player"))
-            {
-                Heal(MaxHealth());
-            }
-        }
-
         public float MaxHealth()
         {
             return Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Vitality)) + _startingHealth;
@@ -74,16 +68,16 @@ namespace RPG.Stats
         public void TakeDamage(GameObject instigator, int damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
-            if(onHealthChanged != null)
-                onHealthChanged.Invoke();
+            if(OnHealthChanged != null)
+                OnHealthChanged.Invoke();
             
             if (_health.value == 0)
             {
                 FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
                 Die();
                 OnDieEvent?.Invoke();
-                if(onDeath != null)
-                    onDeath.Invoke();
+                if(OnDeath != null)
+                    OnDeath.Invoke();
             }
             else if(damage > 0)
                 FMODUnity.RuntimeManager.PlayOneShot(takeDamageSFX, transform.position);
@@ -93,8 +87,8 @@ namespace RPG.Stats
         public void Heal(float healthRestored)
         {
             _health.value = Mathf.RoundToInt(Mathf.Min(_health.value + (MaxHealth() * (healthRestored/100f)), MaxHealth()));
-            if(onHealthChanged != null)
-                onHealthChanged.Invoke();
+            if(OnHealthChanged != null)
+                OnHealthChanged.Invoke();
         }
 
         public float GetHealth()
@@ -114,6 +108,17 @@ namespace RPG.Stats
             _isDead = true;
             _anim.SetTrigger("die");
             _actionScheduler.CancelCurrentAction();
+
+            if (gameObject.CompareTag("Player"))
+            {
+                StartCoroutine(GameOver());
+            }
+        }
+
+        private IEnumerator GameOver()
+        {
+            yield return new WaitForSeconds(2f);
+            OnPlayerDeath?.Invoke();
         }
 
 

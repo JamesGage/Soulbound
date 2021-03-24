@@ -18,7 +18,7 @@ namespace RPG.Combat
 
         private void OnEnable()
         {
-            _health.onHealthChanged += FindTarget;
+            _health.OnHealthChanged += FindTarget;
         }
 
         private void FindTarget()
