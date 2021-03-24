@@ -313,6 +313,7 @@
               <e p="PickupSlotUI.cs" t="Include" />
               <e p="PickupUI.cs" t="Include" />
             </e>
+            <e p="QuestInfoUI.cs" t="Include" />
             <e p="Quests" t="Include">
               <e p="QuestItemUI.cs" t="Include" />
               <e p="QuestListUI.cs" t="Include" />
@@ -332,6 +333,7 @@
             <e p="TakeDamageEvent.cs" t="Include" />
             <e p="TargetHealthDisplay.cs" t="Include" />
             <e p="TextSpawner.cs" t="Include" />
+            <e p="ToolbarUI.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">
             <e p="LazyValue.cs" t="Include" />
