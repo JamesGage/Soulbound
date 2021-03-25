@@ -62,13 +62,5 @@ namespace UI.Quests
             rewardText += ".";
             return rewardText;
         }
-
-        private void ClearChildren()
-        {
-            foreach (Transform objective in _objectiveContainer.GetComponentsInChildren<Transform>())
-            {
-                Destroy(objective.gameObject);
-            }
-        }
     }
 }

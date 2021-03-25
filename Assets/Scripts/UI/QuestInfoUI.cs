@@ -1,4 +1,5 @@
-﻿using RPG.Questing;
+﻿using System;
+using RPG.Questing;
 using TMPro;
 using UnityEngine;
 
@@ -7,15 +8,23 @@ namespace RPG.UI
     public class QuestInfoUI : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI _title;
+        [SerializeField] TextMeshProUGUI _objectiveTitleText;
         [SerializeField] Transform _objectiveContainer;
         [SerializeField] GameObject _objectivePrefab;
         [SerializeField] GameObject _objectiveIncompletePrefab;
+        [SerializeField] TextMeshProUGUI _rewardTitleText;
         [SerializeField] TextMeshProUGUI _rewardText;
         
         private QuestStatus _status;
 
+        private void OnEnable()
+        {
+            InfoActiveState(false);
+        }
+
         public void SetInfo(QuestStatus status)
         {
+            InfoActiveState(true);
             _status = status;
             Quest quest = status.GetQuest();
             _title.text = quest.GetTitle();
@@ -64,6 +73,15 @@ namespace RPG.UI
 
             rewardText += ".";
             return rewardText;
+        }
+        
+        private void InfoActiveState(bool state)
+        {
+            _title.enabled = state;
+            _objectiveTitleText.enabled = state;
+            _objectiveContainer.gameObject.SetActive(state);
+            _rewardTitleText.enabled = state;
+            _rewardText.enabled = state;
         }
     }
 }

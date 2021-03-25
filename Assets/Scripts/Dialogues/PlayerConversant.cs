@@ -17,7 +17,7 @@ namespace RPG.Dialogue
         private AIConversant _currentConversant = null;
         private PlayerController _playerController;
 
-        public event Action onConversationUpdated;
+        public event Action OnConversationUpdated;
 
         private void Start()
         {
@@ -31,7 +31,7 @@ namespace RPG.Dialogue
             _currentNode = _currentDialogue.GetRootNode();
             _playerController.SetStopMove(true);
             TriggerEnterAction();
-            onConversationUpdated();
+            OnConversationUpdated?.Invoke();
         }
 
         public void Quit()
@@ -42,7 +42,7 @@ namespace RPG.Dialogue
             _isChoosing = false;
             _currentConversant = null;
             _playerController.SetStopMove(false);
-            onConversationUpdated();
+            OnConversationUpdated?.Invoke();
         }
 
         public bool IsActive()
@@ -85,7 +85,7 @@ namespace RPG.Dialogue
             {
                 _isChoosing = true;
                 TriggerExitAction();
-                onConversationUpdated();
+                OnConversationUpdated?.Invoke();
                 return;
             }
             
@@ -94,7 +94,7 @@ namespace RPG.Dialogue
             TriggerExitAction();
             _currentNode = children[randomIndex];
             TriggerEnterAction();
-            onConversationUpdated();
+            OnConversationUpdated?.Invoke();
         }
 
         public bool HasNext()

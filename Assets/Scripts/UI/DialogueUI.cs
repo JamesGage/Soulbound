@@ -25,7 +25,7 @@ namespace RPG.UI
 
         private void OnEnable()
         {
-            _playerConversant.onConversationUpdated += UpdateUI;
+            _playerConversant.OnConversationUpdated += UpdateUI;
         }
 
         private void Start()

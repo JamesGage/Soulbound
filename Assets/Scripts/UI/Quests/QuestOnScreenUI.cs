@@ -41,6 +41,8 @@ namespace UI.Quests
             foreach (var status in _questList.GetStatuses())
             {
                 var uiInstance = Instantiate(_questPrefab, _content.transform);
+                uiInstance.gameObject.GetComponent<Button>().enabled = false;
+                
                 if (status.IsComplete())
                 {
                     uiInstance.gameObject.SetActive(false);
