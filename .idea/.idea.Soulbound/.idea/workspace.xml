@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player Menu/Buttons/Toolbar Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player Menu/Buttons/Toolbar Button.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ResourceTabs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ResourceTabs.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventorySlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/InventorySlot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Inventory/ItemTooltip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Inventory/ItemTooltip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Quests/Quest.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +37,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/DropLibrary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropperFromLibrary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ExperienceDisplay.cs" />
@@ -79,6 +85,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuestInfoUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ResourceTabs.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -147,7 +156,8 @@
       <workItem from="1616252426655" duration="9883000" />
       <workItem from="1616375009627" duration="3221000" />
       <workItem from="1616434588337" duration="18013000" />
-      <workItem from="1616609169138" duration="10453000" />
+      <workItem from="1616609169138" duration="11044000" />
+      <workItem from="1616727219865" duration="2080000" />
     </task>
     <servers />
   </component>

@@ -1,25 +1,22 @@
 ﻿using RPG.Inventories;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace UI.Inventories
 {
-    /// <summary>
-    /// Root of the tooltip prefab to expose properties to other classes.
-    /// </summary>
     public class ItemTooltip : MonoBehaviour
     {
-        // CONFIG DATA
-        [SerializeField] TextMeshProUGUI titleText = null;
-        [SerializeField] TextMeshProUGUI bodyText = null;
-
-        // PUBLIC
+        [SerializeField] private TextMeshProUGUI _titleText = null;
+        [SerializeField] private TextMeshProUGUI _bodyText = null;
+        [SerializeField] private TextMeshProUGUI _goldValue;
 
         public void Setup(InventoryItem item)
         {
-            titleText.text = item.GetDisplayName();
-            titleText.color = item.GetDisplayNameColor();
-            bodyText.text = item.GetDescription();
+            _titleText.text = item.GetDisplayName();
+            _titleText.color = item.GetDisplayNameColor();
+            _bodyText.text = item.GetDescription();
+            _goldValue.text = "Gold: " + item.GetGoldValue();
         }
     }
 }

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 25
+  inventorySize: 12
 --- !u!114 &1242258933190733985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,12 +212,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4ad8d3ff0346418becd083d98ad0e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseArmor: 16
   _defaultWeapon: {fileID: 11400000, guid: 75e037045c3b07c41b425e7ab0ab4154, type: 2}
   _rightHandTransform: {fileID: 4656559062928748635}
   _leftHandTransform: {fileID: 4656559062928835305}
-  _hitChanceRange: {x: 0, y: 21}
-  _hitChanceModifer: 10
 --- !u!1001 &4656559062928454413
 PrefabInstance:
   m_ObjectHideFlags: 0
