@@ -2,6 +2,7 @@
 {
     public enum WeaponType
     {
+        General,
         Sword,
         Axe,
         Bow,

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2c728670bd46cfb7d571c987404591, type: 3}
   m_Name: Sword Damage Additive Boost
   m_EditorClassIdentifier: 
-  weaponType: 0
+  weaponType: 1
   _skillName: 10
   _skillDescription: Increases sword damage by 5
   _skillIcon: {fileID: 21300000, guid: a3422219b684ac0409b77d8646fbd114, type: 3}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2c728670bd46cfb7d571c987404591, type: 3}
   m_Name: Sword Damage Percent Boost
   m_EditorClassIdentifier: 
-  weaponType: 0
+  weaponType: 1
   _skillName: 11
   _skillDescription: Increases sword damage by 20%
   _skillIcon: {fileID: 21300000, guid: 330111890c16dcb4e84c88dbe87483b2, type: 3}

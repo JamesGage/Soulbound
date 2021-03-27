@@ -6,6 +6,8 @@ namespace RPG.Skills
     [CreateAssetMenu(fileName = "Skills Library", menuName = "Skill/New Skill Library", order = 0)]
     public class SkillsLibrary : ScriptableObject
     {
+        [Header("General Skills")]
+        [SerializeField] SkillBase[] generalSkills;
         [Header("Sword Skills")]
         [SerializeField] SkillBase[] swordSkills;
         [Header("Axe Skills")]
@@ -21,6 +23,8 @@ namespace RPG.Skills
         {
             switch (weaponType)
             {
+                case WeaponType.General:
+                    return generalSkills;
                 case WeaponType.Sword:
                     return swordSkills;
                 case WeaponType.Axe:

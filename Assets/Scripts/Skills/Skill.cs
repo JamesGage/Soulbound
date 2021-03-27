@@ -7,8 +7,8 @@ namespace RPG.Skills
     {
         [SerializeField] SkillBase _skillBase;
         
-        private bool isActive;
-        private int skillLevel = 1;
+        private bool _isActive;
+        private int _skillLevel = 1;
 
         public SkillBase GetSkillBase()
         {
@@ -19,25 +19,35 @@ namespace RPG.Skills
         {
             _skillBase = skillBase;
         }
+
+        public int GetSkillLevel()
+        {
+            return _skillLevel;
+        }
         
         public void SetSkillLevel(int level)
         {
-            skillLevel = level;
+            _skillLevel = level;
         }
 
+        public bool GetActiveState()
+        {
+            return _isActive;
+        }
+        
         public void SetActive(bool activeState)
         {
-            isActive = activeState;
+            _isActive = activeState;
         }
 
         public int GetAdditiveModifier()
         {
-            return _skillBase.GetAdditiveModifier() * skillLevel;
+            return _skillBase.GetAdditiveModifier() * _skillLevel;
         }
 
         public int GetPercentageModifier()
         {
-            return _skillBase.GetPercentageModifier() * skillLevel;
+            return _skillBase.GetPercentageModifier() * _skillLevel;
         }
     }
 }
