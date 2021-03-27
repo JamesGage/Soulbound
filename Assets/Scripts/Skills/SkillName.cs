@@ -12,12 +12,13 @@
         BookWorm,
         WiseOwl,
         Diplomatic,
-        Extrovert
+        Extrovert,
         
         //---Weapon---
         
         //SWORD
-        
+        SwordDamageBoostAdditive,
+        SwordDamageBoostPercentage
         //AXE
         
         //BOW

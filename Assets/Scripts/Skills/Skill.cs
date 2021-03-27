@@ -1,17 +1,25 @@
-﻿using RPG.Combat;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RPG.Skills
 {
     [System.Serializable]
     public class Skill
     {
-        public WeaponType weaponType;
-        public SkillBase skillBase;
-        [Range(1, 3)]
-        public int skillLevel = 1;
-        public bool isActive;
+        [SerializeField] SkillBase _skillBase;
+        
+        private bool isActive;
+        private int skillLevel = 1;
 
+        public SkillBase GetSkillBase()
+        {
+            return _skillBase;
+        }
+
+        public void SetSkillBase(SkillBase skillBase)
+        {
+            _skillBase = skillBase;
+        }
+        
         public void SetSkillLevel(int level)
         {
             skillLevel = level;
@@ -20,6 +28,16 @@ namespace RPG.Skills
         public void SetActive(bool activeState)
         {
             isActive = activeState;
+        }
+
+        public int GetAdditiveModifier()
+        {
+            return _skillBase.GetAdditiveModifier() * skillLevel;
+        }
+
+        public int GetPercentageModifier()
+        {
+            return _skillBase.GetPercentageModifier() * skillLevel;
         }
     }
 }

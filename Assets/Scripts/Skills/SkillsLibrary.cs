@@ -7,17 +7,17 @@ namespace RPG.Skills
     public class SkillsLibrary : ScriptableObject
     {
         [Header("Sword Skills")]
-        [SerializeField] Skill[] swordSkills;
+        [SerializeField] SkillBase[] swordSkills;
         [Header("Axe Skills")]
-        [SerializeField] Skill[] axeSkills;
+        [SerializeField] SkillBase[] axeSkills;
         [Header("Bow Skills")]
-        [SerializeField] Skill[] bowSkills;
+        [SerializeField] SkillBase[] bowSkills;
         [Header("Hammer Skills")]
-        [SerializeField] Skill[] hammerSkills;
+        [SerializeField] SkillBase[] hammerSkills;
         [Header("Shield Skills")]
-        [SerializeField] Skill[] shieldSkills;
+        [SerializeField] SkillBase[] shieldSkills;
 
-        public Skill[] GetWeaponSkills(WeaponType weaponType)
+        public SkillBase[] GetWeaponSkills(WeaponType weaponType)
         {
             switch (weaponType)
             {

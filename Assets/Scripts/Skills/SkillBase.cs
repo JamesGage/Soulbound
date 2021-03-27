@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using RPG.Combat;
+using UnityEngine;
 
 namespace RPG.Skills
 {
     [CreateAssetMenu(fileName = "Skill", menuName = "Skill/New Skill", order = 0)]
     public class SkillBase : ScriptableObject
     {
+        [SerializeField] WeaponType weaponType;
         [SerializeField] private SkillName _skillName;
         [SerializeField] private string _skillDescription = "";
         [SerializeField] private Sprite _skillIcon;

@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Increase Body.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Increase Body.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Increase Mind.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Increase Mind.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Increase Social.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Increase Social.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Additive Boost.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Additive Boost.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Percent Boost.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Percent Boost.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Weapon Skills Library.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Weapon Skills Library.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,12 +86,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillNames.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" />
     </changedPaths>
@@ -162,7 +164,7 @@
       <workItem from="1616434588337" duration="18013000" />
       <workItem from="1616609169138" duration="11044000" />
       <workItem from="1616727219865" duration="2680000" />
-      <workItem from="1616864186697" duration="6331000" />
+      <workItem from="1616864186697" duration="8801000" />
     </task>
     <servers />
   </component>
