@@ -10,6 +10,7 @@ namespace RPG.Combat
     {
         #region Varaibles
 
+        [SerializeField] private WeaponType _weaponType;
         [SerializeField] Weapon _equippedPrefab;
         [SerializeField] AnimatorOverrideController _animOverride;
         [SerializeField] int _damageAddative = 2;
@@ -110,6 +111,11 @@ namespace RPG.Combat
         public DamageType GetDamageType()
         {
             return _damageType;
+        }
+
+        public WeaponType GetWeaponType()
+        {
+            return _weaponType;
         }
 
         public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, 

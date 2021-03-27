@@ -198,6 +198,7 @@
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponConfig.cs" t="Include" />
             <e p="WeaponPickup.cs" t="Include" />
+            <e p="WeaponType.cs" t="Include" />
           </e>
           <e p="Control" t="Include">
             <e p="AIController.cs" t="Include" />
@@ -273,6 +274,14 @@
             <e p="Fader.cs" t="Include" />
             <e p="Portal.cs" t="Include" />
             <e p="SavingWrapper.cs" t="Include" />
+          </e>
+          <e p="Skills" t="Include">
+            <e p="Ability.cs" t="Include" />
+            <e p="Skill.cs" t="Include" />
+            <e p="SkillBase.cs" t="Include" />
+            <e p="SkillHolder.cs" t="Include" />
+            <e p="SkillName.cs" t="Include" />
+            <e p="SkillsLibrary.cs" t="Include" />
           </e>
           <e p="Stats" t="Include">
             <e p="BaseStats.cs" t="Include" />
