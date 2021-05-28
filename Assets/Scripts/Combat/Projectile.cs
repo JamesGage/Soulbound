@@ -73,7 +73,7 @@ namespace RPG.Combat
             }
             else
             {
-                _target.TakeDamage(_instigator, _damage, _damageType, _isCritical, _weapon);
+                _target.TakeDamage(_damage, _damageType, _isCritical, _weapon);
                 if (_particles != null)
                 {
                     _particles.Stop();

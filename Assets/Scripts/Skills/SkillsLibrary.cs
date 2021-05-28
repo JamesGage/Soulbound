@@ -1,4 +1,5 @@
-﻿using RPG.Combat;
+﻿using System.Collections.Generic;
+using RPG.Combat;
 using UnityEngine;
 
 namespace RPG.Skills
@@ -7,34 +8,60 @@ namespace RPG.Skills
     public class SkillsLibrary : ScriptableObject
     {
         [Header("General Skills")]
-        [SerializeField] SkillBase[] generalSkills;
+        [SerializeField] List<SkillBase> generalSkills = new List<SkillBase>();
         [Header("Sword Skills")]
-        [SerializeField] SkillBase[] swordSkills;
+        [SerializeField] List<SkillBase> swordSkills = new List<SkillBase>();
         [Header("Axe Skills")]
-        [SerializeField] SkillBase[] axeSkills;
+        [SerializeField] List<SkillBase> axeSkills = new List<SkillBase>();
         [Header("Bow Skills")]
-        [SerializeField] SkillBase[] bowSkills;
+        [SerializeField] List<SkillBase> bowSkills = new List<SkillBase>();
         [Header("Hammer Skills")]
-        [SerializeField] SkillBase[] hammerSkills;
+        [SerializeField] List<SkillBase> hammerSkills = new List<SkillBase>();
         [Header("Shield Skills")]
-        [SerializeField] SkillBase[] shieldSkills;
+        [SerializeField] List<SkillBase> shieldSkills = new List<SkillBase>();
 
-        public SkillBase[] GetWeaponSkills(WeaponType weaponType)
+        public List<SkillBase> GetSkills(WeaponType weaponType)
         {
+            var skills = new List<SkillBase>();
+            foreach (var skill in generalSkills)
+            {
+                skills.Add(skill);
+            }
+            
             switch (weaponType)
             {
                 case WeaponType.General:
                     return generalSkills;
                 case WeaponType.Sword:
-                    return swordSkills;
+                    foreach (var skill in swordSkills)
+                    {
+                        skills.Add(skill);
+                    }
+                    return skills;
                 case WeaponType.Axe:
-                    return axeSkills;
+                    foreach (var skill in axeSkills)
+                    {
+                        skills.Add(skill);
+                    }
+                    return skills;
                 case WeaponType.Bow:
-                    return bowSkills;
+                    foreach (var skill in bowSkills)
+                    {
+                        skills.Add(skill);
+                    }
+                    return skills;
                 case WeaponType.Hammer:
-                    return hammerSkills;
+                    foreach (var skill in hammerSkills)
+                    {
+                        skills.Add(skill);
+                    }
+                    return skills;
                 case WeaponType.Shield:
-                    return shieldSkills;
+                    foreach (var skill in shieldSkills)
+                    {
+                        skills.Add(skill);
+                    }
+                    return skills;
             }
 
             return null;

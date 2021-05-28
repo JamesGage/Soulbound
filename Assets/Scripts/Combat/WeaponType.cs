@@ -1,5 +1,6 @@
 ﻿namespace RPG.Combat
 {
+    [System.Serializable]
     public enum WeaponType
     {
         General,

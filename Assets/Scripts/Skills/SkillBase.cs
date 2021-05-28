@@ -12,8 +12,13 @@ namespace RPG.Skills
         [SerializeField] private Sprite _skillIcon;
         [SerializeField] private int _addativeBonusPerLevel = 1;
         [SerializeField] private int _percentageBonusPerLevel = 100;
-        [SerializeField] private Ability _ability;
+        [SerializeField] private IAbility _ability;
 
+        public void UseSkill()
+        {
+            _ability.UseAbility();
+        }
+        
         public SkillName GetSkillName()
         {
             return _skillName;
@@ -27,11 +32,6 @@ namespace RPG.Skills
         public Sprite GetSkillIcon()
         {
             return _skillIcon;
-        }
-
-        public Ability GetAbility()
-        {
-            return _ability;
         }
 
         public int GetAdditiveModifier()

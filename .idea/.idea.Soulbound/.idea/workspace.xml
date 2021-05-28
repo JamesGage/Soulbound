@@ -2,17 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Skills/Abilities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Body Text.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Body Text.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Name Plate.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Name Plate.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Quit Button.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Quit Button.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/IAbility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/IAbility.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Additive Boost.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Additive Boost.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Percent Boost.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Skills/Resources/Sword Damage Percent Boost.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Skills/Weapon Skills Library.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Skills/Weapon Skills Library.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Dialogue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Dialogue.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ToolbarUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ToolbarUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +58,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatAccuracy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatVitality.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatStrength.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatSpeed.cs" />
@@ -51,7 +72,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AutoAttack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AggroGroup.cs" />
@@ -59,15 +79,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatTypes.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItemHealthPotion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ToolbarUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestItemUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestListUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/PlayerConversant.cs" />
@@ -78,14 +95,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillNames.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/AbilityAoE.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/IAbility.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ToolbarUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -156,7 +179,11 @@
       <workItem from="1616434588337" duration="18013000" />
       <workItem from="1616609169138" duration="11044000" />
       <workItem from="1616727219865" duration="2680000" />
-      <workItem from="1616864186697" duration="13448000" />
+      <workItem from="1616864186697" duration="13594000" />
+      <workItem from="1616988123731" duration="7262000" />
+      <workItem from="1617046383383" duration="3168000" />
+      <workItem from="1617155946943" duration="1206000" />
+      <workItem from="1622175529385" duration="1741000" />
     </task>
     <servers />
   </component>

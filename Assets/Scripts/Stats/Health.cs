@@ -65,7 +65,7 @@ namespace RPG.Stats
             return _isDead;
         }
 
-        public void TakeDamage(GameObject instigator, int damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
+        public void TakeDamage(int damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
             if(OnHealthChanged != null)

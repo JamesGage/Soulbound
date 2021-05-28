@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 269c39d256e448ef82bc2ab65018370b, type: 3}
   m_Name: Weapon Skills Library
   m_EditorClassIdentifier: 
+  generalSkills:
+  - {fileID: 11400000, guid: c4d2ff1268db6e547a45f297ce497a7a, type: 2}
+  - {fileID: 11400000, guid: c45e1b5907c166148a1f16e4416d9125, type: 2}
+  - {fileID: 11400000, guid: 6fb98a559efeb7340a51d4aa6d21eafc, type: 2}
   swordSkills:
   - {fileID: 11400000, guid: a5c6e0c79abcd24408c00c91489eb3db, type: 2}
   - {fileID: 11400000, guid: 6becb3214e791ce48988b7d3fbfc9786, type: 2}
