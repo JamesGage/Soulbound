@@ -854,7 +854,7 @@ RectTransform:
   m_Children:
   - {fileID: 3805087610662894015}
   m_Father: {fileID: 2358638947922177314}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -895,7 +895,7 @@ RectTransform:
   - {fileID: 2319833677575892075}
   - {fileID: 6939488761069565746}
   m_Father: {fileID: 2358638947922177314}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   content: {fileID: 6376343601083460489}
   shopItemPrefab: {fileID: 3821125244976399950, guid: 9098af6a1e315bc4a99b5489efac94ee, type: 3}
   totalPurchaseField: {fileID: 2448332504133495700}
-  playerPurse: {fileID: 7581957463558765636}
+  _confirmButton: {fileID: 1373307611379634163}
 --- !u!114 &5510553688402928182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,8 +1128,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2933343891349682762}
-  - {fileID: 2358638946527037980}
   - {fileID: 2358638946676546017}
+  - {fileID: 2358638946527037980}
   m_Father: {fileID: 2358638947110354663}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4199,7 +4199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2688398712503152252, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
       propertyPath: m_Color.b
-      value: 0.23867702
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2688398712503152252, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
       propertyPath: m_Color.g
@@ -4207,15 +4207,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2688398712503152252, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3027538651210595356, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
       propertyPath: m_Name
       value: Buy Button
       objectReference: {fileID: 0}
     - target: {fileID: 3940109048049684632, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.49056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940109048049684632, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.49056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940109048049684632, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.49056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940109048049684632, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3940109048049684632, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4336,6 +4348,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8228850606740673412, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
   m_PrefabInstance: {fileID: 2711417332253745003}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1373307611379634163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3940109048049684632, guid: f5e7dd9f63c65b44ebf6bc9b1b8b42c0, type: 3}
+  m_PrefabInstance: {fileID: 2711417332253745003}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2930314507611398864
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using RPG.Core;
 using UnityEngine;
 using RPG.Saving;
@@ -50,6 +51,17 @@ namespace RPG.Inventories
         public bool HasSpaceFor(InventoryItem item)
         {
             return FindSlot(item) >= 0;
+        }
+
+        public bool HasSpaceFor(IEnumerable<InventoryItem> items)
+        {
+            var count = 0;
+            foreach (var item in items)
+            {
+                count++;
+            }
+
+            return count <= inventorySize;
         }
 
         /// <summary>

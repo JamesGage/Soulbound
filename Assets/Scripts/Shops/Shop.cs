@@ -17,7 +17,6 @@ namespace RPG.Shops
             public int initialStock;
             [Range(-100f, 100f)]
             public float discountPercentage;
-            public int maxQuantity = 99;
         }
 
         private Dictionary<InventoryItem, int> _transaction = new Dictionary<InventoryItem, int>();
@@ -51,7 +50,7 @@ namespace RPG.Shops
                 int quantityInTransaction = 0;
                 _transaction.TryGetValue(config.item, out quantityInTransaction);
                 var currentStock = _stock[config.item];
-                yield return new ShopItem(config.item, currentStock, price, quantityInTransaction, config.maxQuantity);
+                yield return new ShopItem(config.item, currentStock, price, quantityInTransaction);
             }
         }
 
@@ -77,9 +76,44 @@ namespace RPG.Shops
 
         public bool CanTransact()
         {
+            if (IsTransactionEmpty()) return false;
+            if (!HasSufficientFunds()) return false;
+            if (!HasInventorySpace()) return false;
             return true;
         }
         
+        public bool HasSufficientFunds()
+        {
+            var purse = _shopper.GetComponent<Purse>();
+            if (purse == null) return false;
+
+            return purse.GetCurrency() >= TransactionTotal();
+        }
+
+        public bool IsTransactionEmpty()
+        {
+            return _transaction.Count == 0;
+        }
+        
+        public bool HasInventorySpace()
+        {
+            Inventory shopperInventory = _shopper.GetComponent<Inventory>();
+            if (shopperInventory == null) return false;
+            
+            List<InventoryItem> flatItems = new List<InventoryItem>();
+            foreach (ShopItem shopItem in GetAllItems())
+            {
+                InventoryItem item = shopItem.GetInventoryItem();
+                var quantity = shopItem.GetQuantity();
+                for (int i = 0; i < quantity; i++)
+                {
+                    flatItems.Add(item);
+                }
+            }
+
+            return shopperInventory.HasSpaceFor(flatItems);
+        }
+
         public void ConfirmTransaction()
         {
             Inventory shopperInventory = _shopper.GetComponent<Inventory>();

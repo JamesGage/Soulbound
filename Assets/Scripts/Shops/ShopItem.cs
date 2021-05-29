@@ -9,15 +9,13 @@ namespace RPG.Shops
         private int _availability;
         private int _price;
         private int _quantityStock;
-        private int _maxQuantity;
 
-        public ShopItem(InventoryItem item, int availability, int price, int quantityStock, int maxQuantity)
+        public ShopItem(InventoryItem item, int availability, int price, int quantityStock)
         {
             _item = item;
             _availability = availability;
             _price = price;
             _quantityStock = quantityStock;
-            _maxQuantity = maxQuantity;
         }
 
         public string GetName()
@@ -58,11 +56,6 @@ namespace RPG.Shops
         public int GetQuantity()
         {
             return _quantityStock;
-        }
-        
-        public int GetMaxQuantity()
-        {
-            return _maxQuantity;
         }
     }
 }
