@@ -2,237 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Arrow_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Arrow_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Arrow_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Arrow_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Attack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Attack.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Attack_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Attack_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Attack_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Attack_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic2_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic2_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic2_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Basic2_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Deff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Deff.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Flask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Flask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Hand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Hand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Hand2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Move1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Move2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Production.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Production.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_Settings.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_book.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_loot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_loot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_ship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_ship.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_shoot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/Cursor_shoot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Attack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Attack.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Attack_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Attack_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Attack_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Attack_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic2_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic2_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic2_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Basic2_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Deff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Deff.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Flask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Flask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Hand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Hand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Hand2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Move1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Move2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Production.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Production.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_Settings.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_book.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_loot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_loot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_ship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_ship.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_shoot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 256/G_Cursor_shoot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Arrow_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Arrow_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Arrow_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Arrow_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Attack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Attack.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Attack_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Attack_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Attack_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Attack_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic2_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic2_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic2_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Basic2_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Deff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Deff.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Flask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Flask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Hand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Hand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Hand2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Move1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Move2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Production.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Production.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_Settings.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_book.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_loot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_loot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_ship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_ship.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_shoot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/Cursor_shoot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Arrow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Attack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Attack.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Attack_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Attack_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Attack_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Attack_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic2_G.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic2_G.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic2_R.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Basic2_R.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Deff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Deff.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Flask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Flask.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Hand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Hand2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Hand2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Move1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Move1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Move2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Move2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Production.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Production.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_Settings.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_book.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_loot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_loot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_ship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_ship.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_shoot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Cursors 64/G_Cursor_shoot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Demo.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Asset Packs/Cursors/Demo.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Shop Keeper.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Shop Keeper.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Main Camera to Menu Blend.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Main Camera to Menu Blend.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Prefab/Sequence.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Prefab/Sequence.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Timeline.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Timeline/Sequence Camp01Timeline.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Cinematics/Timeline/Sequence Camp01Timeline.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Panel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Panel.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Quantity Button.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Quantity Button.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Control/StopMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Control/StopMovement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUIOpen.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUIOpen.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Weapons Dealer.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/Weapons Dealer.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Cinematics/Sequence Camp01Timeline.playable" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Cinematics/Sequence Camp01Timeline.playable.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Cinematics/Sequence.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Cinematics/Sequence.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Main Camera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Dialogue/Weapon Dealer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Dialogue/Weapon Dealer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Spell Fireball.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Spell Fireball.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Destruction.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Destruction.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Vigore.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Vigore.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Ring of Speed.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Ring of Speed.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley/NavMesh.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicsTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicsTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/CursorType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/CursorType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueActionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueActionType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,11 +41,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AutoAttack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AggroGroup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatTypes.cs" />
@@ -274,7 +62,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ResourceTabs.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillNames.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
@@ -303,9 +90,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueActionType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUIOpen.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -381,7 +171,7 @@
       <workItem from="1617046383383" duration="3168000" />
       <workItem from="1617155946943" duration="1206000" />
       <workItem from="1622175529385" duration="1972000" />
-      <workItem from="1622216436537" duration="14678000" />
+      <workItem from="1622216436537" duration="19404000" />
     </task>
     <servers />
   </component>

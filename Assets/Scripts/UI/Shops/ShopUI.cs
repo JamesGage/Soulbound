@@ -1,10 +1,15 @@
 ﻿using RPG.Shops;
+using TMPro;
 using UnityEngine;
 
 namespace RPG.UI.Shops
 {
     public class ShopUI : MonoBehaviour
     {
+        [SerializeField] private TextMeshProUGUI shopName;
+        [SerializeField] private Transform content;
+        [SerializeField] private ShopItemUI shopItemPrefab;
+        
         private Shopper shopper = null;
         private Shop currentShop = null;
         
@@ -20,7 +25,7 @@ namespace RPG.UI.Shops
 
         public void CloseShop()
         {
-            gameObject.SetActive(false);
+            shopper.SetActiveShop(null);
         }
         
         
@@ -28,6 +33,25 @@ namespace RPG.UI.Shops
         {
             currentShop = shopper.GetActiveShop();
             gameObject.SetActive(currentShop != null);
+
+            if (currentShop == null) return;
+            shopName.text = currentShop.GetShopName();
+
+            RefreshUI();
+        }
+
+        private void RefreshUI()
+        {
+            foreach (Transform child in content)
+            {
+                Destroy(child.gameObject);
+            }
+
+            foreach (ShopItem item in currentShop.GetFilteredItems())
+            {
+                var shopItem = Instantiate<ShopItemUI>(shopItemPrefab, content);
+                shopItem.Setup(item);
+            }
         }
     }
 }

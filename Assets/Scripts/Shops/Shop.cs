@@ -7,19 +7,25 @@ namespace RPG.Shops
 {
     public class Shop : MonoBehaviour
     {
-        public class ShopItem
-        {
-            private InventoryItem item;
-            private int availibility;
-            private int price;
-            private int quantityInTransaction;
-        }
+        [SerializeField] private string shopName = "Shop";
+        [SerializeField] private StockItemConfig[] stockConfig;
 
+        [System.Serializable]
+        class StockItemConfig
+        {
+            public InventoryItem item;
+            public int initialStock;
+            [Range(-100f, 100f)]
+            public float discountPercentage;
+        }
         public event Action onChange;
         
         public IEnumerable<ShopItem> GetFilteredItems()
         {
-            return null;
+            foreach (StockItemConfig config in stockConfig)
+            {
+                yield return new ShopItem(config.item, config.initialStock, 0);
+            }
         }
 
         public void SelectFilter(ItemType category)
@@ -60,6 +66,11 @@ namespace RPG.Shops
         public void AddToTransaction(InventoryItem item, int quantity)
         {
             
+        }
+
+        public string GetShopName()
+        {
+            return shopName;
         }
     }
 }

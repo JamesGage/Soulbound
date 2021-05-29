@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: Ring of Speed
   m_EditorClassIdentifier: 
   itemID: 5fbbdf23-9a5b-4c47-a67e-345d170f1e2a
-  displayName: 
+  displayName: Ring of Speed
   _displayNameColor: {r: 0.9622642, g: 0.6607019, b: 0.13163051, a: 1}
   description: This ring increase movement and attack speed by 20%
   icon: {fileID: 21300000, guid: cc79555cce10b06499e9d74600a043e3, type: 3}
   pickup: {fileID: 3157175472706966604, guid: 202f345e156d1114a845451090348e20, type: 3}
   stackable: 0
-  _goldValue: 200
+  _goldValue: 550
   isGold: 0
   equipSFX: 
   allowedEquipLocation: 7
   addativeModifiers: []
   percentageModifiers:
-  - stat: 4
+  - statTypes: 0
     value: 20
-  - stat: 5
+  - statTypes: 0
     value: 20

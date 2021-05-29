@@ -279,6 +279,7 @@
           </e>
           <e p="Shops" t="Include">
             <e p="Shop.cs" t="Include" />
+            <e p="ShopItem.cs" t="Include" />
             <e p="Shopper.cs" t="Include" />
           </e>
           <e p="Skills" t="Include">
@@ -346,7 +347,7 @@
               <e p="SettingsMenuUI.cs" t="Include" />
             </e>
             <e p="Shops" t="Include">
-              <e p="RowUI.cs" t="Include" />
+              <e p="ShopItemUI.cs" t="Include" />
               <e p="ShopUI.cs" t="Include" />
               <e p="ShopUIOpen.cs" t="Include" />
             </e>
