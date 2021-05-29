@@ -19,7 +19,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 9e54a146e64f40149a04094618559ce7, type: 3}
   pickup: {fileID: 813604151754665848, guid: 9925259900ddd92469637711a9f83eda, type: 3}
   stackable: 1
-  _goldValue: 0
+  _goldValue: 100
   isGold: 0
   equipSFX: event:/SFX/Ambient/Pickup/Pickup_Bottle
   consumable: 1

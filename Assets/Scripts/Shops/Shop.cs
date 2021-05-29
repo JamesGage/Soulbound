@@ -10,21 +10,27 @@ namespace RPG.Shops
         [SerializeField] private string shopName = "Shop";
         [SerializeField] private StockItemConfig[] stockConfig;
 
-        [System.Serializable]
+        [Serializable]
         class StockItemConfig
         {
             public InventoryItem item;
             public int initialStock;
             [Range(-100f, 100f)]
             public float discountPercentage;
+            public int maxQuantity = 99;
         }
+
+        private Dictionary<InventoryItem, int> _transaction = new Dictionary<InventoryItem, int>();
         public event Action onChange;
         
         public IEnumerable<ShopItem> GetFilteredItems()
         {
             foreach (StockItemConfig config in stockConfig)
             {
-                yield return new ShopItem(config.item, config.initialStock, 0);
+                var price = Mathf.RoundToInt(config.item.GetGoldValue() * (1 - config.discountPercentage / 100));
+                int quantityInTransaction = 0;
+                _transaction.TryGetValue(config.item, out quantityInTransaction);
+                yield return new ShopItem(config.item, config.initialStock, price, quantityInTransaction, config.maxQuantity);
             }
         }
 
@@ -65,7 +71,19 @@ namespace RPG.Shops
 
         public void AddToTransaction(InventoryItem item, int quantity)
         {
+            if (!_transaction.ContainsKey(item))
+            {
+                _transaction[item] = 0;
+            }
             
+            _transaction[item] += quantity;
+
+            if (_transaction[item] <= 0)
+            {
+                _transaction.Remove(item);
+            }
+
+            onChange?.Invoke();
         }
 
         public string GetShopName()
