@@ -71,7 +71,8 @@ namespace RPG.Movement
 
         public void Cancel()
         {
-            _navAgent.isStopped = true;
+            if(_navAgent != null)
+                _navAgent.isStopped = true;
         }
 
         [System.Serializable]

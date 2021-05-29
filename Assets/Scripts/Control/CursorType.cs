@@ -8,6 +8,7 @@
         UI,
         Pickup,
         FullPickup,
-        Dialogue
+        Dialogue,
+        Shop
     }
 }

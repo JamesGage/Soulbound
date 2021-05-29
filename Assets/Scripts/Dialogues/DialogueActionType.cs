@@ -7,6 +7,7 @@
         CompleteObjective,
         Aggro,
         ChangeDialogue,
-        ChangeQuest
+        ChangeQuest,
+        OpenMenu
     }
 }
