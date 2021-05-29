@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
+using RPG.Inventories;
 using RPG.Stats;
 using UnityEngine;
 
-namespace RPG.Inventories
-{
-    [CreateAssetMenu(menuName = ("RPG/Inventory/Equipable Item"))]
+
+[CreateAssetMenu(menuName = ("RPG/Inventory/Equipable Item"))]
     public class StatsEquipableItem : EquipableItem, IModifierProvider
     {
         [SerializeField] Modifier[] addativeModifiers;
@@ -13,11 +13,11 @@ namespace RPG.Inventories
             [System.Serializable]
             struct Modifier
             {
-                public Stats.StatTypes statTypes;
+                public StatTypes statTypes;
                 public float value;
             }
 
-            public IEnumerable<int> GetAddativeModifiers(Stats.StatTypes statTypes)
+            public IEnumerable<int> GetAddativeModifiers(StatTypes statTypes)
             {
                 foreach (var modifier in addativeModifiers)
                 {
@@ -28,7 +28,7 @@ namespace RPG.Inventories
                 }
             }
 
-            public IEnumerable<float> GetPercentageModifiers(Stats.StatTypes statTypes)
+            public IEnumerable<float> GetPercentageModifiers(StatTypes statTypes)
             {
                 foreach (var modifier in percentageModifiers)
                 {
@@ -39,4 +39,3 @@ namespace RPG.Inventories
                 }
             }
     }
-}

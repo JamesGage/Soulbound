@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/CurrencyItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources/Health Potion Small.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Resources/Health Potion Small.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop/Quantity Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Quantity Button.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItemHealthPotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItemHealthPotion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/DropLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/DropLibrary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/GoldItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/GoldItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/GoldStorage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/GoldStorage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropperFromLibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropperFromLibrary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GoldDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GoldDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,50 +47,19 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/CurrencyItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Attributes/Health.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatTypes.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItemHealthPotion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthBar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestItemUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestListUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/PlayerConversant.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/QuestInfoUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestTooltipUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ResourceTabs.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillNames.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillName.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Skill.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/AbilityAoE.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/Ability.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/IAbility.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/ToolbarUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicsTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Cinematics/CinematicsPlay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MenuCamera.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/RowUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/CursorType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/StopMovement.cs" />
@@ -80,10 +67,45 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueActionType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUIOpen.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipLocation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipableItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Pickup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillHolder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/EquipmentSlotUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/IItemHolder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryDragItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryDropTarget.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Pickups/PickupSlotUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Questing/Quest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Control/ClickablePickup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/GoldStorage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/CurrencyItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
     </changedPaths>
   </component>
@@ -160,7 +182,8 @@
       <workItem from="1617046383383" duration="3168000" />
       <workItem from="1617155946943" duration="1206000" />
       <workItem from="1622175529385" duration="1972000" />
-      <workItem from="1622216436537" duration="25034000" />
+      <workItem from="1622216436537" duration="25131000" />
+      <workItem from="1622310503953" duration="9311000" />
     </task>
     <servers />
   </component>

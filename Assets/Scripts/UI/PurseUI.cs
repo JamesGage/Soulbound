@@ -1,31 +1,30 @@
-﻿using RPG.Inventory;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 namespace RPG.Inventories
 {
-    public class GoldDisplay : MonoBehaviour
+    public class PurseUI : MonoBehaviour
     {
         private TMP_Text _goldText;
-        private GoldStorage _goldStorage;
+        private Purse _purse;
         private GameObject _player;
 
         private void Awake()
         {
             _goldText = GetComponent<TMP_Text>();
             _player = GameObject.FindWithTag("Player");
-            _goldStorage = _player.GetComponent<GoldStorage>();
+            _purse = _player.GetComponent<Purse>();
         }
 
         private void Start()
         {
-            _goldStorage.onGoldChanged += UpdateGold;
+            _purse.onGoldChanged += UpdateGold;
             UpdateGold();
         }
 
         private void UpdateGold()
         {
-            _goldText.text = _goldStorage.GetGold().ToString();
+            _goldText.text = $"{_purse.GetCurrency():N0}";
         }
     }
 }

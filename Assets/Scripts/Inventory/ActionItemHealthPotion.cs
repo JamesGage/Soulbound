@@ -2,7 +2,7 @@
 using RPG.Stats;
 using UnityEngine;
 
-namespace RPG.Inventory
+namespace RPG.Inventories
 {
     [CreateAssetMenu(menuName = ("RPG/Inventory/Health Potion"))]
     public class ActionItemHealthPotion : ActionItem

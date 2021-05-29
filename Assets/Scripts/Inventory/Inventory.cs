@@ -1,6 +1,5 @@
 ﻿using System;
 using RPG.Core;
-using RPG.Inventory;
 using UnityEngine;
 using RPG.Saving;
 
@@ -18,7 +17,7 @@ namespace RPG.Inventories
         [Tooltip("Allowed size")]
         [SerializeField] int inventorySize = 16;
 
-        private GoldStorage _goldStorage;
+        private Purse _purse;
 
         // STATE
         InventorySlot[] slots;
@@ -71,7 +70,7 @@ namespace RPG.Inventories
         {
             if (item.isGold)
             {
-                _goldStorage.IncreaseCurrentGold(number);
+                _purse.UpdateCurrency(number);
                 return true;
             }
             
@@ -176,7 +175,7 @@ namespace RPG.Inventories
         private void Awake()
         {
             slots = new InventorySlot[inventorySize];
-            _goldStorage = GetComponent<GoldStorage>();
+            _purse = GetComponent<Purse>();
         }
 
         /// <summary>

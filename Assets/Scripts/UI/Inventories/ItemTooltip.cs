@@ -1,7 +1,6 @@
 ﻿using RPG.Inventories;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 namespace UI.Inventories
 {

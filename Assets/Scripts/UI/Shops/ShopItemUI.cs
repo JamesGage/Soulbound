@@ -40,10 +40,5 @@ namespace RPG.UI.Shops
         {
             _currentShop.AddToTransaction(_item.GetInventoryItem(), -1);
         }
-
-        public void Clear()
-        {
-            
-        }
     }
 }

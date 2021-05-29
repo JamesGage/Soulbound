@@ -1,4 +1,5 @@
-﻿using RPG.Shops;
+﻿using RPG.Inventories;
+using RPG.Shops;
 using TMPro;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ namespace RPG.UI.Shops
         [SerializeField] private TextMeshProUGUI shopName;
         [SerializeField] private Transform content;
         [SerializeField] private ShopItemUI shopItemPrefab;
+        [SerializeField] private TextMeshProUGUI totalPurchaseField;
+        [SerializeField] private TextMeshProUGUI playerPurse;
         
         private Shopper shopper = null;
         private Shop currentShop = null;
@@ -26,6 +29,16 @@ namespace RPG.UI.Shops
         public void CloseShop()
         {
             shopper.SetActiveShop(null);
+        }
+
+        public void ConfirmTransaction()
+        {
+            currentShop.ConfirmTransaction();
+        }
+
+        public void ClearTransaction()
+        {
+            
         }
         
         
@@ -59,6 +72,8 @@ namespace RPG.UI.Shops
                 var shopItem = Instantiate<ShopItemUI>(shopItemPrefab, content);
                 shopItem.Setup(item, currentShop);
             }
+
+            totalPurchaseField.text = $"{currentShop.TransactionTotal():N0}";
         }
     }
 }

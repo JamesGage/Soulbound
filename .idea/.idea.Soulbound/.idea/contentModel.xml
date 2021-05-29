@@ -236,18 +236,18 @@
             <e p="ActionItem.cs" t="Include" />
             <e p="ActionItemHealthPotion.cs" t="Include" />
             <e p="ActionStore.cs" t="Include" />
+            <e p="CurrencyItem.cs" t="Include" />
             <e p="DropLibrary.cs" t="Include" />
             <e p="EquipableItem.cs" t="Include" />
             <e p="EquipLocation.cs" t="Include" />
             <e p="Equipment.cs" t="Include" />
-            <e p="GoldItem.cs" t="Include" />
-            <e p="GoldStorage.cs" t="Include" />
             <e p="Inventory.cs" t="Include" />
             <e p="InventoryItem.cs" t="Include" />
             <e p="ItemDropper.cs" t="Include" />
             <e p="ItemType.cs" t="Include" />
             <e p="Pickup.cs" t="Include" />
             <e p="PickupSpawner.cs" t="Include" />
+            <e p="Purse.cs" t="Include" />
             <e p="RandomDropper.cs" t="Include" />
             <e p="RandomDropperFromLibrary.cs" t="Include" />
             <e p="StatsEquipableItem.cs" t="Include" />
@@ -305,7 +305,6 @@
             <e p="DialogueUI.cs" t="Include" />
             <e p="ExperienceDisplay.cs" t="Include" />
             <e p="GameOverUI.cs" t="Include" />
-            <e p="GoldDisplay.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
             <e p="HealthDisplay.cs" t="Include" />
             <e p="Inventories" t="Include">
@@ -329,6 +328,7 @@
               <e p="PickupSlotUI.cs" t="Include" />
               <e p="PickupUI.cs" t="Include" />
             </e>
+            <e p="PurseUI.cs" t="Include" />
             <e p="QuestInfoUI.cs" t="Include" />
             <e p="Quests" t="Include">
               <e p="QuestItemUI.cs" t="Include" />

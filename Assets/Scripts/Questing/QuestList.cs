@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using RPG.Core;
 using RPG.Inventories;
 using RPG.Saving;
@@ -12,7 +10,7 @@ namespace RPG.Questing
     public class QuestList : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
         private List<QuestStatus> _statuses = new List<QuestStatus>();
-        private Inventories.Inventory _inventroy;
+        private Inventory _inventory;
         private ItemDropper _itemDropper;
 
         [FMODUnity.EventRef] public string addQuestSFX;
@@ -23,7 +21,7 @@ namespace RPG.Questing
 
         private void Awake()
         {
-            _inventroy = GetComponent<Inventories.Inventory>();
+            _inventory = GetComponent<Inventory>();
             _itemDropper = GetComponent<ItemDropper>();
         }
 
@@ -87,7 +85,7 @@ namespace RPG.Questing
         {
             foreach (var reward in quest.GetRewards())
             {
-                var success = _inventroy.AddToFirstEmptySlot(reward.item, reward.number);
+                var success = _inventory.AddToFirstEmptySlot(reward.item, reward.number);
                 if (!success)
                 {
                     _itemDropper.DropItem(reward.item, reward.number);
