@@ -4447,6 +4447,10 @@ PrefabInstance:
       value: Burt's Bludgeonings
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: sellingPercentage
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4496,7 +4500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[3].initialStock
-      value: 200
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].discountPercentage
@@ -4504,6 +4508,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[2].discountPercentage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[3].discountPercentage
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5602925555301481981, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
@@ -11900,6 +11908,22 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1948910464604417957, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948910464604417957, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948910464604417957, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948910464604417957, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1983765006434755719, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -17551,6 +17575,22 @@ PrefabInstance:
     - target: {fileID: 7493381554530165306, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: _startingHealth
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496690003561718850, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496690003561718850, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496690003561718850, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496690003561718850, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503724375980177568, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: m_AnchorMax.y

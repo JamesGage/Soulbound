@@ -14,6 +14,8 @@ namespace RPG.UI.Shops
         [SerializeField] private Color totalDefaultColor = Color.white;
         [SerializeField] private Color totalErrorColor = Color.red;
         [SerializeField] private Button _confirmButton;
+        [SerializeField] private Button _buyingButton;
+        [SerializeField] private Button _sellingButton;
 
         private Shopper shopper = null;
         private Shop currentShop = null;
@@ -25,6 +27,8 @@ namespace RPG.UI.Shops
 
             shopper.activeShopChange += ShopChanged;
             _confirmButton.onClick.AddListener(ConfirmTransaction);
+            _buyingButton.onClick.AddListener(SwitchMode);
+            _sellingButton.onClick.AddListener(SwitchMode);
             
             ShopChanged();
         }
@@ -43,8 +47,12 @@ namespace RPG.UI.Shops
         {
             
         }
-        
-        
+
+        public void SwitchMode()
+        {
+            currentShop.SelectMode(!currentShop.IsBuyingMode());
+        }
+
         private void ShopChanged()
         {
             if (currentShop != null)
@@ -79,6 +87,19 @@ namespace RPG.UI.Shops
             totalPurchaseField.text = $"{currentShop.TransactionTotal():N0}";
             totalPurchaseField.color = currentShop.HasSufficientFunds() ? totalDefaultColor : totalErrorColor;
             _confirmButton.interactable = currentShop.CanTransact();
+            var confirmText = _confirmButton.GetComponentInChildren<TextMeshProUGUI>();
+            if (currentShop.IsBuyingMode())
+            {
+                _sellingButton.interactable = true;
+                _buyingButton.interactable = false;
+                confirmText.text = "Buy";
+            }
+            if(!currentShop.IsBuyingMode())
+            {
+                _sellingButton.interactable = false;
+                _buyingButton.interactable = true;
+                confirmText.text = "Sell";
+            }
         }
     }
 }

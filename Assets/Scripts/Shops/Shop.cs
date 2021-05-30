@@ -8,6 +8,8 @@ namespace RPG.Shops
     public class Shop : MonoBehaviour
     {
         [SerializeField] private string shopName = "Shop";
+        [Range(0f, 100f)]
+        [SerializeField] private float sellingPercentage = 80f;
         [SerializeField] private StockItemConfig[] stockConfig;
 
         [Serializable]
@@ -22,6 +24,7 @@ namespace RPG.Shops
         private Dictionary<InventoryItem, int> _transaction = new Dictionary<InventoryItem, int>();
         private Dictionary<InventoryItem, int> _stock = new Dictionary<InventoryItem, int>();
         private Shopper _shopper = null;
+        private bool isBuyingMode = true;
         public event Action onChange;
 
         private void Awake()
@@ -46,11 +49,11 @@ namespace RPG.Shops
         {
             foreach (StockItemConfig config in stockConfig)
             {
-                var price = Mathf.RoundToInt(config.item.GetGoldValue() * (1 - config.discountPercentage / 100));
+                var price = GetPrice(config);
                 int quantityInTransaction = 0;
                 _transaction.TryGetValue(config.item, out quantityInTransaction);
-                var currentStock = _stock[config.item];
-                yield return new ShopItem(config.item, currentStock, price, quantityInTransaction);
+                var availability = GetAvailability(config.item);
+                yield return new ShopItem(config.item, availability, price, quantityInTransaction);
             }
         }
 
@@ -66,12 +69,13 @@ namespace RPG.Shops
 
         public void SelectMode(bool isBuying)
         {
-            
+            isBuyingMode = isBuying;
+            onChange?.Invoke();
         }
 
         public bool IsBuyingMode()
         {
-            return true;
+            return isBuyingMode;
         }
 
         public bool CanTransact()
@@ -160,9 +164,10 @@ namespace RPG.Shops
                 _transaction[item] = 0;
             }
 
+            int availability = GetAvailability(item);
             if (_transaction[item] + quantity > _stock[item])
             {
-                _transaction[item] = _stock[item];
+                _transaction[item] = availability;
             }
             else
             {
@@ -180,6 +185,44 @@ namespace RPG.Shops
         public string GetShopName()
         {
             return shopName;
+        }
+        
+        private int GetAvailability(InventoryItem item)
+        {
+            if (isBuyingMode)
+            {
+                return _stock[item];   
+            }
+
+            return CountItemsInInventory(item);
+        }
+
+        private int CountItemsInInventory(InventoryItem item)
+        {
+            var inventory = _shopper.GetComponent<Inventory>();
+            if (inventory == null) return 0;
+
+            var total = 0;
+            for (int i = 0; i < inventory.GetSize(); i++)
+            {
+                if (inventory.GetItemInSlot(i) == item)
+                {
+                    total += inventory.GetNumberInSlot(i);
+                }
+            }
+
+            return total;
+        }
+
+        private int GetPrice(StockItemConfig config)
+        {
+            if (isBuyingMode)
+            {
+                return Mathf.RoundToInt(config.item.GetGoldValue() * (1 - config.discountPercentage / 100));
+            }
+
+            return Mathf.RoundToInt(config.item.GetGoldValue() * (1 - config.discountPercentage / 100) * (sellingPercentage / 100));
+
         }
     }
 }
