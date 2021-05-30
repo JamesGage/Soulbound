@@ -21,6 +21,7 @@ MonoBehaviour:
   stackable: 0
   _goldValue: 10
   isGold: 0
+  itemType: 2
   equipSFX: event:/SFX/Weapons/Bows/Bow_Equip
   allowedEquipLocation: 5
   _weaponType: 3

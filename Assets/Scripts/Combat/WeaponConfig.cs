@@ -10,7 +10,7 @@ namespace RPG.Combat
     {
         #region Varaibles
 
-        [SerializeField] private WeaponType _weaponType;
+        [SerializeField] private ItemType _weaponType;
         [SerializeField] Weapon _equippedPrefab;
         [SerializeField] AnimatorOverrideController _animOverride;
         [SerializeField] int _damageAddative = 2;
@@ -113,7 +113,7 @@ namespace RPG.Combat
             return _damageType;
         }
 
-        public WeaponType GetWeaponType()
+        public ItemType GetWeaponType()
         {
             return _weaponType;
         }

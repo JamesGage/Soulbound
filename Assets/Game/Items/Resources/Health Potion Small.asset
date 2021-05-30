@@ -21,6 +21,7 @@ MonoBehaviour:
   stackable: 1
   _goldValue: 100
   isGold: 0
+  itemType: 3
   equipSFX: event:/SFX/Ambient/Pickup/Pickup_Bottle
   consumable: 1
   comsumeSFX: event:/SFX/Items/Potions/Potion_Drink

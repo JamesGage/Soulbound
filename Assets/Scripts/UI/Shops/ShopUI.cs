@@ -63,6 +63,11 @@ namespace RPG.UI.Shops
             currentShop = shopper.GetActiveShop();
             gameObject.SetActive(currentShop != null);
 
+            foreach (FilterButtonUI button in GetComponentsInChildren<FilterButtonUI>())
+            {
+                button.SetShop(currentShop);
+            }
+
             if (currentShop == null) return;
             shopName.text = currentShop.GetShopName();
 
@@ -88,6 +93,7 @@ namespace RPG.UI.Shops
             totalPurchaseField.color = currentShop.HasSufficientFunds() ? totalDefaultColor : totalErrorColor;
             _confirmButton.interactable = currentShop.CanTransact();
             var confirmText = _confirmButton.GetComponentInChildren<TextMeshProUGUI>();
+            
             if (currentShop.IsBuyingMode())
             {
                 _sellingButton.interactable = true;
@@ -99,6 +105,11 @@ namespace RPG.UI.Shops
                 _sellingButton.interactable = false;
                 _buyingButton.interactable = true;
                 confirmText.text = "Sell";
+            }
+
+            foreach (FilterButtonUI button in GetComponentsInChildren<FilterButtonUI>())
+            {
+                button.RefreshUI();
             }
         }
     }

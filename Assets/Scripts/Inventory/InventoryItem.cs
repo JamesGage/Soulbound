@@ -22,7 +22,8 @@ namespace RPG.Inventories
         [Tooltip("The value if sold to most stores")]
         [SerializeField] int _goldValue;
         [Tooltip("Check if this item only returns gold pieces.")]
-        public bool isGold;
+        [SerializeField] internal bool isGold;
+        [SerializeField] private ItemType itemType = ItemType.None;
         
         [FMODUnity.EventRef] public string equipSFX;
         
@@ -92,7 +93,11 @@ namespace RPG.Inventories
         {
             return _goldValue;
         }
-        
+
+        public ItemType GetItemType()
+        {
+            return itemType;
+        }
         
         void ISerializationCallbackReceiver.OnBeforeSerialize()
         {

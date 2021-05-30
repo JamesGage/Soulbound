@@ -21,8 +21,10 @@ MonoBehaviour:
   stackable: 0
   _goldValue: 0
   isGold: 0
+  itemType: 2
   equipSFX: 
   allowedEquipLocation: 5
+  _weaponType: 0
   _equippedPrefab: {fileID: 0}
   _animOverride: {fileID: 0}
   _damageAddative: 2

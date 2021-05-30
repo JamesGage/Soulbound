@@ -21,6 +21,7 @@ MonoBehaviour:
   stackable: 0
   _goldValue: 1000
   isGold: 0
+  itemType: 1
   equipSFX: event:/SFX/Ambient/Pickup/Pickup_Coin
   allowedEquipLocation: 1
   addativeModifiers:
