@@ -45,7 +45,7 @@ namespace RPG.UI.Shops
 
         public void ClearTransaction()
         {
-            
+            //Clear items in cart
         }
 
         public void SwitchMode()

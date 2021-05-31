@@ -15,7 +15,7 @@ namespace UI.Inventories
             _titleText.text = item.GetDisplayName();
             _titleText.color = item.GetDisplayNameColor();
             _bodyText.text = item.GetDescription();
-            _goldValue.text = "Gold: " + item.GetGoldValue();
+            _goldValue.text = "Gold: " + item.GetCost();
         }
     }
 }

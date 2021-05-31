@@ -89,7 +89,7 @@ namespace RPG.Inventories
             return description;
         }
 
-        public int GetGoldValue()
+        public int GetCost()
         {
             return _goldValue;
         }

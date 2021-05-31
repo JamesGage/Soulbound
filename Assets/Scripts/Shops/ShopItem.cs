@@ -57,5 +57,10 @@ namespace RPG.Shops
         {
             return _quantityStock;
         }
+
+        public void SetQuantity(int quantity)
+        {
+            _quantityStock += quantity;
+        }
     }
 }

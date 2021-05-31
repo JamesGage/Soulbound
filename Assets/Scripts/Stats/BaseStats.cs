@@ -11,7 +11,8 @@ namespace RPG.Stats
 
         [SerializeField] CharacterType _characterType;
         [SerializeField] Stat[] _stats;
-        
+
+        private int _characterLevel = 1;
         private Dictionary<StatTypes, int> _statsLookup = new Dictionary<StatTypes, int>();
 
         public event Action OnStatsChanged;
@@ -21,6 +22,15 @@ namespace RPG.Stats
         private void Awake()
         {
             Initialize();
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyUp(KeyCode.L))
+            {
+                SetLevel(2);
+                print("Character level: " + _characterLevel);
+            }
         }
 
         public float GetStat(StatTypes statTypes)
@@ -44,6 +54,16 @@ namespace RPG.Stats
         public CharacterType GetCharacterType()
         {
             return _characterType;
+        }
+
+        public int GetLevel()
+        {
+            return _characterLevel;
+        }
+
+        public void SetLevel(int level)
+        {
+            _characterLevel = level;
         }
         
         private void Initialize()
