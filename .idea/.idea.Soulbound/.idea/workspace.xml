@@ -2,14 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/HUD.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/HUD.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +56,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Control/CursorType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Control/StopMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueActionType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUIOpen.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipLocation.cs" />
@@ -69,7 +83,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Questing/Quest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/ClickablePickup.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" />
@@ -89,6 +102,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DemoTargeting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -166,7 +184,8 @@
       <workItem from="1622175529385" duration="1972000" />
       <workItem from="1622216436537" duration="25131000" />
       <workItem from="1622310503953" duration="19985000" />
-      <workItem from="1622395797028" duration="13671000" />
+      <workItem from="1622395797028" duration="14266000" />
+      <workItem from="1622478808073" duration="7575000" />
     </task>
     <servers />
   </component>

@@ -4452,7 +4452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].item
@@ -4470,6 +4470,10 @@ PrefabInstance:
       propertyPath: stockConfig.Array.data[3].item
       value: 
       objectReference: {fileID: 11400000, guid: 42cae2857c6904544a99d4ddd0bddc70, type: 2}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[4].item
+      value: 
+      objectReference: {fileID: 11400000, guid: cd8b81324b8c31a4480051fd27fc03a4, type: 2}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].levelToHide
       value: 5
@@ -4503,6 +4507,10 @@ PrefabInstance:
       value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[4].levelToHide
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].initialStock
       value: 1
       objectReference: {fileID: 0}
@@ -4519,6 +4527,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[4].initialStock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].levelToUnlock
       value: 2
       objectReference: {fileID: 0}
@@ -4533,6 +4545,10 @@ PrefabInstance:
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[3].discountPercentage
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[4].discountPercentage
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5602925555301481981, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: uniqueIdentifier
@@ -23062,7 +23078,7 @@ GameObject:
   - component: {fileID: 1965242926}
   - component: {fileID: 1965242925}
   - component: {fileID: 1965242928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}

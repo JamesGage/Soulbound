@@ -18,6 +18,7 @@ namespace RPG.Control
         [SerializeField] float _navMeshProjectionTolerance = 1f;
         [SerializeField] float _raycastRadius = 0.5f;
         [SerializeField] CursorMapping[] cursorMappings = null;
+        [SerializeField] int numberOfAbilities = 6;
 
         private ActionStore _actionStore;
         private bool _movementStarted;
@@ -70,23 +71,21 @@ namespace RPG.Control
 
         private void CheckSpecialAbilityKeys()
         {
-            if (Input.GetKeyDown(KeyCode.Q))
-                _actionStore.Use(0, gameObject);
-            if (Input.GetKeyDown(KeyCode.W))
-                _actionStore.Use(1, gameObject);
-            if (Input.GetKeyDown(KeyCode.E))
-                _actionStore.Use(2, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-                _actionStore.Use(3, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-                _actionStore.Use(4, gameObject);
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-                _actionStore.Use(5, gameObject);
+            for (int i = 0; i < numberOfAbilities; i++)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                    _actionStore.Use(i, gameObject);
+            }
         }
 
         public Mover GetMover()
         {
             return _mover;
+        }
+        
+        public static Ray GetMouseRay()
+        {
+            return Camera.main.ScreenPointToRay(Input.mousePosition);
         }
 
         #region Interact
@@ -211,11 +210,5 @@ namespace RPG.Control
         }
 
         #endregion
-        
-        
-        private static Ray GetMouseRay()
-        {
-            return Camera.main.ScreenPointToRay(Input.mousePosition);
-        }
     }   
 }
