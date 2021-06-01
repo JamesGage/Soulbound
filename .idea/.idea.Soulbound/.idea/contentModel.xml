@@ -185,6 +185,7 @@
           <e p="Abilities" t="Include">
             <e p="Ability.cs" t="Include" />
             <e p="AbilityData.cs" t="Include" />
+            <e p="CooldownStore.cs" t="Include" />
             <e p="Effects" t="Include">
               <e p="HealthEffect.cs" t="Include" />
               <e p="SpawnTargetPrefabEffect.cs" t="Include" />
