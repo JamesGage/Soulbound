@@ -15,9 +15,9 @@ namespace RPG.Abilities.Effects
         [SerializeField] private bool isCritical;
         [SerializeField] private WeaponConfig weapon;
         
-        public override void StartEffect(GameObject user, IEnumerable<GameObject> targets, Action finished)
+        public override void StartEffect(AbilityData data, Action finished)
         {
-            foreach (var target in targets)
+            foreach (var target in data.GetTargets())
             {
                 var health = target.GetComponent<Health>();
                 if (health)
