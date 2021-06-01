@@ -2,32 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Targeting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Targeting/Targeting Circle.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Targeting/Targeting Circle.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Health 10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Health 10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Filter.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Filter/Filter Enemy.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Filter/Filter Enemy.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Filter/Filter NPC.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Filter/Filter NPC.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/HealthEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/HealthEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/FilterStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/FilterStrategy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EffectStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/EffectStrategy.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/HUD.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/HUD.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/UI Canvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/_Source/_Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/_Source/_Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/_Source/_NPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/_Source/_NPC.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +62,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dialogues/DialogueActionType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUIOpen.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipLocation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipableItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
@@ -105,8 +107,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DemoTargeting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/FilterStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EffectStrategy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/HealthEffect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -185,7 +191,7 @@
       <workItem from="1622216436537" duration="25131000" />
       <workItem from="1622310503953" duration="19985000" />
       <workItem from="1622395797028" duration="14266000" />
-      <workItem from="1622478808073" duration="7575000" />
+      <workItem from="1622478808073" duration="18573000" />
     </task>
     <servers />
   </component>

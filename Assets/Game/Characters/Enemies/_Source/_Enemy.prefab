@@ -24,13 +24,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b4ad8d3ff0346418becd083d98ad0e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseArmor: 10
-  timeBetweenAttack: 3
   _defaultWeapon: {fileID: 11400000, guid: 75e037045c3b07c41b425e7ab0ab4154, type: 2}
   _rightHandTransform: {fileID: 0}
   _leftHandTransform: {fileID: 0}
-  _hitChanceRange: {x: 0, y: 21}
-  _hitChanceModifer: 0
 --- !u!114 &8318213481455106510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +196,10 @@ PrefabInstance:
     - target: {fileID: 1306814148330273329, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: m_Name
       value: _Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306814148330273329, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1306814148330273333, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: m_RootOrder

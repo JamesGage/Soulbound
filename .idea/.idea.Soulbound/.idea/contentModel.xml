@@ -184,6 +184,13 @@
         <e p="Scripts" t="Include">
           <e p="Abilities" t="Include">
             <e p="Ability.cs" t="Include" />
+            <e p="Effects" t="Include">
+              <e p="HealthEffect.cs" t="Include" />
+            </e>
+            <e p="Filters" t="Include">
+              <e p="TagFilter.cs" t="Include" />
+            </e>
+            <e p="FilterStrategy.cs" t="Include" />
             <e p="Targeting" t="Include">
               <e p="DelayedClickTargeting.cs" t="Include" />
             </e>
@@ -238,6 +245,7 @@
             </e>
             <e p="PlayerConversant.cs" t="Include" />
           </e>
+          <e p="EffectStrategy.cs" t="Include" />
           <e p="Inventory" t="Include">
             <e p="ActionItem.cs" t="Include" />
             <e p="ActionItemHealthPotion.cs" t="Include" />

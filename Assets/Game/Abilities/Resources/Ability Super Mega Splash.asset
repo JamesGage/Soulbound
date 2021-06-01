@@ -26,3 +26,7 @@ MonoBehaviour:
   consumable: 0
   comsumeSFX: 
   targetingStrategy: {fileID: 11400000, guid: a9a586224fcdb4c4dbbb5febf83d8a78, type: 2}
+  filterStrategies:
+  - {fileID: 11400000, guid: 70f313f2804902a4aafbc40134027eb4, type: 2}
+  effectStrategies:
+  - {fileID: 11400000, guid: f33b00df593c38349907c49d5697b923, type: 2}

@@ -8,18 +8,30 @@ namespace RPG.Abilities
     public class Ability : ActionItem
     {
         [SerializeField] private TargetingStrategy targetingStrategy;
+        [SerializeField] private FilterStrategy[] filterStrategies;
+        [SerializeField] private EffectStrategy[] effectStrategies;
         
         public override void Use(GameObject user)
         {
-            targetingStrategy.StartTargeting(user, TargetAquired);
+            targetingStrategy.StartTargeting(user, (IEnumerable<GameObject> targets) => TargetAquired(user, targets));
         }
 
-        private void TargetAquired(IEnumerable<GameObject> targets)
+        private void TargetAquired(GameObject user, IEnumerable<GameObject> targets)
         {
-            foreach (var target in targets)
+            foreach (var filterStrategy in filterStrategies)
             {
-                Debug.Log(target);
+                targets = filterStrategy.Filter(targets);
             }
+
+            foreach (var effect in effectStrategies)
+            {
+                effect.StartEffect(user, targets, EffectFinished);
+            }
+        }
+
+        private void EffectFinished()
+        {
+            
         }
     }
 }
