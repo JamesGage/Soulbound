@@ -52,6 +52,7 @@ namespace RPG.Abilities.Targeting
                     
                         playerController.enabled = true;
                         targetingPrefabInstance.gameObject.SetActive(false);
+                        data.SetTargetedPoint(raycastHit.point);
                         data.SetTargets(GetGameObjectsInRadius(raycastHit.point));
                         finished();
                         yield break;

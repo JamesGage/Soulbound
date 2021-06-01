@@ -20,8 +20,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 4020834238478072262}
-  - {fileID: 4986937186897418600}
+  - {fileID: -4362372471699498517}
+  - {fileID: 3710749401283516006}
   MinDistance: 0.2
   MaxDistance: 8
   Length: 0
@@ -48,6 +48,49 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 424
+--- !u!114 &-8503342324191028563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-8281624775986555496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Abilities/Ice/Ability Ice Blast
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Abilities/Ice/Ability Ice Blast
+  guid: 5f12a98d5b509c41bee7ca8bb2195b7a
+  Banks:
+  - {fileID: -7528432947412087156}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8044323724785829238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Soulbound/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637513320208713576
+  lastModified: 637581627818897918
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -227,6 +270,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 585
+--- !u!114 &-4362372471699498517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3868510713822878039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,12 +827,13 @@ MonoBehaviour:
   - {fileID: -5221022659519667022}
   - {fileID: 5975024778836044523}
   - {fileID: -3024170774826962908}
+  - {fileID: -8281624775986555496}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7528432947412087156}
   StringsBanks:
   - {fileID: 3805074605827639084}
-  stringsBankWriteTime: 637513320208913030
+  stringsBankWriteTime: 637581627818947797
   cacheVersion: 5
 --- !u!114 &348351596864645240
 MonoBehaviour:
@@ -786,6 +850,26 @@ MonoBehaviour:
   Name: Speed
   Min: 0
   Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &726554288311950860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
   Default: 0
   ID:
     data1: 0
@@ -969,6 +1053,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3298639321046441949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &3524376109623988306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,6 +1088,26 @@ MonoBehaviour:
   Name: Material
   Min: 0
   Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &3594541809396421660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
   Default: 0
   ID:
     data1: 0
@@ -1012,6 +1136,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 639
+--- !u!114 &3710749401283516006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3805074605827639084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,11 +1170,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Soulbound/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637513320208913030
+  lastModified: 637581627818947797
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3234
+    Value: 3306
   Exists: 1
 --- !u!114 &3820548362373980985
 MonoBehaviour:

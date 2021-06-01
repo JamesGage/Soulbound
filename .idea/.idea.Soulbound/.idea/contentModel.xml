@@ -187,6 +187,7 @@
             <e p="AbilityData.cs" t="Include" />
             <e p="Effects" t="Include">
               <e p="HealthEffect.cs" t="Include" />
+              <e p="SpawnTargetPrefabEffect.cs" t="Include" />
             </e>
             <e p="EffectStrategy.cs" t="Include" />
             <e p="Filters" t="Include">
