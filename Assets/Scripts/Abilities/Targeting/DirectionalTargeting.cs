@@ -8,13 +8,16 @@ namespace RPG.Abilities.Targeting
     public class DirectionalTargeting : TargetingStrategy
     {
         [SerializeField] private LayerMask layerMask;
+        [SerializeField] float groundOffset = 1f;
+        
         
         public override void StartTargeting(AbilityData data, Action finished)
         {
             RaycastHit raycastHit;
-            if (Physics.Raycast(PlayerController.GetMouseRay(), out raycastHit, 1000, layerMask))
+            var ray = PlayerController.GetMouseRay();
+            if (Physics.Raycast(ray, out raycastHit, 1000, layerMask))
             {
-                data.SetTargetedPoint(raycastHit.point);
+                data.SetTargetedPoint(raycastHit.point + ray.direction * groundOffset / ray.direction.y);
             }
             finished();
         }
