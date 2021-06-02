@@ -119,11 +119,11 @@ namespace RPG.Combat
         }
 
         public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, 
-            GameObject instigator, int calculatedDamage, DamageType damageType, bool isCritical, WeaponConfig weapon)
+            GameObject instigator, int calculatedDamage)
         {
             Projectile projectileInstance =
                 Instantiate(_projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
-            projectileInstance.SetTarget(target, instigator, calculatedDamage, damageType, isCritical, this);
+            projectileInstance.SetTarget(target, instigator, calculatedDamage);
         }
 
         public IEnumerable<int> GetAddativeModifiers(StatTypes statTypes)

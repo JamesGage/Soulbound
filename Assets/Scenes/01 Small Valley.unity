@@ -3566,6 +3566,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 50268921}
     m_Modifications:
+    - target: {fileID: 2661870212608484663, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
+      propertyPath: potentialDrops.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
     - target: {fileID: 2944364321842764132, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
       propertyPath: patrolPath
       value: 
@@ -4452,7 +4456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].item
@@ -4474,6 +4478,10 @@ PrefabInstance:
       propertyPath: stockConfig.Array.data[4].item
       value: 
       objectReference: {fileID: 11400000, guid: cd8b81324b8c31a4480051fd27fc03a4, type: 2}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[5].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2df103e1856514448acb2ea59706ecfd, type: 2}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].levelToHide
       value: 5
@@ -4511,6 +4519,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[5].levelToHide
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[0].initialStock
       value: 1
       objectReference: {fileID: 0}
@@ -4528,6 +4540,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[4].initialStock
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
+      propertyPath: stockConfig.Array.data[5].initialStock
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
@@ -7827,6 +7843,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8898689449553060590, guid: 87763d5c98872fb45a97b61c73d2539d, type: 3}
+      propertyPath: potentialDrops.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87763d5c98872fb45a97b61c73d2539d, type: 3}
 --- !u!4 &1103308952 stripped
@@ -9365,6 +9385,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 50268921}
     m_Modifications:
+    - target: {fileID: 2661870212608484663, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
+      propertyPath: potentialDrops.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
     - target: {fileID: 3032602251827397290, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
       propertyPath: m_Name
       value: Human Sword Fighter (1)

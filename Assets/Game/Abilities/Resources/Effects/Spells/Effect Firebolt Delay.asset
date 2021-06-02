@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac24764c84cc4a4bb4b88750e9245c1a, type: 3}
-  m_Name: Effect Ice Spell Delay
+  m_Name: Effect Firebolt Delay
   m_EditorClassIdentifier: 
-  delay: 1
+  delay: 0.5
   delayedEffects:
-  - {fileID: 11400000, guid: f33b00df593c38349907c49d5697b923, type: 2}
-  - {fileID: 11400000, guid: 23776c2aa60630748abcca117b22342d, type: 2}
+  - {fileID: 11400000, guid: a357a7c78ce540249892dd26627abee0, type: 2}
   abortIfCancelled: 0

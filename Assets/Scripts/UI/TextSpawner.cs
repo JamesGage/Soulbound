@@ -9,10 +9,10 @@ namespace RPG.UI
         
         private DamageText _damageText;
 
-        public void SpawnDamage(float value, DamageType damageType, bool isCrititcal, WeaponConfig weapon)
+        public void SpawnDamage(float value, DamageType damageType)
         {
             var instance = Instantiate(_damageTextPrefab, transform);
-            instance.GetComponentInChildren<DamageText>().SetDamage(value, damageType, isCrititcal, weapon);
+            instance.GetComponentInChildren<DamageText>().SetDamage(value, damageType);
         }
     }
 }

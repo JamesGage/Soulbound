@@ -2,82 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Super Mega Splash.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Super Mega Splash.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Attacks.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Damage Health 10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Damage Health 10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Heal Health 10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Heal Health 10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Look At Target.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Look At Target.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger Drink.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger Drink.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger SpellCast 01.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger SpellCast 01.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Items.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Items/Effect Health Potion Delay.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Items/Effect Health Potion Delay.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Health.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Health.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Ice Shard.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Ice Shard.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spells.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spells/Effect Ice Spell Delay.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spells/Effect Ice Spell Delay.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Target Self.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Target Self.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Drink.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Drink.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/00 Main Menu.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/00 Main Menu.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/02 Collapsed Cave.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/02 Collapsed Cave.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SelfTargeting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SelfTargeting.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Firebolt.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Firebolt.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Ice Spike AoE.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Ice Spike AoE.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Ability 01.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Ability 01.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Ability02.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Ability02.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Drink.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Drink.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Damage Health 10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Damage Health 10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Heal Health 10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Heal Health 10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Projectile Fireball.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Projectile Fireball.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spells/Effect Firebolt Delay.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spells/Effect Firebolt Delay.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Target.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Target/Effect Look At Target.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Target/Effect Look At Target.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting AoE 5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting AoE 5.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Delay 1 Second.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Delay 1 Second.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Health 10.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Health 10.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Look At Target.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Look At Target.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Spawn IceShard.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Spawn IceShard.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Trigger SpellCast 01.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Trigger SpellCast 01.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Super Mega Splash.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Super Mega Splash.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Attacks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Damage Health 10.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Damage Health 10.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Heal Health 10.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Heal Health 10.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Look At Target.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Look At Target.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger Drink.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger Drink.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger SpellCast 01.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/General/Effect Trigger SpellCast 01.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spells/Effect Ice Spell Delay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spells/Effect Ice Spell Delay.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Super Mega Splash.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources/Health Potion Small.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources/Health Potion Small.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Collapsed Cave.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Collapsed Cave.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Small Valley.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItemHealthPotion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItemHealthPotion.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/DelayCompositeEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/DelayCompositeEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +76,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/CurrencyItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/ff/fd158713/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/c3/04713f13/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Questing/Quest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/ClickablePickup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" />
@@ -141,23 +117,24 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TakeDamageEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/LookAtTargetEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/AbilityData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/DelayCompositeEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SelfTargeting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/DelayCompositeEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -239,7 +216,7 @@
       <workItem from="1622478808073" duration="18859000" />
       <workItem from="1622571199104" duration="1592000" />
       <workItem from="1622595353486" duration="3252000" />
-      <workItem from="1622642030410" duration="9612000" />
+      <workItem from="1622642030410" duration="12491000" />
     </task>
     <servers />
   </component>

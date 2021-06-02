@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RPG.Abilities.Effects
 {
-    [CreateAssetMenu(fileName = "Effect Delay Composite", menuName = "Abilities/Effects/Delay Effect")]
+    [CreateAssetMenu(fileName = "Effect Delay", menuName = "Abilities/Effects/Delay Effect")]
     public class DelayCompositeEffect : EffectStrategy
     {
         [SerializeField] private float delay = 0f;

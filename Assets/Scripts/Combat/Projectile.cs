@@ -44,15 +44,12 @@ namespace RPG.Combat
             transform.Translate(Vector3.forward * _speed * Time.deltaTime);
         }
 
-        public void SetTarget(Health target, GameObject instigator, float damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
+        public void SetTarget(Health target, GameObject instigator, float damage)
         {
             _target = target;
             _damage = damage;
             _instigator = instigator;
-            _damageType = damageType;
-            _isCritical = isCritical;
-            _weapon = weapon;
-            
+
             Destroy(gameObject, _maxLifetime);
         }
 

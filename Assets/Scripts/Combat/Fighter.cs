@@ -108,7 +108,7 @@ namespace RPG.Combat
             if (_currentWeaponConfig.HasProjectile())
             {
                 _currentWeaponConfig.LaunchProjectile(_rightHandTransform, _leftHandTransform, _target, gameObject,
-                    CalculateAttack(), _hitDamageType, _isCritical, _currentWeaponConfig);
+                    CalculateAttack());
             }
             else
             {
@@ -227,6 +227,18 @@ namespace RPG.Combat
         public Health GetTarget()
         {
             return _target;
+        }
+
+        public Transform GetHandTransform(bool isRightHand)
+        {
+            if (isRightHand)
+            {
+                return _rightHandTransform;
+            }
+            else
+            {
+                return _leftHandTransform;
+            }
         }
 
         public object CaptureState()
