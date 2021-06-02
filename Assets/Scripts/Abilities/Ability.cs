@@ -1,4 +1,5 @@
-﻿using RPG.Inventories;
+﻿using RPG.Core;
+using RPG.Inventories;
 using RPG.Stats;
 using UnityEngine;
 
@@ -22,11 +23,17 @@ namespace RPG.Abilities
             if (cooldownStore.GetTimeRemaining(this) > 0) return;
             
             AbilityData data = new AbilityData(user);
+
+            var actionScheduler = user.GetComponent<ActionScheduler>();
+            actionScheduler.StartAction(data);
+
             targetingStrategy.StartTargeting(data, () => TargetAquired(data));
         }
 
         private void TargetAquired(AbilityData data)
         {
+            if(data.IsCancelled()) return;
+            
             Bond bond = data.GetUser().GetComponent<Bond>();
             if(!bond.UseBond(bondCost)) return;
             

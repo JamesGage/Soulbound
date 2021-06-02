@@ -1,9 +1,10 @@
 ﻿using System;
+using RPG.Saving;
 using UnityEngine;
 
 namespace RPG.Stats
 {
-    public class Bond : MonoBehaviour
+    public class Bond : MonoBehaviour, ISaveable
     {
         [SerializeField] private float maxBond;
         [Range(0f, 2f)]
@@ -49,6 +50,16 @@ namespace RPG.Stats
             _bond -= bondToUse;
             OnBondChanged?.Invoke();
             return true;
+        }
+
+        public object CaptureState()
+        {
+            return _bond;
+        }
+
+        public void RestoreState(object state)
+        {
+            _bond = (float) state;
         }
     }
 }
