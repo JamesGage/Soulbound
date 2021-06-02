@@ -350,6 +350,8 @@
             <e p="IModifierProvider.cs" t="Include" />
             <e p="Stat.cs" t="Include" />
             <e p="StatTypes.cs" t="Include" />
+            <e p="Trait.cs" t="Include" />
+            <e p="TraitStore.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="BondDisplay.cs" t="Include" />
@@ -411,6 +413,7 @@
             <e p="TargetHealthDisplay.cs" t="Include" />
             <e p="TextSpawner.cs" t="Include" />
             <e p="ToolbarUI.cs" t="Include" />
+            <e p="TraitRowUI.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">
             <e p="LazyValue.cs" t="Include" />
