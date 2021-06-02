@@ -239,6 +239,7 @@
             <e p="FilterStrategy.cs" t="Include" />
             <e p="Targeting" t="Include">
               <e p="DelayedClickTargeting.cs" t="Include" />
+              <e p="DirectionalTargeting.cs" t="Include" />
               <e p="SelfTargeting.cs" t="Include" />
             </e>
             <e p="TargetingStrategy.cs" t="Include" />

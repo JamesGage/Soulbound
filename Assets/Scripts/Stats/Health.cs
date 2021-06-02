@@ -65,7 +65,7 @@ namespace RPG.Stats
             return _isDead;
         }
 
-        public void TakeDamage(float damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
+        public void TakeDamage(float damage, DamageType damageType)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
             if(OnHealthChanged != null)
@@ -81,7 +81,7 @@ namespace RPG.Stats
             }
             else if(damage > 0)
                 FMODUnity.RuntimeManager.PlayOneShot(takeDamageSFX, transform.position);
-            _takeDamageEvent.Invoke(damage, damageType, isCritical, weapon);
+            _takeDamageEvent.Invoke(damage, damageType);
         }
 
         public void Heal(float healthRestored)

@@ -29,7 +29,7 @@ namespace RPG.Abilities.Effects
                     }
                     else
                     {
-                        health.TakeDamage(healthChange, _damageType, isCritical, weapon);
+                        health.TakeDamage(healthChange, _damageType);
                     }
                 }
             }

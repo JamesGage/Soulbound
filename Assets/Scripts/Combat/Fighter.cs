@@ -112,7 +112,7 @@ namespace RPG.Combat
             }
             else
             {
-                _target.TakeDamage(CalculateAttack(), _hitDamageType, _isCritical, _currentWeaponConfig);
+                _target.TakeDamage(CalculateAttack(), _hitDamageType);
             }
         }
 
