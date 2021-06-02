@@ -5360,6 +5360,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5286201881155809000, guid: 13372f1dc397df44682f830fa495d0e1, type: 3}
+      propertyPath: bondRegenerationRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286201881155809000, guid: 13372f1dc397df44682f830fa495d0e1, type: 3}
+      propertyPath: bondRegenerationAmount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7968763298227037891, guid: 13372f1dc397df44682f830fa495d0e1, type: 3}
       propertyPath: m_Name
       value: Player
