@@ -10,7 +10,7 @@ namespace RPG.Combat
     public class WeaponPickup : MonoBehaviour, ISaveable, IRaycastable
     {
         [SerializeField] WeaponConfig _weaponType;
-        [SerializeField] int _healthRestore = 0;
+        [SerializeField] float _healthRestore = 0;
         [SerializeField] float _respawnTimer = 5f;
         [SerializeField] bool _canBePickedUp = true;
 

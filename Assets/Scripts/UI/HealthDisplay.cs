@@ -43,7 +43,7 @@ namespace RPG.UI
         private void UpdateHealth()
         {
             _healthFill.fillAmount = _health.GetHealth() / _health.MaxHealth();
-            _healthText.text = _health.GetHealth().ToString();
+            _healthText.text = $"{_health.GetHealth():N0}";
         }
     }
 }

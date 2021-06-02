@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using RPG.Inventories;
+﻿using RPG.Inventories;
+using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Abilities
@@ -10,10 +10,14 @@ namespace RPG.Abilities
         [SerializeField] private TargetingStrategy targetingStrategy;
         [SerializeField] private FilterStrategy[] filterStrategies;
         [SerializeField] private EffectStrategy[] effectStrategies;
+        [SerializeField] private int bondCost;
         [SerializeField] private float cooldownTime;
         
         public override void Use(GameObject user)
         {
+            Bond bond = user.GetComponent<Bond>();
+            if (bond.GetBond() < bondCost) return;
+            
             var cooldownStore = user.GetComponent<CooldownStore>();
             if (cooldownStore.GetTimeRemaining(this) > 0) return;
             
@@ -23,6 +27,9 @@ namespace RPG.Abilities
 
         private void TargetAquired(AbilityData data)
         {
+            Bond bond = data.GetUser().GetComponent<Bond>();
+            if(!bond.UseBond(bondCost)) return;
+            
             var cooldownStore = data.GetUser().GetComponent<CooldownStore>();
             cooldownStore.StartCooldown(this, cooldownTime);
             

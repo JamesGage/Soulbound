@@ -13,13 +13,13 @@ namespace RPG.Stats
     public class Health : MonoBehaviour, ISaveable
     {
         [Range(1, 100)]
-        [SerializeField] private int _startingHealth = 5;
+        [SerializeField] private float _startingHealth = 5;
         [SerializeField] private TakeDamageEvent _takeDamageEvent;
         public UnityEvent OnDieEvent = null;
         [FMODUnity.EventRef] public string deathSFX = "";
         [FMODUnity.EventRef] public string takeDamageSFX = "";
 
-        LazyValue<int> _health;
+        LazyValue<float> _health;
         private bool _isDead;
         private ActionScheduler _actionScheduler;
         private BaseStats _baseStats;
@@ -35,12 +35,12 @@ namespace RPG.Stats
             _actionScheduler = GetComponent<ActionScheduler>();
             _baseStats = GetComponent<BaseStats>();
 
-            _health = new LazyValue<int>(GetInitialHealth);
+            _health = new LazyValue<float>(GetInitialHealth);
         }
 
-        private int GetInitialHealth()
+        private float GetInitialHealth()
         {
-            return Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Vitality)) + _startingHealth;
+            return _baseStats.GetStat(StatTypes.Vitality) + _startingHealth;
         }
 
         private void Start()
@@ -65,7 +65,7 @@ namespace RPG.Stats
             return _isDead;
         }
 
-        public void TakeDamage(int damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
+        public void TakeDamage(float damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
             if(OnHealthChanged != null)
@@ -98,7 +98,7 @@ namespace RPG.Stats
 
         public float GetFraction()
         {
-            return (float)_health.value / (float)MaxHealth();
+            return _health.value / MaxHealth();
         }
 
         private void Die()
@@ -131,7 +131,7 @@ namespace RPG.Stats
 
         public void RestoreState(object state)
         {
-            _health.value = (int)state;
+            _health.value = (float)state;
 
             if(_health.value <= 0)
                 Die();

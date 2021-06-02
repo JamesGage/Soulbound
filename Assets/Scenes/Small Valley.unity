@@ -4120,7 +4120,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2838921984034552881, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.34
+      value: -4.405
       objectReference: {fileID: 0}
     - target: {fileID: 2838921984034552881, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4128,7 +4128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2838921984034552881, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.11
+      value: 21.917
       objectReference: {fileID: 0}
     - target: {fileID: 2838921984034552881, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12532,6 +12532,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2532988038866945886, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
+      propertyPath: m_Name
+      value: Player HUD
+      objectReference: {fileID: 0}
     - target: {fileID: 2532988038866945886, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: m_IsActive
       value: 1

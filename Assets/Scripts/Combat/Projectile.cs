@@ -17,7 +17,7 @@ namespace RPG.Combat
 
         private Health _target = null;
         private GameObject _instigator = null;
-        private int _damage;
+        private float _damage;
         private DamageType _damageType;
         private bool _isCritical;
         private WeaponConfig _weapon;
@@ -44,7 +44,7 @@ namespace RPG.Combat
             transform.Translate(Vector3.forward * _speed * Time.deltaTime);
         }
 
-        public void SetTarget(Health target, GameObject instigator, int damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
+        public void SetTarget(Health target, GameObject instigator, float damage, DamageType damageType, bool isCritical, WeaponConfig weapon)
         {
             _target = target;
             _damage = damage;

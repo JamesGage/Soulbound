@@ -301,6 +301,7 @@
           </e>
           <e p="Stats" t="Include">
             <e p="BaseStats.cs" t="Include" />
+            <e p="Bond.cs" t="Include" />
             <e p="CharacterType.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="IModifierProvider.cs" t="Include" />
@@ -308,6 +309,7 @@
             <e p="StatTypes.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="BondDisplay.cs" t="Include" />
             <e p="DamageText.cs" t="Include" />
             <e p="DestroyObject.cs" t="Include" />
             <e p="DestroyOnComplete.cs" t="Include" />
