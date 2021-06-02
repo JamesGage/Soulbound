@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Look At Target.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Look At Target.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Spawn IceShard.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Spawn IceShard.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Trigger SpellCast 01.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Trigger SpellCast 01.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/LookAtTargetEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/LookAtTargetEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Ability Super Mega Splash.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Spawn Prefab.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Effect Spawn Prefab.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +47,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/IItemHolder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryDragItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryDropTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventorySlotUI.cs" />
@@ -87,6 +96,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/LookAtTargetEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -168,7 +179,7 @@
       <workItem from="1622478808073" duration="18859000" />
       <workItem from="1622571199104" duration="1592000" />
       <workItem from="1622595353486" duration="3252000" />
-      <workItem from="1622642030410" duration="1546000" />
+      <workItem from="1622642030410" duration="2777000" />
     </task>
     <servers />
   </component>

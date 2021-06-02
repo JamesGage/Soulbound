@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fafac4ee8d94635b2dcaa6dc3ae90a1, type: 3}
-  m_Name: Effect Spawn Prefab
+  m_Script: {fileID: 11500000, guid: f45e3c1599104ce3b282c808de47137f, type: 3}
+  m_Name: Effect Look At Target
   m_EditorClassIdentifier: 
-  targetPrefab: {fileID: 8693820443557491124, guid: 6cd36dec103334545b787db84d04ee92, type: 3}
-  destroyDelay: 6

@@ -10,6 +10,44 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Asset Packs" t="Include">
+          <e p="Animation Mega Pack" t="Include">
+            <e p="Archer Animations" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="BowLoadScript.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Caster Mage Animations" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="AddCastEffect.cs" t="Include" />
+                <e p="CastSpells.cs" t="Include" />
+                <e p="ThrowFireball.cs" t="Include" />
+                <e p="ThrowHealing.cs" t="Include" />
+                <e p="ThrowNova.cs" t="Include" />
+                <e p="ThrowShockwave.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Melee Warrior Animations" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="MeleeWarriorLeftHandIK.cs" t="Include" />
+                <e p="MeleeWarriorShieldRotator.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Throwing Animations Pack" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ChangeSpear.cs" t="Include" />
+                <e p="IdleThrowTrick.cs" t="Include" />
+                <e p="ThrowBigAxe.cs" t="Include" />
+                <e p="ThrowingActionSMB.cs" t="Include" />
+                <e p="ThrowMultipleProps.cs" t="Include" />
+                <e p="ThrowProp.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Villager Animations" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="VillagerHandsIK.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Polygon Prototype" t="Include">
             <e p="Shaders" t="Include">
               <e p="Prototype_Glass_Global.shader" t="Include" />
@@ -188,7 +226,9 @@
             <e p="CooldownStore.cs" t="Include" />
             <e p="Effects" t="Include">
               <e p="HealthEffect.cs" t="Include" />
+              <e p="LookAtTargetEffect.cs" t="Include" />
               <e p="SpawnTargetPrefabEffect.cs" t="Include" />
+              <e p="TriggerAnimationEffect.cs" t="Include" />
             </e>
             <e p="EffectStrategy.cs" t="Include" />
             <e p="Filters" t="Include">

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fafac4ee8d94635b2dcaa6dc3ae90a1, type: 3}
+  m_Name: Effect Spawn IceShard
+  m_EditorClassIdentifier: 
+  targetPrefab: {fileID: 8693820443557491124, guid: 6cd36dec103334545b787db84d04ee92, type: 3}
+  destroyDelay: 6
