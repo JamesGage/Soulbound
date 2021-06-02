@@ -1,5 +1,4 @@
-﻿using System;
-using RPG.Abilities;
+﻿using RPG.Abilities;
 using RPG.Inventories;
 using UI.Dragging;
 using UnityEngine;

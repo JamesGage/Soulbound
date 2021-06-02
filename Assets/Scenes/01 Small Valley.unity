@@ -4465,7 +4465,7 @@ PrefabInstance:
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[2].item
       value: 
-      objectReference: {fileID: 11400000, guid: c368c21e1ea34f9429ad6cd2a8332749, type: 2}
+      objectReference: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
     - target: {fileID: 5002235692406402375, guid: 1a86926e5ef9f6f42bfcea5e2768fd7d, type: 3}
       propertyPath: stockConfig.Array.data[3].item
       value: 
@@ -17646,7 +17646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7493381554530165306, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: _startingHealth
-      value: 4
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7496690003561718850, guid: d62adadf5509eec43be0be3411bc3554, type: 3}
       propertyPath: m_AnchorMax.y
@@ -20348,7 +20348,7 @@ MonoBehaviour:
   _guaranteedDrops:
   - item: {fileID: 0}
     amount: 20
-  - item: {fileID: 11400000, guid: c368c21e1ea34f9429ad6cd2a8332749, type: 2}
+  - item: {fileID: 0}
     amount: 1
   - item: {fileID: 11400000, guid: 738e5bdca4f2bd648b627ecfe1b674a4, type: 2}
     amount: 1

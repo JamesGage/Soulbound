@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RPG.Abilities;
 using UnityEngine;
 using RPG.Saving;
 
@@ -17,7 +18,7 @@ namespace RPG.Inventories
         Dictionary<int, DockedItemSlot> dockedItems = new Dictionary<int, DockedItemSlot>();
         private class DockedItemSlot
         {
-            public ActionItem item;
+            public Ability item;
             public int number;
         }
 
@@ -74,7 +75,7 @@ namespace RPG.Inventories
             else
             {
                 var slot = new DockedItemSlot();
-                slot.item = item as ActionItem;
+                slot.item = item as Ability;
                 slot.number = number;
                 dockedItems[index] = slot;
             }
@@ -90,18 +91,19 @@ namespace RPG.Inventories
         /// </summary>
         /// <param name="user">The character that wants to use this action.</param>
         /// <returns>False if the action could not be executed.</returns>
-        public bool Use(int index, GameObject user)
+        public void Use(int index, GameObject user)
         {
             if (dockedItems.ContainsKey(index))
             {
+                if (!dockedItems[index].item.Use(user)) return;
+                
                 dockedItems[index].item.Use(user);
                 if (dockedItems[index].item.isConsumable())
                 {
                     RemoveItems(index, 1);
                 }
-                return true;
+                return;
             }
-            return false;
         }
 
         /// <summary>

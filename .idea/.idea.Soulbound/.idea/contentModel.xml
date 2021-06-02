@@ -228,6 +228,7 @@
               <e p="DelayCompositeEffect.cs" t="Include" />
               <e p="HealthEffect.cs" t="Include" />
               <e p="LookAtTargetEffect.cs" t="Include" />
+              <e p="SpawnProjectileEffect.cs" t="Include" />
               <e p="SpawnTargetPrefabEffect.cs" t="Include" />
               <e p="TriggerAnimationEffect.cs" t="Include" />
             </e>
@@ -238,6 +239,7 @@
             <e p="FilterStrategy.cs" t="Include" />
             <e p="Targeting" t="Include">
               <e p="DelayedClickTargeting.cs" t="Include" />
+              <e p="SelfTargeting.cs" t="Include" />
             </e>
             <e p="TargetingStrategy.cs" t="Include" />
           </e>
@@ -292,7 +294,6 @@
           </e>
           <e p="Inventory" t="Include">
             <e p="ActionItem.cs" t="Include" />
-            <e p="ActionItemHealthPotion.cs" t="Include" />
             <e p="ActionStore.cs" t="Include" />
             <e p="CurrencyItem.cs" t="Include" />
             <e p="DropLibrary.cs" t="Include" />
