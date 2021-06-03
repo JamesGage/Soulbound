@@ -1,5 +1,4 @@
-﻿using System;
-using RPG.Stats;
+﻿using RPG.Stats;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,7 +34,7 @@ namespace RPG.UI
         public void Allocate(int points)
         {
             _playerTraitStore.AssignPoints(traitType, points);
-            valueText.text = $"{_playerTraitStore.GetPoints(traitType):00}";
+            valueText.text = $"{_playerTraitStore.GetProposedPoints(traitType):00}";
         }
     }
 }
