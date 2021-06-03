@@ -6,7 +6,10 @@ namespace RPG.Stats
 {
     public class TraitStore : MonoBehaviour
     {
+        public Action OnTraitModified;
+        
         private Dictionary<Trait, int> assignedPoints = new Dictionary<Trait, int>();
+        private Dictionary<Trait, int> stagedPoints = new Dictionary<Trait, int>();
         private int _unassignedPoints = 10;
 
         public int GetPoints(Trait trait)
@@ -20,11 +23,13 @@ namespace RPG.Stats
             
             assignedPoints[trait] = GetPoints(trait) + points;
             _unassignedPoints -= points;
+
+            OnTraitModified?.Invoke();
         }
 
         public bool CanAssignPointsToTrait(Trait trait, int points)
         {
-            if (GetPoints(trait) + points >= 100 || GetPoints(trait) + points <= -100) return false;
+            if (GetPoints(trait) + points < 0) return false;
             if (_unassignedPoints < points) return false;
             
             return true;

@@ -18,11 +18,15 @@ namespace RPG.UI
         private void Start()
         {
             _playerTraitStore = GameObject.FindWithTag("Player").GetComponent<TraitStore>();
+            _playerTraitStore.OnTraitModified += CheckInteractive;
+            
             minusButton.onClick.AddListener(() => Allocate(-1));
             plusButton.onClick.AddListener(() => Allocate(+1));
+            
+            CheckInteractive();
         }
 
-        private void Update()
+        private void CheckInteractive()
         {
             minusButton.interactable = _playerTraitStore.CanAssignPointsToTrait(traitType, -1);
             plusButton.interactable = _playerTraitStore.CanAssignPointsToTrait(traitType, +1);
