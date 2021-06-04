@@ -10,7 +10,6 @@ namespace RPG.Stats
         
         private Dictionary<Trait, int> assignedPoints = new Dictionary<Trait, int>();
         private Dictionary<Trait, int> stagedPoints = new Dictionary<Trait, int>();
-        private int _unassignedPoints = 10;
 
         public int GetProposedPoints(Trait trait)
         {
@@ -32,7 +31,6 @@ namespace RPG.Stats
             if(!CanAssignPointsToTrait(trait, points)) return;
             
             stagedPoints[trait] = GetStagedPoints(trait) + points;
-            _unassignedPoints -= points;
 
             OnTraitModified?.Invoke();
         }
@@ -40,14 +38,29 @@ namespace RPG.Stats
         public bool CanAssignPointsToTrait(Trait trait, int points)
         {
             if (GetStagedPoints(trait) + points < 0) return false;
-            if (_unassignedPoints < points) return false;
+            if (GetUnassignedPoints() < points) return false;
             
             return true;
         }
 
         public int GetUnassignedPoints()
         {
-            return _unassignedPoints;
+            return GetAssignablePoints() - GetTotalProposedPoints();
+        }
+
+        private int GetTotalProposedPoints()
+        {
+            int total = 0;
+            foreach (var points in assignedPoints.Values)
+            {
+                total += points;
+            }
+            foreach (var points in stagedPoints.Values)
+            {
+                total += points;
+            }
+
+            return total;
         }
 
         public void Confirm()
@@ -59,6 +72,11 @@ namespace RPG.Stats
             stagedPoints.Clear();
             
             OnTraitModified?.Invoke();
+        }
+
+        public int GetAssignablePoints()
+        {
+            return (int)GetComponent<BaseStats>().GetStat(Stat.TotalTraitPoints);
         }
     }
 }
