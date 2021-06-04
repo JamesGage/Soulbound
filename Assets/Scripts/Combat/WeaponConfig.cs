@@ -128,7 +128,7 @@ namespace RPG.Combat
 
         public IEnumerable<int> GetAddativeModifiers(StatTypes statTypes)
         {
-            if (statTypes == StatTypes.Strength)
+            if (statTypes == StatTypes.Damage)
             {
                 yield return _damageAddative;
             }
@@ -136,7 +136,7 @@ namespace RPG.Combat
 
         public IEnumerable<float> GetPercentageModifiers(StatTypes statTypes)
         {
-            if (statTypes == StatTypes.Strength)
+            if (statTypes == StatTypes.Damage)
             {
                 yield return _damagePercentage;
             }

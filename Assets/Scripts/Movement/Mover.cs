@@ -64,8 +64,8 @@ namespace RPG.Movement
         public void MoveTo(Vector3 destination, float speedFraction)
         {
             _navAgent.destination = destination;
-            _navAgent.speed = _baseStats.GetStat(Stats.StatTypes.Speed) * _baseStats.GetStat(Stats.StatTypes.Speed) * 0.1f + _baseSpeed * Mathf.Clamp01(speedFraction);
-            _anim.speed = 1 + _baseStats.GetStat(Stats.StatTypes.Speed) * 0.1f;
+            _navAgent.speed = _baseStats.GetStat(StatTypes.Speed) * _baseStats.GetStat(StatTypes.Speed) * 0.1f + _baseSpeed * Mathf.Clamp01(speedFraction);
+            _anim.speed = 1 + _baseStats.GetStat(StatTypes.Speed) * 0.1f;
             _navAgent.isStopped = false;
         }
 

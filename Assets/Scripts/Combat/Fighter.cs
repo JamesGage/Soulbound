@@ -119,7 +119,7 @@ namespace RPG.Combat
         private int CalculateAttack()
         {
             var attack = Random.Range(1, 101) + (int)_baseStats.GetStat(StatTypes.Accuracy);
-            var damage = Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Strength));
+            var damage = Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Damage));
             var speed = _target.GetComponent<BaseStats>().GetStat(StatTypes.Speed);
 
             //Critical

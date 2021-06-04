@@ -345,9 +345,11 @@
           <e p="Stats" t="Include">
             <e p="BaseStats.cs" t="Include" />
             <e p="Bond.cs" t="Include" />
-            <e p="CharacterType.cs" t="Include" />
+            <e p="CharacterClass.cs" t="Include" />
+            <e p="CharacterRace.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="IModifierProvider.cs" t="Include" />
+            <e p="Progression.cs" t="Include" />
             <e p="Stat.cs" t="Include" />
             <e p="StatTypes.cs" t="Include" />
             <e p="Trait.cs" t="Include" />

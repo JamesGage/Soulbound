@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TraitUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TraitUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/TraitStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/TraitStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TraitRowUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TraitRowUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Progression.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Progression.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/StatTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatTypes.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +42,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/ff/fd158713/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/c3/04713f13/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Abilities/EffectStrategy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/GoldStorage.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/CurrencyItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shopper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Skills/SkillsLibrary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/FilterButtonUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
@@ -72,14 +74,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/DelayCompositeEffect.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/HealthEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TakeDamageEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs" />
@@ -91,6 +90,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TraitRowUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TraitUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/TraitStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/BaseStats.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatTypes.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -174,6 +182,7 @@
       <workItem from="1622595353486" duration="3252000" />
       <workItem from="1622642030410" duration="21447000" />
       <workItem from="1622690057247" duration="1625000" />
+      <workItem from="1622844483209" duration="2423000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 ﻿namespace RPG.Stats
 {
-    public enum CharacterType
+    public enum CharacterRace
     {
         Human,
         Elf,

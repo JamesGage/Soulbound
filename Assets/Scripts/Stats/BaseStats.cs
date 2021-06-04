@@ -1,85 +1,58 @@
 ﻿using System;
-using System.Collections.Generic;
 using RPG.Saving;
+using RPG.Utils;
 using UnityEngine;
 
 namespace RPG.Stats
 {
-    public class BaseStats : MonoBehaviour
+    public class BaseStats : MonoBehaviour, ISaveable
     {
         #region Variables
 
-        [SerializeField] CharacterType _characterType;
-        [SerializeField] Stat[] _stats;
+        [Range(1, 99)]
+        [SerializeField] int startingLevel = 1;
+        [SerializeField] CharacterRace characterRace;
+        [SerializeField] CharacterClass characterClass;
+        [SerializeField] Progression progression = null;
+        [SerializeField] bool shouldUseModifiers;
+        
+        private LazyValue<int> currentLevel;
 
-        private int _characterLevel = 1;
-        private Dictionary<StatTypes, int> _statsLookup = new Dictionary<StatTypes, int>();
-
-        public event Action OnStatsChanged;
+        public event Action OnLevelUp;
 
         #endregion
 
-        private void Awake()
+        private void Start()
         {
-            Initialize();
+            currentLevel.ForceInit();
         }
 
-        private void Update()
+        public float GetStat(StatTypes statType)
         {
-            if (Input.GetKeyUp(KeyCode.L))
-            {
-                SetLevel(2);
-                print("Character level: " + _characterLevel);
-            }
-        }
-
-        public float GetStat(StatTypes statTypes)
-        {
-            return _statsLookup[statTypes] * GetPercentageModifier(statTypes) + GetAddativeMoifier(statTypes);
+            return (GetBaseStat(statType) + GetAdditiveModifier(statType)) * (1 + GetPercentageModifier(statType)/100);
         }
         
-        public void SetStat(StatTypes statTypeType, int statValue)
+        private float GetBaseStat(StatTypes statType)
         {
-            foreach (var stat in _stats)
-            {
-                if(stat.GetStatType() != statTypeType) continue;
-                
-                stat.SetStatValue(statValue);
-                break;
-            }
-            
-            Initialize();
-        }
-
-        public CharacterType GetCharacterType()
-        {
-            return _characterType;
-        }
-
-        public int GetLevel()
-        {
-            return _characterLevel;
+            return progression.GetStat(statType, characterClass, GetLevel());
         }
 
         public void SetLevel(int level)
         {
-            _characterLevel = level;
+            currentLevel.value = level;
+            
+            OnLevelUp?.Invoke();
         }
         
-        private void Initialize()
+        public int GetLevel()
         {
-            _statsLookup.Clear();
-
-            foreach (var stat in _stats)
-            {
-                if(_statsLookup.ContainsKey(stat.GetStatType())) continue;
-                
-                _statsLookup.Add(stat.GetStatType(), stat.GetStatValue());
-            }
+            return currentLevel.value;
         }
 
-        private int GetAddativeMoifier(StatTypes statTypes)
+        private int GetAdditiveModifier(StatTypes statTypes)
         {
+            if (!shouldUseModifiers) return 0;
+            
             var total = 0;
             foreach (var provider in GetComponents<IModifierProvider>())
             {
@@ -94,6 +67,8 @@ namespace RPG.Stats
         
         private float GetPercentageModifier(StatTypes statTypes)
         {
+            if (!shouldUseModifiers) return 0;
+            
             var total = 0f;
             foreach (var provider in GetComponents<IModifierProvider>())
             {
@@ -102,10 +77,18 @@ namespace RPG.Stats
                     total += modifier;
                 }
             }
-
-            if (total <= 1f) return 1f;
             
-            return total / 100f;
+            return total;
+        }
+
+        public object CaptureState()
+        {
+            return currentLevel.value;
+        }
+
+        public void RestoreState(object state)
+        {
+            currentLevel.value = (int) state;
         }
     }
 }

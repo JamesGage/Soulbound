@@ -2,13 +2,12 @@
 {
     public enum StatTypes
     {
-        Vitality,
-        Strength,
-        Accuracy,
+        Health,
+        Damage,
         Speed,
-        Intellect,
-        Wisdom,
-        Diplomacy,
-        Charm
+        Accuracy,
+        BondMax,
+        BondRegenRate,
+        TotalTraitPoints
     }
 }
