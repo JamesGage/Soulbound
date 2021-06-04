@@ -1,33 +1,32 @@
 ﻿using System;
 using RPG.Saving;
+using RPG.Utils;
 using UnityEngine;
 
 namespace RPG.Stats
 {
     public class Bond : MonoBehaviour, ISaveable
     {
-        [SerializeField] private float maxBond;
-        [Range(0f, 2f)]
-        [SerializeField] private float bondRegenerationRate = 1f;
-        [SerializeField] private float bondRegenerationAmount = 2f;
-
-        private float _bond;
         public Action OnBondChanged;
+        
+        LazyValue<float> _bond;
+        private BaseStats _baseStats;
 
         private void Awake()
         {
-            _bond = maxBond;
+            _bond = new LazyValue<float>(GetMaxBond);
+            _baseStats = GetComponent<BaseStats>();
         }
 
         private void Update()
         {
-            if (_bond < maxBond)
+            if (_bond.value < GetMaxBond())
             {
-                _bond += bondRegenerationAmount * Time.deltaTime * bondRegenerationRate;
+                _bond.value += Time.deltaTime * GetRegenRate();
                 OnBondChanged?.Invoke();
-                if (_bond > maxBond)
+                if (_bond.value > GetMaxBond())
                 {
-                    _bond = maxBond;
+                    _bond.value = GetMaxBond();
                     OnBondChanged?.Invoke();
                 }
             }
@@ -35,31 +34,36 @@ namespace RPG.Stats
 
         public float GetBond()
         {
-            return _bond;
+            return _bond.value;
         }
 
         public float GetMaxBond()
         {
-            return maxBond;
+            return _baseStats.GetStat(Stat.BondMax);
+        }
+
+        public float GetRegenRate()
+        {
+            return _baseStats.GetStat(Stat.BondRegenRate);
         }
 
         public bool UseBond(int bondToUse)
         {
-            if (bondToUse > _bond) return false;
+            if (bondToUse > _bond.value) return false;
             
-            _bond -= bondToUse;
+            _bond.value -= bondToUse;
             OnBondChanged?.Invoke();
             return true;
         }
 
         public object CaptureState()
         {
-            return _bond;
+            return _bond.value;
         }
 
         public void RestoreState(object state)
         {
-            _bond = (float) state;
+            _bond.value = (float) state;
         }
     }
 }

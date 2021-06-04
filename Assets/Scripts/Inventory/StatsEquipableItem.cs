@@ -13,26 +13,26 @@ using UnityEngine;
             [System.Serializable]
             struct Modifier
             {
-                public StatTypes statTypes;
+                public Stat stat;
                 public float value;
             }
 
-            public IEnumerable<int> GetAddativeModifiers(StatTypes statTypes)
+            public IEnumerable<int> GetAddativeModifiers(Stat stat)
             {
                 foreach (var modifier in addativeModifiers)
                 {
-                    if (modifier.statTypes == statTypes)
+                    if (modifier.stat == stat)
                     {
                         yield return (int)modifier.value;
                     }
                 }
             }
 
-            public IEnumerable<float> GetPercentageModifiers(StatTypes statTypes)
+            public IEnumerable<float> GetPercentageModifiers(Stat stat)
             {
                 foreach (var modifier in percentageModifiers)
                 {
-                    if (modifier.statTypes == statTypes)
+                    if (modifier.stat == stat)
                     {
                         yield return (int)modifier.value;
                     }

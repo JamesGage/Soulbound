@@ -27,14 +27,14 @@ namespace RPG.Stats
             currentLevel.ForceInit();
         }
 
-        public float GetStat(StatTypes statType)
+        public float GetStat(Stat stat)
         {
-            return (GetBaseStat(statType) + GetAdditiveModifier(statType)) * (1 + GetPercentageModifier(statType)/100);
+            return (GetBaseStat(stat) + GetAdditiveModifier(stat)) * (1 + GetPercentageModifier(stat)/100);
         }
         
-        private float GetBaseStat(StatTypes statType)
+        private float GetBaseStat(Stat stat)
         {
-            return progression.GetStat(statType, characterClass, GetLevel());
+            return progression.GetStat(stat, characterClass, GetLevel());
         }
 
         public void SetLevel(int level)
@@ -49,14 +49,14 @@ namespace RPG.Stats
             return currentLevel.value;
         }
 
-        private int GetAdditiveModifier(StatTypes statTypes)
+        private int GetAdditiveModifier(Stat stat)
         {
             if (!shouldUseModifiers) return 0;
             
             var total = 0;
             foreach (var provider in GetComponents<IModifierProvider>())
             {
-                foreach (var modifier in provider.GetAddativeModifiers(statTypes))
+                foreach (var modifier in provider.GetAddativeModifiers(stat))
                 {
                     total += modifier;
                 }
@@ -65,14 +65,14 @@ namespace RPG.Stats
             return total;
         }
         
-        private float GetPercentageModifier(StatTypes statTypes)
+        private float GetPercentageModifier(Stat stat)
         {
             if (!shouldUseModifiers) return 0;
             
             var total = 0f;
             foreach (var provider in GetComponents<IModifierProvider>())
             {
-                foreach (var modifier in provider.GetPercentageModifiers(statTypes))
+                foreach (var modifier in provider.GetPercentageModifiers(stat))
                 {
                     total += modifier;
                 }

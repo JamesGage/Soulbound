@@ -40,7 +40,7 @@ namespace RPG.Stats
 
         private float GetInitialHealth()
         {
-            return _baseStats.GetStat(StatTypes.Health) + _startingHealth;
+            return _baseStats.GetStat(Stat.Health) + _startingHealth;
         }
 
         private void Start()
@@ -57,7 +57,7 @@ namespace RPG.Stats
 
         public float MaxHealth()
         {
-            return Mathf.RoundToInt(_baseStats.GetStat(StatTypes.Health)) + _startingHealth;
+            return Mathf.RoundToInt(_baseStats.GetStat(Stat.Health)) + _startingHealth;
         }
         
         public bool IsDead()
