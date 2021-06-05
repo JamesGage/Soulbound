@@ -13,9 +13,9 @@ namespace RPG.SceneManagement
         [SerializeField] string _sceneToLoad;
         [SerializeField] Transform _spawnPoint;
         [SerializeField] DestinationIdentifier destination;
-        
-        [Tooltip("X = Fade Out time. Y = Fade In time.")]
-        [SerializeField] Vector2 _fadeTime = new Vector2(1f, 0.5f);
+        [SerializeField] private float _fadeOutTime = 0.2f;
+        [SerializeField] float _fadeInTime = 0.2f;
+        [SerializeField] float _fadeWaitTime = 0.5f;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -32,7 +32,7 @@ namespace RPG.SceneManagement
             Fader fader = FindObjectOfType<Fader>();
             SavingWrapper saveWrapper = FindObjectOfType<SavingWrapper>();
 
-            yield return fader.FadeOut(_fadeTime.x);
+            yield return fader.FadeOut(_fadeOutTime);
             
             saveWrapper.Save();
             
@@ -43,13 +43,11 @@ namespace RPG.SceneManagement
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
             
-            yield return new WaitForSeconds(1f);
-            
-            //saveWrapper.DeleteFile();
-
-            yield return fader.FadeIn(_fadeTime.y);
             saveWrapper.Save();
             
+            yield return new WaitForSeconds(_fadeWaitTime);
+            fader.FadeIn(_fadeInTime);
+
             Destroy(gameObject);
         }
 

@@ -17,7 +17,7 @@ namespace RPG.Stats
         [FMODUnity.EventRef] public string deathSFX = "";
         [FMODUnity.EventRef] public string takeDamageSFX = "";
 
-        float _health;
+        LazyValue<float> _health;
         
         private bool _wasDeadLastFrame;
         private ActionScheduler _actionScheduler;
@@ -28,29 +28,24 @@ namespace RPG.Stats
         public event Action OnDeath;
         public event Action OnPlayerDeath;
 
-        private void OnEnable()
-        {
-            
-        }
-
-        private void OnDisable()
-        {
-            
-        }
-        
         private void Awake()
         {
+            _health = new LazyValue<float>(GetInitialHealth);
+            
             _anim = GetComponent<Animator>();
             _actionScheduler = GetComponent<ActionScheduler>();
             _baseStats = GetComponent<BaseStats>();
-            
-            _health = GetInitialHealth();
+        }
+
+        private void Start()
+        {
+            _health.ForceInit();
         }
 
 
         public void TakeDamage(float damage, DamageType damageType)
         {
-            _health = Mathf.Max(_health - damage, 0);
+            _health.value = Mathf.Max(_health.value - damage, 0);
 
             if (IsDead())
             {
@@ -67,7 +62,7 @@ namespace RPG.Stats
         
         public void Heal(float healthRestored)
         {
-            _health = Mathf.Min(_health + healthRestored, GetMaxHealth());
+            _health.value = Mathf.Min(_health.value + healthRestored, GetMaxHealth());
             OnHealthChanged?.Invoke();
         }
         
@@ -83,17 +78,17 @@ namespace RPG.Stats
         
         public bool IsDead()
         {
-            return _health <= 0;
+            return _health.value <= 0;
         }
 
         public float GetHealth()
         {
-            return _health;
+            return _health.value;
         }
 
         public float GetFraction()
         {
-            return _health / GetMaxHealth();
+            return _health.value / GetMaxHealth();
         }
 
         private void UpdateState()
@@ -126,12 +121,12 @@ namespace RPG.Stats
 
         public object CaptureState()
         {
-            return _health;
+            return _health.value;
         }
 
         public void RestoreState(object state)
         {
-            _health = (float)state;
+            _health.value = (float)state;
 
             UpdateState();
         }

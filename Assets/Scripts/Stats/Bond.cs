@@ -18,6 +18,11 @@ namespace RPG.Stats
             _baseStats = GetComponent<BaseStats>();
         }
 
+        private void Start()
+        {
+            _bond.ForceInit();
+        }
+
         private void Update()
         {
             if (_bond.value < GetMaxBond())

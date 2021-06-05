@@ -396,8 +396,10 @@
             </e>
             <e p="ResourceTabs.cs" t="Include" />
             <e p="Save Menu" t="Include">
+              <e p="LoadUI.cs" t="Include" />
+              <e p="QuitUI.cs" t="Include" />
               <e p="SaveFileUI.cs" t="Include" />
-              <e p="SaveMenuUI.cs" t="Include" />
+              <e p="SaveUI.cs" t="Include" />
             </e>
             <e p="Settings Menu" t="Include">
               <e p="AudioSliderUI.cs" t="Include" />
@@ -416,6 +418,7 @@
             <e p="ToolbarUI.cs" t="Include" />
             <e p="TraitRowUI.cs" t="Include" />
             <e p="TraitUI.cs" t="Include" />
+            <e p="UISwitcher.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">
             <e p="LazyValue.cs" t="Include" />

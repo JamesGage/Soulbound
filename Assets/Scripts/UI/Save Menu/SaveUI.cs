@@ -5,33 +5,25 @@ using UnityEngine;
 
 namespace RPG.UI
 {
-    public class MainMenuUI : MonoBehaviour
+    public class SaveUI : MonoBehaviour
     {
         LazyValue<SavingWrapper> _savingWrapper;
 
         [SerializeField] private TMP_InputField newGameNameField;
-
+        
         private void Awake()
         {
             _savingWrapper = new LazyValue<SavingWrapper>(GetSavingWrapper);
         }
 
-        public void ContinueGame()
+        public void Save()
         {
-            _savingWrapper.value.ContinueGame();
+            _savingWrapper.value.Save();
         }
 
-        public void NewGame()
+        public void SaveNew()
         {
-            _savingWrapper.value.NewGame(newGameNameField.text);
-        }
-
-        public void Quit()
-        {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#endif
-            Application.Quit();
+            _savingWrapper.value.NewSave(newGameNameField.text);
         }
 
         private SavingWrapper GetSavingWrapper()
