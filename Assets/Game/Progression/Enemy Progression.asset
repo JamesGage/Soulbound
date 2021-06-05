@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b3b24da32c463eb44ecbca852d47bf, type: 3}
+  m_Name: Enemy Progression
+  m_EditorClassIdentifier: 
+  characterClasses:
+  - characterClass: 0
+    stats:
+    - stat: 0
+      levels:
+      - 5
+      - 10
+      - 15
+    - stat: 1
+      levels:
+      - 3
+      - 5
+      - 8
+    - stat: 2
+      levels:
+      - 1
+    - stat: 3
+      levels:
+      - 50
+      - 60
+      - 70
+  - characterClass: 1
+    stats:
+    - stat: 0
+      levels:
+      - 5
+      - 10
+      - 15
+    - stat: 1
+      levels:
+      - 3
+      - 5
+      - 8
+    - stat: 2
+      levels:
+      - 1
+    - stat: 3
+      levels:
+      - 50
+      - 60
+      - 70
+  - characterClass: 2
+    stats:
+    - stat: 0
+      levels:
+      - 5
+      - 10
+      - 15
+    - stat: 1
+      levels:
+      - 3
+      - 5
+      - 8
+    - stat: 2
+      levels:
+      - 1
+    - stat: 3
+      levels:
+      - 50
+      - 60
+      - 70
+  - characterClass: 3
+    stats:
+    - stat: 0
+      levels:
+      - 5
+      - 10
+      - 15
+    - stat: 1
+      levels:
+      - 3
+      - 5
+      - 8
+    - stat: 2
+      levels:
+      - 1
+    - stat: 3
+      levels:
+      - 50
+      - 60
+      - 70
+  - characterClass: 4
+    stats:
+    - stat: 0
+      levels:
+      - 5
+      - 10
+      - 15
+    - stat: 1
+      levels:
+      - 3
+      - 5
+      - 8
+    - stat: 2
+      levels:
+      - 1
+    - stat: 3
+      levels:
+      - 50
+      - 60
+      - 70

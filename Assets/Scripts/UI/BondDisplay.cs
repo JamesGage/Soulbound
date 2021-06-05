@@ -14,6 +14,7 @@ namespace RPG.UI
         private Image _bondFill;
         private GameObject _player;
         private Equipment _equipment;
+        private TraitStore _traitStore;
 
         private void Awake()
         {
@@ -21,16 +22,21 @@ namespace RPG.UI
             _bond = _player.GetComponent<Bond>();
             _bondFill = GetComponent<Image>();
             _equipment = _player.GetComponent<Equipment>();
+            _traitStore = _player.GetComponent<TraitStore>();
         }
         
         private void OnEnable()
         {
             _bond.OnBondChanged += UpdateBond;
+            _equipment.onEquipmentUpdated += UpdateBond;
+            _traitStore.OnTraitModified += UpdateBond;
         }
         
         private void OnDisable()
         {
             _bond.OnBondChanged -= UpdateBond;
+            _equipment.onEquipmentUpdated -= UpdateBond;
+            _traitStore.OnTraitModified -= UpdateBond;
         }
 
         private void Start()

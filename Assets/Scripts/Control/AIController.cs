@@ -179,12 +179,12 @@ namespace RPG.Control
             Gizmos.DrawWireSphere(transform.position, chaseDistance);
         }
 
-        public IEnumerable<int> GetAddativeModifiers(Stats.Stat stat)
+        public IEnumerable<float> GetAddativeModifiers(Stat stat)
         {
             return _fighter.GetCurrentWeapon().GetAddativeModifiers(stat);
         }
 
-        public IEnumerable<float> GetPercentageModifiers(Stats.Stat stat)
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
         {
             return _fighter.GetCurrentWeapon().GetPercentageModifiers(stat);
         }

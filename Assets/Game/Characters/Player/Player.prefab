@@ -74,6 +74,43 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &402525830550980345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968763298227037891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03aac5489a8c4290a2c9bba44acdca27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusConfig:
+  - trait: 0
+    stat: 0
+    additiveBonusPerPoint: 5
+    percentageBonusPerPoint: 0
+  - trait: 1
+    stat: 1
+    additiveBonusPerPoint: 5
+    percentageBonusPerPoint: 0
+  - trait: 2
+    stat: 1
+    additiveBonusPerPoint: 0
+    percentageBonusPerPoint: 5
+  - trait: 3
+    stat: 2
+    additiveBonusPerPoint: 0
+    percentageBonusPerPoint: 0.5
+  - trait: 4
+    stat: 4
+    additiveBonusPerPoint: 10
+    percentageBonusPerPoint: 0
+  - trait: 5
+    stat: 5
+    additiveBonusPerPoint: 0
+    percentageBonusPerPoint: 2.5
 --- !u!114 &470415821151586295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,9 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e0314fe4414f39aa74529fc32b5a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxBond: 100
-  bondRegenerationRate: 1
-  bondRegenerationAmount: 2
 --- !u!114 &5438348971279438332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,18 +290,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a255ce41b60d4f23ae337408b87e7d94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &402525830550980345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7968763298227037891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03aac5489a8c4290a2c9bba44acdca27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4656559062928454413
@@ -622,9 +644,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: _baseStats
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b52aab98c84b034a9e14f505e0d3d58, type: 2}
     - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: _levelUpEffect
       value: 

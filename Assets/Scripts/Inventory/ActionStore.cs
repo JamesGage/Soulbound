@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using RPG.Abilities;
 using UnityEngine;
 using RPG.Saving;
+using RPG.Stats;
 
 namespace RPG.Inventories
 {
@@ -95,14 +96,15 @@ namespace RPG.Inventories
         {
             if (dockedItems.ContainsKey(index))
             {
-                if (!dockedItems[index].item.Use(user)) return;
+                var item = dockedItems[index].item;
+                if (user.GetComponent<CooldownStore>().GetTimeRemaining(item) > 0) return;
+                if(user.GetComponent<Health>().IsDead()) return;
                 
-                dockedItems[index].item.Use(user);
-                if (dockedItems[index].item.isConsumable())
+                item.Use(user);
+                if (item.isConsumable())
                 {
                     RemoveItems(index, 1);
                 }
-                return;
             }
         }
 

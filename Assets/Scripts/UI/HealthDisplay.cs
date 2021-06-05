@@ -14,6 +14,7 @@ namespace RPG.UI
         private Image _healthFill;
         private GameObject _player;
         private Equipment _equipment;
+        private TraitStore _traitStore;
 
         private void Awake()
         {
@@ -21,18 +22,21 @@ namespace RPG.UI
             _health = _player.GetComponent<Health>();
             _healthFill = GetComponent<Image>();
             _equipment = _player.GetComponent<Equipment>();
+            _traitStore = _player.GetComponent<TraitStore>();
         }
         
         private void OnEnable()
         {
             _health.OnHealthChanged += UpdateHealth;
             _equipment.onEquipmentUpdated += UpdateHealth;
+            _traitStore.OnTraitModified += UpdateHealth;
         }
         
         private void OnDisable()
         {
             _health.OnHealthChanged -= UpdateHealth;
             _equipment.onEquipmentUpdated -= UpdateHealth;
+            _traitStore.OnTraitModified -= UpdateHealth;
         }
 
         private void Start()
@@ -42,7 +46,7 @@ namespace RPG.UI
 
         private void UpdateHealth()
         {
-            _healthFill.fillAmount = _health.GetHealth() / _health.MaxHealth();
+            _healthFill.fillAmount = _health.GetHealth() / _health.GetMaxHealth();
             _healthText.text = $"{_health.GetHealth():N0}";
         }
     }

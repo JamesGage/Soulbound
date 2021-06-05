@@ -22,7 +22,7 @@ namespace RPG.UI
                 _targetText.text = "";
                 return;
             }
-            _targetText.text = "Target Health: " + _target.GetTarget().GetHealth() + "/" + _target.GetTarget().MaxHealth();
+            _targetText.text = "Target Health: " + _target.GetTarget().GetHealth() + "/" + _target.GetTarget().GetMaxHealth();
         }
     }
 }

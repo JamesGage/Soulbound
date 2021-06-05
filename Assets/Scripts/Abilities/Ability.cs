@@ -14,13 +14,13 @@ namespace RPG.Abilities
         [SerializeField] private int bondCost;
         [SerializeField] private float cooldownTime;
         
-        public override bool Use(GameObject user)
+        public override void Use(GameObject user)
         {
             Bond bond = user.GetComponent<Bond>();
-            if (bond.GetBond() < bondCost) return false;
+            if (bond.GetBond() < bondCost) return;
             
             var cooldownStore = user.GetComponent<CooldownStore>();
-            if (cooldownStore.GetTimeRemaining(this) > 0) return false;
+            if (cooldownStore.GetTimeRemaining(this) > 0) return;
             
             AbilityData data = new AbilityData(user);
 
@@ -28,7 +28,7 @@ namespace RPG.Abilities
             actionScheduler.StartAction(data);
 
             targetingStrategy.StartTargeting(data, () => TargetAquired(data));
-            return false;
+            return;
         }
 
         private void TargetAquired(AbilityData data)

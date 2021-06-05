@@ -126,7 +126,7 @@ namespace RPG.Combat
             projectileInstance.SetTarget(target, instigator, calculatedDamage);
         }
 
-        public IEnumerable<int> GetAddativeModifiers(Stat stat)
+        public IEnumerable<float> GetAddativeModifiers(Stat stat)
         {
             if (stat == Stat.Damage)
             {

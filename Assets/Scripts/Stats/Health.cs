@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using RPG.Combat;
 using RPG.Core;
 using RPG.Saving;
@@ -12,15 +11,15 @@ namespace RPG.Stats
 {
     public class Health : MonoBehaviour, ISaveable
     {
-        [Range(1, 100)]
-        [SerializeField] private float _startingHealth = 5;
         [SerializeField] private TakeDamageEvent _takeDamageEvent;
         public UnityEvent OnDieEvent = null;
+        
         [FMODUnity.EventRef] public string deathSFX = "";
         [FMODUnity.EventRef] public string takeDamageSFX = "";
 
-        LazyValue<float> _health;
-        private bool _isDead;
+        float _health;
+        
+        private bool _wasDeadLastFrame;
         private ActionScheduler _actionScheduler;
         private BaseStats _baseStats;
         private Animator _anim;
@@ -29,112 +28,112 @@ namespace RPG.Stats
         public event Action OnDeath;
         public event Action OnPlayerDeath;
 
+        private void OnEnable()
+        {
+            
+        }
+
+        private void OnDisable()
+        {
+            
+        }
+        
         private void Awake()
         {
             _anim = GetComponent<Animator>();
             _actionScheduler = GetComponent<ActionScheduler>();
             _baseStats = GetComponent<BaseStats>();
-
-            _health = new LazyValue<float>(GetInitialHealth);
+            
+            _health = GetInitialHealth();
         }
 
+
+        public void TakeDamage(float damage, DamageType damageType)
+        {
+            _health = Mathf.Max(_health - damage, 0);
+
+            if (IsDead())
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
+                OnDieEvent?.Invoke();
+            }
+            else
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(takeDamageSFX, transform.position);
+                _takeDamageEvent.Invoke(damage, damageType);
+            }
+            UpdateState();
+        }
+        
+        public void Heal(float healthRestored)
+        {
+            _health = Mathf.Min(_health + healthRestored, GetMaxHealth());
+            OnHealthChanged?.Invoke();
+        }
+        
         private float GetInitialHealth()
         {
-            return _baseStats.GetStat(Stat.Health) + _startingHealth;
+            return _baseStats.GetStat(Stat.Health);
         }
 
-        private void Start()
+        public float GetMaxHealth()
         {
-            _health.ForceInit();
-            
-            //Bug fix for weapon equip animation override
-            if (_health.value <= 0)
-            {
-                _isDead = false;
-                Die();
-            }
-        }
-
-        public float MaxHealth()
-        {
-            return Mathf.RoundToInt(_baseStats.GetStat(Stat.Health)) + _startingHealth;
+            return _baseStats.GetStat(Stat.Health);
         }
         
         public bool IsDead()
         {
-            return _isDead;
-        }
-
-        public void TakeDamage(float damage, DamageType damageType)
-        {
-            _health.value = Mathf.Max(_health.value - damage, 0);
-            if(OnHealthChanged != null)
-                OnHealthChanged.Invoke();
-            
-            if (_health.value == 0)
-            {
-                FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
-                Die();
-                OnDieEvent?.Invoke();
-                if(OnDeath != null)
-                    OnDeath.Invoke();
-            }
-            else if(damage > 0)
-                FMODUnity.RuntimeManager.PlayOneShot(takeDamageSFX, transform.position);
-            _takeDamageEvent.Invoke(damage, damageType);
-        }
-
-        public void Heal(float healthRestored)
-        {
-            _health.value = Mathf.RoundToInt(Mathf.Min(_health.value + (MaxHealth() * (healthRestored/100f)), MaxHealth()));
-            if(OnHealthChanged != null)
-                OnHealthChanged.Invoke();
+            return _health <= 0;
         }
 
         public float GetHealth()
         {
-            return _health.value;
+            return _health;
         }
 
         public float GetFraction()
         {
-            return _health.value / MaxHealth();
+            return _health / GetMaxHealth();
         }
 
-        private void Die()
+        private void UpdateState()
         {
-            if (_isDead) return;
-            
-            _isDead = true;
-            _anim.SetTrigger("die");
-            _actionScheduler.CancelCurrentAction();
-
-            if (gameObject.CompareTag("Player"))
+            Animator animator = GetComponent<Animator>();
+            if (!_wasDeadLastFrame && IsDead())
             {
-                StartCoroutine(GameOver());
+                _anim.SetTrigger("die");
+                GetComponent<ActionScheduler>().CancelCurrentAction();
+                if (gameObject.CompareTag("Player"))
+                {
+                    OnPlayerDeath?.Invoke();
+                }
+                else
+                {
+                    OnDeath?.Invoke();
+                }
             }
-        }
 
-        private IEnumerator GameOver()
-        {
-            yield return new WaitForSeconds(2f);
-            OnPlayerDeath?.Invoke();
+            if (_wasDeadLastFrame && !IsDead())
+            {
+                animator.Rebind();
+            }
+            
+            OnHealthChanged?.Invoke();
+            _wasDeadLastFrame = IsDead();
         }
-
 
         #region Save
 
         public object CaptureState()
         {
-            return _health.value;
+            return _health;
         }
 
         public void RestoreState(object state)
         {
-            _health.value = (float)state;
+            _health = (float)state;
 
-            if(_health.value <= 0)
-                Die();
+            UpdateState();
         }
 
         #endregion

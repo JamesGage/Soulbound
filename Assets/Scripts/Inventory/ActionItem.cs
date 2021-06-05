@@ -24,11 +24,10 @@ namespace RPG.Inventories
         /// Trigger the use of this item. Override to provide functionality.
         /// </summary>
         /// <param name="user">The character that is using this action.</param>
-        public virtual bool Use(GameObject user)
+        public virtual void Use(GameObject user)
         {
             Debug.Log("Using action: " + this);
             FMODUnity.RuntimeManager.PlayOneShot(comsumeSFX);
-            return true;
         }
 
         public bool isConsumable()

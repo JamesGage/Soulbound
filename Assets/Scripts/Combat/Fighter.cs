@@ -66,11 +66,8 @@ namespace RPG.Combat
             _timeSinceLastAttack += Time.deltaTime;
             
             if (_target == null) return;
-            if (_target.IsDead())
-            {
-                _anim.SetTrigger("stopAttack");
-                return;
-            }
+            if (_target.IsDead()) return;
+
             if (!IsInRange(_target.transform))
             {
                 _mover.MoveTo(_target.transform.position, 1f);

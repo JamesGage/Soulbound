@@ -17,7 +17,7 @@ using UnityEngine;
                 public float value;
             }
 
-            public IEnumerable<int> GetAddativeModifiers(Stat stat)
+            public IEnumerable<float> GetAddativeModifiers(Stat stat)
             {
                 foreach (var modifier in addativeModifiers)
                 {

@@ -1,15 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
+using RPG.Saving;
 using UnityEngine;
 
 namespace RPG.Stats
 {
-    public class TraitStore : MonoBehaviour
+    public class TraitStore : MonoBehaviour, IModifierProvider, ISaveable
     {
+        [SerializeField] private TraitBonus[] bonusConfig;
+
+        [Serializable]
+        class TraitBonus
+        {
+            public Trait trait;
+            public Stat stat;
+            public float additiveBonusPerPoint;
+            public float percentageBonusPerPoint;
+        }
         public Action OnTraitModified;
         
         private Dictionary<Trait, int> assignedPoints = new Dictionary<Trait, int>();
         private Dictionary<Trait, int> stagedPoints = new Dictionary<Trait, int>();
+
+        private Dictionary<Stat, Dictionary<Trait, float>> additiveBonusCache;
+        private Dictionary<Stat, Dictionary<Trait, float>> percentageBonusCache;
+
+        private void Awake()
+        {
+            additiveBonusCache = new Dictionary<Stat, Dictionary<Trait, float>>();
+            percentageBonusCache = new Dictionary<Stat, Dictionary<Trait, float>>();
+            
+            foreach (var bonus in bonusConfig)
+            {
+                if (!additiveBonusCache.ContainsKey(bonus.stat))
+                {
+                    additiveBonusCache[bonus.stat] = new Dictionary<Trait, float>();
+                }
+                if (!percentageBonusCache.ContainsKey(bonus.stat))
+                {
+                    percentageBonusCache[bonus.stat] = new Dictionary<Trait, float>();
+                }
+
+                additiveBonusCache[bonus.stat][bonus.trait] = bonus.additiveBonusPerPoint;
+                percentageBonusCache[bonus.stat][bonus.trait] = bonus.percentageBonusPerPoint;
+            }
+        }
 
         public int GetProposedPoints(Trait trait)
         {
@@ -43,14 +78,14 @@ namespace RPG.Stats
             return true;
         }
 
-        public int GetUnassignedPoints()
+        public float GetUnassignedPoints()
         {
             return GetAssignablePoints() - GetTotalProposedPoints();
         }
 
-        private int GetTotalProposedPoints()
+        private float GetTotalProposedPoints()
         {
-            int total = 0;
+            float total = 0;
             foreach (var points in assignedPoints.Values)
             {
                 total += points;
@@ -77,6 +112,38 @@ namespace RPG.Stats
         public int GetAssignablePoints()
         {
             return (int)GetComponent<BaseStats>().GetStat(Stat.TotalTraitPoints);
+        }
+
+        public IEnumerable<float> GetAddativeModifiers(Stat stat)
+        {
+            if(!additiveBonusCache.ContainsKey(stat)) yield break;
+
+            foreach (var trait in additiveBonusCache[stat].Keys)
+            {
+                var bonus = additiveBonusCache[stat][trait];
+                yield return bonus * GetPoints(trait);
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            if(!percentageBonusCache.ContainsKey(stat)) yield break;
+
+            foreach (var trait in percentageBonusCache[stat].Keys)
+            {
+                var bonus = percentageBonusCache[stat][trait];
+                yield return bonus * GetPoints(trait);
+            }
+        }
+
+        public object CaptureState()
+        {
+            return assignedPoints;
+        }
+
+        public void RestoreState(object state)
+        {
+            assignedPoints = new Dictionary<Trait, int>((IDictionary<Trait, int>) state);
         }
     }
 }

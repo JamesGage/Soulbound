@@ -1,6 +1,5 @@
 ﻿using System;
 using RPG.Saving;
-using RPG.Utils;
 using UnityEngine;
 
 namespace RPG.Stats
@@ -16,16 +15,11 @@ namespace RPG.Stats
         [SerializeField] Progression progression = null;
         [SerializeField] bool shouldUseModifiers;
         
-        private LazyValue<int> currentLevel;
+        private int currentLevel;
 
         public event Action OnLevelUp;
 
         #endregion
-
-        private void Start()
-        {
-            currentLevel.ForceInit();
-        }
 
         public float GetStat(Stat stat)
         {
@@ -39,21 +33,22 @@ namespace RPG.Stats
 
         public void SetLevel(int level)
         {
-            currentLevel.value = level;
+            currentLevel = level;
             
             OnLevelUp?.Invoke();
         }
         
         public int GetLevel()
         {
-            return currentLevel.value;
+            if (currentLevel == 0) currentLevel = startingLevel;
+            return currentLevel;
         }
 
-        private int GetAdditiveModifier(Stat stat)
+        private float GetAdditiveModifier(Stat stat)
         {
             if (!shouldUseModifiers) return 0;
             
-            var total = 0;
+            var total = 0f;
             foreach (var provider in GetComponents<IModifierProvider>())
             {
                 foreach (var modifier in provider.GetAddativeModifiers(stat))
@@ -83,12 +78,12 @@ namespace RPG.Stats
 
         public object CaptureState()
         {
-            return currentLevel.value;
+            return currentLevel;
         }
 
         public void RestoreState(object state)
         {
-            currentLevel.value = (int) state;
+            currentLevel = (int) state;
         }
     }
 }

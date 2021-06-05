@@ -65,7 +65,7 @@ MonoBehaviour:
   _maxDrops: 3
   _guaranteedDrops: []
   potentialDrops:
-  - item: {fileID: 11400000, guid: c368c21e1ea34f9429ad6cd2a8332749, type: 2}
+  - item: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
     relativeChance: 3
     minNumber: 1
     maxNumber: 1
@@ -149,6 +149,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 11400000, guid: 422dda55f42f1c14db29c450a5fdaf14, type: 2}
     - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: _characterClass
       value: 2

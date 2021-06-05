@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3159233631009804569, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 11400000, guid: 114db6dd62270c3479535ae4cffad372, type: 2}
     - target: {fileID: 1306814148330273329, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: m_Name
       value: _NPC

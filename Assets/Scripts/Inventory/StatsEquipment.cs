@@ -5,7 +5,7 @@ namespace RPG.Inventories
 {
     public class StatsEquipment : Equipment, IModifierProvider
     {
-        public IEnumerable<int> GetAddativeModifiers(Stats.Stat stat)
+        public IEnumerable<float> GetAddativeModifiers(Stats.Stat stat)
         {
             foreach (var slot in GetAllPopulatedSlots())
             {

@@ -164,24 +164,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a7d3f05b38143c29728d4cb759899e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterType: 0
-  _stats:
-  - _statType: 0
-    _statValue: 1
-  - _statType: 1
-    _statValue: 1
-  - _statType: 2
-    _statValue: 1
-  - _statType: 3
-    _statValue: 1
-  - _statType: 4
-    _statValue: 1
-  - _statType: 5
-    _statValue: 1
-  - _statType: 6
-    _statValue: 1
-  - _statType: 7
-    _statValue: 1
+  startingLevel: 1
+  characterRace: 0
+  characterClass: 0
+  progression: {fileID: 0}
+  shouldUseModifiers: 0
 --- !u!114 &7432532089349530410
 MonoBehaviour:
   m_ObjectHideFlags: 0
