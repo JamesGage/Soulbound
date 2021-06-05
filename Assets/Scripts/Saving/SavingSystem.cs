@@ -16,7 +16,6 @@ namespace RPG.Saving
             if (state.ContainsKey("lastSceneBuildIndex"))
             {
                 buildIndex = (int)state["lastSceneBuildIndex"];
-                print(buildIndex);
             }
             yield return SceneManager.LoadSceneAsync(buildIndex);
             RestoreState(state);
