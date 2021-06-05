@@ -12,6 +12,8 @@ namespace RPG.Shops
         [SerializeField] private string shopName = "Shop";
         [Range(0f, 100f)]
         [SerializeField] private float sellingPercentage = 80f;
+        [Range(0f, 100f)]
+        [SerializeField] private float maxBarterDiscount = 80f;
         [SerializeField] private StockItemConfig[] stockConfig;
 
         [Serializable]
@@ -20,7 +22,7 @@ namespace RPG.Shops
             public InventoryItem item;
             public int initialStock;
             [Range(-100, 100)]
-            public int discountPercentage;
+            public float discountPercentage;
             [Tooltip("Level player must be to show this item in the shop")]
             public int levelToUnlock = 0;
             [Tooltip("Hide this item if the player is at this level or higher")]
@@ -54,7 +56,7 @@ namespace RPG.Shops
 
         public IEnumerable<ShopItem> GetAllItems()
         {
-            Dictionary<InventoryItem, int> prices = GetPrices();
+            Dictionary<InventoryItem, float> prices = GetPrices();
             Dictionary<InventoryItem, int> availabilities = GetAvailabilities();
             foreach (InventoryItem item in availabilities.Keys)
             {
@@ -162,9 +164,9 @@ namespace RPG.Shops
             onChange?.Invoke();
         }
 
-        public int TransactionTotal()
+        public float TransactionTotal()
         {
-            var total = 0;
+            var total = 0f;
             foreach (ShopItem item in GetAllItems())
             {
                 total += item.GetCost() * item.GetQuantity();
@@ -221,7 +223,7 @@ namespace RPG.Shops
             return total;
         }
 
-        private void BuyItem(Purse shopperPurse, int cost, Inventory shopperInventory, InventoryItem item)
+        private void BuyItem(Purse shopperPurse, float cost, Inventory shopperInventory, InventoryItem item)
         {
             if (shopperPurse.GetCurrency() < cost) return;
 
@@ -238,7 +240,7 @@ namespace RPG.Shops
             }
         }
         
-        private void SellItem(Purse shopperPurse, int cost, Inventory shopperInventory, InventoryItem item)
+        private void SellItem(Purse shopperPurse, float cost, Inventory shopperInventory, InventoryItem item)
         {
             int slot = FindFirstItemSlot(shopperInventory, item);
             if (slot == -1) return;
@@ -299,9 +301,9 @@ namespace RPG.Shops
             return availabilities;
         }
 
-        private Dictionary<InventoryItem, int> GetPrices()
+        private Dictionary<InventoryItem, float> GetPrices()
         {
-            Dictionary<InventoryItem, int> prices = new Dictionary<InventoryItem, int>();
+            Dictionary<InventoryItem, float> prices = new Dictionary<InventoryItem, float>();
 
             foreach (var config in GetAvailableConfigs())
             {
@@ -309,7 +311,7 @@ namespace RPG.Shops
                 {
                     if (!prices.ContainsKey(config.item))
                     {
-                        prices[config.item] = config.item.GetCost();
+                        prices[config.item] = config.item.GetCost() * GetBarterDiscount();
                     }
 
                     prices[config.item] *= 1 - config.discountPercentage / 100;
@@ -321,6 +323,13 @@ namespace RPG.Shops
             }
 
             return prices;
+        }
+
+        private float GetBarterDiscount()
+        {
+            var baseStats = _shopper.GetComponent<BaseStats>();
+            var discount = baseStats.GetStat(Stat.BuyingDiscountPercentage);
+            return 1 - Mathf.Min(discount, maxBarterDiscount) / 100;
         }
 
         private IEnumerable<StockItemConfig> GetAvailableConfigs()

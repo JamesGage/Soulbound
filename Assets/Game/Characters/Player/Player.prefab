@@ -111,6 +111,10 @@ MonoBehaviour:
     stat: 5
     additiveBonusPerPoint: 0
     percentageBonusPerPoint: 2.5
+  - trait: 7
+    stat: 7
+    additiveBonusPerPoint: 5
+    percentageBonusPerPoint: 0
 --- !u!114 &470415821151586295
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,15 +6,15 @@ namespace RPG.Inventories
 {
     public class Purse : MonoBehaviour, ISaveable
     {
-        [SerializeField] private int _currency;
+        [SerializeField] private float _currency;
         public event Action onGoldChanged;
         
-        public int GetCurrency()
+        public float GetCurrency()
         {
             return _currency;
         }
 
-        public void UpdateCurrency(int currency)
+        public void UpdateCurrency(float currency)
         {
             _currency += currency;
 

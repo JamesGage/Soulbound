@@ -7,10 +7,10 @@ namespace RPG.Shops
     {
         private InventoryItem _item;
         private int _availability;
-        private int _price;
+        private float _price;
         private int _quantityStock;
 
-        public ShopItem(InventoryItem item, int availability, int price, int quantityStock)
+        public ShopItem(InventoryItem item, int availability, float price, int quantityStock)
         {
             _item = item;
             _availability = availability;
@@ -28,7 +28,7 @@ namespace RPG.Shops
             return _item.GetDisplayNameColor();
         }
 
-        public int GetCost()
+        public float GetCost()
         {
             return _price;
         }

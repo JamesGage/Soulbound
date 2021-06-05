@@ -8,6 +8,7 @@
         Accuracy,
         BondMax,
         BondRegenRate,
-        TotalTraitPoints
+        TotalTraitPoints,
+        BuyingDiscountPercentage
     }
 }
