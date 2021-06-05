@@ -28,7 +28,7 @@ namespace RPG.Inventories
 
         public void RestoreState(object state)
         {
-            _currency = (int) state;
+            _currency = (float) state;
         }
     }
 }

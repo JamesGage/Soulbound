@@ -16,6 +16,7 @@ namespace RPG.Saving
             if (state.ContainsKey("lastSceneBuildIndex"))
             {
                 buildIndex = (int)state["lastSceneBuildIndex"];
+                print(buildIndex);
             }
             yield return SceneManager.LoadSceneAsync(buildIndex);
             RestoreState(state);
@@ -51,7 +52,7 @@ namespace RPG.Saving
         
         private Dictionary<string, object> LoadFile(string saveFile)
         {
-            string path = saveFile;
+            string path = GetPathFromSaveFile(saveFile);
             if (!File.Exists(path))
             {
                 return new Dictionary<string, object>();

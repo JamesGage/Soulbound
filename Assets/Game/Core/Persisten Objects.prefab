@@ -106,6 +106,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3902654611299324967}
     m_Modifications:
+    - target: {fileID: 2746604774551830540, guid: 59d60eb158f4f324bbe1630b46a3f2cb, type: 3}
+      propertyPath: menuLevelIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746604774551830540, guid: 59d60eb158f4f324bbe1630b46a3f2cb, type: 3}
+      propertyPath: firstLevelIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7181858380525524594, guid: 59d60eb158f4f324bbe1630b46a3f2cb, type: 3}
       propertyPath: m_Name
       value: Saving
