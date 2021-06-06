@@ -25,8 +25,6 @@ namespace RPG.Stats
         private Animator _anim;
         
         public event Action OnHealthChanged;
-        public event Action OnDeath;
-        public event Action OnPlayerDeath;
 
         private void Awake()
         {
@@ -98,14 +96,8 @@ namespace RPG.Stats
             {
                 _anim.SetTrigger("die");
                 GetComponent<ActionScheduler>().CancelCurrentAction();
-                if (gameObject.CompareTag("Player"))
-                {
-                    OnPlayerDeath?.Invoke();
-                }
-                else
-                {
-                    OnDeath?.Invoke();
-                }
+                
+                OnDieEvent?.Invoke();
             }
 
             if (_wasDeadLastFrame && !IsDead())

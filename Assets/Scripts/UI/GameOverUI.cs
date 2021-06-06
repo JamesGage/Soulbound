@@ -19,12 +19,12 @@ namespace RPG.UI
 
         private void OnEnable()
         {
-            _health.OnPlayerDeath += GameOver;
+            _health.OnDieEvent.AddListener(GameOver);
         }
 
         private void OnDisable()
         {
-            _health.OnPlayerDeath -= GameOver;
+            _health.OnDieEvent.AddListener(GameOver);
         }
 
         public void Restart()
