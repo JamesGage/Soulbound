@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 4750506403110002348}
   - component: {fileID: 1110847208718807333}
   - component: {fileID: 5592049734835150331}
+  - component: {fileID: 1191192707324426409}
   m_Layer: 5
   m_Name: Plus Button
   m_TagString: Untagged
@@ -330,7 +331,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 175797940272776029}
+      - m_Target: {fileID: 1191192707324426409}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
         m_Mode: 1
@@ -342,6 +343,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1191192707324426409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081938346055822993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/UI/Menu/Tick
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &4613251410492303263
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956f639e74c1460da620957659558b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  traitType: 0
   valueText: {fileID: 7052029691996741901}
   minusButton: {fileID: 6986723696708426187}
   plusButton: {fileID: 5592049734835150331}
@@ -594,6 +619,7 @@ GameObject:
   - component: {fileID: 3194256147306721562}
   - component: {fileID: 6006155771075631770}
   - component: {fileID: 6986723696708426187}
+  - component: {fileID: 7697251190598277722}
   m_Layer: 5
   m_Name: Minus Button
   m_TagString: Untagged
@@ -702,7 +728,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 175797940272776029}
+      - m_Target: {fileID: 1191192707324426409}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
         m_Mode: 1
@@ -714,3 +740,26 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7697251190598277722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7293694818867817081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/SFX/UI/Menu/Tick
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

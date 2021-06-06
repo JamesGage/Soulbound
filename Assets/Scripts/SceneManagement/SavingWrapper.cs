@@ -75,8 +75,7 @@ namespace RPG.SceneManagement
             yield return SceneManager.LoadSceneAsync(menuLevelIndex);
             yield return fader.FadeIn(_fadeInTime);
         }
-
-
+        
         public void Load()
         {
             GetComponent<SavingSystem>().Load(GetCurrentSave());

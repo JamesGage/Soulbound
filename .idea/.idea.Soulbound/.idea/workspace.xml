@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CheckContinueButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CheckContinueButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/fsbcache/Desktop/7CD6F3E3.fobj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/.cache/{2e8ac7a1-81b1-4147-9d10-0e9afbd894cb}.pdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Assets/SFX/UI/Shop/Coins 24.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Asset/{1e09f45c-ac95-4fe2-bef5-4b7226d23430}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Asset/{73c787e5-0915-4e2c-a129-25454ccd6ea3}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Asset/{e24ce84c-b4ea-44db-87ab-53a7ea34e38e}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/AudioFile/{2e8ac7a1-81b1-4147-9d10-0e9afbd894cb}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{7a44772b-7192-450a-9afb-54a1fab37737}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{ce3e65ea-531c-47e9-866f-50e714b472e9}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/EventFolder/{a84bca72-c98c-401d-a88b-e6fe3a045a60}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop/Shop Items.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Traits/Trait Row.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Traits/Trait Row.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +56,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SelfTargeting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DirectionalTargeting.cs" />
@@ -64,7 +83,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UISwitcher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveLoadUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/QuitUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/StopMovement.cs" />
@@ -83,10 +101,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/Respawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveFileUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/LoadUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CheckContinueButton.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -171,7 +191,7 @@
       <workItem from="1622642030410" duration="21447000" />
       <workItem from="1622690057247" duration="1625000" />
       <workItem from="1622844483209" duration="14290000" />
-      <workItem from="1622911003399" duration="28275000" />
+      <workItem from="1622911003399" duration="29740000" />
     </task>
     <servers />
   </component>

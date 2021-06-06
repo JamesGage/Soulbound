@@ -20,8 +20,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -4362372471699498517}
-  - {fileID: 3710749401283516006}
+  - {fileID: 8337279681343048611}
+  - {fileID: -448956117835517541}
   MinDistance: 0.2
   MaxDistance: 8
   Length: 0
@@ -82,8 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Abilities/Ice/Ability Ice Blast
   guid: 5f12a98d5b509c41bee7ca8bb2195b7a
-  Banks:
-  - {fileID: -7528432947412087156}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -128,10 +127,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Soulbound/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637581627818897918
+  lastModified: 637585260489682555
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-7457950660376834706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-7441821311654985721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +243,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 882
+--- !u!114 &-5812506778879567475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-5221022659519667022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,7 +328,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3868510713822878039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,6 +780,49 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 550
+--- !u!114 &-448956117835517541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-191784727916288442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Shop/Buy
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Shop/Buy
+  guid: ea653ece1c53e947866f50e714b472e9
+  Banks:
+  - {fileID: -7528432947412087156}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-25426482638190870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,13 +909,14 @@ MonoBehaviour:
   - {fileID: -5221022659519667022}
   - {fileID: 5975024778836044523}
   - {fileID: -3024170774826962908}
-  - {fileID: -8281624775986555496}
+  - {fileID: 6805470882481582868}
+  - {fileID: -191784727916288442}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7528432947412087156}
   StringsBanks:
   - {fileID: 3805074605827639084}
-  stringsBankWriteTime: 637581627818947797
+  stringsBankWriteTime: 637585260489752272
   cacheVersion: 5
 --- !u!114 &348351596864645240
 MonoBehaviour:
@@ -1155,7 +1238,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3805074605827639084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,11 +1253,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Soulbound/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637581627818947797
+  lastModified: 637585260489752272
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 3306
+    Value: 3356
   Exists: 1
 --- !u!114 &3820548362373980985
 MonoBehaviour:
@@ -1533,6 +1616,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 132413
+--- !u!114 &6805470882481582868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/Menu/Tick
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/Menu/Tick
+  guid: 2b77447a92710a459afb54a1fab37737
+  Banks:
+  - {fileID: -7528432947412087156}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &7886357999903176950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,6 +1659,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &8337279681343048611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8888618109857998531
 MonoBehaviour:
   m_ObjectHideFlags: 0
