@@ -54,6 +54,12 @@ namespace RPG.Abilities.Targeting
                         data.SetTargets(GetGameObjectsInRadius(raycastHit.point));
                         break;
                     }
+
+                    if (Input.GetMouseButtonDown(1))
+                    {
+                        data.Cancel();
+                        break;
+                    }
                 }
                 yield return null;
             }
