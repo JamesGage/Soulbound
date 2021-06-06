@@ -83,7 +83,7 @@ namespace RPG.Combat
         {
             transform.LookAt(_target.transform);
 
-            if (_timeSinceLastAttack > _baseStats.GetStat(Stats.Stat.Speed) + (_baseStats.GetStat(Stats.Stat.Speed) * 0.1f));
+            if (_timeSinceLastAttack > _baseStats.GetStat(Stat.Speed) + .1f)
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
@@ -94,13 +94,14 @@ namespace RPG.Combat
         {
             _anim.ResetTrigger("stopAttack");
             _anim.SetTrigger("attack");
-            _anim.speed = _baseStats.GetStat(Stats.Stat.Speed);
+            _anim.speed = _baseStats.GetStat(Stat.Speed);
         }
 
         //Animation Event
         void Hit()
         {
             if (_target == null) return;
+            if (_target.IsDead()) return;
 
             if (_currentWeaponConfig.HasProjectile())
             {

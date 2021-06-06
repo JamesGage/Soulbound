@@ -21,7 +21,6 @@ namespace RPG.Stats
         
         private bool _wasDeadLastFrame;
         private BaseStats _baseStats;
-        private Fighter _fighter;
         private Animator _anim;
         
         public event Action OnHealthChanged;
@@ -32,7 +31,6 @@ namespace RPG.Stats
             
             _anim = GetComponent<Animator>();
             _baseStats = GetComponent<BaseStats>();
-            _fighter = GetComponent<Fighter>();
         }
 
         private void Start()

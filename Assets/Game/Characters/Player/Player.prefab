@@ -101,8 +101,8 @@ MonoBehaviour:
     percentageBonusPerPoint: 5
   - trait: 3
     stat: 2
-    additiveBonusPerPoint: 0
-    percentageBonusPerPoint: 0.5
+    additiveBonusPerPoint: 0.1
+    percentageBonusPerPoint: 0
   - trait: 4
     stat: 4
     additiveBonusPerPoint: 10
@@ -244,6 +244,8 @@ MonoBehaviour:
   respawnLocation: {fileID: 0}
   respawnDelay: 3
   fadeTime: 0.5
+  healthRegenPercentage: 50
+  enemyHealthRegenPercentage: 0
 --- !u!114 &8029642082349966675
 MonoBehaviour:
   m_ObjectHideFlags: 0
