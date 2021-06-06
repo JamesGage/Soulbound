@@ -21,6 +21,11 @@ namespace RPG.Combat
             _health.OnHealthChanged += FindTarget;
         }
 
+        private void OnDisable()
+        {
+            _health.OnHealthChanged -= FindTarget;
+        }
+
         private void FindTarget()
         {
             if (_fighter.GetTarget() != null && !_fighter.GetTarget().IsDead()) return;

@@ -20,8 +20,8 @@ namespace RPG.Stats
         LazyValue<float> _health;
         
         private bool _wasDeadLastFrame;
-        private ActionScheduler _actionScheduler;
         private BaseStats _baseStats;
+        private Fighter _fighter;
         private Animator _anim;
         
         public event Action OnHealthChanged;
@@ -31,8 +31,8 @@ namespace RPG.Stats
             _health = new LazyValue<float>(GetInitialHealth);
             
             _anim = GetComponent<Animator>();
-            _actionScheduler = GetComponent<ActionScheduler>();
             _baseStats = GetComponent<BaseStats>();
+            _fighter = GetComponent<Fighter>();
         }
 
         private void Start()
@@ -61,7 +61,8 @@ namespace RPG.Stats
         public void Heal(float healthRestored)
         {
             _health.value = Mathf.Min(_health.value + healthRestored, GetMaxHealth());
-            OnHealthChanged?.Invoke();
+            
+            UpdateState();
         }
         
         private float GetInitialHealth()
@@ -96,7 +97,7 @@ namespace RPG.Stats
             {
                 _anim.SetTrigger("die");
                 GetComponent<ActionScheduler>().CancelCurrentAction();
-                
+
                 OnDieEvent?.Invoke();
             }
 

@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Control/Respawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Control/Respawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/AggroGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/AggroGroup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/AutoAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/AutoAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/Respawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/Respawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/GameOverUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/TakeDamageEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/TargetingStrategy.cs" />
@@ -54,11 +51,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TraitUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Progression.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/StatTypes.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterClass.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/IModifierProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
@@ -70,7 +65,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
@@ -90,10 +84,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TraitRowUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Saving/SavingSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AggroGroup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/GameOverUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AutoAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Mover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/Respawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -178,7 +176,7 @@
       <workItem from="1622642030410" duration="21447000" />
       <workItem from="1622690057247" duration="1625000" />
       <workItem from="1622844483209" duration="14290000" />
-      <workItem from="1622911003399" duration="19686000" />
+      <workItem from="1622911003399" duration="22417000" />
     </task>
     <servers />
   </component>

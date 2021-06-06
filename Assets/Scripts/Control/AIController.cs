@@ -5,6 +5,7 @@ using RPG.Movement;
 using RPG.Stats;
 using RPG.Utils;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace RPG.Control
 {
@@ -46,11 +47,8 @@ namespace RPG.Control
             _health = GetComponent<Health>();
             _actionScheduler = GetComponent<ActionScheduler>();
             _player = GameObject.FindWithTag("Player");
+            
             _guardPosition = new LazyValue<Vector3>(GetGuardPosition);
-        }
-
-        private void Start()
-        {
             _guardPosition.ForceInit();
         }
 
@@ -171,6 +169,18 @@ namespace RPG.Control
             _timeSinceLastSawPlayer += Time.deltaTime;
             _timeSinceArrivedAtWaypoint += Time.deltaTime;
             _timeSinceAggrevated += Time.deltaTime;
+        }
+        
+        public void Reset()
+        {
+            var navMeshAgent = GetComponent<NavMeshAgent>();
+            navMeshAgent.Warp(_guardPosition.value);
+            
+            _timeSinceLastSawPlayer = Mathf.Infinity;
+            _timeSinceArrivedAtWaypoint = Mathf.Infinity;
+            _timeSinceAggrevated = Mathf.Infinity;
+            _currentWaypointIndex = 0;
+            _canShout = true;
         }
 
         private void OnDrawGizmosSelected()
