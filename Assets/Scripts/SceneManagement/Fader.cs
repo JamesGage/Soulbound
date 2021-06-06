@@ -1,5 +1,7 @@
 ﻿using System.Collections;
+using RPG.Audio;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RPG.SceneManagement
 {
@@ -25,6 +27,7 @@ namespace RPG.SceneManagement
 
         public Coroutine FadeIn(float time)
         {
+            SceneMusicManager.Scene(SceneManager.GetActiveScene().buildIndex);
             return Fade(0, time);
         }
 

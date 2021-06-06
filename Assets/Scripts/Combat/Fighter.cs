@@ -1,4 +1,6 @@
-﻿using RPG.Core;
+﻿using System;
+using RPG.Audio;
+using RPG.Core;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Saving;
@@ -24,6 +26,7 @@ namespace RPG.Combat
         private Equipment _equipment;
         private float _timeSinceLastAttack = Mathf.Infinity;
         private bool _isCritical;
+        private bool _canTrigger = true;
 
         private Mover _mover;
         private Animator _anim;
@@ -65,6 +68,12 @@ namespace RPG.Combat
         {
             _timeSinceLastAttack += Time.deltaTime;
             
+            if (_timeSinceLastAttack > 5f && !_canTrigger)
+            {
+                SceneMusicManager.SetThreat(0);
+                _canTrigger = true;
+            }
+            
             if (_target == null) return;
             if (_target.IsDead()) return;
 
@@ -87,6 +96,7 @@ namespace RPG.Combat
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
+                TriggerCombat();
             }
         }
 
@@ -220,6 +230,15 @@ namespace RPG.Combat
         private Weapon AttachWeapon(WeaponConfig weapon)
         {
             return weapon.Spawn(_rightHandTransform, _leftHandTransform, _anim);
+        }
+        
+        private void TriggerCombat()
+        {
+            if (_canTrigger)
+            {
+                SceneMusicManager.SetThreat(1);
+                _canTrigger = false;
+            }
         }
 
         public Health GetTarget()
