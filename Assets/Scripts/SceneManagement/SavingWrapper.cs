@@ -92,9 +92,9 @@ namespace RPG.SceneManagement
             LoadMenu();
         }
 
-        public void Delete()
+        public void Delete(string saveFile)
         {
-            GetComponent<SavingSystem>().Delete(GetCurrentSave());
+            GetComponent<SavingSystem>().Delete(saveFile);
         }
 
         public IEnumerable<string> ListSaves()

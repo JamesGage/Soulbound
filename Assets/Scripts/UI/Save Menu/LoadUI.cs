@@ -23,7 +23,7 @@ namespace RPG.UI
         {
             ClearSaveMenu();
 
-            ReverseOrderOfContent();
+            LoadFiles();
         }
 
         private void ClearSaveMenu()
@@ -34,7 +34,7 @@ namespace RPG.UI
             }
         }
         
-        private void ReverseOrderOfContent()
+        private void LoadFiles()
         {
             foreach (var save in _savingWrapper.ListSaves())
             {
@@ -44,6 +44,14 @@ namespace RPG.UI
                 button.onClick.AddListener(() =>
                 {
                     _savingWrapper.LoadGame(save);
+                });
+                
+                var deleteButton = saveFileInstance.GetComponent<SaveFileUI>().GetDeleteButton();
+                deleteButton.onClick.AddListener(() =>
+                {
+                    _savingWrapper.Delete(save);
+                    PopulateSaveMenu();
+                    deleteButton.gameObject.SetActive(false);
                 });
             }
         }
