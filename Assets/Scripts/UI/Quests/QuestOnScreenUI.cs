@@ -8,7 +8,6 @@ namespace UI.Quests
     {
         [SerializeField] QuestItemUI _questPrefab;
         [SerializeField] GameObject _content;
-        [SerializeField] GameObject _questButton;
         [SerializeField] Image _background;
 
         private QuestList _questList;
@@ -64,7 +63,6 @@ namespace UI.Quests
         {
             _background.enabled = activeState;
             _content.SetActive(activeState);
-            _questButton.SetActive(activeState);
         }
     }
 }
