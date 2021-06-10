@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,13 +79,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/CheckContinueButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/Fader.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AggroGroup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/SceneMusicManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/AudioSliderUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -170,7 +171,8 @@
       <workItem from="1622690057247" duration="1625000" />
       <workItem from="1622844483209" duration="14290000" />
       <workItem from="1622911003399" duration="37649000" />
-      <workItem from="1623259261551" duration="4542000" />
+      <workItem from="1623259261551" duration="5135000" />
+      <workItem from="1623352323359" duration="2073000" />
     </task>
     <servers />
   </component>

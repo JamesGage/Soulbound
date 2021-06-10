@@ -1,5 +1,4 @@
 ﻿using System;
-using RPG.Audio;
 using RPG.Combat;
 using RPG.Core;
 using RPG.Saving;
@@ -20,7 +19,6 @@ namespace RPG.Stats
 
         LazyValue<float> _health;
         
-        private bool _wasDeadLastFrame;
         private BaseStats _baseStats;
         private Animator _anim;
         
@@ -36,6 +34,12 @@ namespace RPG.Stats
 
         private void Start()
         {
+            if (IsDead())
+            {
+                Destroy(gameObject);
+                return;
+            }
+            
             _health.ForceInit();
         }
 
@@ -91,22 +95,18 @@ namespace RPG.Stats
 
         private void UpdateState()
         {
-            Animator animator = GetComponent<Animator>();
-            if (!_wasDeadLastFrame && IsDead())
+            if (IsDead())
             {
                 _anim.SetTrigger("die");
                 GetComponent<ActionScheduler>().CancelCurrentAction();
-
-                OnDieEvent?.Invoke();
             }
 
-            if (_wasDeadLastFrame && !IsDead())
+            if (!IsDead())
             {
-                animator.Rebind();
+                _anim.Rebind();
             }
-            
+
             OnHealthChanged?.Invoke();
-            _wasDeadLastFrame = IsDead();
         }
 
         #region Save
