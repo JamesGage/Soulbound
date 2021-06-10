@@ -3697,7 +3697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2944364321842764132, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
       propertyPath: patrolSpeedFraction
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3032602251827397290, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
       propertyPath: m_Name
@@ -3762,6 +3762,10 @@ PrefabInstance:
     - target: {fileID: 4661648056790680418, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
       propertyPath: uniqueIdentifier
       value: 352d1633-82bc-4428-a39c-539ad514a993
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936780662584882924, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
+      propertyPath: _baseSpeed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9473ebcb2c8f84b44a5e8f051400d825, type: 3}
