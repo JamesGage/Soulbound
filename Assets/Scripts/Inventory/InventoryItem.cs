@@ -51,10 +51,8 @@ namespace RPG.Inventories
             return itemLookupCache[itemID];
         }
         
-        public Pickup SpawnPickup(Vector3 position, int number)
+        public Pickup SpawnPickup(int number)
         {
-            var pickup = Instantiate(this.pickup);
-            pickup.transform.position = position;
             pickup.Setup(this, number);
             return pickup;
         }

@@ -43,7 +43,7 @@ namespace RPG.Inventories
 
         private void SpawnPickup()
         {
-            var spawnedPickup = item.SpawnPickup(transform.position, number);
+            var spawnedPickup = item.SpawnPickup(number);
             spawnedPickup.transform.SetParent(transform);
         }
 

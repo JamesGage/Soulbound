@@ -1,14 +1,11 @@
 ﻿using System.Collections.Generic;
-using RPG.Stats;
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace RPG.Inventories
 {
     public class RandomDropper : ItemDropper
     {
-        [Tooltip("How far can the pickups be scattered from the dropper")]
-        [SerializeField] float _scatterDistance = 1f;
+        [SerializeField] private PickupMenu _pickupMenuPrefab;
         [Range(0f, 100f)]
         [SerializeField] float _dropChancePercentage;
         [SerializeField] int _minDrops;
@@ -16,14 +13,6 @@ namespace RPG.Inventories
         [SerializeField] GuaranteedDropConfig[] _guaranteedDrops = null;
         [SerializeField] DropConfig[] potentialDrops;
 
-        private const int ATTEMPTS = 30;
-        private BaseStats _baseStats;
-
-        private void Awake()
-        {
-            _baseStats = GetComponent<BaseStats>();
-        }
-        
         public void RandomDrop()
         {
             var drops = GetRandomDrops();
@@ -40,6 +29,8 @@ namespace RPG.Inventories
                     DropItem(guaranteeDrop.item, guaranteeDrop.amount);
                 }
             }
+            
+            SetupPickupMenu();
         }
 
         public struct Dropped
@@ -50,10 +41,7 @@ namespace RPG.Inventories
         
         public IEnumerable<Dropped> GetRandomDrops()
         {
-            if (!ShouldRandomDrop())
-            {
-                yield break;
-            }
+            if (!ShouldRandomDrop()) yield break;
 
             for (int i = 0; i < GetRandomNumberOfDrops(); i++)
             {
@@ -61,6 +49,12 @@ namespace RPG.Inventories
             }
         }
 
+        private void SetupPickupMenu()
+        {
+            var pickupMenu = Instantiate(_pickupMenuPrefab, transform);
+            pickupMenu.SetItems(this);
+        }
+        
         private bool ShouldRandomDrop()
         {
             return Random.Range(0, 100) < _dropChancePercentage;
@@ -109,22 +103,7 @@ namespace RPG.Inventories
 
             return total;
         }
-        
-        protected override Vector3 GetDropLocation()
-        {
-            for (int i = 0; i < ATTEMPTS; i++)
-            {
-                Vector3 randomPoint = transform.position + Random.insideUnitSphere * _scatterDistance;
-                NavMeshHit hit;
-                if (NavMesh.SamplePosition(randomPoint, out hit, 0.1f, NavMesh.AllAreas))
-                {
-                    return hit.position;
-                }
-            }
-            
-            return transform.position;
-        }
-        
+
         [System.Serializable]
         class DropConfig
         {

@@ -1095,7 +1095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &154359166
 Transform:
   m_ObjectHideFlags: 0
@@ -21217,7 +21217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d3e582cdeb94a03b147154908de561b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scatterDistance: 2
+  _pickupMenuPrefab: {fileID: 0}
   _dropChancePercentage: 0
   _minDrops: 0
   _maxDrops: 0

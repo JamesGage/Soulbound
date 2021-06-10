@@ -27,35 +27,18 @@ namespace RPG.Inventories
         /// </param>
         public void DropItem(InventoryItem item, int number)
         {
-            SpawnPickup(item, GetDropLocation(), number);
+            SpawnPickup(item, number);
         }
 
-        /// <summary>
-        /// Create a pickup at the current position.
-        /// </summary>
-        /// <param name="item">The item type for the pickup.</param>
-        public void DropItem(InventoryItem item)
+        public void SpawnPickup(InventoryItem item, int number)
         {
-            SpawnPickup(item, GetDropLocation(), 1);
-        }
-
-        // PROTECTED
-
-        /// <summary>
-        /// Override to set a custom method for locating a drop.
-        /// </summary>
-        /// <returns>The location the drop should be spawned.</returns>
-        protected virtual Vector3 GetDropLocation()
-        {
-            return transform.position;
-        }
-
-        // PRIVATE
-
-        public void SpawnPickup(InventoryItem item, Vector3 spawnLocation, int number)
-        {
-            var pickup = item.SpawnPickup(spawnLocation, number);
+            var pickup = item.SpawnPickup(number);
             droppedItems.Add(pickup);
+        }
+
+        public List<Pickup> GetDroppedItems()
+        {
+            return droppedItems;
         }
 
         [System.Serializable]
@@ -101,9 +84,8 @@ namespace RPG.Inventories
                 }
                 
                 var pickupItem = InventoryItem.GetFromID(item.itemID);
-                Vector3 position = item.position.ToVector();
                 int number = item.number;
-                SpawnPickup(pickupItem, position, number);
+                SpawnPickup(pickupItem, number);
             }
         }
 
