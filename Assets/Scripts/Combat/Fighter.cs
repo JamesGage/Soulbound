@@ -120,7 +120,7 @@ namespace RPG.Combat
             }
             else
             {
-                _target.TakeDamage(CalculateAttack(), _hitDamageType);
+                _target.TakeDamage(CalculateAttack());
             }
         }
 

@@ -1,5 +1,4 @@
-﻿using RPG.Combat;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RPG.UI
 {
@@ -9,10 +8,10 @@ namespace RPG.UI
         
         private DamageText _damageText;
 
-        public void SpawnDamage(float value, DamageType damageType)
+        public void SpawnDamage(float value)
         {
             var instance = Instantiate(_damageTextPrefab, transform);
-            instance.GetComponentInChildren<DamageText>().SetDamage(value, damageType);
+            instance.GetComponentInChildren<DamageText>().SetDamage(value);
         }
     }
 }

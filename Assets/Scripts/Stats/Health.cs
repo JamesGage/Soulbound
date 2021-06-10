@@ -44,19 +44,20 @@ namespace RPG.Stats
         }
 
 
-        public void TakeDamage(float damage, DamageType damageType)
+        public void TakeDamage(float damage)
         {
             _health.value = Mathf.Max(_health.value - damage, 0);
 
             if (IsDead())
             {
                 FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
+                _takeDamageEvent.Invoke(damage);
                 OnDieEvent?.Invoke();
             }
             else
             {
                 FMODUnity.RuntimeManager.PlayOneShot(takeDamageSFX, transform.position);
-                _takeDamageEvent.Invoke(damage, damageType);
+                _takeDamageEvent.Invoke(damage);
             }
             UpdateState();
         }

@@ -85,7 +85,7 @@ namespace RPG.Combat
                 _particles.Stop();
             }
 
-            health.TakeDamage(_damage, _damageType);
+            health.TakeDamage(_damage);
 
             _speed = 0;
             

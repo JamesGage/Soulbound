@@ -12,9 +12,7 @@ namespace RPG.Abilities.Effects
         [Range(0, 100)]
         [SerializeField] private int healthChange;
         [SerializeField] private DamageType _damageType;
-        [SerializeField] private bool isCritical;
-        [SerializeField] private WeaponConfig weapon;
-        
+
         public override void StartEffect(AbilityData data, Action finished)
         {
             foreach (var target in data.GetTargets())
@@ -29,7 +27,7 @@ namespace RPG.Abilities.Effects
                     }
                     else
                     {
-                        health.TakeDamage(healthChange, _damageType);
+                        health.TakeDamage(healthChange);
                     }
                 }
             }
