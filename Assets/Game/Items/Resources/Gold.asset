@@ -16,8 +16,10 @@ MonoBehaviour:
   displayName: Gold
   _displayNameColor: {r: 0.9622642, g: 0.6607019, b: 0.13163051, a: 1}
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b9b29a527ec417d4a899175a5044fe2a, type: 3}
   pickup: {fileID: 4523111677544510196, guid: 8ba56ee595787d2419939fe44b320bab, type: 3}
   stackable: 1
   _goldValue: 0
   isGold: 1
+  itemType: 0
+  equipSFX: 

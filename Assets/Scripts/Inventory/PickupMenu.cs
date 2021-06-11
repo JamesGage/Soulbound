@@ -10,7 +10,7 @@ namespace RPG.Inventories
         [SerializeField] private PickupMenuItem _pickupMenuItemPrefab;
         [SerializeField] private GameObject contents;
         [SerializeField] private Button takeAllButton;
-        
+
         private ItemDropper _itemDropper;
         private SphereCollider _collider;
 
@@ -18,6 +18,11 @@ namespace RPG.Inventories
         {
             takeAllButton.onClick.AddListener(TakeAll);
             _collider = GetComponent<SphereCollider>();
+        }
+
+        private void Start()
+        {
+            _pickupMenu.SetActive(false);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -45,7 +50,6 @@ namespace RPG.Inventories
             {
                 var itemRow = Instantiate(_pickupMenuItemPrefab, contents.transform);
                 itemRow.SetItem(item);
-                print(item);
             }
         }
         
@@ -54,9 +58,20 @@ namespace RPG.Inventories
             foreach (var item in contents.GetComponentsInChildren<PickupMenuItem>())
             {
                 item.AddItemToInventory();
+                RemoveItemFromList(item.GetItem());
             }
             CloseMenu();
             Destroy(gameObject);
+        }
+
+        public void RemoveItemFromList(Pickup item)
+        {
+            _itemDropper.GetDroppedItems().Remove(item);
+            if (_itemDropper.GetDroppedItems().Count <= 0)
+            {
+                CloseMenu();
+                Destroy(gameObject);
+            }
         }
 
         public void SetItems(ItemDropper itemDropper)
@@ -74,7 +89,6 @@ namespace RPG.Inventories
             foreach (var item in contents.GetComponentsInChildren<PickupMenuItem>())
             {
                 Destroy(item.gameObject);
-                print("Destroyed item");
             }
         }
     }

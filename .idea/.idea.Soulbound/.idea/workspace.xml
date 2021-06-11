@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{cc91a58c-1959-4f2b-912f-5c4e4efe0964}.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/EventFolder/{0d327164-34fe-4adb-8f4e-8143b7a3396e}.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/ShardIce_Explosion_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/ShardIce_Explosion_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources/Gold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Resources/Gold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup Item UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup Item UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.strings.bank" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Build/Desktop/Master.strings.bank" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{8da9125f-505b-419c-bee7-ca8bb2195b7a}.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{8da9125f-505b-419c-bee7-ca8bb2195b7a}.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FMOD/Soulbound/Metadata/Event/{a4ce721f-4d8b-4f24-9288-656454b4acc8}.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,9 +99,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -176,7 +189,7 @@
       <workItem from="1622911003399" duration="37649000" />
       <workItem from="1623259261551" duration="5135000" />
       <workItem from="1623352323359" duration="11716000" />
-      <workItem from="1623427018843" duration="1054000" />
+      <workItem from="1623427018843" duration="5753000" />
     </task>
     <servers />
   </component>
