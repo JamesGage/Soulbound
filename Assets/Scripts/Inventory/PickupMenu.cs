@@ -55,11 +55,18 @@ namespace RPG.Inventories
             {
                 item.AddItemToInventory();
             }
+            CloseMenu();
+            Destroy(gameObject);
         }
 
         public void SetItems(ItemDropper itemDropper)
         {
             _itemDropper = itemDropper;
+        }
+
+        public void CloseMenu()
+        {
+            _pickupMenu.SetActive(false);
         }
 
         private void ClearItems()

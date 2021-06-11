@@ -51,7 +51,7 @@ namespace RPG.Inventories
 
         private void SetupPickupMenu()
         {
-            var pickupMenu = Instantiate(_pickupMenuPrefab, transform);
+            var pickupMenu = Instantiate(_pickupMenuPrefab, transform.position, Quaternion.identity);
             pickupMenu.SetItems(this);
         }
         
