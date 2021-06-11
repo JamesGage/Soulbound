@@ -41,6 +41,14 @@ namespace RPG.Inventories
             return droppedItems;
         }
 
+        public void SetDroppedItems(InventoryItem item, int amount)
+        {
+            foreach (var pickup in droppedItems)
+            {
+                pickup.Setup(item, amount);
+            }
+        }
+
         [System.Serializable]
         private struct DropRecord
         {

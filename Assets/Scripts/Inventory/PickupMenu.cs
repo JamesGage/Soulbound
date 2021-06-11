@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using RPG.Control;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace RPG.Inventories
 {
     [RequireComponent(typeof(SphereCollider))]
-    public class PickupMenu : MonoBehaviour
+    public class PickupMenu : MonoBehaviour, IRaycastable
     {
         [SerializeField] private GameObject _pickupMenu;
         [SerializeField] private PickupMenuItem _pickupMenuItemPrefab;
@@ -12,34 +13,17 @@ namespace RPG.Inventories
         [SerializeField] private Button takeAllButton;
 
         private ItemDropper _itemDropper;
-        private SphereCollider _collider;
+        private bool _canPickUp;
+        private bool _clickPickup;
 
         private void Awake()
         {
             takeAllButton.onClick.AddListener(TakeAll);
-            _collider = GetComponent<SphereCollider>();
         }
 
         private void Start()
         {
             _pickupMenu.SetActive(false);
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                _pickupMenu.SetActive(true);
-                AddItems();
-            }
-        }
-        
-        private void OnTriggerExit(Collider other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                _pickupMenu.SetActive(false);
-            }
         }
 
         public void AddItems()
@@ -89,6 +73,49 @@ namespace RPG.Inventories
             foreach (var item in contents.GetComponentsInChildren<PickupMenuItem>())
             {
                 Destroy(item.gameObject);
+            }
+        }
+
+        public CursorType GetCursorType()
+        {
+            return CursorType.Pickup;
+        }
+
+        public bool HandleRaycast(PlayerController callingController)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (_canPickUp)
+                {
+                    _clickPickup = true;
+                    return true;
+                }
+                callingController.GetMover().StartMoveAction(transform.position, 1f);
+                _clickPickup = true;
+            }
+            return true;
+        }
+        
+        private void OnTriggerStay(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                _canPickUp = true;
+                if (_clickPickup)
+                {
+                    _pickupMenu.SetActive(true);
+                    AddItems();
+                    _clickPickup = false;
+                }
+            }
+        }
+        
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                _pickupMenu.SetActive(false);
+                _canPickUp = false;
             }
         }
     }
