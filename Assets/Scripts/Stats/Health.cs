@@ -21,6 +21,7 @@ namespace RPG.Stats
         
         private BaseStats _baseStats;
         private Animator _anim;
+        bool _wasDeadLastFrame = false;
         
         public event Action OnHealthChanged;
 
@@ -96,17 +97,18 @@ namespace RPG.Stats
 
         private void UpdateState()
         {
-            if (IsDead())
+            if (!_wasDeadLastFrame && IsDead())
             {
                 _anim.SetTrigger("die");
                 GetComponent<ActionScheduler>().CancelCurrentAction();
             }
 
-            if (!IsDead())
+            if (_wasDeadLastFrame && !IsDead())
             {
                 _anim.Rebind();
             }
 
+            _wasDeadLastFrame = IsDead();
             OnHealthChanged?.Invoke();
         }
 

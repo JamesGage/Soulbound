@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/CurrencyItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/LoadUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/9d/88331e6d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/24/8cbb1504/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/ff/fd158713/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -81,7 +80,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/HealthEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" />
@@ -89,6 +87,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Pickup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
