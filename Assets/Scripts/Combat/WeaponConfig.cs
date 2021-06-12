@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using RPG.Abilities;
 using RPG.Inventories;
 using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat
 {
-    [CreateAssetMenu(fileName = "Weapon", menuName = "Weapons/Make New Weapon")]
+    [CreateAssetMenu(fileName = "Weapon Name", menuName = "Weapons/New Weapon")]
     public class WeaponConfig : EquipableItem, IModifierProvider
     {
         #region Varaibles
@@ -23,10 +24,8 @@ namespace RPG.Combat
         [FMODUnity.EventRef] public string attackStartSFX;
         [FMODUnity.EventRef] public string attackMidSFX;
         [FMODUnity.EventRef] public string attackEndSFX;
-        [FMODUnity.EventRef] public string hitSFX;
-        [FMODUnity.EventRef] public string missSFX;
-        [FMODUnity.EventRef] public string blockSFX;
-        [FMODUnity.EventRef] public string critSFX;
+
+        [SerializeField] private List<Ability> _weaponAbilities = new List<Ability>();
 
         private const string _weaponName = "Weapon";
 
@@ -61,6 +60,55 @@ namespace RPG.Combat
             return weapon;
         }
 
+        public float Range()
+        {
+            return _weaponRange;
+        }
+
+        public bool HasProjectile()
+        {
+            return _projectile != null;
+        }
+
+        public DamageType GetDamageType()
+        {
+            return _damageType;
+        }
+
+        public ItemType GetWeaponType()
+        {
+            return _weaponType;
+        }
+
+        public List<Ability> GetAbilities()
+        {
+            return _weaponAbilities;
+        }
+
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, 
+            GameObject instigator, int calculatedDamage)
+        {
+            Projectile projectileInstance =
+                Instantiate(_projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
+            projectileInstance.SetTarget(target, instigator, calculatedDamage);
+        }
+
+        public IEnumerable<float> GetAddativeModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return _damageAddative;
+            }
+        }
+
+        public IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            if (stat == Stat.Damage)
+            {
+                yield return _damagePercentage;
+            }
+        }
+        
         private bool FindPlayerRoot(Weapon weapon)
         {
             Transform t = weapon.transform;
@@ -96,50 +144,6 @@ namespace RPG.Combat
             if (_isRightHanded) handTransform = rightHand;
             else handTransform = leftHand;
             return handTransform;
-        }
-
-        public float Range()
-        {
-            return _weaponRange;
-        }
-
-        public bool HasProjectile()
-        {
-            return _projectile != null;
-        }
-
-        public DamageType GetDamageType()
-        {
-            return _damageType;
-        }
-
-        public ItemType GetWeaponType()
-        {
-            return _weaponType;
-        }
-
-        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, 
-            GameObject instigator, int calculatedDamage)
-        {
-            Projectile projectileInstance =
-                Instantiate(_projectile, GetTransform(rightHand, leftHand).position, Quaternion.identity);
-            projectileInstance.SetTarget(target, instigator, calculatedDamage);
-        }
-
-        public IEnumerable<float> GetAddativeModifiers(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return _damageAddative;
-            }
-        }
-
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
-        {
-            if (stat == Stat.Damage)
-            {
-                yield return _damagePercentage;
-            }
         }
     }
 }
