@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.Abilities.Effects
@@ -17,11 +18,20 @@ namespace RPG.Abilities.Effects
 
         private IEnumerator Effect(AbilityData data, Action finished)
         {
-            var instance = Instantiate(targetPrefab, data.GetTargetPoint(), Quaternion.identity);
+            var instances = new List<Transform>();
+            
+            foreach (var target in data.GetTargets())
+            {
+                instances.Add(Instantiate(targetPrefab, target.transform.position, Quaternion.identity));
+            }
+            
             if (destroyDelay > 0)
             {
-                yield return new WaitForSeconds(destroyDelay);
-                Destroy(instance.gameObject);
+                foreach (var instance in instances)
+                {
+                    yield return new WaitForSeconds(destroyDelay);
+                    Destroy(instance.gameObject);
+                }
             }
 
             finished();
