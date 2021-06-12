@@ -28,14 +28,14 @@ namespace RPG.Abilities.Targeting
             playerController.enabled = false;
             if (targetingPrefabInstance == null)
             {
-                targetingPrefabInstance = Instantiate(targetingPrefab);   
+                targetingPrefabInstance = Instantiate(targetingPrefab); 
             }
             else
             {
                 targetingPrefabInstance.gameObject.SetActive(true);
             }
 
-            targetingPrefabInstance.localScale = new Vector3(areaAffectRadius * 2, 1, areaAffectRadius * 2);
+            targetingPrefabInstance.localScale = new Vector3(areaAffectRadius * 2, areaAffectRadius * 2, areaAffectRadius * 2);
 
             while (!data.IsCancelled())
             {
