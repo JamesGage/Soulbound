@@ -15,19 +15,7 @@ namespace RPG.Shops
         [Range(0f, 100f)]
         [SerializeField] private float maxBarterDiscount = 80f;
         [SerializeField] private StockItemConfig[] stockConfig;
-
-        [Serializable]
-        class StockItemConfig
-        {
-            public InventoryItem item;
-            public int initialStock;
-            [Range(-100, 100)]
-            public float discountPercentage;
-            [Tooltip("Level player must be to show this item in the shop")]
-            public int levelToUnlock = 0;
-            [Tooltip("Hide this item if the player is at this level or higher")]
-            public int levelToHide = 5;
-        }
+        private StockItemConfig[] _playerStockConfig;
 
         private Dictionary<InventoryItem, int> _transaction = new Dictionary<InventoryItem, int>();
         private Dictionary<InventoryItem, int> _stockSold = new Dictionary<InventoryItem, int>();
@@ -284,17 +272,17 @@ namespace RPG.Shops
             {
                 if (isBuyingMode)
                 {
-                    if (!availabilities.ContainsKey(config.item))
+                    if (!availabilities.ContainsKey(config._item))
                     {
                         var soldAmount = 0;
-                        _stockSold.TryGetValue(config.item, out soldAmount);
-                        availabilities[config.item] = -soldAmount;
+                        _stockSold.TryGetValue(config._item, out soldAmount);
+                        availabilities[config._item] = -soldAmount;
                     }
-                    availabilities[config.item] += config.initialStock;
+                    availabilities[config._item] += config._initialStock;
                 }
                 else
                 {
-                    availabilities[config.item] = CountItemsInInventory(config.item);
+                    availabilities[config._item] = CountItemsInInventory(config._item);
                 }
             }
 
@@ -309,16 +297,16 @@ namespace RPG.Shops
             {
                 if (isBuyingMode)
                 {
-                    if (!prices.ContainsKey(config.item))
+                    if (!prices.ContainsKey(config._item))
                     {
-                        prices[config.item] = config.item.GetCost() * GetBarterDiscount();
+                        prices[config._item] = config._item.GetCost() * GetBarterDiscount();
                     }
 
-                    prices[config.item] *= 1 - config.discountPercentage / 100;
+                    prices[config._item] *= 1 - config._discountPercentage / 100;
                 }
                 else
                 {
-                    prices[config.item] = Mathf.RoundToInt(config.item.GetCost() * (1 - config.discountPercentage / 100) * (sellingPercentage / 100));
+                    prices[config._item] = Mathf.RoundToInt(config._item.GetCost() * (1 - config._discountPercentage / 100) * (sellingPercentage / 100));
                 }
             }
 
@@ -334,11 +322,25 @@ namespace RPG.Shops
 
         private IEnumerable<StockItemConfig> GetAvailableConfigs()
         {
-            int shopperLevel = GetShopperLevel();
-            foreach (var config in stockConfig)
+            if (!isBuyingMode)
             {
-                if(config.levelToUnlock > shopperLevel || config.levelToHide <= shopperLevel) continue;
-                yield return config;
+                foreach (var item in _shopper.GetComponent<Inventory>().GetAllInventory())
+                {
+                    var config = new StockItemConfig();
+                    config.SetInventoryItem(item.Key);
+                    config.SetStock(item.Value);
+                    yield return config;
+                }
+            }
+
+            else
+            {
+                int shopperLevel = GetShopperLevel();
+                foreach (var config in stockConfig)
+                {
+                    if(config._levelToUnlock > shopperLevel || config._levelToHide <= shopperLevel && config._levelToHide != 0) continue;
+                    yield return config;
+                }   
             }
         }
 

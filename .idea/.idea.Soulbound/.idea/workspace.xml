@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +43,11 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BondDisplay.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UISwitcher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveLoadUI.cs" />
@@ -88,6 +91,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />

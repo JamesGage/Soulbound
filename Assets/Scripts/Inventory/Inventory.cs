@@ -45,6 +45,26 @@ namespace RPG.Inventories
             return player.GetComponent<Inventory>();
         }
 
+        public Dictionary<InventoryItem, int> GetAllInventory()
+        {
+            var allInventory = new Dictionary<InventoryItem, int>();
+            for (int i = 0; i < inventorySize; i++)
+            {
+                if(GetItemInSlot(i) == null) continue;
+                
+                var item = GetItemInSlot(i);
+                var amount = GetNumberInSlot(i);
+                if (allInventory.ContainsKey(item))
+                {
+                    allInventory[item]++;
+                    continue;
+                }
+                allInventory.Add(item, amount);
+            }
+
+            return allInventory;
+        }
+
         /// <summary>
         /// Could this item fit anywhere in the inventory?
         /// </summary>
