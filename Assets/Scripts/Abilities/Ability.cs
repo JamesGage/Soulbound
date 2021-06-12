@@ -28,7 +28,6 @@ namespace RPG.Abilities
             actionScheduler.StartAction(data);
 
             targetingStrategy.StartTargeting(data, () => TargetAquired(data));
-            return;
         }
 
         private void TargetAquired(AbilityData data)

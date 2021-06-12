@@ -14,6 +14,7 @@ namespace RPG.Abilities.Targeting
         [SerializeField] LayerMask layerMask;
         [SerializeField] Transform targetingPrefab;
         [SerializeField] float areaAffectRadius;
+        [SerializeField] private float maxDistance;
 
         private Transform targetingPrefabInstance = null;
 
@@ -36,6 +37,7 @@ namespace RPG.Abilities.Targeting
             }
 
             targetingPrefabInstance.localScale = new Vector3(areaAffectRadius * 2, areaAffectRadius * 2, areaAffectRadius * 2);
+            var meshRenderer = targetingPrefabInstance.GetComponent<MeshRenderer>();
 
             while (!data.IsCancelled())
             {
@@ -44,8 +46,9 @@ namespace RPG.Abilities.Targeting
                 if (Physics.Raycast(PlayerController.GetMouseRay(), out raycastHit, 1000, layerMask))
                 {
                     targetingPrefabInstance.position = raycastHit.point;
+                    meshRenderer.enabled = !data.IsInRange(raycastHit.point, maxDistance);
 
-                    if (Input.GetMouseButtonDown(0))
+                    if (Input.GetMouseButtonDown(0) && data.IsInRange(raycastHit.point, maxDistance))
                     {
                         //Absorb whole mouse click
                         yield return new WaitWhile(() => Input.GetMouseButton(0));

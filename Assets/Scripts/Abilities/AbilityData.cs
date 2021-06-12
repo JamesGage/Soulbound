@@ -15,7 +15,7 @@ namespace RPG.Abilities
 
         public AbilityData(GameObject user)
         {
-            this._user = user;
+            _user = user;
         }
 
         public IEnumerable<GameObject> GetTargets()
@@ -41,6 +41,11 @@ namespace RPG.Abilities
         public GameObject GetUser()
         {
             return _user;
+        }
+
+        public bool IsInRange(Vector3 currentMousePosition, float maxDistance)
+        {
+            return Vector3.Distance(currentMousePosition, _user.transform.position) < maxDistance;
         }
 
         public void StartCoroutine(IEnumerator coroutine)
