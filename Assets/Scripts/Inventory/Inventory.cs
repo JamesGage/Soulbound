@@ -34,7 +34,7 @@ namespace RPG.Inventories
         /// <summary>
         /// Broadcasts when the items in the slots are added/removed.
         /// </summary>
-        public event Action inventoryUpdated;
+        public event Action OnInventoryUpdated;
 
         /// <summary>
         /// Convenience for getting the player's inventory.
@@ -138,9 +138,9 @@ namespace RPG.Inventories
 
             slots[i].item = item;
             slots[i].number += number;
-            if (inventoryUpdated != null)
+            if (OnInventoryUpdated != null)
             {
-                inventoryUpdated();
+                OnInventoryUpdated();
             }
             return true;
         }
@@ -188,9 +188,9 @@ namespace RPG.Inventories
                 slots[slot].number = 0;
                 slots[slot].item = null;
             }
-            if (inventoryUpdated != null)
+            if (OnInventoryUpdated != null)
             {
-                inventoryUpdated();
+                OnInventoryUpdated();
             }
         }
 
@@ -218,9 +218,9 @@ namespace RPG.Inventories
 
             slots[slot].item = item;
             slots[slot].number += number;
-            if (inventoryUpdated != null)
+            if (OnInventoryUpdated != null)
             {
-                inventoryUpdated();
+                OnInventoryUpdated();
             }
             return true;
         }
@@ -313,9 +313,9 @@ namespace RPG.Inventories
                 slots[i].item = InventoryItem.GetFromID(slotStrings[i].itemID);
                 slots[i].number = slotStrings[i].number;
             }
-            if (inventoryUpdated != null)
+            if (OnInventoryUpdated != null)
             {
-                inventoryUpdated();
+                OnInventoryUpdated();
             }
         }
 

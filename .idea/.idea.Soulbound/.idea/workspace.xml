@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InventoryCapacityUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InventoryCapacityUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,23 +27,22 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/CurrencyItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/LoadUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/9d/88331e6d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/24/8cbb1504/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/ff/fd158713/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/c3/04713f13/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/ff/fd158713/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Abilities/EffectStrategy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" />
@@ -93,7 +91,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryCapacityUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />

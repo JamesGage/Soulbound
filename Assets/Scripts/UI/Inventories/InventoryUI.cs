@@ -20,7 +20,7 @@ namespace UI.Inventories
         private void Awake() 
         {
             playerInventory = Inventory.GetPlayerInventory();
-            playerInventory.inventoryUpdated += Redraw;
+            playerInventory.OnInventoryUpdated += Redraw;
         }
 
         private void Start()
