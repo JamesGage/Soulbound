@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b879b3a04f478a83fb170e8c0259fd, type: 3}
+  m_Name: Effect Spawn Slash
+  m_EditorClassIdentifier: 
+  effectPrefab: {fileID: 8348756767061023491, guid: e32ea47a9e155dc409aa88d14e71dace, type: 3}
+  spawnOffset: {x: 0, y: 1, z: 0}
+  effectScale: 3
+  destroyDelay: 1

@@ -228,6 +228,7 @@
               <e p="DelayCompositeEffect.cs" t="Include" />
               <e p="HealthEffect.cs" t="Include" />
               <e p="LookAtTargetEffect.cs" t="Include" />
+              <e p="SpawnPrefabEffect.cs" t="Include" />
               <e p="SpawnProjectileEffect.cs" t="Include" />
               <e p="SpawnTargetPrefabEffect.cs" t="Include" />
               <e p="TriggerAnimationEffect.cs" t="Include" />
@@ -241,6 +242,7 @@
               <e p="DelayedClickTargeting.cs" t="Include" />
               <e p="DirectionalTargeting.cs" t="Include" />
               <e p="SelfTargeting.cs" t="Include" />
+              <e p="SurroundingTargeting.cs" t="Include" />
             </e>
             <e p="TargetingStrategy.cs" t="Include" />
           </e>

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4347a0d3f71541f88dcc4cecc4285fb4, type: 3}
+  m_Name: Ability Slash
+  m_EditorClassIdentifier: 
+  itemID: 4c01e817-0c3a-4066-b504-6ca578d125ce
+  displayName: Slash
+  _displayNameColor: {r: 1, g: 1, b: 1, a: 1}
+  description: A wide slash that deals 10 damage to each enemy in the arc.
+  icon: {fileID: 21300000, guid: 34bcda609bb9b404398e9c0bc91dd48c, type: 3}
+  pickup: {fileID: 0}
+  stackable: 0
+  _goldValue: 0
+  isGold: 0
+  itemType: 5
+  equipSFX: 
+  consumable: 0
+  comsumeSFX: 
+  targetingStrategy: {fileID: 11400000, guid: 374be181dd2a5b64faa225e53e356f5c, type: 2}
+  filterStrategies:
+  - {fileID: 11400000, guid: 70f313f2804902a4aafbc40134027eb4, type: 2}
+  effectStrategies:
+  - {fileID: 11400000, guid: f24f7e204117e0c419bb83065dbbd653, type: 2}
+  - {fileID: 11400000, guid: b4cf54ec0fc27d0438195911ce98e23b, type: 2}
+  bondCost: 15
+  cooldownTime: 5

@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="" />
+    <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/ShardIce_Effect_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/ShardIce_Effect_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Slash.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Slash.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Health Potion Delay.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Health Potion Delay.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Slash Delay.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Slash Delay.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Slash.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Slash.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Surrounding.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Surrounding.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnPrefabEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnPrefabEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SurroundingTargeting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SurroundingTargeting.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/ShardIce_Explosion_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/ShardIce_Explosion_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Items/Effect Health Potion Delay.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Items/Effect Health Potion Delay.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/_Source/_Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/_Source/_Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/_Source/_NPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/NPCs/_Source/_NPC.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Shop UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +71,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveLoadUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/QuitUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/StopMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" />
@@ -83,9 +117,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SurroundingTargeting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnPrefabEffect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -174,7 +210,7 @@
       <workItem from="1623259261551" duration="5135000" />
       <workItem from="1623352323359" duration="11716000" />
       <workItem from="1623427018843" duration="11314000" />
-      <workItem from="1623529850419" duration="1423000" />
+      <workItem from="1623529850419" duration="7473000" />
     </task>
     <servers />
   </component>

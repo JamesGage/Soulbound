@@ -16,6 +16,10 @@ PrefabInstance:
       value: _NPC
       objectReference: {fileID: 0}
     - target: {fileID: 1306814148330273329, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306814148330273329, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
