@@ -36,7 +36,6 @@ MonoBehaviour:
   attackStartSFX: 
   attackMidSFX: event:/SFX/Weapons/Melee/Sword_AttackMid
   attackEndSFX: 
-  hitSFX: event:/SFX/Weapons/Melee/Sword_Hit
-  missSFX: event:/SFX/Weapons/Miss
-  blockSFX: event:/SFX/Weapons/Melee/Sword_Block
-  critSFX: event:/SFX/Weapons/Melee/Sword_Crit
+  _weaponAbilities:
+  - {fileID: 11400000, guid: d2857b9af6eb4634a9650354dbf94a14, type: 2}
+  - {fileID: 11400000, guid: 1ab75383590473640bb8f3157d862312, type: 2}

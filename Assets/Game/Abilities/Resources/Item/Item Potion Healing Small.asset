@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4347a0d3f71541f88dcc4cecc4285fb4, type: 3}
-  m_Name: Ability Heal Small
+  m_Name: Item Potion Healing Small
   m_EditorClassIdentifier: 
-  itemID: cf0376e5-f5fe-4d2e-98ed-815bb7ab2ece
-  displayName: Simple Heal
+  itemID: 191c025a-71bf-431b-b7ee-14804afb4c53
+  displayName: Heal Potion (Small)
   _displayNameColor: {r: 1, g: 1, b: 1, a: 1}
   description: Heal the player for 10 points of health.
-  icon: {fileID: 21300000, guid: 58417734e20842a4186b98f8be0c8e58, type: 3}
+  icon: {fileID: 21300000, guid: 9e54a146e64f40149a04094618559ce7, type: 3}
   pickup: {fileID: 813604151754665848, guid: 9925259900ddd92469637711a9f83eda, type: 3}
-  stackable: 0
-  _goldValue: 0
+  stackable: 1
+  _goldValue: 25
   isGold: 0
-  itemType: 5
-  equipSFX: 
+  itemType: 3
+  equipSFX: event:/SFX/Ambient/Pickup/Pickup_Bottle
   consumable: 1
-  comsumeSFX: 
+  comsumeSFX: event:/SFX/Items/Potions/Potion_Drink
   targetingStrategy: {fileID: 11400000, guid: 2c12d2b9d72ea5440964612c12cf9b6d, type: 2}
   filterStrategies: []
   effectStrategies:
-  - {fileID: 11400000, guid: 5fe8c6be7c14274408428ce84d2bc273, type: 2}
+  - {fileID: 11400000, guid: 53f958a12de5a8d41bcda5b5eb4ea5fd, type: 2}
   - {fileID: 11400000, guid: 69d20a1406c23a3489f6bf4dd4b90b44, type: 2}
-  bondCost: 25
-  cooldownTime: 4
+  bondCost: 0
+  cooldownTime: 2

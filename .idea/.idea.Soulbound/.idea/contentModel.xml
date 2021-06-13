@@ -364,6 +364,10 @@
             <e p="TraitStore.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="Ability Menu" t="Include">
+              <e p="AbilityRowUI.cs" t="Include" />
+              <e p="AbilityUI.cs" t="Include" />
+            </e>
             <e p="BondDisplay.cs" t="Include" />
             <e p="CheckContinueButton.cs" t="Include" />
             <e p="DamageText.cs" t="Include" />

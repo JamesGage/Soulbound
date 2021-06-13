@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RPG.Combat;
 using UnityEngine;
 using RPG.Saving;
 
@@ -45,6 +46,22 @@ namespace RPG.Inventories
         public IEnumerable<EquipLocation> GetAllPopulatedSlots()
         {
             return equippedItems.Keys;
+        }
+        
+        public WeaponConfig GetCurrentWeapon()
+        {
+            if (!equippedItems.ContainsKey(EquipLocation.Weapon))
+            {
+                return null;
+            }
+
+            return (WeaponConfig)equippedItems[EquipLocation.Weapon];
+        }
+        
+        public static Equipment GetPlayerEquipment()
+        {
+            var player = GameObject.FindWithTag("Player");
+            return player.GetComponent<Equipment>();
         }
         
 
