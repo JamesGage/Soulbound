@@ -4,11 +4,8 @@ using UI.Dragging;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI.Inventories
+namespace RPG.UI.Inventories
 {
-    /// <summary>
-    /// The UI slot for the player action bar.
-    /// </summary>
     public class ActionSlotUI : MonoBehaviour, IItemHolder, IDragContainer<InventoryItem>
     {
         // CONFIG DATA

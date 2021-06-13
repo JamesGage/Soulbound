@@ -1,8 +1,8 @@
 ﻿using RPG.Inventories;
-using UI.Inventories;
+using RPG.UI.Inventories;
 using UnityEngine;
 
-namespace UI.Pickups
+namespace RPG.UI.Pickups
 {
     public class PickupSlotUI : MonoBehaviour
     {

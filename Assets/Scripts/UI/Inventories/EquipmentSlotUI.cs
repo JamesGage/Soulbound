@@ -2,7 +2,7 @@
 using UI.Dragging;
 using RPG.Inventories;
 
-namespace UI.Inventories
+namespace RPG.UI.Inventories
 {
     /// <summary>
     /// An slot for the players equipment.

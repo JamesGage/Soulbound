@@ -2,7 +2,7 @@
 using RPG.Inventories;
 using UnityEngine;
 
-namespace UI.Inventories
+namespace RPG.UI.Inventories
 {
     public class InventorySlotUI : MonoBehaviour, IItemHolder, IDragContainer<InventoryItem>
     {

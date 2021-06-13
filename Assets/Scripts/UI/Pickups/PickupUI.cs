@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UI.Pickups
+namespace RPG.UI.Pickups
 {
     public class PickupUI : MonoBehaviour
     {

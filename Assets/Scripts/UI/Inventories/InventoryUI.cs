@@ -1,7 +1,7 @@
 ﻿using RPG.Inventories;
 using UnityEngine;
 
-namespace UI.Inventories
+namespace RPG.UI.Inventories
 {
     /// <summary>
     /// To be placed on the root of the inventory UI. Handles spawning all the

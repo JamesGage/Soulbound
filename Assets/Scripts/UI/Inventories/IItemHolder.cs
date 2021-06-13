@@ -1,6 +1,6 @@
 ﻿using RPG.Inventories;
 
-namespace UI.Inventories
+namespace RPG.UI.Inventories
 {
     /// <summary>
     /// Allows the `ItemTooltipSpawner` to display the right information.

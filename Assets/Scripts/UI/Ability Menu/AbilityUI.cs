@@ -20,6 +20,7 @@ namespace RPG.UI.Ability_Menu
 
         private void OnEnable()
         {
+            if(_playerEquipment == null) return;
             SetAbilityUI();
         }
 
@@ -28,11 +29,19 @@ namespace RPG.UI.Ability_Menu
             ClearAbilities();
             var currentWeapon = _playerEquipment.GetCurrentWeapon();
             if(currentWeapon == null) return;
-            
+
+            int abilityCount = 0;
             foreach (var ability in currentWeapon.GetAbilities())
             {
                 var abilityRow = Instantiate(_abilityRowPrefab, _contents.transform);
-                abilityRow.SetIcon(ability.GetIcon());
+                abilityRow.SetAbility(ability, _abilityNameText, _abilityDecriptionText);
+
+                if (abilityCount == 0)
+                {
+                    abilityRow.SetAbilityInfo();
+                }
+
+                abilityCount++;
             }
         }
 
