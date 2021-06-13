@@ -1,4 +1,5 @@
-﻿using RPG.Inventories;
+﻿using System.Collections;
+using RPG.Inventories;
 using RPG.UI.Inventories;
 using UnityEngine;
 
@@ -46,6 +47,12 @@ namespace RPG.UI.Ability_Menu
             foreach (var ability in _contents.GetComponentsInChildren<AbilityRowUI>())
             {
                 Destroy(ability.gameObject);
+            }
+
+            foreach (var actionSlot in _actionBar.GetComponentsInChildren<ActionSlotUI>())
+            {
+                if(actionSlot.GetStore() == null) break;
+                actionSlot.RemoveItems(1);
             }
         }
     }

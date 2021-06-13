@@ -58,6 +58,11 @@ namespace RPG.UI.Inventories
             store.RemoveItems(index, number);
         }
 
+        public ActionStore GetStore()
+        {
+            return store;
+        }
+
         // PRIVATE
 
         void UpdateIcon()
