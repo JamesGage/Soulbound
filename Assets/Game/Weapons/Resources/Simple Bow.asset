@@ -36,7 +36,6 @@ MonoBehaviour:
   attackStartSFX: event:/SFX/Weapons/Bows/Bow_AttackStart
   attackMidSFX: event:/SFX/Weapons/Bows/Bow_AttackMid
   attackEndSFX: event:/SFX/Weapons/Bows/Bow_AttackEnd
-  hitSFX: event:/SFX/Weapons/Arrows/Arrow_Hit
-  missSFX: event:/SFX/Weapons/Miss
-  blockSFX: event:/SFX/Weapons/Arrows/Arrow_Block
-  critSFX: event:/SFX/Weapons/Arrows/Arrow_Crit
+  _weaponAbilities:
+  - {fileID: 11400000, guid: 2df103e1856514448acb2ea59706ecfd, type: 2}
+  - {fileID: 11400000, guid: cd8b81324b8c31a4480051fd27fc03a4, type: 2}

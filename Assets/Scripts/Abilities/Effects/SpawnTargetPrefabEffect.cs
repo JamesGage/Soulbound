@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Abilities.Effects
@@ -22,7 +23,10 @@ namespace RPG.Abilities.Effects
             
             foreach (var target in data.GetTargets())
             {
-                instances.Add(Instantiate(targetPrefab, target.transform.position, Quaternion.identity));
+                if (target.GetComponent<Health>() != null && !target.GetComponent<Health>().IsDead())
+                {
+                    instances.Add(Instantiate(targetPrefab, target.transform.position, Quaternion.identity));   
+                }
             }
             
             if (destroyDelay > 0)

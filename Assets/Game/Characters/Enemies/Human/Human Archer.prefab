@@ -127,6 +127,18 @@ PrefabInstance:
       propertyPath: chaseDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 9177381716959053213, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: _guaranteedDrops.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177381716959053213, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: _guaranteedDrops.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 42cae2857c6904544a99d4ddd0bddc70, type: 2}
+    - target: {fileID: 9177381716959053213, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: _guaranteedDrops.Array.data[0].amount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
 --- !u!4 &8474461256200242551 stripped

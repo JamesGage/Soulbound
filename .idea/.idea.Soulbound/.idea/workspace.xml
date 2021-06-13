@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +68,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryCapacityUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/AbilityData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SurroundingTargeting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnPrefabEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
@@ -91,6 +91,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -179,7 +181,7 @@
       <workItem from="1623259261551" duration="5135000" />
       <workItem from="1623352323359" duration="11716000" />
       <workItem from="1623427018843" duration="11314000" />
-      <workItem from="1623529850419" duration="18257000" />
+      <workItem from="1623529850419" duration="19057000" />
     </task>
     <servers />
   </component>

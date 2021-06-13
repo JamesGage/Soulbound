@@ -40,12 +40,11 @@ namespace RPG.Abilities.Effects
         {
             foreach (var target in data.GetTargets())
             {
-                var health = target.GetComponent<Health>();
-                if (health)
+                if (target.GetComponent<Health>() != null && !target.GetComponent<Health>().IsDead())
                 {
                     var projectile = Instantiate(projectileToSpawn);
                     projectile.transform.position = spawnPosition;
-                    projectile.SetTarget(health, data.GetUser(), damage);
+                    projectile.SetTarget(target.GetComponent<Health>(), data.GetUser(), damage);
                 }
             }
         }
