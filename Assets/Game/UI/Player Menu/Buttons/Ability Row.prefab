@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 2246913814522322571}
   - component: {fileID: 2251372436329858849}
   - component: {fileID: 9193682280162078613}
+  - component: {fileID: 7380624923939794346}
   m_Layer: 5
   m_Name: Ability Row
   m_TagString: Untagged
@@ -181,7 +182,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89674da7c14416fbab42449dc803b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _abilityImage: {fileID: 0}
+--- !u!114 &7380624923939794346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3973094016561112508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477cf941ab0445b3ab686f3defafd74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipPrefab: {fileID: 6796662661069912602, guid: a4df01714ba6f614f8f051880533a4bc, type: 3}
 --- !u!1 &5753179301408713543
 GameObject:
   m_ObjectHideFlags: 0

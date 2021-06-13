@@ -1,5 +1,5 @@
 ﻿using RPG.Inventories;
-using TMPro;
+using RPG.UI.Inventories;
 using UnityEngine;
 
 namespace RPG.UI.Ability_Menu
@@ -8,8 +8,7 @@ namespace RPG.UI.Ability_Menu
     {
         [SerializeField] private AbilityRowUI _abilityRowPrefab;
         [SerializeField] private GameObject _contents;
-        [SerializeField] private TextMeshProUGUI _abilityNameText;
-        [SerializeField] private TextMeshProUGUI _abilityDecriptionText;
+        [SerializeField] private GameObject _actionBar;
 
         private Equipment _playerEquipment;
 
@@ -21,6 +20,7 @@ namespace RPG.UI.Ability_Menu
         private void OnEnable()
         {
             if(_playerEquipment == null) return;
+            _playerEquipment.onEquipmentUpdated += SetAbilityUI;
             SetAbilityUI();
         }
 
@@ -34,12 +34,8 @@ namespace RPG.UI.Ability_Menu
             foreach (var ability in currentWeapon.GetAbilities())
             {
                 var abilityRow = Instantiate(_abilityRowPrefab, _contents.transform);
-                abilityRow.SetAbility(ability, _abilityNameText, _abilityDecriptionText);
-
-                if (abilityCount == 0)
-                {
-                    abilityRow.SetAbilityInfo();
-                }
+                abilityRow.SetAbility(ability);
+                _actionBar.GetComponentsInChildren<ActionSlotUI>()[abilityCount].AddItems(ability, 0);
 
                 abilityCount++;
             }

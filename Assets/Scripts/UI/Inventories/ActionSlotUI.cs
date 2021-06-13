@@ -36,7 +36,6 @@ namespace RPG.UI.Inventories
         public void AddItems(InventoryItem item, int number)
         {
             store.AddAction(item, index, number);
-            FMODUnity.RuntimeManager.PlayOneShot(item.equipSFX);
         }
 
         public InventoryItem GetItem()

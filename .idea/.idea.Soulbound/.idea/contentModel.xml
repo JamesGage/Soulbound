@@ -366,7 +366,10 @@
           <e p="UI" t="Include">
             <e p="Ability Menu" t="Include">
               <e p="AbilityRowUI.cs" t="Include" />
+              <e p="AbilityTooltip.cs" t="Include" />
+              <e p="AbilityTooltipSpawner.cs" t="Include" />
               <e p="AbilityUI.cs" t="Include" />
+              <e p="IAbilityHolder.cs" t="Include" />
             </e>
             <e p="BondDisplay.cs" t="Include" />
             <e p="CheckContinueButton.cs" t="Include" />
