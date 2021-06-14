@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 4969156927700690879}
   - component: {fileID: -1557714828081611929}
   m_Layer: 5
-  m_Name: Pickup Menu
+  m_Name: Loot Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -313,7 +313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcea2f60b9544ec88c199fbcad8b2044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickupMenu: {fileID: 0}
   _pickupMenuItemPrefab: {fileID: 2214475566472521962, guid: 6852bd5a1709b3e42813e9059a8d35f2, type: 3}
   contents: {fileID: 1188927020518924620}
   takeAllButton: {fileID: 3613110483517451324}
@@ -838,7 +837,7 @@ PrefabInstance:
     - target: {fileID: 7038441398083973173, guid: d3fadb5a04d42d846832c1f61ea9d670, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -1557714828081611929}
     - target: {fileID: 7038441398083973173, guid: d3fadb5a04d42d846832c1f61ea9d670, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2

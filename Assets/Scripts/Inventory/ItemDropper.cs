@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using RPG.Control;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace RPG.Inventories
 {
@@ -19,6 +21,11 @@ namespace RPG.Inventories
         private PickupMenu _newPickupMenu;
         private bool _canPickUp;
         private bool _clickPickup;
+
+        private void Start()
+        {
+            InitiateDrops();
+        }
 
         public void InitiateDrops()
         {
@@ -177,7 +184,6 @@ namespace RPG.Inventories
                 _canPickUp = true;
                 if (_clickPickup)
                 {
-                    InitiateDrops();
                     SetupPickupMenu();
                     _clickPickup = false;
                 }

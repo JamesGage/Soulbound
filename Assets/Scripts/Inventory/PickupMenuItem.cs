@@ -41,7 +41,7 @@ namespace RPG.Inventories
             _nameText.text = item.GetDisplayName();
             _nameText.color = item.GetDisplayNameColor();
             _descriptionText.text = item.GetDescription();
-            _amountText.text = "(" + $"{item:N0}" + ")";
+            _amountText.text = "(" + $"{amount:N0}" + ")";
             if (amount <= 1)
             {
                 _amountText.enabled = false;
