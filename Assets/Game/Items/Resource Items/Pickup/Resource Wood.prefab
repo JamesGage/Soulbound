@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -78229183000914169, guid: 11d42f28ede0baa49a46b705482488f9, type: 3}
+      propertyPath: _pickupSFX
+      value: event:/SFX/Ambient/Pickup/Pickup_General
+      objectReference: {fileID: 0}
+    - target: {fileID: -78229183000914169, guid: 11d42f28ede0baa49a46b705482488f9, type: 3}
       propertyPath: _resourceAmount
       value: 5
       objectReference: {fileID: 0}

@@ -332,6 +332,7 @@
           </e>
           <e p="Resource System" t="Include">
             <e p="ResourceItem.cs" t="Include" />
+            <e p="ResourceSpawner.cs" t="Include" />
             <e p="ResourceStore.cs" t="Include" />
             <e p="ResourceType.cs" t="Include" />
           </e>

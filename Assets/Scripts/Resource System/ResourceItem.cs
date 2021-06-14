@@ -8,10 +8,16 @@ namespace RPG.Resource_System
     {
         [SerializeField] private ResourceType _resourceType;
         [SerializeField] private int _resourceAmount;
+        [FMODUnity.EventRef] public string _pickupSFX;
 
         private bool _canPickUp;
         private bool _clickPickup;
         private ResourceStore _playerResourceStore;
+
+        public void SetAmount(int amount)
+        {
+            _resourceAmount = amount;
+        }
 
         public CursorType GetCursorType()
         {
@@ -42,6 +48,7 @@ namespace RPG.Resource_System
                 if (_clickPickup)
                 {
                     _playerResourceStore.AddResource(_resourceType, _resourceAmount);
+                    FMODUnity.RuntimeManager.PlayOneShot(_pickupSFX);
                     _clickPickup = false;
                     Destroy(gameObject);
                 }
