@@ -1,5 +1,4 @@
-﻿using System;
-using RPG.Resource_System;
+﻿using RPG.Resource_System;
 using UnityEngine;
 
 namespace RPG.UI.Resource_System
@@ -18,7 +17,8 @@ namespace RPG.UI.Resource_System
 
         private void OnEnable()
         {
-            _resourceStore.OnResourceChanged += InitializeResourceUI;
+            if(_resourceStore != null)
+                _resourceStore.OnResourceChanged += InitializeResourceUI;
         }
 
         private void OnDisable()
@@ -33,7 +33,8 @@ namespace RPG.UI.Resource_System
             foreach (var resource in _resourceStore.GetResourceStore())
             {
                 var resourceBar = Instantiate(_resourceBarUIPrefab, _contents.transform);
-                resourceBar.SetResourceBar(resource.Key, resource.Value, _resourceStore.GetResourceMax());
+                resourceBar.SetResourceBar(resource.resourceIcon,resource.resourceType,
+                    resource.resourceAmount, resource.resourceMax, resource.resourceFillColor, resource.resourceBackgroundColor);
             }
         }
 

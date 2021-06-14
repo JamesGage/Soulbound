@@ -6,69 +6,68 @@ namespace RPG.Resource_System
 {
     public class ResourceStore : MonoBehaviour
     {
-        [SerializeField] private int _resourceMax = 100;
+        [SerializeField] List<Resource> _resources = new List<Resource>();
 
         public Action OnResourceChanged;
-        
-        private Dictionary<ResourceType, int> _resourceLookup = new Dictionary<ResourceType, int>();
-
-        private void Awake()
-        {
-            foreach (ResourceType type in Enum.GetValues(typeof(ResourceType)))
-            {
-                _resourceLookup.Add(type, 50);
-            }
-        }
 
         public int AddResource(ResourceType type, int amount)
         {
-            if (_resourceLookup.ContainsKey(type))
+            foreach (var resource in _resources)
             {
-                if (_resourceLookup[type] + amount > _resourceMax)
+                if(resource.resourceType != type) continue;
+                if (resource.resourceAmount + amount > resource.resourceMax)
                 {
-                    _resourceLookup[type] = _resourceMax;
+                    var leftover = amount - (resource.resourceMax - resource.resourceAmount);
+                    resource.resourceAmount = resource.resourceMax;
                     OnResourceChanged?.Invoke();
-                    return amount - (_resourceMax - _resourceLookup[type]);
+                    return leftover;
                 }
-                _resourceLookup[type] += amount;
+                resource.resourceAmount += amount;
                 OnResourceChanged?.Invoke();
                 return 0;
             }
-            _resourceLookup.Add(type, amount);
-            OnResourceChanged?.Invoke();
+
             return 0;
         }
         
         public bool RemoveResource(ResourceType type, int amount)
         {
-            if (_resourceLookup.ContainsKey(type))
+            foreach (var resource in _resources)
             {
-                if (_resourceLookup[type] < amount)
+                if (resource.resourceType != type) continue;
+                
+                if (resource.resourceAmount < amount)
                 {
                     return false;
                 }
-                _resourceLookup[type] -= amount;
+                resource.resourceAmount -= amount;
                 OnResourceChanged?.Invoke();
+                return true;
             }
 
             return false;
         }
 
-        public Dictionary<ResourceType, int> GetResourceStore()
+        public List<Resource> GetResourceStore()
         {
-            return _resourceLookup;
-        }
-        
-
-        public int GetResourceMax()
-        {
-            return _resourceMax;
+            return _resources;
         }
 
         public static ResourceStore GetPlayerResourceStore()
         {
             var player = GameObject.FindGameObjectWithTag("Player");
             return player.GetComponent<ResourceStore>();
+        }
+        
+        [Serializable]
+        public class Resource
+        {
+            public ResourceType resourceType;
+            public Sprite resourceIcon;
+            public Color resourceFillColor = Color.grey;
+            public Color resourceBackgroundColor = Color.black;
+            public int resourceAmount;
+            public int resourceMax;
         }
     }
 }

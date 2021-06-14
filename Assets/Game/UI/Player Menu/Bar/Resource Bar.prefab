@@ -226,6 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ded7c756bcb4aa5af2a3b4a837cb7be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _resourceIcon: {fileID: 7711065485682534210}
   _resourceNameText: {fileID: 4399565293107475669}
   _resourceAmountText: {fileID: 217189959592696892}
   _slider: {fileID: 283525151279324402}
@@ -332,8 +333,8 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 6016509088453789747}
   m_FillRect: {fileID: 382579343386068576}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
