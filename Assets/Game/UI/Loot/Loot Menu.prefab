@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcea2f60b9544ec88c199fbcad8b2044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickupMenuItemPrefab: {fileID: 2214475566472521962, guid: 6852bd5a1709b3e42813e9059a8d35f2, type: 3}
+  _lootMenuItemPrefab: {fileID: 2214475566472521962, guid: 6852bd5a1709b3e42813e9059a8d35f2, type: 3}
   contents: {fileID: 1188927020518924620}
   takeAllButton: {fileID: 3613110483517451324}
 --- !u!1 &4935694004750000012

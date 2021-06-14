@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RPG.Control;
 using RPG.Stats;
 using UnityEngine;
@@ -9,8 +8,8 @@ namespace RPG.Inventories
 {
     public class ItemDropper : MonoBehaviour, IRaycastable
     {
-        [SerializeField] private PickupMenu _pickupMenu;
-        [Tooltip("Chance of anything being dropped. Set to 100 to guarantee a drop.")]
+        [SerializeField] private LootMenu _lootMenu;
+        [Tooltip("Chance random items being dropped. Set to 0 if there are no random drops.")]
         [Range(0f, 100f)]
         [SerializeField] float _dropChancePercentage;
         [SerializeField] int _minDrops;
@@ -19,7 +18,7 @@ namespace RPG.Inventories
         [SerializeField] DropConfig[] potentialDrops;
         
         private Dictionary<InventoryItem, int> droppedItems = new Dictionary<InventoryItem, int>();
-        private PickupMenu _newPickupMenu;
+        private LootMenu _newPickupMenu;
         private bool _canPickUp;
         private bool _clickPickup;
         private Health _health = null;
@@ -41,9 +40,12 @@ namespace RPG.Inventories
         {
             var drops = GetRandomDrops();
 
-            foreach (var drop in drops)
+            if (drops != null)
             {
-                DropItem(drop.item, drop.number);
+                foreach (var drop in drops)
+                {
+                    DropItem(drop.item, drop.number);
+                }
             }
 
             if (_guaranteedDrops != null)
@@ -82,7 +84,7 @@ namespace RPG.Inventories
 
         private void SetupPickupMenu()
         {
-            _newPickupMenu = Instantiate(_pickupMenu);
+            _newPickupMenu = Instantiate(_lootMenu);
             _newPickupMenu.AddItems(droppedItems);
         }
         

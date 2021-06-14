@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 namespace RPG.Inventories
 {
-    public class PickupMenu : MonoBehaviour
+    public class LootMenu : MonoBehaviour
     {
-        [SerializeField] private PickupMenuItem _pickupMenuItemPrefab;
+        [SerializeField] private LootMenuItem _lootMenuItemPrefab;
         [SerializeField] private GameObject contents;
         [SerializeField] private Button takeAllButton;
 
@@ -24,14 +24,14 @@ namespace RPG.Inventories
             
             foreach (var item in _droppedItems)
             {
-                var itemRow = Instantiate(_pickupMenuItemPrefab, contents.transform);
+                var itemRow = Instantiate(_lootMenuItemPrefab, contents.transform);
                 itemRow.SetItem(item.Key, item.Value);
             }
         }
         
         public void TakeAll()
         {
-            foreach (var item in contents.GetComponentsInChildren<PickupMenuItem>())
+            foreach (var item in contents.GetComponentsInChildren<LootMenuItem>())
             {
                 item.AddItemToInventory();
                 RemoveItemFromList(item.GetItem());
@@ -57,7 +57,7 @@ namespace RPG.Inventories
 
         private void ClearItems()
         {
-            foreach (var item in contents.GetComponentsInChildren<PickupMenuItem>())
+            foreach (var item in contents.GetComponentsInChildren<LootMenuItem>())
             {
                 Destroy(item.gameObject);
             }

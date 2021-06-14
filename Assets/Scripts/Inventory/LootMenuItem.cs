@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace RPG.Inventories
 {
-    public class PickupMenuItem : MonoBehaviour
+    public class LootMenuItem : MonoBehaviour
     {
         [SerializeField] Image _icon;
         [SerializeField] private TextMeshProUGUI _nameText;
@@ -53,7 +53,7 @@ namespace RPG.Inventories
             var canAdd = _playerInventory.AddToFirstEmptySlot(_item, _amount);
             if (canAdd)
             {
-                GetComponentInParent<PickupMenu>().RemoveItemFromList(_item);
+                GetComponentInParent<LootMenu>().RemoveItemFromList(_item);
                 Destroy(gameObject);
                 return;
             }
