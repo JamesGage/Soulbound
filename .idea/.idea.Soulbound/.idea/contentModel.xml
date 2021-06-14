@@ -330,6 +330,11 @@
             <e p="QuestStatus.cs" t="Include" />
             <e p="QuestTrigger.cs" t="Include" />
           </e>
+          <e p="Resource System" t="Include">
+            <e p="ResourceItem.cs" t="Include" />
+            <e p="ResourceStore.cs" t="Include" />
+            <e p="ResourceType.cs" t="Include" />
+          </e>
           <e p="Saving" t="Include">
             <e p="ISaveable.cs" t="Include" />
             <e p="SaveableEntity.cs" t="Include" />
@@ -407,6 +412,10 @@
               <e p="QuestOnScreenUI.cs" t="Include" />
               <e p="QuestTooltipSpawner.cs" t="Include" />
               <e p="QuestTooltipUI.cs" t="Include" />
+            </e>
+            <e p="Resource System" t="Include">
+              <e p="ResourceBarUI.cs" t="Include" />
+              <e p="ResourceUI.cs" t="Include" />
             </e>
             <e p="ResourceTabs.cs" t="Include" />
             <e p="Save Menu" t="Include">

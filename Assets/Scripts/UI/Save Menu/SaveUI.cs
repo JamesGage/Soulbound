@@ -7,7 +7,7 @@ namespace RPG.UI
 {
     public class SaveUI : MonoBehaviour
     {
-        LazyValue<SavingWrapper> _savingWrapper;
+        private LazyValue<SavingWrapper> _savingWrapper;
 
         private void Awake()
         {

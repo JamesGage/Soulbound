@@ -2,9 +2,163 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Currency.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Currency/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Currency/Resources/Currency.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Currency/Resources/Currency.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Arrow Simple.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Arrow Simple.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Bow Override Controller.overrideController" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Bow Override Controller.overrideController.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Simple Bow Equip.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Simple Bow Equip.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Default Projectile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Default Projectile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Epic Sword.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Epic Sword.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Bow.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Bow.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Spell Fireball.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Spell Fireball.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Unarmed.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Unarmed.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Book Fire.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Book Fire.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Fireball Equip.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Fireball Equip.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Projectile Fireball.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Projectile Fireball.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Spell Override Controller.overrideController" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Spell Override Controller.overrideController.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Epic Sword Equip.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Epic Sword Equip.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Simple Sword Equip.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Simple Sword Equip.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Sword Override Controller.overrideController" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Sword Override Controller.overrideController.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Unarmed.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Impacts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Impacts/FX_Fire_Explosion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Impacts/FX_Fire_Explosion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Impacts/FX_Impact_Small.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Impacts/FX_Impact_Small.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Hands.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Head.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Neck.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Destruction.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Destruction.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Vigore.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Vigore.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Ring of Speed.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Ring of Speed.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Chest.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Chest/Loot Chest Common.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Chest/Loot Chest Common.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Chest/Loot Chest Rare.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Chest/Loot Chest Rare.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Crates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Crates/Loot Barrell.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Crates/Loot Barrell.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Crates/Loot Box.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Crates/Loot Box.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Loot Item.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Loot/Loot Item.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceBarUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceBarUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Default Enemy Drops.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Default Enemy Drops.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources/Gold.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources/Gold.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player Menu/Bar/Resource Bar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player Menu/Bar/Resource Bar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Arrows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Arrows/Simple Arrows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Arrows/Simple Arrows/Arrow Simple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Arrows/Simple Arrows/Arrow Simple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Bows.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Bows/Bow Override Controller.overrideController" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Bows/Bow Override Controller.overrideController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Bows/Simple Bow Equip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Bows/Simple Bow Equip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Default Projectile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Default Projectile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Spell Fireball.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Spell Fireball.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Unarmed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Unarmed.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Fireball.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Fireball/Book Fire.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Fireball/Book Fire.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Fireball/Fireball Equip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Fireball/Fireball Equip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Fireball/Projectile Fireball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Fireball/Projectile Fireball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Spell Override Controller.overrideController" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Spells/Spell Override Controller.overrideController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Swords.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Swords/Epic Sword Equip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Swords/Epic Sword Equip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Swords/Simple Sword Equip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Swords/Simple Sword Equip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Swords/Sword Override Controller.overrideController" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Swords/Sword Override Controller.overrideController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Unarmed.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/_Impacts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/_Impacts/FX_Fire_Explosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/_Impacts/FX_Fire_Explosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/_Impacts/FX_Impact_Small.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/_Impacts/FX_Impact_Small.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Hands.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Head.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Neck.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Destruction.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Destruction.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Vigore.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Necklace of Vigore.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Ring of Speed.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Wearables/Resources/Ring of Speed.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +187,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/c3/04713f13/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/41/f67ef837/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/ff/fd158713/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,11 +196,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/DamageText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/TakeDamageEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/HealthEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs" />
@@ -92,6 +242,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceBarUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -181,7 +336,7 @@
       <workItem from="1623352323359" duration="11716000" />
       <workItem from="1623427018843" duration="11314000" />
       <workItem from="1623529850419" duration="19126000" />
-      <workItem from="1623614244102" duration="11848000" />
+      <workItem from="1623614244102" duration="17300000" />
     </task>
     <servers />
   </component>
