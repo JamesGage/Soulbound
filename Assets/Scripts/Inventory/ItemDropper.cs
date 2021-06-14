@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using RPG.Control;
+using RPG.Saving;
 using RPG.Stats;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace RPG.Inventories
 {
-    public class ItemDropper : MonoBehaviour, IRaycastable
+    public class ItemDropper : MonoBehaviour, IRaycastable, ISaveable
     {
         [SerializeField] private LootMenu _lootMenu;
         [Tooltip("Chance random items being dropped. Set to 0 if there are no random drops.")]
@@ -33,7 +34,8 @@ namespace RPG.Inventories
 
         private void Start()
         {
-            InitiateDrops();
+            if(droppedItems == null)
+                InitiateDrops();
         }
 
         public void InitiateDrops()
@@ -213,6 +215,28 @@ namespace RPG.Inventories
                     _newPickupMenu.gameObject.SetActive(false);
                 }
                 _canPickUp = false;
+            }
+        }
+
+        public object CaptureState()
+        {
+            Dictionary<string, int> saveObject = new Dictionary<string, int>();
+
+            foreach (var pair in droppedItems)
+            {
+                saveObject[pair.Key.GetItemID()] = pair.Value;
+            }
+
+            return saveObject;
+        }
+
+        public void RestoreState(object state)
+        {
+            Dictionary<string, int> saveObject = (Dictionary<string, int>) state;
+            droppedItems.Clear();
+            foreach (var pair in saveObject)
+            {
+                droppedItems[InventoryItem.GetFromID(pair.Key)] = pair.Value;
             }
         }
     }
