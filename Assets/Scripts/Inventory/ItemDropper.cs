@@ -1,116 +1,199 @@
 ﻿using System.Collections.Generic;
+using RPG.Control;
 using UnityEngine;
-using RPG.Saving;
-using UnityEngine.SceneManagement;
 
 namespace RPG.Inventories
 {
-    /// <summary>
-    /// To be placed on anything that wishes to drop pickups into the world.
-    /// Tracks the drops for saving and restoring.
-    /// </summary>
-    public class ItemDropper : MonoBehaviour, ISaveable
+    public class ItemDropper : MonoBehaviour, IRaycastable
     {
-        // STATE
-        private List<Pickup> droppedItems = new List<Pickup>();
-        private List<DropRecord> otherSceneDroppedItems = new List<DropRecord>();
+        [SerializeField] private PickupMenu _pickupMenu;
+        [Tooltip("Chance of anything being dropped. Set to 100 to guarantee a drop.")]
+        [Range(0f, 100f)]
+        [SerializeField] float _dropChancePercentage;
+        [SerializeField] int _minDrops;
+        [SerializeField] int _maxDrops;
+        [SerializeField] GuaranteedDropConfig[] _guaranteedDrops = null;
+        [SerializeField] DropConfig[] potentialDrops;
+        
+        private Dictionary<InventoryItem, int> droppedItems = new Dictionary<InventoryItem, int>();
+        private PickupMenu _newPickupMenu;
+        private bool _canPickUp;
+        private bool _clickPickup;
 
-        // PUBLIC
+        public void InitiateDrops()
+        {
+            var drops = GetRandomDrops();
 
-        /// <summary>
-        /// Create a pickup at the current position.
-        /// </summary>
-        /// <param name="item">The item type for the pickup.</param>
-        /// <param name="number">
-        /// The number of items contained in the pickup. Only used if the item
-        /// is stackable.
-        /// </param>
+            foreach (var drop in drops)
+            {
+                DropItem(drop.item, drop.number);
+            }
+
+            if (_guaranteedDrops != null)
+            {
+                foreach (var guaranteeDrop in _guaranteedDrops)
+                {
+                    DropItem(guaranteeDrop.item, guaranteeDrop.amount);
+                }
+            }
+        }
+
+        public IEnumerable<Dropped> GetRandomDrops()
+        {
+            if (!ShouldRandomDrop()) yield break;
+
+            for (int i = 0; i < GetRandomNumberOfDrops(); i++)
+            {
+                yield return GetRandomDrop();
+            }
+        }
+        
         public void DropItem(InventoryItem item, int number)
         {
-            SpawnPickup(item, number);
+            if (droppedItems.ContainsKey(item))
+            {
+                droppedItems[item]++;
+                return;
+            }
+            droppedItems.Add(item, number);
         }
 
-        public void SpawnPickup(InventoryItem item, int number)
-        {
-            var pickup = item.SpawnPickup(number);
-            droppedItems.Add(pickup);
-        }
-
-        public List<Pickup> GetDroppedItems()
+        public Dictionary<InventoryItem, int> GetLoot()
         {
             return droppedItems;
         }
 
-        public void SetDroppedItems(InventoryItem item, int amount)
+        private void SetupPickupMenu()
         {
-            foreach (var pickup in droppedItems)
+            _newPickupMenu = Instantiate(_pickupMenu);
+            _newPickupMenu.AddItems(droppedItems);
+        }
+        
+        private bool ShouldRandomDrop()
+        {
+            return Random.Range(0, 100) < _dropChancePercentage;
+        }
+        
+        private int GetRandomNumberOfDrops()
+        {
+            int min = _minDrops;
+            int max = _maxDrops;
+            return Random.Range(min, max);
+        }
+        
+        private Dropped GetRandomDrop()
+        {
+            var drop = SelectRandomItem();
+            var result = new Dropped();
+            result.item = drop.item;
+            result.number = drop.GetRandomNumber();
+            return result;
+        }
+
+        private DropConfig SelectRandomItem()
+        {
+            float totalChance = GetTotalChance();
+            float randomRoll = Random.Range(0, totalChance);
+            float chanceTotal = 0f;
+            foreach (var drop in potentialDrops)
             {
-                pickup.Setup(item, amount);
+                chanceTotal += drop.relativeChance;
+                if (chanceTotal > randomRoll)
+                {
+                    return drop;
+                }
             }
+
+            return null;
+        }
+
+        private float GetTotalChance()
+        {
+            float total = 0f;
+            foreach (var drop in potentialDrops)
+            {
+                total += drop.relativeChance;
+            }
+
+            return total;
         }
 
         [System.Serializable]
-        private struct DropRecord
+        class DropConfig
         {
-            public string itemID;
-            public SerializableVector3 position;
+            public InventoryItem item;
+            public float relativeChance;
+            public int minNumber;
+            public int maxNumber;
+            public int GetRandomNumber()
+            {
+                if (!item.IsStackable())
+                {
+                    return 1;
+                }
+                int min = minNumber;
+                int max = maxNumber;
+                return Random.Range(min, max + 1);
+            }
+        }
+        
+        [System.Serializable]
+        class GuaranteedDropConfig
+        {
+            public InventoryItem item;
+            public int amount;
+        }
+        
+        public struct Dropped
+        {
+            public InventoryItem item;
             public int number;
-            public int sceneBuildIndex;
         }
 
-        object ISaveable.CaptureState()
+        public CursorType GetCursorType()
         {
-            RemoveDestroyedDrops();
-            var droppedItemsList = new List<DropRecord>();
-            int buildIndex = SceneManager.GetActiveScene().buildIndex;
-            
-            foreach (var pickup in droppedItems)
-            {
-                var droppedItem = new DropRecord();
-                droppedItem.itemID = pickup.GetItem().GetItemID();
-                droppedItem.position = new SerializableVector3(pickup.transform.position);
-                droppedItem.number = pickup.GetNumber();
-                droppedItem.sceneBuildIndex = buildIndex;
-                droppedItemsList.Add(droppedItem);
-            }
-            droppedItemsList.AddRange(otherSceneDroppedItems);
-            return droppedItemsList;
+            return CursorType.Pickup;
         }
 
-        void ISaveable.RestoreState(object state)
+        public bool HandleRaycast(PlayerController callingController)
         {
-            var droppedItemsList = (List<DropRecord>)state;
-            int buildIndex = SceneManager.GetActiveScene().buildIndex;
-            otherSceneDroppedItems.Clear();
-            
-            foreach (var item in droppedItemsList)
+            if (Input.GetMouseButtonDown(0))
             {
-                if (item.sceneBuildIndex != buildIndex)
+                if (_canPickUp)
                 {
-                    otherSceneDroppedItems.Add(item);
-                    continue;
+                    _clickPickup = true;
+                    return true;
                 }
-                
-                var pickupItem = InventoryItem.GetFromID(item.itemID);
-                int number = item.number;
-                SpawnPickup(pickupItem, number);
+                callingController.GetMover().StartMoveAction(transform.position, 1f);
+                _clickPickup = true;
             }
+            return true;
         }
-
-        /// <summary>
-        /// Remove any drops in the world that have subsequently been picked up.
-        /// </summary>
-        private void RemoveDestroyedDrops()
+        
+        private void OnTriggerStay(Collider other)
         {
-            var newList = new List<Pickup>();
-            foreach (var item in droppedItems)
+            if (other.CompareTag("Player"))
             {
-                if (item != null)
+                _canPickUp = true;
+                if (_clickPickup)
                 {
-                    newList.Add(item);
+                    InitiateDrops();
+                    SetupPickupMenu();
+                    _clickPickup = false;
                 }
             }
-            droppedItems = newList;
+        }
+        
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                if (_newPickupMenu != null)
+                {
+                    _newPickupMenu.gameObject.SetActive(false);
+                }
+                _canPickUp = false;
+            }
         }
     }
 }

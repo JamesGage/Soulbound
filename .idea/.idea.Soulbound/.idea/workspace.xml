@@ -2,12 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup Menu.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup Menu.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Archer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/Human/Human Sword Fighter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/_Source/_Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Enemies/_Source/_Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resources/Gold.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Resources/Gold.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Items/Gold Pickup.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Items/Gold Pickup.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Items/Health Pickup.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Items/Health Pickup.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Pickup Default.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Pickup Default.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Pickup Spawner.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Pickup Spawner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Pickup.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Pickup.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Epic Sword.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Epic Sword.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Fireball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Fireball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Simple Bow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Simple Bow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Simple Sword.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Weapons/Pickup Simple Sword.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Wearables.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Wearables/Necklace of Destruction.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Wearables/Necklace of Destruction.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Wearables/Necklace of Vigore.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Wearables/Necklace of Vigore.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Wearables/Ring of Speed.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Pickups/Wearables/Ring of Speed.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup Item UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Pickup/Pickup Item UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Epic Sword.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Bow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Weapons/Resources/Simple Sword.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/ClickablePickup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/ClickablePickup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Pickup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Pickup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +91,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AggroGroup.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/SceneMusicManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Settings Menu/AudioSliderUI.cs" />
@@ -53,18 +100,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/HealthEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TextSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Pickup.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/StockItemConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryCapacityUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/AbilityData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
@@ -93,6 +133,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Pickup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ILootable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -181,7 +230,8 @@
       <workItem from="1623259261551" duration="5135000" />
       <workItem from="1623352323359" duration="11716000" />
       <workItem from="1623427018843" duration="11314000" />
-      <workItem from="1623529850419" duration="19057000" />
+      <workItem from="1623529850419" duration="19126000" />
+      <workItem from="1623614244102" duration="7197000" />
     </task>
     <servers />
   </component>

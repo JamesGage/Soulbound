@@ -17,10 +17,8 @@ MonoBehaviour:
   _displayNameColor: {r: 0.13163051, g: 0.9622642, b: 0.19823858, a: 1}
   description: Has a bit of rust on the blade.
   icon: {fileID: 21300000, guid: 15211a0cfb4fbde49aa1eeede2a403c8, type: 3}
-  pickup: {fileID: 8189180268357642860, guid: 3093b936660aec24f90abb3d2b8ffd11, type: 3}
   stackable: 0
-  _goldValue: 10
-  isGold: 0
+  _currencyValue: 10
   itemType: 2
   equipSFX: event:/SFX/Weapons/Melee/Sword_Equip
   allowedEquipLocation: 5

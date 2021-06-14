@@ -7,6 +7,7 @@
         Weapons,
         Potion,
         Resources,
-        Abilities
+        Abilities,
+        Currency
     }
 }

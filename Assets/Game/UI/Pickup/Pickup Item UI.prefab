@@ -741,9 +741,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _icon: {fileID: 5112495544990048937}
-  _name: {fileID: 4149015179038815722}
-  _description: {fileID: 8548177737542355083}
-  _amount: {fileID: 6910562373049043055}
+  _nameText: {fileID: 4149015179038815722}
+  _descriptionText: {fileID: 8548177737542355083}
+  _amountText: {fileID: 6910562373049043055}
 --- !u!114 &8245384424722387798
 MonoBehaviour:
   m_ObjectHideFlags: 0

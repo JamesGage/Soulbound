@@ -123,7 +123,7 @@ namespace RPG.Inventories
         /// <returns>Whether or not the item could be added.</returns>
         public bool AddToFirstEmptySlot(InventoryItem item, int number)
         {
-            if (item.isGold)
+            if (item.GetItemType() == ItemType.Currency)
             {
                 _purse.UpdateCurrency(number);
                 return true;

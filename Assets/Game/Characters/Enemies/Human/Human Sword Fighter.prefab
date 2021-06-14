@@ -79,6 +79,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: _guaranteedDrops.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 3861826a8c1c3b54cbb6f34951800dcd, type: 2}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[1].item
+      value: 
+      objectReference: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: _guaranteedDrops.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: fab5258ef4a13714ebcc44d575742800, type: 2}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: _guaranteedDrops.Array.data[0].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[0].maxNumber
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[0].minNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[1].maxNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[1].minNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[0].relativeChance
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3776103051455595330, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
+      propertyPath: potentialDrops.Array.data[1].relativeChance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4013602491938453206, guid: da1d3ee92fe6f1145a9feba07b1cbadc, type: 3}
       propertyPath: _baseStats
       value: 

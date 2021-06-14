@@ -17,10 +17,8 @@ MonoBehaviour:
   _displayNameColor: {r: 0.4617857, g: 0.22316661, b: 0.8018868, a: 1}
   description: This blade is EPIC!
   icon: {fileID: 21300000, guid: db4c0e2534521ba4694d156202c85236, type: 3}
-  pickup: {fileID: 8189180268357642860, guid: db5b1ba3e4140da49a792de79b37d782, type: 3}
   stackable: 0
-  _goldValue: 10000
-  isGold: 0
+  _currencyValue: 10000
   itemType: 2
   equipSFX: event:/SFX/Weapons/Melee/Sword_Equip
   allowedEquipLocation: 5
@@ -36,7 +34,4 @@ MonoBehaviour:
   attackStartSFX: 
   attackMidSFX: event:/SFX/Weapons/Melee/Sword_AttackMid
   attackEndSFX: 
-  hitSFX: event:/SFX/Weapons/Melee/Sword_Hit
-  missSFX: event:/SFX/Weapons/Miss
-  blockSFX: event:/SFX/Weapons/Melee/Sword_Block
-  critSFX: event:/SFX/Weapons/Melee/Sword_Crit
+  _weaponAbilities: []

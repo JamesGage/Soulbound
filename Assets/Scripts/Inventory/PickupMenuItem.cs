@@ -7,13 +7,14 @@ namespace RPG.Inventories
     public class PickupMenuItem : MonoBehaviour
     {
         [SerializeField] Image _icon;
-        [SerializeField] private TextMeshProUGUI _name;
-        [SerializeField] private TextMeshProUGUI _description;
-        [SerializeField] private TextMeshProUGUI _amount;
+        [SerializeField] private TextMeshProUGUI _nameText;
+        [SerializeField] private TextMeshProUGUI _descriptionText;
+        [SerializeField] private TextMeshProUGUI _amountText;
 
         private Button _itemButton;
         private Inventory _playerInventory;
-        private Pickup _item;
+        private InventoryItem _item;
+        private int _amount;
 
         private void Awake()
         {
@@ -26,29 +27,30 @@ namespace RPG.Inventories
             _itemButton.onClick.AddListener(AddItemToInventory);
         }
 
-        public Pickup GetItem()
+        public InventoryItem GetItem()
         {
             return _item;
         }
         
-        public void SetItem(Pickup item)
+        public void SetItem(InventoryItem item, int amount)
         {
             _item = item;
+            _amount = amount;
             
-            _icon.sprite = item.GetItem().GetIcon();
-            _name.text = item.GetItem().GetDisplayName();
-            _name.color = item.GetItem().GetDisplayNameColor();
-            _description.text = item.GetItem().GetDescription();
-            _amount.text = "(" + $"{item.GetNumber():N0}" + ")";
-            if (item.GetNumber() <= 1)
+            _icon.sprite = item.GetIcon();
+            _nameText.text = item.GetDisplayName();
+            _nameText.color = item.GetDisplayNameColor();
+            _descriptionText.text = item.GetDescription();
+            _amountText.text = "(" + $"{item:N0}" + ")";
+            if (amount <= 1)
             {
-                _amount.enabled = false;
+                _amountText.enabled = false;
             }
         }
 
         public void AddItemToInventory()
         {
-            var canAdd = _playerInventory.AddToFirstEmptySlot(_item.GetItem(), _item.GetNumber());
+            var canAdd = _playerInventory.AddToFirstEmptySlot(_item, _amount);
             if (canAdd)
             {
                 GetComponentInParent<PickupMenu>().RemoveItemFromList(_item);

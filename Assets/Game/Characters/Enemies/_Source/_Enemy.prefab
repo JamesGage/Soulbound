@@ -47,7 +47,7 @@ MonoBehaviour:
   waypointTolerance: 1
   waypointDwellTime: 1
   patrolSpeedFraction: 0.5
---- !u!114 &9177381716959053213
+--- !u!114 &3776103051455595330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,31 +56,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8194782726860202496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3e582cdeb94a03b147154908de561b, type: 3}
+  m_Script: {fileID: 11500000, guid: e8c756a4f32f0d945bb0d60bb0f29ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickupMenuPrefab: {fileID: 3146420429611709683, guid: 02903b05090bb934b8858fec59ad56ca, type: 3}
+  _pickupMenu: {fileID: -1557714828081611929, guid: 1720bb2bea5cdef4a8d66fbb08474f15, type: 3}
   _dropChancePercentage: 100
   _minDrops: 1
   _maxDrops: 3
   _guaranteedDrops: []
-  potentialDrops:
-  - item: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
-    relativeChance: 3
-    minNumber: 1
-    maxNumber: 1
-  - item: {fileID: 11400000, guid: fab5258ef4a13714ebcc44d575742800, type: 2}
-    relativeChance: 10
-    minNumber: 1
-    maxNumber: 1
-  - item: {fileID: 11400000, guid: 42cae2857c6904544a99d4ddd0bddc70, type: 2}
-    relativeChance: 8
-    minNumber: 1
-    maxNumber: 1
-  - item: {fileID: 11400000, guid: 3861826a8c1c3b54cbb6f34951800dcd, type: 2}
-    relativeChance: 12
-    minNumber: 1
-    maxNumber: 10
+  potentialDrops: []
 --- !u!1001 &2353027377898438579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280,7 +264,7 @@ PrefabInstance:
     - target: {fileID: 7182100930406446910, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: OnDieEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 9177381716959053213}
+      objectReference: {fileID: 0}
     - target: {fileID: 7182100930406446910, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: OnDieEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -380,7 +364,7 @@ PrefabInstance:
     - target: {fileID: 8447613596236158511, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: OnDieEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 9177381716959053213}
+      objectReference: {fileID: 0}
     - target: {fileID: 8447613596236158511, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: OnDieEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2

@@ -268,7 +268,6 @@
           </e>
           <e p="Control" t="Include">
             <e p="AIController.cs" t="Include" />
-            <e p="ClickablePickup.cs" t="Include" />
             <e p="CursorType.cs" t="Include" />
             <e p="IRaycastable.cs" t="Include" />
             <e p="PatrolPath.cs" t="Include" />
@@ -311,12 +310,9 @@
             <e p="InventoryItem.cs" t="Include" />
             <e p="ItemDropper.cs" t="Include" />
             <e p="ItemType.cs" t="Include" />
-            <e p="Pickup.cs" t="Include" />
             <e p="PickupMenu.cs" t="Include" />
             <e p="PickupMenuItem.cs" t="Include" />
-            <e p="PickupSpawner.cs" t="Include" />
             <e p="Purse.cs" t="Include" />
-            <e p="RandomDropper.cs" t="Include" />
             <e p="RandomDropperFromLibrary.cs" t="Include" />
             <e p="StatsEquipableItem.cs" t="Include" />
             <e p="StatsEquipment.cs" t="Include" />

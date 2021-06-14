@@ -15,14 +15,10 @@ namespace RPG.Inventories
         [SerializeField][TextArea] string description = null;
         [Tooltip("The UI icon to represent this item in the inventory.")]
         [SerializeField] Sprite icon = null;
-        [Tooltip("The prefab that should be spawned when this item is dropped.")]
-        [SerializeField] Pickup pickup = null;
         [Tooltip("If true, multiple items of this type can be stacked in the same inventory slot.")]
         [SerializeField] bool stackable = false;
         [Tooltip("The value if sold to most stores")]
-        [SerializeField] int _goldValue;
-        [Tooltip("Check if this item only returns gold pieces.")]
-        [SerializeField] internal bool isGold;
+        [SerializeField] int _currencyValue;
         [SerializeField] private ItemType itemType = ItemType.None;
         
         [FMODUnity.EventRef] public string equipSFX;
@@ -49,12 +45,6 @@ namespace RPG.Inventories
 
             if (itemID == null || !itemLookupCache.ContainsKey(itemID)) return null;
             return itemLookupCache[itemID];
-        }
-        
-        public Pickup SpawnPickup(int number)
-        {
-            pickup.Setup(this, number);
-            return pickup;
         }
 
         public Sprite GetIcon()
@@ -89,7 +79,7 @@ namespace RPG.Inventories
 
         public int GetCost()
         {
-            return _goldValue;
+            return _currencyValue;
         }
 
         public ItemType GetItemType()
