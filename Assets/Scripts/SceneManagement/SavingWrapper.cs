@@ -26,12 +26,6 @@ namespace RPG.SceneManagement
             StartCoroutine(LoadFirstScene());
         }
 
-        public void NewSave(string saveFile)
-        {
-            SetCurrentSave(saveFile);
-            Save();
-        }
-
         public void LoadGame(string saveFile)
         {
             SetCurrentSave(saveFile);
