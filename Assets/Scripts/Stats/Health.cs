@@ -21,6 +21,7 @@ namespace RPG.Stats
         
         private BaseStats _baseStats;
         private Animator _anim;
+        private CapsuleCollider _collider;
         bool _wasDeadLastFrame = false;
         
         public event Action OnHealthChanged;
@@ -31,6 +32,7 @@ namespace RPG.Stats
             
             _anim = GetComponent<Animator>();
             _baseStats = GetComponent<BaseStats>();
+            _collider = GetComponent<CapsuleCollider>();
         }
 
         private void Start()
@@ -53,6 +55,9 @@ namespace RPG.Stats
             {
                 FMODUnity.RuntimeManager.PlayOneShot(deathSFX, transform.position);
                 _takeDamageEvent.Invoke(damage);
+                _collider.height = 0;
+                _collider.isTrigger = true;
+                _collider.center = new Vector3(0,0,0);
                 OnDieEvent?.Invoke();
             }
             else

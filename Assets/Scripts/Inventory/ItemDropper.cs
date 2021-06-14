@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using RPG.Control;
+using RPG.Stats;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -21,6 +22,15 @@ namespace RPG.Inventories
         private PickupMenu _newPickupMenu;
         private bool _canPickUp;
         private bool _clickPickup;
+        private Health _health = null;
+
+        private void Awake()
+        {
+            if (GetComponent<Health>() != null)
+            {
+                _health = GetComponent<Health>();
+            }
+        }
 
         private void Start()
         {
@@ -164,6 +174,8 @@ namespace RPG.Inventories
 
         public bool HandleRaycast(PlayerController callingController)
         {
+            if (_health != null && !_health.IsDead()) return false;
+
             if (Input.GetMouseButtonDown(0))
             {
                 if (_canPickUp)
