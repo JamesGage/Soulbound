@@ -11,12 +11,14 @@ GameObject:
   - component: {fileID: 6382087451701101002}
   - component: {fileID: 6382087451701101005}
   - component: {fileID: 6382087451701101004}
+  - component: {fileID: -8129320494146513718}
+  - component: {fileID: 6669327480974573449}
   m_Layer: 0
   m_Name: Loot Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6382087451701101002
 Transform:
@@ -63,3 +65,37 @@ MonoBehaviour:
   _maxDrops: 0
   _guaranteedDrops: []
   potentialDrops: []
+--- !u!114 &-8129320494146513718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6382087451701101007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.90419155, g: 0.3160377, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 1
+  mouseOver: 1
+  mouseOverWidth: 1
+  mouseExitWidth: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &6669327480974573449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6382087451701101007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea9374b509b70f4bba37e4a2ca8cf00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
