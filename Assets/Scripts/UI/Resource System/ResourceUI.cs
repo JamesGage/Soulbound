@@ -23,7 +23,8 @@ namespace RPG.UI.Resource_System
 
         private void OnDisable()
         {
-            _resourceStore.OnResourceChanged -= InitializeResourceUI;
+            if(_resourceStore != null)
+                _resourceStore.OnResourceChanged -= InitializeResourceUI;
         }
 
         public void InitializeResourceUI()

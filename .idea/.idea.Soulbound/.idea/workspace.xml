@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Resource Items/Resource Spawner.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Resource Items/Resource Spawner.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceSpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceSpawner.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Resource Items/Pickup/Resource Wood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Resource Items/Pickup/Resource Wood.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +88,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceBarUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -189,7 +183,7 @@
       <workItem from="1623427018843" duration="11314000" />
       <workItem from="1623529850419" duration="19126000" />
       <workItem from="1623614244102" duration="19038000" />
-      <workItem from="1623699904159" duration="3077000" />
+      <workItem from="1623699904159" duration="5016000" />
     </task>
     <servers />
   </component>

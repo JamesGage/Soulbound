@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using RPG.Saving;
 using UnityEngine;
 
 namespace RPG.Resource_System
 {
-    public class ResourceStore : MonoBehaviour
+    public class ResourceStore : MonoBehaviour, ISaveable
     {
         [SerializeField] List<Resource> _resources = new List<Resource>();
 
@@ -68,6 +69,30 @@ namespace RPG.Resource_System
             public Color resourceBackgroundColor = Color.black;
             public int resourceAmount;
             public int resourceMax;
+        }
+
+        public object CaptureState()
+        {
+            Dictionary<string, int> resources = new Dictionary<string, int>();
+            foreach (var resource in _resources)
+            {
+                resources.Add(resource.resourceType.ToString(), resource.resourceAmount);
+            }
+
+            return resources;
+        }
+
+        public void RestoreState(object state)
+        {
+            int index = 0;
+            foreach (var resource in (Dictionary<string, int>)state)
+            {
+                if (_resources[index].resourceType.ToString() == resource.Key)
+                {
+                    _resources[index].resourceAmount = resource.Value;
+                    index++;
+                }
+            }
         }
     }
 }
