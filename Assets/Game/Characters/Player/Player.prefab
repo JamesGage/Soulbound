@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494666414569802573}
   - component: {fileID: 2111697022314944755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Equipment Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1859158757793162633, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7182100930406446910, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
       propertyPath: deathSFX

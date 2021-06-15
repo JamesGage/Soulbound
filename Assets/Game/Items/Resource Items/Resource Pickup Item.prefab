@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7591504007298551289}
   - component: {fileID: 8951868865659365566}
   - component: {fileID: -78229183000914169}
+  - component: {fileID: 4065835964087705486}
   m_Layer: 0
   m_Name: Resource Pickup Item
   m_TagString: Untagged
@@ -59,3 +60,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _resourceType: 0
   _resourceAmount: 0
+  _pickupSFX: 
+--- !u!114 &4065835964087705486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120441072751066420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.5712285, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 1
+  mouseOver: 1
+  mouseOverWidth: 1
+  mouseExitWidth: 0
+  bakeKeys: []
+  bakeValues: []

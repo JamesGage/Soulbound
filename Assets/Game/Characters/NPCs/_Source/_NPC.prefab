@@ -1,5 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &8607721741596022743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426136564472783031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.08018869, g: 0.504462, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 1
+  mouseOver: 1
+  mouseOverWidth: 1
+  mouseExitWidth: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &1714548169437256326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67,5 +88,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1859158757793162633, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+--- !u!1 &426136564472783031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1306814148330273329, guid: 2546b63973ef61b4db41567a1ef83bcc, type: 3}
+  m_PrefabInstance: {fileID: 1714548169437256326}
+  m_PrefabAsset: {fileID: 0}

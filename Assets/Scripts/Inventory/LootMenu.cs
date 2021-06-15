@@ -21,7 +21,7 @@ namespace RPG.Inventories
         {
             _droppedItems = droppedItems;
             ClearItems();
-            
+
             foreach (var item in _droppedItems)
             {
                 var itemRow = Instantiate(_lootMenuItemPrefab, contents.transform);

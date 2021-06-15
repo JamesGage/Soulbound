@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using RPG.Control;
 using RPG.Saving;
 using RPG.Stats;
@@ -34,7 +35,7 @@ namespace RPG.Inventories
 
         private void Start()
         {
-            if(droppedItems == null)
+            if(droppedItems.Count == 0)
                 InitiateDrops();
         }
 
