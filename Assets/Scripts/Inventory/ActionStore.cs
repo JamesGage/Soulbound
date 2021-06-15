@@ -96,12 +96,12 @@ namespace RPG.Inventories
         {
             if (dockedItems.ContainsKey(index))
             {
-                var item = dockedItems[index].item;
-                if (user.GetComponent<CooldownStore>().GetTimeRemaining(item) > 0) return;
+                var ability = dockedItems[index].item;
+                if (user.GetComponent<CooldownStore>().GetTimeRemaining(ability) > 0) return;
                 if(user.GetComponent<Health>().IsDead()) return;
                 
-                item.Use(user);
-                if (item.isConsumable())
+                ability.Use(user);
+                if (ability.isConsumable())
                 {
                     RemoveItems(index, 1);
                 }

@@ -293,6 +293,12 @@
             <e p="PersistentObjectSpawner.cs" t="Include" />
             <e p="PredicateType.cs" t="Include" />
           </e>
+          <e p="Crafting" t="Include">
+            <e p="CraftingUI.cs" t="Include" />
+            <e p="Recipe.cs" t="Include" />
+            <e p="RecipeComponent.cs" t="Include" />
+            <e p="RecipeStore.cs" t="Include" />
+          </e>
           <e p="Dialogues" t="Include">
             <e p="AIConversant.cs" t="Include" />
             <e p="Dialogue.cs" t="Include" />
