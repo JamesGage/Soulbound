@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0f5c5bbfff4b2c91486370f3f88c8b, type: 3}
   m_Name: Recipe Simple Sword
   m_EditorClassIdentifier: 
+  _recipeName: Simple Sword
   _craftedItem: {fileID: 11400000, guid: fab5258ef4a13714ebcc44d575742800, type: 2}
   _components:
   - resourceType: 0
