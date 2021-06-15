@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using RPG.Inventories;
 using RPG.Resource_System;
 using UnityEngine;
@@ -7,7 +8,7 @@ namespace RPG.Crafting
 {
     public class RecipeStore : MonoBehaviour
     {
-        private List<Recipe> _knownRecipes = new List<Recipe>();
+        [SerializeField] private List<Recipe> _knownRecipes = new List<Recipe>();
         private ResourceStore _resourceStore;
 
         private void Awake()
@@ -20,6 +21,11 @@ namespace RPG.Crafting
             if (_knownRecipes.Contains(recipe)) return;
             
             _knownRecipes.Add(recipe);
+        }
+
+        public List<Recipe> GetKnownRecipes()
+        {
+            return _knownRecipes;
         }
 
         public InventoryItem Craft(Recipe recipe)
@@ -43,6 +49,11 @@ namespace RPG.Crafting
             }
 
             return true;
+        }
+
+        public static RecipeStore GetPlayerRecipeStore()
+        {
+            return  GameObject.FindWithTag("Player").GetComponent<RecipeStore>();
         }
     }
 }

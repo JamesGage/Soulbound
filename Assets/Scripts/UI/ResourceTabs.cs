@@ -7,6 +7,7 @@ namespace RPG.UI
         [SerializeField] private GameObject _inventoryPanel;
         [SerializeField] private GameObject _skillsPanel;
         [SerializeField] private GameObject _resourcesPanel;
+        [SerializeField] private GameObject _craftingPanel;
 
         private void OnEnable()
         {
@@ -18,6 +19,7 @@ namespace RPG.UI
             _inventoryPanel.SetActive(true);
             _skillsPanel.SetActive(false);
             _resourcesPanel.SetActive(false);
+            _craftingPanel.SetActive(false);
         }
 
         public void Skills()
@@ -25,6 +27,7 @@ namespace RPG.UI
             _inventoryPanel.SetActive(false);
             _skillsPanel.SetActive(true);
             _resourcesPanel.SetActive(false);
+            _craftingPanel.SetActive(false);
         }
 
         public void Resources()
@@ -32,6 +35,15 @@ namespace RPG.UI
             _inventoryPanel.SetActive(false);
             _skillsPanel.SetActive(false);
             _resourcesPanel.SetActive(true);
+            _craftingPanel.SetActive(false);
+        }
+        
+        public void Crafting()
+        {
+            _inventoryPanel.SetActive(false);
+            _skillsPanel.SetActive(false);
+            _resourcesPanel.SetActive(false);
+            _craftingPanel.SetActive(true);
         }
     }
 }
