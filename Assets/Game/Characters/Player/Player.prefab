@@ -182,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _knownRecipes:
   - {fileID: 11400000, guid: 5dfba08fa95e5534ebfb451091e4b88d, type: 2}
+  - {fileID: 11400000, guid: 279822cd40792ad4aa1862a925290d9c, type: 2}
 --- !u!114 &2447232606536918913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +304,19 @@ MonoBehaviour:
   fadeTime: 0.5
   healthRegenPercentage: 50
   enemyHealthRegenPercentage: 0
+--- !u!114 &7498305598123590478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968763298227037891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94421bf2ee604b3dabe42a73a969ac40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags: {fileID: 11400000, guid: 704ec390e20fa7e42aa56491b211da79, type: 2}
 --- !u!114 &8029642082349966675
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -380,6 +380,10 @@
             <e p="Trait.cs" t="Include" />
             <e p="TraitStore.cs" t="Include" />
           </e>
+          <e p="Tag System" t="Include">
+            <e p="Tags.cs" t="Include" />
+            <e p="TagStore.cs" t="Include" />
+          </e>
           <e p="UI" t="Include">
             <e p="Ability Menu" t="Include">
               <e p="AbilityRowUI.cs" t="Include" />

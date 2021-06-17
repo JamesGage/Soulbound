@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Crafting/Resources/Recipe Simple Bow.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Crafting/Resources/Recipe Simple Bow.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Tag System.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Tag System/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Tag System/Resources/Player Tags.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Tag System/Resources/Player Tags.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tag System.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tag System/TagStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tag System/TagStore.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tag System/Tags.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tag System/Tags.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Crafting/Resources/Recipe Simple Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Crafting/Resources/Recipe Simple Sword.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +53,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SurroundingTargeting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnPrefabEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/InventoryItemIcon.cs" />
@@ -93,6 +101,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/CraftingUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/Tag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/Tags.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/TagStore.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -184,7 +195,8 @@
       <workItem from="1623529850419" duration="19126000" />
       <workItem from="1623614244102" duration="19038000" />
       <workItem from="1623699904159" duration="12659000" />
-      <workItem from="1623774525512" duration="11328000" />
+      <workItem from="1623774525512" duration="11402000" />
+      <workItem from="1623962681023" duration="1597000" />
     </task>
     <servers />
   </component>
