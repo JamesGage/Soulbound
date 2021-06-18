@@ -207,37 +207,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c5e4d23d624647997452c989fbd1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxResourceAmount: 50
   _resources:
-  - resourceType: 0
-    resourceIcon: {fileID: 21300000, guid: 284c1c790c04e734491bbda77bf6ea8f, type: 3}
-    resourceFillColor: {r: 0.6415094, g: 0.52218175, b: 0.40245637, a: 1}
-    resourceBackgroundColor: {r: 0.13207549, g: 0.11894812, b: 0.09905662, a: 1}
-    resourceAmount: 20
-    resourceMax: 100
-  - resourceType: 1
-    resourceIcon: {fileID: 21300000, guid: 78f24e0e1a4dedc44aea6792e2a38def, type: 3}
-    resourceFillColor: {r: 0.49968848, g: 0.52026397, b: 0.5377358, a: 1}
-    resourceBackgroundColor: {r: 0.097721584, g: 0.102963485, b: 0.11320752, a: 1}
-    resourceAmount: 25
-    resourceMax: 100
-  - resourceType: 2
-    resourceIcon: {fileID: 21300000, guid: 268157e703d40dc4ab6b3a9845a2ee36, type: 3}
-    resourceFillColor: {r: 0.5991456, g: 0.6792453, b: 0.66720456, a: 1}
-    resourceBackgroundColor: {r: 0.17532927, g: 0.18578255, b: 0.18867922, a: 1}
-    resourceAmount: 30
-    resourceMax: 100
-  - resourceType: 3
-    resourceIcon: {fileID: 21300000, guid: c8c6fa80d08b4374db1159ce4d284fc8, type: 3}
-    resourceFillColor: {r: 0.79912305, g: 0.56910825, b: 0.8207547, a: 1}
-    resourceBackgroundColor: {r: 0.17478524, g: 0.10951406, b: 0.21698111, a: 1}
-    resourceAmount: 15
-    resourceMax: 100
-  - resourceType: 4
-    resourceIcon: {fileID: 21300000, guid: 8070594b98b9e8e4e9cb810ececa69c6, type: 3}
-    resourceFillColor: {r: 0.6034591, g: 0.8396226, b: 0.4950605, a: 1}
-    resourceBackgroundColor: {r: 0.17896932, g: 0.20754719, b: 0.16349237, a: 1}
-    resourceAmount: 60
-    resourceMax: 100
+  - {fileID: 11400000, guid: 26870d0cbf8e1204a88cf57e23ce022d, type: 2}
+  - {fileID: 11400000, guid: cb719a1beb6bd9543aa264154273407f, type: 2}
+  - {fileID: 11400000, guid: 44ad08d6c78a2aa469b514040bee29f8, type: 2}
+  - {fileID: 11400000, guid: f7066202d3cf19b4a8e471bf4b1300cf, type: 2}
+  - {fileID: 11400000, guid: 0177d36fa7d640f4c9207c64eeafeacc, type: 2}
 --- !u!114 &4317442870415705927
 MonoBehaviour:
   m_ObjectHideFlags: 0

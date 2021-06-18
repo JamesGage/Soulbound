@@ -7,23 +7,32 @@ namespace RPG.Resource_System
 {
     public class ResourceStore : MonoBehaviour, ISaveable
     {
+        [SerializeField] private int maxResourceAmount = 50;
         [SerializeField] List<Resource> _resources = new List<Resource>();
+
+        private Dictionary<Resource, int> _resourceLookup = new Dictionary<Resource, int>();
 
         public Action OnResourceChanged;
 
+        private void Awake()
+        {
+            BuildLookup();
+        }
+
         public int AddResource(ResourceType type, int amount)
         {
-            foreach (var resource in _resources)
+            var tempResources = _resourceLookup;
+            foreach (var resource in tempResources)
             {
-                if(resource.resourceType != type) continue;
-                if (resource.resourceAmount + amount > resource.resourceMax)
+                if(resource.Key._resourceType != type) continue;
+                if (resource.Value + amount > maxResourceAmount)
                 {
-                    var leftover = amount - (resource.resourceMax - resource.resourceAmount);
-                    resource.resourceAmount = resource.resourceMax;
+                    var leftover = amount - (maxResourceAmount - resource.Value);
+                    _resourceLookup[resource.Key] = maxResourceAmount;
                     OnResourceChanged?.Invoke();
                     return leftover;
                 }
-                resource.resourceAmount += amount;
+                _resourceLookup[resource.Key] += amount;
                 OnResourceChanged?.Invoke();
                 return 0;
             }
@@ -31,27 +40,53 @@ namespace RPG.Resource_System
             return 0;
         }
         
-        public bool RemoveResource(ResourceType type, int amount)
+        public void RemoveResource(ResourceType type, int amount)
+        {
+            var tempResources = _resourceLookup;
+            foreach (var resource in tempResources)
+            {
+                if (resource.Key._resourceType != type) continue;
+                
+                _resourceLookup[resource.Key] -= amount;
+                print(amount);
+                OnResourceChanged?.Invoke();
+            }
+        }
+        
+        public bool HasResources(ResourceType type, int amount)
+        {
+            var tempResources = _resourceLookup;
+            foreach (var resource in tempResources)
+            {
+                if (resource.Key._resourceType != type) continue;
+                
+                if (resource.Value < amount)
+                {
+                    print("Not enough resources");
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public Dictionary<Resource, int> GetResourceStore()
+        {
+            return _resourceLookup;
+        }
+
+        public int GetMaxResources()
+        {
+            return maxResourceAmount;
+        }
+
+        private void BuildLookup()
         {
             foreach (var resource in _resources)
             {
-                if (resource.resourceType != type) continue;
-                
-                if (resource.resourceAmount < amount)
-                {
-                    return false;
-                }
-                resource.resourceAmount -= amount;
-                OnResourceChanged?.Invoke();
-                return true;
+                if(_resourceLookup.ContainsKey(resource)) continue;
+                _resourceLookup.Add(resource, 0);
             }
-
-            return false;
-        }
-
-        public List<Resource> GetResourceStore()
-        {
-            return _resources;
         }
 
         public static ResourceStore GetPlayerResourceStore()
@@ -59,24 +94,13 @@ namespace RPG.Resource_System
             var player = GameObject.FindGameObjectWithTag("Player");
             return player.GetComponent<ResourceStore>();
         }
-        
-        [Serializable]
-        public class Resource
-        {
-            public ResourceType resourceType;
-            public Sprite resourceIcon;
-            public Color resourceFillColor = Color.grey;
-            public Color resourceBackgroundColor = Color.black;
-            public int resourceAmount;
-            public int resourceMax;
-        }
 
         public object CaptureState()
         {
             Dictionary<string, int> resources = new Dictionary<string, int>();
-            foreach (var resource in _resources)
+            foreach (var resource in _resourceLookup)
             {
-                resources.Add(resource.resourceType.ToString(), resource.resourceAmount);
+                resources.Add(resource.Key.GetResourceID(), resource.Value);
             }
 
             return resources;
@@ -84,14 +108,11 @@ namespace RPG.Resource_System
 
         public void RestoreState(object state)
         {
-            int index = 0;
+            BuildLookup();
+
             foreach (var resource in (Dictionary<string, int>)state)
             {
-                if (_resources[index].resourceType.ToString() == resource.Key)
-                {
-                    _resources[index].resourceAmount = resource.Value;
-                    index++;
-                }
+                _resourceLookup[Resource.GetFromID(resource.Key)] += resource.Value;
             }
         }
     }

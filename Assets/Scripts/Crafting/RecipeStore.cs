@@ -46,10 +46,9 @@ namespace RPG.Crafting
         {
             foreach (var component in recipe.GetComponents())
             {
-                var hasResources = _resourceStore.RemoveResource(component.resourceType, component.amount);
-                if (!hasResources) return false;
+                var hasResources = _resourceStore.HasResources(component.resourceType, component.amount);
+                return hasResources;
             }
-
             return true;
         }
 

@@ -28,7 +28,7 @@ namespace RPG.Inventories
                 {
                     if (itemLookupCache.ContainsKey(item.itemID))
                     {
-                        Debug.LogError(string.Format("Looks like there's a duplicate GameDevTV.UI.InventorySystem ID for objects: {0} and {1}", itemLookupCache[item.itemID], item));
+                        Debug.LogError(string.Format("Looks like there's a duplicate RPG.Inventories ID for objects: {0} and {1}", itemLookupCache[item.itemID], item));
                         continue;
                     }
 

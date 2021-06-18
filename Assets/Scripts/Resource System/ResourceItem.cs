@@ -6,9 +6,8 @@ namespace RPG.Resource_System
     [RequireComponent(typeof(SphereCollider))]
     public class ResourceItem : MonoBehaviour, IRaycastable
     {
-        [SerializeField] private ResourceType _resourceType;
+        [SerializeField] private Resource _resource;
         [SerializeField] private int _resourceAmount;
-        [FMODUnity.EventRef] public string _pickupSFX;
 
         private bool _canPickUp;
         private bool _clickPickup;
@@ -47,8 +46,8 @@ namespace RPG.Resource_System
                 _canPickUp = true;
                 if (_clickPickup)
                 {
-                    _playerResourceStore.AddResource(_resourceType, _resourceAmount);
-                    FMODUnity.RuntimeManager.PlayOneShot(_pickupSFX);
+                    _playerResourceStore.AddResource(_resource._resourceType, _resourceAmount);
+                    FMODUnity.RuntimeManager.PlayOneShot(_resource._pickupSFX);
                     _clickPickup = false;
                     Destroy(gameObject);
                 }
