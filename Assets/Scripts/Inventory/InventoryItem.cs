@@ -9,20 +9,13 @@ namespace RPG.Inventories
         [SerializeField] string itemID = null;
         [Tooltip("Item name to be displayed in UI.")]
         [SerializeField] string displayName = null;
-        [Tooltip("Color the item name will show.")]
-        [SerializeField] private Color _displayNameColor = Color.white;
         [Tooltip("Item description to be displayed in UI.")]
         [SerializeField][TextArea] string description = null;
         [Tooltip("The UI icon to represent this item in the inventory.")]
         [SerializeField] Sprite icon = null;
-        [Tooltip("If true, multiple items of this type can be stacked in the same inventory slot.")]
-        [SerializeField] bool stackable = false;
-        [Tooltip("The value if sold to most stores")]
-        [SerializeField] int _currencyValue;
-        [SerializeField] private ItemType itemType = ItemType.None;
-        
-        [FMODUnity.EventRef] public string equipSFX;
-        
+        [SerializeField] private ItemType _itemType;
+        [SerializeField] private int _currencyValue;
+
         static Dictionary<string, InventoryItem> itemLookupCache;
         
         public static InventoryItem GetFromID(string itemID)
@@ -57,19 +50,9 @@ namespace RPG.Inventories
             return itemID;
         }
 
-        public bool IsStackable()
-        {
-            return stackable;
-        }
-        
         public string GetDisplayName()
         {
             return displayName;
-        }
-
-        public Color GetDisplayNameColor()
-        {
-            return _displayNameColor;
         }
 
         public string GetDescription()
@@ -84,7 +67,7 @@ namespace RPG.Inventories
 
         public ItemType GetItemType()
         {
-            return itemType;
+            return _itemType;
         }
         
         void ISerializationCallbackReceiver.OnBeforeSerialize()

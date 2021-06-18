@@ -21,7 +21,7 @@ namespace RPG.Shops
         private Dictionary<InventoryItem, int> _stockSold = new Dictionary<InventoryItem, int>();
         private Shopper _shopper = null;
         private bool isBuyingMode = true;
-        private ItemType filter = ItemType.None;
+        private ItemType filter;
             
         public event Action onChange;
 
@@ -35,7 +35,7 @@ namespace RPG.Shops
             foreach (ShopItem shopItem in GetAllItems())
             {
                 var item = shopItem.GetInventoryItem();
-                if (filter == ItemType.None || item.GetItemType() == filter)
+                if (item.GetItemType() == filter)
                 {
                     yield return shopItem;
                 }

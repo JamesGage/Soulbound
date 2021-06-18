@@ -223,7 +223,6 @@ namespace RPG.Combat
             else
             {
                 EquipWeapon(weapon);
-                FMODUnity.RuntimeManager.PlayOneShot(weapon.equipSFX, transform.position);
             }
         }
 

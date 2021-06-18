@@ -24,7 +24,6 @@ namespace RPG.UI.Shops
 
             icon.sprite = item.GetIcon();
             name.text = item.GetName();
-            name.color = item.GetColor();
             description.text = item.GetDescription();
             cost.text = $"{item.GetCost():N0}";
             availability.text = item.GetAvailability().ToString();

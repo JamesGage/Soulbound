@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RPG.Control;
 using RPG.Saving;
 using RPG.Stats;
@@ -149,10 +148,6 @@ namespace RPG.Inventories
             public int maxNumber;
             public int GetRandomNumber()
             {
-                if (!item.IsStackable())
-                {
-                    return 1;
-                }
                 int min = minNumber;
                 int max = maxNumber;
                 return Random.Range(min, max + 1);

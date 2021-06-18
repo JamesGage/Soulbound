@@ -39,7 +39,6 @@ namespace RPG.Inventories
             
             _icon.sprite = item.GetIcon();
             _nameText.text = item.GetDisplayName();
-            _nameText.color = item.GetDisplayNameColor();
             _descriptionText.text = item.GetDescription();
             _amountText.text = "(" + $"{amount:N0}" + ")";
             if (amount <= 1)

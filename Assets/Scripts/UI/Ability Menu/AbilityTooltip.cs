@@ -15,7 +15,6 @@ namespace RPG.UI.Ability_Menu
         {
             _abilityIcon.sprite = ability.GetIcon();
             _titleText.text = ability.GetDisplayName();
-            _titleText.color = ability.GetDisplayNameColor();
             _bodyText.text = ability.GetDescription();
         }
     }

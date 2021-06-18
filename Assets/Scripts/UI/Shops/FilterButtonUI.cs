@@ -7,7 +7,7 @@ namespace RPG.UI.Shops
 {
     public class FilterButtonUI : MonoBehaviour
     {
-        [SerializeField] private ItemType itemType = ItemType.None;
+        [SerializeField] private ItemType itemType;
         private Button button;
         private Shop _currentShop;
 

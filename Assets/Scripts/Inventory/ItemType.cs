@@ -2,12 +2,9 @@
 {
     public enum ItemType
     {
-        None,
-        Armor,
-        Weapons,
+        Currency,
         Potion,
-        Resources,
-        Abilities,
-        Currency
+        Resource,
+        Weapon
     }
 }

@@ -23,11 +23,6 @@ namespace RPG.Shops
             return _item.GetDisplayName();
         }
 
-        public Color GetColor()
-        {
-            return _item.GetDisplayNameColor();
-        }
-
         public float GetCost()
         {
             return _price;

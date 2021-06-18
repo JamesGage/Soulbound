@@ -13,7 +13,6 @@ namespace RPG.UI.Inventories
         public void Setup(InventoryItem item)
         {
             _titleText.text = item.GetDisplayName();
-            _titleText.color = item.GetDisplayNameColor();
             _bodyText.text = item.GetDescription();
             _goldValue.text = "Gold: " + item.GetCost();
         }

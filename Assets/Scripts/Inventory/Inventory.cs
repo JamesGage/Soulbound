@@ -79,13 +79,6 @@ namespace RPG.Inventories
             List<InventoryItem> stackedItems = new List<InventoryItem>();
             foreach (var item in items)
             {
-                if (item.IsStackable())
-                {
-                    if(HasItem(item)) continue;
-                    if(stackedItems.Contains(item)) continue;
-                    stackedItems.Add(item);
-                }
-                
                 if (freeSlots <= 0) return false;
                 freeSlots--;
             }
@@ -123,12 +116,6 @@ namespace RPG.Inventories
         /// <returns>Whether or not the item could be added.</returns>
         public bool AddToFirstEmptySlot(InventoryItem item, int number)
         {
-            if (item.GetItemType() == ItemType.Currency)
-            {
-                _purse.UpdateCurrency(number);
-                return true;
-            }
-            
             int i = FindSlot(item);
 
             if (i < 0)
@@ -269,11 +256,6 @@ namespace RPG.Inventories
         /// <returns>-1 if no stack exists or if the item is not stackable.</returns>
         private int FindStack(InventoryItem item)
         {
-            if (!item.IsStackable())
-            {
-                return -1;
-            }
-
             for (int i = 0; i < slots.Length; i++)
             {
                 if (object.ReferenceEquals(slots[i].item, item))

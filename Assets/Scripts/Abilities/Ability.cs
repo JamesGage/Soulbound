@@ -6,7 +6,7 @@ using UnityEngine;
 namespace RPG.Abilities
 {
     [CreateAssetMenu(fileName = "Ability", menuName = "Abilities/Ability")]
-    public class Ability : ActionItem
+    public class Ability : InventoryItem
     {
         [SerializeField] private TargetingStrategy targetingStrategy;
         [SerializeField] private FilterStrategy[] filterStrategies;
@@ -14,7 +14,7 @@ namespace RPG.Abilities
         [SerializeField] private int bondCost;
         [SerializeField] private float cooldownTime;
         
-        public override void Use(GameObject user)
+        public void Use(GameObject user)
         {
             Bond bond = user.GetComponent<Bond>();
             if (bond.GetBond() < bondCost) return;

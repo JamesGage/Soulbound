@@ -39,7 +39,6 @@ namespace RPG.Combat
             if (_weaponType != null)
             {
                 subject.GetComponent<Fighter>().EquipWeapon(_weaponType);
-                FMODUnity.RuntimeManager.PlayOneShot(_weaponType.equipSFX, transform.position);
             }
 
             if (_healthRestore > 0)
