@@ -42,15 +42,16 @@ namespace RPG.Resource_System
         
         public void RemoveResource(ResourceType type, int amount)
         {
-            var tempResources = _resourceLookup;
-            foreach (var resource in tempResources)
+            int changeAmount = 0;
+            Resource tempResource = null;
+            foreach (var resource in _resourceLookup)
             {
                 if (resource.Key._resourceType != type) continue;
-                
-                _resourceLookup[resource.Key] -= amount;
-                print(amount);
-                OnResourceChanged?.Invoke();
+                tempResource = resource.Key;
+                changeAmount = amount;
             }
+            _resourceLookup[tempResource] -= changeAmount;
+            OnResourceChanged?.Invoke();
         }
         
         public bool HasResources(ResourceType type, int amount)
