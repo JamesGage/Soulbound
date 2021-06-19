@@ -23,7 +23,7 @@ namespace RPG.Abilities.Effects
             
             foreach (var target in data.GetTargets())
             {
-                if (target.GetComponent<Health>() != null && !target.GetComponent<Health>().IsDead())
+                if (target.GetComponent<Health>() != null)
                 {
                     instances.Add(Instantiate(targetPrefab, target.transform.position, Quaternion.identity));   
                 }

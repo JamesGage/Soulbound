@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +41,13 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityTooltipSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityRowUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnProjectileEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/RandomDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Pickup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ILootable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceType.cs" />
@@ -94,6 +88,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/AbilityData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -187,7 +185,8 @@
       <workItem from="1623699904159" duration="12659000" />
       <workItem from="1623774525512" duration="11402000" />
       <workItem from="1623962681023" duration="11877000" />
-      <workItem from="1624033131758" duration="5036000" />
+      <workItem from="1624033131758" duration="5193000" />
+      <workItem from="1624067904752" duration="1533000" />
     </task>
     <servers />
   </component>
