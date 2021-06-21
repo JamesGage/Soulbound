@@ -14,17 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: a808ab76-e21c-419f-b88c-7455389defbb
   displayName: 'Spell: Fireball'
-  _displayNameColor: {r: 0.9622642, g: 0.17446475, b: 0.13163051, a: 1}
   description: 'CAUTION: HOT'
   icon: {fileID: 21300000, guid: 4321546f582a9b74eb8cb4da5126d700, type: 3}
-  pickup: {fileID: 652689746961899054, guid: 05d71a36b7dfd6c4292eb474bf6901bc, type: 3}
-  stackable: 0
-  _goldValue: 100
-  isGold: 0
-  itemType: 2
-  equipSFX: event:/SFX/Weapons/Spells/Fireball_Equip
-  allowedEquipLocation: 5
-  _weaponType: 0
+  _itemType: 3
+  _currencyValue: 0
   _equippedPrefab: {fileID: 7519987596654375340, guid: d6fbd6bdfb8fa3c40ae3342acc58fe06, type: 3}
   _animOverride: {fileID: 22100000, guid: 041ddb3926d067e488bf70107f01ac8c, type: 2}
   _damageAddative: 2
@@ -32,11 +25,5 @@ MonoBehaviour:
   _weaponRange: 10
   _isRightHanded: 1
   _projectile: {fileID: 1687764964036165747, guid: 2a098fc4fec3faa4da093b5f134e4c3b, type: 3}
-  _damageType: 0
-  attackStartSFX: event:/SFX/Weapons/Spells/Fireball_AttackStart
-  attackMidSFX: 
-  attackEndSFX: event:/SFX/Weapons/Spells/Fireball_AttackEnd
-  hitSFX: event:/SFX/Weapons/Spells/Fireball_Hit
-  missSFX: event:/SFX/Weapons/Miss
-  blockSFX: event:/SFX/Weapons/Spells/Fireball_Block
-  critSFX: event:/SFX/Weapons/Spells/Fireball_Crit
+  _weaponAbilities: []
+  _weaponQuests: []

@@ -28,7 +28,7 @@ namespace RPG.UI.Ability_Menu
         private void SetAbilityUI()
         {
             ClearAbilities();
-            var currentWeapon = _playerEquipment.GetCurrentWeapon();
+            var currentWeapon = _playerEquipment.GetEquippedWeapon();
             if(currentWeapon == null) return;
 
             int abilityCount = 0;

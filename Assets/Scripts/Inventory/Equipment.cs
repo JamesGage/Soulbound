@@ -8,87 +8,45 @@ namespace RPG.Inventories
 {
     public class Equipment : MonoBehaviour, ISaveable
     {
-        private Dictionary<EquipLocation, EquipableItem> equippedItems = new Dictionary<EquipLocation, EquipableItem>();
+        private WeaponConfig _currentWeapon;
 
         public event Action onEquipmentUpdated;
 
-        public EquipableItem GetItemInSlot(EquipLocation equipLocation)
+        public WeaponConfig GetEquippedWeapon()
         {
-            if (!equippedItems.ContainsKey(equipLocation))
-            {
-                return null;
-            }
+            return _currentWeapon;
+        }
+        
+        public void SetEquippedWeapon(WeaponConfig weapon)
+        {
+            _currentWeapon = weapon;
+            onEquipmentUpdated?.Invoke();
+        }
+        
+        public void RemoveEquippedWeapon()
+        {
+            _currentWeapon = null;
+            onEquipmentUpdated?.Invoke();
+        }
 
-            return equippedItems[equipLocation];
-        }
-        
-        public void AddItem(EquipLocation slot, EquipableItem item)
-        {
-            Debug.Assert(item.GetAllowedEquipLocation() == slot);
-
-            equippedItems[slot] = item;
-
-            if (onEquipmentUpdated != null)
-            {
-                onEquipmentUpdated();
-            }
-        }
-        
-        public void RemoveItem(EquipLocation slot)
-        {
-            equippedItems.Remove(slot);
-            if (onEquipmentUpdated != null)
-            {
-                onEquipmentUpdated();
-            }
-        }
-        
-        public IEnumerable<EquipLocation> GetAllPopulatedSlots()
-        {
-            return equippedItems.Keys;
-        }
-        
-        public WeaponConfig GetCurrentWeapon()
-        {
-            if (!equippedItems.ContainsKey(EquipLocation.Weapon))
-            {
-                return null;
-            }
-
-            return (WeaponConfig)equippedItems[EquipLocation.Weapon];
-        }
-        
         public static Equipment GetPlayerEquipment()
         {
             var player = GameObject.FindWithTag("Player");
             return player.GetComponent<Equipment>();
         }
         
-
         object ISaveable.CaptureState()
         {
-            var equippedItemsForSerialization = new Dictionary<EquipLocation, string>();
-            foreach (var pair in equippedItems)
-            {
-                equippedItemsForSerialization[pair.Key] = pair.Value.GetItemID();
-            }
-            return equippedItemsForSerialization;
+            if (_currentWeapon == null) return "";
+            
+            return _currentWeapon.GetItemID();
         }
 
         void ISaveable.RestoreState(object state)
         {
-            equippedItems = new Dictionary<EquipLocation, EquipableItem>();
-
-            var equippedItemsForSerialization = (Dictionary<EquipLocation, string>)state;
-
-            foreach (var pair in equippedItemsForSerialization)
-            {
-                var item = (EquipableItem)InventoryItem.GetFromID(pair.Value);
-                if (item != null)
-                {
-                    equippedItems[pair.Key] = item;
-                }
-            }
+            if((string) state == "") return;
+            
+            _currentWeapon = (WeaponConfig) InventoryItem.GetFromID((string) state);
         }
     }
 }

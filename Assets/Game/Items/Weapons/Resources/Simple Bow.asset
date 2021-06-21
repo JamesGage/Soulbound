@@ -14,15 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 359ae85a-8cc6-4cc6-ac8d-9d2d78450811
   displayName: Simple Bow
-  _displayNameColor: {r: 0.13163051, g: 0.9622642, b: 0.19823858, a: 1}
   description: Looks a bit worn
   icon: {fileID: 21300000, guid: eb9dacc5edc8fdc4dbba58aef5f792ab, type: 3}
-  stackable: 0
+  _itemType: 3
   _currencyValue: 10
-  itemType: 2
-  equipSFX: event:/SFX/Weapons/Bows/Bow_Equip
-  allowedEquipLocation: 5
-  _weaponType: 3
   _equippedPrefab: {fileID: 1281007043042331088, guid: d7450984d4260d24ab9c0c299732dba8, type: 3}
   _animOverride: {fileID: 22100000, guid: 2615ed0e9d17233409e9b6c37d9b9473, type: 2}
   _damageAddative: 2
@@ -30,10 +25,7 @@ MonoBehaviour:
   _weaponRange: 10
   _isRightHanded: 0
   _projectile: {fileID: 6206652454154147562, guid: 37124f0bf6679db45a50e43173dab8fb, type: 3}
-  _damageType: 0
-  attackStartSFX: event:/SFX/Weapons/Bows/Bow_AttackStart
-  attackMidSFX: event:/SFX/Weapons/Bows/Bow_AttackMid
-  attackEndSFX: event:/SFX/Weapons/Bows/Bow_AttackEnd
   _weaponAbilities:
   - {fileID: 11400000, guid: 2df103e1856514448acb2ea59706ecfd, type: 2}
   - {fileID: 11400000, guid: cd8b81324b8c31a4480051fd27fc03a4, type: 2}
+  _weaponQuests: []

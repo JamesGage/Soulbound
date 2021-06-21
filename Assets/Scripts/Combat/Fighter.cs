@@ -1,5 +1,4 @@
-﻿using System;
-using RPG.Audio;
+﻿using RPG.Audio;
 using RPG.Core;
 using UnityEngine;
 using RPG.Movement;
@@ -7,7 +6,6 @@ using RPG.Saving;
 using RPG.Inventories;
 using RPG.Stats;
 using RPG.Utils;
-using Random = UnityEngine.Random;
 
 namespace RPG.Combat
 {
@@ -25,7 +23,6 @@ namespace RPG.Combat
         private Health _target;
         private Equipment _equipment;
         private float _timeSinceLastAttack = Mathf.Infinity;
-        private bool _isCritical;
         private bool _canTrigger = true;
 
         private Mover _mover;
@@ -126,46 +123,8 @@ namespace RPG.Combat
 
         private int CalculateAttack()
         {
-            var attack = Random.Range(1, 101) + (int)_baseStats.GetStat(Stat.Accuracy);
             var damage = Mathf.RoundToInt(_baseStats.GetStat(Stat.Damage));
-            var speed = _target.GetComponent<BaseStats>().GetStat(Stat.Speed);
-
-            //Critical
-            if (attack >= 100 && attack > speed * 2f)
-            {
-                _isCritical = true;
-                _hitDamageType = _currentWeaponConfig.GetDamageType();
-                return damage * 2;
-            }
-            
-            //Good Hit
-            if (attack >= speed * 1.25f)
-            {
-                _isCritical = false;
-                _hitDamageType = _currentWeaponConfig.GetDamageType();
-                return damage;
-            }
-            
-            //Hit
-            if (attack >= speed)
-            {
-                _isCritical = false;
-                _hitDamageType = _currentWeaponConfig.GetDamageType();
-                return Mathf.RoundToInt(damage * 0.75f);
-            }
-            
-            //Block
-            if (attack >= speed * 0.5f)
-            {
-                _isCritical = false;
-                _hitDamageType = DamageType.Block;
-                return Mathf.RoundToInt(damage * 0.5f);
-            }
-
-            //Miss
-            _isCritical = false;
-            _hitDamageType = DamageType.Miss;
-            return 0;
+            return damage;
         }
 
         private bool IsInRange(Transform targetTransform)
@@ -215,7 +174,7 @@ namespace RPG.Combat
         
         private void UpdateWeapon()
         {
-            var weapon = _equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
+            var weapon = _equipment.GetEquippedWeapon();
             if (weapon == null)
             {
                 EquipWeapon(_defaultWeapon);
@@ -259,14 +218,12 @@ namespace RPG.Combat
 
         public object CaptureState()
         {
-            return _currentWeaponConfig.name;
+            return _currentWeaponConfig.GetItemID();
         }
 
         public void RestoreState(object state)
         {
-            string weaponName = (string) state;
-            WeaponConfig weapon = UnityEngine.Resources.Load<WeaponConfig>(weaponName);
-            EquipWeapon(weapon);
+            EquipWeapon((WeaponConfig)InventoryItem.GetFromID((string) state));
         }
     }
 }

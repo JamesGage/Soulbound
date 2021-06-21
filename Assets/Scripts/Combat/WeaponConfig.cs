@@ -1,17 +1,17 @@
 ﻿using System.Collections.Generic;
 using RPG.Abilities;
 using RPG.Inventories;
+using RPG.Questing;
 using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat
 {
     [CreateAssetMenu(fileName = "Weapon Name", menuName = "Weapons/New Weapon")]
-    public class WeaponConfig : EquipableItem, IModifierProvider
+    public class WeaponConfig : InventoryItem, IModifierProvider
     {
         #region Varaibles
-
-        [SerializeField] private ItemType _weaponType;
+        
         [SerializeField] Weapon _equippedPrefab;
         [SerializeField] AnimatorOverrideController _animOverride;
         [SerializeField] int _damageAddative = 2;
@@ -19,13 +19,10 @@ namespace RPG.Combat
         [SerializeField] float _weaponRange = 2f;
         [SerializeField] bool _isRightHanded = true;
         [SerializeField] Projectile _projectile = null;
-        [SerializeField] DamageType _damageType;
-        
-        [FMODUnity.EventRef] public string attackStartSFX;
-        [FMODUnity.EventRef] public string attackMidSFX;
-        [FMODUnity.EventRef] public string attackEndSFX;
-
+        [Space]
         [SerializeField] private List<Ability> _weaponAbilities = new List<Ability>();
+        [Space]
+        [SerializeField] private List<Quest> _weaponQuests = new List<Quest>();
 
         private const string _weaponName = "Weapon";
 
@@ -70,16 +67,6 @@ namespace RPG.Combat
             return _projectile != null;
         }
 
-        public DamageType GetDamageType()
-        {
-            return _damageType;
-        }
-
-        public ItemType GetWeaponType()
-        {
-            return _weaponType;
-        }
-
         public List<Ability> GetAbilities()
         {
             return _weaponAbilities;
@@ -95,18 +82,12 @@ namespace RPG.Combat
 
         public IEnumerable<float> GetAddativeModifiers(Stat stat)
         {
-            if (stat == Stat.Damage)
-            {
-                yield return _damageAddative;
-            }
+            yield return _damageAddative;
         }
 
         public IEnumerable<float> GetPercentageModifiers(Stat stat)
         {
-            if (stat == Stat.Damage)
-            {
-                yield return _damagePercentage;
-            }
+            yield return _damagePercentage;
         }
         
         private bool FindPlayerRoot(Weapon weapon)

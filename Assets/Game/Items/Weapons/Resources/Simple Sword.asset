@@ -14,15 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: c2c7b2b9-965b-4ea1-a038-5f22de2d7316
   displayName: Simple Sword
-  _displayNameColor: {r: 0.13163051, g: 0.9622642, b: 0.19823858, a: 1}
   description: Has a bit of rust on the blade.
   icon: {fileID: 21300000, guid: 15211a0cfb4fbde49aa1eeede2a403c8, type: 3}
-  stackable: 0
+  _itemType: 3
   _currencyValue: 10
-  itemType: 2
-  equipSFX: event:/SFX/Weapons/Melee/Sword_Equip
-  allowedEquipLocation: 5
-  _weaponType: 1
   _equippedPrefab: {fileID: 4263859535763257474, guid: 44e0b93368062de4b96b3066339172f3, type: 3}
   _animOverride: {fileID: 22100000, guid: 1f55313a58a2f784f8098cf5bc904aaf, type: 2}
   _damageAddative: 2
@@ -30,10 +25,7 @@ MonoBehaviour:
   _weaponRange: 2
   _isRightHanded: 1
   _projectile: {fileID: 0}
-  _damageType: 0
-  attackStartSFX: 
-  attackMidSFX: event:/SFX/Weapons/Melee/Sword_AttackMid
-  attackEndSFX: 
   _weaponAbilities:
   - {fileID: 11400000, guid: d2857b9af6eb4634a9650354dbf94a14, type: 2}
   - {fileID: 11400000, guid: 1ab75383590473640bb8f3157d862312, type: 2}
+  _weaponQuests: []
