@@ -64,6 +64,8 @@ namespace RPG.Combat
         {
             foreach (var weapon in (List<string>) state)
             {
+                if(_weapons.Contains(InventoryItem.GetFromID(weapon) as WeaponConfig)) continue;
+                
                 _weapons.Add(InventoryItem.GetFromID(weapon) as WeaponConfig);
             }
         }

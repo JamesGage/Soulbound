@@ -1,5 +1,4 @@
-﻿using System;
-using RPG.Combat;
+﻿using RPG.Combat;
 using RPG.Inventories;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +8,7 @@ namespace UI.Inventories
     public class WeaponSlot : MonoBehaviour
     {
         [SerializeField] private Image _icon;
+        [SerializeField] private Button _removeWeapon;
 
         private Button _button;
         private WeaponConfig _weapon;
@@ -19,6 +19,8 @@ namespace UI.Inventories
         {
             _button = GetComponent<Button>();
             _button.onClick.AddListener(SetCurrentWeapon);
+            
+            _removeWeapon.onClick.AddListener(RemoveWeapon);
         }
 
         public void SetupWeaponSlot(WeaponConfig weapon, Equipment equipment, WeaponStore weaponStore)
@@ -38,6 +40,9 @@ namespace UI.Inventories
         public void RemoveWeapon()
         {
             _weaponStore.RemoveWeapon(_weapon);
+            
+            if(_equipment.GetEquippedWeapon() == _weapon)
+                _equipment.RemoveEquippedWeapon();
         }
     }
 }

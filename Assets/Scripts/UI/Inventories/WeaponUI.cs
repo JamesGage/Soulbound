@@ -1,4 +1,5 @@
-﻿using RPG.Combat;
+﻿using System;
+using RPG.Combat;
 using RPG.Inventories;
 using UI.Inventories;
 using UnityEngine;
@@ -20,8 +21,15 @@ namespace RPG.UI.Inventories
                 _weaponStore = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponStore>();
             if (_equipment == null)
                 _equipment = Equipment.GetPlayerEquipment();
+
+            _weaponStore.OnWeaponChanged += SetupWeaponUI;
             
             SetupWeaponUI();
+        }
+
+        private void OnDisable()
+        {
+            _weaponStore.OnWeaponChanged -= SetupWeaponUI;
         }
 
         public void AddWeapon(WeaponConfig weapon, Equipment equipment)
@@ -46,10 +54,10 @@ namespace RPG.UI.Inventories
         public void SetupWeaponUI()
         {
             ClearWeapons();
-            
-            for (int i = 0; i < _weaponStore.GetWeaponSlots(); i++)
+
+            foreach (var weapon in _weaponStore.GetWeapons())
             {
-                AddWeapon(_weaponStore.GetWeapons()[i], _equipment);
+                AddWeapon(weapon, _equipment);
             }
         }
 

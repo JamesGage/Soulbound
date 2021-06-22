@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Weapon Slot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Weapon Slot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Weapons.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Elements/Weapon Slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Elements/Weapon Slot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,12 +89,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/EquipmentSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -201,7 +192,7 @@
       <workItem from="1624067904752" duration="1533000" />
       <workItem from="1624240841409" duration="3645000" />
       <workItem from="1624304330432" duration="3411000" />
-      <workItem from="1624380031732" duration="2437000" />
+      <workItem from="1624380031732" duration="3504000" />
     </task>
     <servers />
   </component>
