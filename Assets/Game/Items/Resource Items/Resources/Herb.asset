@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e066456567a143958cd2a38d4805781c, type: 3}
   m_Name: Herb
   m_EditorClassIdentifier: 
+  itemID: 8fad815d-17f1-405b-b96f-30c77549e792
+  displayName: Herb
+  description: 
+  icon: {fileID: 21300000, guid: ca5d28699103fe04e968dd7f144e2302, type: 3}
+  _itemType: 2
+  _currencyValue: 0
   _resourceType: 4
-  resourceIcon: {fileID: 21300000, guid: 8070594b98b9e8e4e9cb810ececa69c6, type: 3}
   resourceFillColor: {r: 0.5583638, g: 0.7254902, b: 0.50980395, a: 1}
   resourceBackgroundColor: {r: 0.15356949, g: 0.16862746, b: 0.105882354, a: 1}
   _pickupSFX: event:/SFX/Ambient/Pickup/Pickup_General

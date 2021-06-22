@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RPG.Inventories;
 using RPG.Saving;
 using UnityEngine;
 
@@ -101,7 +102,7 @@ namespace RPG.Resource_System
             Dictionary<string, int> resources = new Dictionary<string, int>();
             foreach (var resource in _resourceLookup)
             {
-                resources.Add(resource.Key.GetResourceID(), resource.Value);
+                resources.Add(resource.Key.GetItemID(), resource.Value);
             }
 
             return resources;
@@ -113,7 +114,7 @@ namespace RPG.Resource_System
 
             foreach (var resource in (Dictionary<string, int>)state)
             {
-                _resourceLookup[Resource.GetFromID(resource.Key)] += resource.Value;
+                _resourceLookup[InventoryItem.GetFromID(resource.Key) as Resource] += resource.Value;
             }
         }
     }

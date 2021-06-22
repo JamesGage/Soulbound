@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e066456567a143958cd2a38d4805781c, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
+  itemID: fab652fa-fd19-4387-a6f5-da2d445d705e
+  displayName: Stone
+  description: 
+  icon: {fileID: 21300000, guid: 3d61f47a51933b94194a3b1cd9cc90bf, type: 3}
+  _itemType: 2
+  _currencyValue: 0
   _resourceType: 1
-  resourceIcon: {fileID: 21300000, guid: 3d61f47a51933b94194a3b1cd9cc90bf, type: 3}
   resourceFillColor: {r: 0.60746706, g: 0.65086955, b: 0.6886792, a: 1}
   resourceBackgroundColor: {r: 0.105882354, g: 0.13431187, b: 0.16862746, a: 1}
   _pickupSFX: event:/SFX/Ambient/Pickup/Pickup_General

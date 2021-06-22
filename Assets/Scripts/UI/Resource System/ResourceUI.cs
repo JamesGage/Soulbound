@@ -34,8 +34,9 @@ namespace RPG.UI.Resource_System
             foreach (var resource in _resourceStore.GetResourceStore())
             {
                 var resourceBar = Instantiate(_resourceBarUIPrefab, _contents.transform);
-                resourceBar.SetResourceBar(resource.Key.resourceIcon,resource.Key._resourceType,
-                    resource.Value, _resourceStore.GetMaxResources(), resource.Key.resourceFillColor, resource.Key.resourceBackgroundColor);
+                resourceBar.SetResourceBar(resource.Key.GetIcon(),resource.Key._resourceType,
+                    resource.Value, _resourceStore.GetMaxResources(), resource.Key.resourceFillColor,
+                    resource.Key.resourceBackgroundColor);
             }
         }
 

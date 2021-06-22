@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenuItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Resource System/Resource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/Resource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +67,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utils/UI/Dragging/IDragContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/Resource.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/AbilityData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
@@ -92,6 +91,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenuItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/Resource.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -189,7 +191,7 @@
       <workItem from="1624067904752" duration="1533000" />
       <workItem from="1624240841409" duration="3645000" />
       <workItem from="1624304330432" duration="3411000" />
-      <workItem from="1624380031732" duration="11134000" />
+      <workItem from="1624380031732" duration="11585000" />
     </task>
     <servers />
   </component>

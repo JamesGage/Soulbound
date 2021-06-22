@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e066456567a143958cd2a38d4805781c, type: 3}
   m_Name: Metal
   m_EditorClassIdentifier: 
+  itemID: 7ee00e34-278e-4270-bfe0-edd48761e6bc
+  displayName: Metal
+  description: 
+  icon: {fileID: 21300000, guid: 268157e703d40dc4ab6b3a9845a2ee36, type: 3}
+  _itemType: 2
+  _currencyValue: 0
   _resourceType: 2
-  resourceIcon: {fileID: 21300000, guid: 268157e703d40dc4ab6b3a9845a2ee36, type: 3}
   resourceFillColor: {r: 0.60746706, g: 0.65086955, b: 0.6886792, a: 1}
   resourceBackgroundColor: {r: 0.105882354, g: 0.13431187, b: 0.16862746, a: 1}
   _pickupSFX: event:/SFX/Ambient/Pickup/Pickup_General
