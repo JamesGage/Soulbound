@@ -59,8 +59,16 @@ namespace RPG.Inventories
                 Destroy(gameObject);
                 return;
             }
+
+            if (_item.GetItemType() == ItemType.Potion)
+            {
+                PotionStore.GetPlayerPotionStore().AddPotion();
+                componentInParent.RemoveItemFromList(_item);
+                Destroy(gameObject);
+                return;
+            }
             
-            if (_weaponStore.HasOpenSlot())
+            if (_item.GetItemType() == ItemType.Weapon && _weaponStore.HasOpenSlot())
             {
                 _weaponStore.AddWeapon(_item as WeaponConfig);
                 componentInParent.RemoveItemFromList(_item);
