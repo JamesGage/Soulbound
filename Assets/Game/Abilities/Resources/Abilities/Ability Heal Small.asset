@@ -14,17 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: cf0376e5-f5fe-4d2e-98ed-815bb7ab2ece
   displayName: Simple Heal
-  _displayNameColor: {r: 1, g: 1, b: 1, a: 1}
   description: Heal the player for 10 points of health.
   icon: {fileID: 21300000, guid: 58417734e20842a4186b98f8be0c8e58, type: 3}
-  pickup: {fileID: 0}
-  stackable: 0
-  _goldValue: 0
-  isGold: 0
-  itemType: 5
-  equipSFX: 
-  consumable: 0
-  comsumeSFX: 
+  _itemType: 4
+  _currencyValue: 0
   targetingStrategy: {fileID: 11400000, guid: 2c12d2b9d72ea5440964612c12cf9b6d, type: 2}
   filterStrategies: []
   effectStrategies:

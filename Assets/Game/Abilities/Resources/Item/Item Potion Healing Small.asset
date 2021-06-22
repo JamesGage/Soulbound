@@ -14,15 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 191c025a-71bf-431b-b7ee-14804afb4c53
   displayName: Health Potion
-  _displayNameColor: {r: 1, g: 1, b: 1, a: 1}
   description: Heal the player for 10 points of health.
   icon: {fileID: 21300000, guid: 9e54a146e64f40149a04094618559ce7, type: 3}
-  stackable: 1
+  _itemType: 1
   _currencyValue: 0
-  itemType: 3
-  equipSFX: event:/SFX/Ambient/Pickup/Pickup_Bottle
-  consumable: 1
-  comsumeSFX: event:/SFX/Items/Potions/Potion_Drink
   targetingStrategy: {fileID: 11400000, guid: 2c12d2b9d72ea5440964612c12cf9b6d, type: 2}
   filterStrategies: []
   effectStrategies:

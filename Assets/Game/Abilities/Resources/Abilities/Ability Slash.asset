@@ -14,17 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 4c01e817-0c3a-4066-b504-6ca578d125ce
   displayName: Slash
-  _displayNameColor: {r: 1, g: 1, b: 1, a: 1}
   description: A wide slash that deals 10 damage to each enemy in the arc.
   icon: {fileID: 21300000, guid: 34bcda609bb9b404398e9c0bc91dd48c, type: 3}
-  pickup: {fileID: 0}
-  stackable: 0
-  _goldValue: 0
-  isGold: 0
-  itemType: 5
-  equipSFX: 
-  consumable: 0
-  comsumeSFX: 
+  _itemType: 4
+  _currencyValue: 0
   targetingStrategy: {fileID: 11400000, guid: 374be181dd2a5b64faa225e53e356f5c, type: 2}
   filterStrategies:
   - {fileID: 11400000, guid: 70f313f2804902a4aafbc40134027eb4, type: 2}

@@ -14,17 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: a116853a-08e7-46df-9254-4430a3b7ca17
   displayName: Ice Spike Zone
-  _displayNameColor: {r: 0.9622642, g: 0.6607019, b: 0.13163051, a: 1}
   description: Summon a large Ice Spike that deals 10 damage to all surrounding enemies.
   icon: {fileID: 21300000, guid: d64d550e99d51eb44a47ddc8e3a78d19, type: 3}
-  pickup: {fileID: 0}
-  stackable: 0
-  _goldValue: 25
-  isGold: 0
-  itemType: 5
-  equipSFX: 
-  consumable: 0
-  comsumeSFX: 
+  _itemType: 4
+  _currencyValue: 0
   targetingStrategy: {fileID: 11400000, guid: a9a586224fcdb4c4dbbb5febf83d8a78, type: 2}
   filterStrategies:
   - {fileID: 11400000, guid: 70f313f2804902a4aafbc40134027eb4, type: 2}

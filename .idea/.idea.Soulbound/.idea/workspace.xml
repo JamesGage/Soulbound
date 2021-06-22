@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Potion.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Potions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Hands.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Head.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Neck.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Destruction.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Destruction.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Vigore.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Necklace of Vigore.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Ring of Speed.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Wearables/Resources/Ring of Speed.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 Small Valley.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenuItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenuItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Fireball.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Fireball.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Firebolt.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Firebolt.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Ice Spike AoE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Ice Spike AoE.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Item/Item Potion Healing Small.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Item/Item Potion Healing Small.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +56,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceBarUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Outline.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeComponent.cs" />
@@ -74,7 +72,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityTooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/FilterButtonUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
@@ -107,6 +104,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenuItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -204,7 +204,7 @@
       <workItem from="1624067904752" duration="1533000" />
       <workItem from="1624240841409" duration="3645000" />
       <workItem from="1624304330432" duration="3411000" />
-      <workItem from="1624380031732" duration="6013000" />
+      <workItem from="1624380031732" duration="10452000" />
     </task>
     <servers />
   </component>

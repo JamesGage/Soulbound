@@ -74,6 +74,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &-624916985797539739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968763298227037891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad877a377bf343b2bca6f4e96559bfa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _potion: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
+  _potionMax: 10
 --- !u!114 &402525830550980345
 MonoBehaviour:
   m_ObjectHideFlags: 0

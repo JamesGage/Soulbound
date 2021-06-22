@@ -5,6 +5,7 @@
         Currency,
         Potion,
         Resource,
-        Weapon
+        Weapon,
+        Ability
     }
 }

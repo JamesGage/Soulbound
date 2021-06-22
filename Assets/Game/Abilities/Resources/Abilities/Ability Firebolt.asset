@@ -14,17 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 7236d2d6-94dc-4444-8119-23ffe044e9b3
   displayName: Firebolt
-  _displayNameColor: {r: 0.9622642, g: 0.17446475, b: 0.13163051, a: 1}
   description: Launch a fire bolt at all enemies within the area of effect.
   icon: {fileID: 21300000, guid: 4321546f582a9b74eb8cb4da5126d700, type: 3}
-  pickup: {fileID: 0}
-  stackable: 0
-  _goldValue: 100
-  isGold: 0
-  itemType: 5
-  equipSFX: event:/SFX/Weapons/Spells/Fireball_Equip
-  consumable: 0
-  comsumeSFX: event:/SFX/Weapons/Spells/Fireball_Equip
+  _itemType: 4
+  _currencyValue: 0
   targetingStrategy: {fileID: 11400000, guid: a9a586224fcdb4c4dbbb5febf83d8a78, type: 2}
   filterStrategies:
   - {fileID: 11400000, guid: 70f313f2804902a4aafbc40134027eb4, type: 2}

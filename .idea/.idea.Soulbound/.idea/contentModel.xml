@@ -328,6 +328,7 @@
             <e p="ItemType.cs" t="Include" />
             <e p="LootMenu.cs" t="Include" />
             <e p="LootMenuItem.cs" t="Include" />
+            <e p="PotionStore.cs" t="Include" />
             <e p="Purse.cs" t="Include" />
             <e p="RandomDropperFromLibrary.cs" t="Include" />
             <e p="StatsEquipableItem.cs" t="Include" />
@@ -427,6 +428,9 @@
             <e p="Pickups" t="Include">
               <e p="PickupSlotUI.cs" t="Include" />
               <e p="PickupUI.cs" t="Include" />
+            </e>
+            <e p="Potions" t="Include">
+              <e p="PotionsUI.cs" t="Include" />
             </e>
             <e p="PurseUI.cs" t="Include" />
             <e p="QuestInfoUI.cs" t="Include" />

@@ -14,17 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 568f54f5-249d-40ed-b2ac-48de5ece2414
   displayName: Fireball
-  _displayNameColor: {r: 0.9622642, g: 0.17446475, b: 0.13163051, a: 1}
   description: Launch a single fireball.
   icon: {fileID: 21300000, guid: 004b161ceb1b5e544985a70ad4eb0f4a, type: 3}
-  pickup: {fileID: 0}
-  stackable: 0
-  _goldValue: 80
-  isGold: 0
-  itemType: 5
-  equipSFX: event:/SFX/Weapons/Spells/Fireball_Equip
-  consumable: 0
-  comsumeSFX: event:/SFX/Weapons/Spells/Fireball_Equip
+  _itemType: 4
+  _currencyValue: 0
   targetingStrategy: {fileID: 11400000, guid: d9ad03706a93cef4ba25a3e7e768ca7a, type: 2}
   filterStrategies: []
   effectStrategies:
