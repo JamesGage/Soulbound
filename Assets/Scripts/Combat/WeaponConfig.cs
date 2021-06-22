@@ -8,14 +8,12 @@ using UnityEngine;
 namespace RPG.Combat
 {
     [CreateAssetMenu(fileName = "Weapon Name", menuName = "Weapons/New Weapon")]
-    public class WeaponConfig : InventoryItem, IModifierProvider
+    public class WeaponConfig : InventoryItem
     {
         #region Varaibles
         
         [SerializeField] Weapon _equippedPrefab;
         [SerializeField] AnimatorOverrideController _animOverride;
-        [SerializeField] int _damageAddative = 2;
-        [SerializeField] float _damagePercentage = 100f;
         [SerializeField] float _weaponRange = 2f;
         [SerializeField] bool _isRightHanded = true;
         [SerializeField] Projectile _projectile = null;
@@ -80,16 +78,6 @@ namespace RPG.Combat
             projectileInstance.SetTarget(target, instigator, calculatedDamage);
         }
 
-        public IEnumerable<float> GetAddativeModifiers(Stat stat)
-        {
-            yield return _damageAddative;
-        }
-
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
-        {
-            yield return _damagePercentage;
-        }
-        
         private bool FindPlayerRoot(Weapon weapon)
         {
             Transform t = weapon.transform;

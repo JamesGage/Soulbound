@@ -9,7 +9,7 @@ using UnityEngine.AI;
 
 namespace RPG.Control
 {
-    public class AIController : MonoBehaviour, IModifierProvider
+    public class AIController : MonoBehaviour
     {
         #region Variables
 
@@ -187,16 +187,6 @@ namespace RPG.Control
         {
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, chaseDistance);
-        }
-
-        public IEnumerable<float> GetAddativeModifiers(Stat stat)
-        {
-            return _fighter.GetCurrentWeapon().GetAddativeModifiers(stat);
-        }
-
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
-        {
-            return _fighter.GetCurrentWeapon().GetPercentageModifiers(stat);
         }
     }
 }

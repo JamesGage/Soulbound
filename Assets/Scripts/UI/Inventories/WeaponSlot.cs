@@ -1,4 +1,5 @@
-﻿using RPG.Combat;
+﻿using System;
+using RPG.Combat;
 using RPG.Inventories;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,9 +10,16 @@ namespace UI.Inventories
     {
         [SerializeField] private Image _icon;
 
+        private Button _button;
         private WeaponConfig _weapon;
         private Equipment _equipment;
         private WeaponStore _weaponStore;
+
+        private void Awake()
+        {
+            _button = GetComponent<Button>();
+            _button.onClick.AddListener(SetCurrentWeapon);
+        }
 
         public void SetupWeaponSlot(WeaponConfig weapon, Equipment equipment, WeaponStore weaponStore)
         {
@@ -25,7 +33,6 @@ namespace UI.Inventories
         public void SetCurrentWeapon()
         {
             _equipment.SetEquippedWeapon(_weapon);
-            _icon.sprite = null;
         }
 
         public void RemoveWeapon()

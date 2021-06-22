@@ -10,7 +10,7 @@ namespace RPG.Combat
     {
         [SerializeField] private int _slots = 3;
         
-        private List<WeaponConfig> _weapons = new List<WeaponConfig>();
+        [SerializeField] private List<WeaponConfig> _weapons = new List<WeaponConfig>();
 
         public Action OnWeaponChanged;
 

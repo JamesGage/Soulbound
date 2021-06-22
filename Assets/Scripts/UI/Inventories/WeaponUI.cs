@@ -10,6 +10,7 @@ namespace RPG.UI.Inventories
         [SerializeField] private WeaponSlot weaponSlotPrefab;
         [SerializeField] private Transform contents;
 
+        private int weaponCount = 0;
         private WeaponStore _weaponStore;
         private Equipment _equipment;
 
@@ -31,10 +32,12 @@ namespace RPG.UI.Inventories
                 return;
             }
             
-            if (_weaponStore.GetWeapons().Count < _weaponStore.GetWeaponSlots())
+            if (weaponCount < _weaponStore.GetWeaponSlots())
             {
                 var weaponSlot = Instantiate(weaponSlotPrefab, contents);
                 weaponSlot.SetupWeaponSlot(weapon, equipment, _weaponStore);
+                weaponCount++;
+                return;
             }
             
             Debug.Log("Weapon Store is full");
@@ -42,9 +45,20 @@ namespace RPG.UI.Inventories
 
         public void SetupWeaponUI()
         {
-            for (int i = 0; i < _weaponStore.GetWeaponSlots() - 1; i++)
+            ClearWeapons();
+            
+            for (int i = 0; i < _weaponStore.GetWeaponSlots(); i++)
             {
                 AddWeapon(_weaponStore.GetWeapons()[i], _equipment);
+            }
+        }
+
+        private void ClearWeapons()
+        {
+            foreach (var weaponSlot in contents.GetComponentsInChildren<WeaponSlot>())
+            {
+                Destroy(weaponSlot.gameObject);
+                weaponCount = 0;
             }
         }
     }
