@@ -8,6 +8,12 @@ namespace RPG.Inventories
     {
         [SerializeField] private float _currency;
         public event Action onGoldChanged;
+
+        public static Purse GetPlayerPurse()
+        {
+            var player = GameObject.FindWithTag("Player");
+            return player.GetComponent<Purse>();
+        }
         
         public float GetCurrency()
         {

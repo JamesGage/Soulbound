@@ -33,7 +33,7 @@ namespace RPG.Inventories
         {
             foreach (var item in contents.GetComponentsInChildren<LootMenuItem>())
             {
-                item.AddItemToInventory();
+                item.PickupItem();
                 RemoveItemFromList(item.GetItem());
             }
             CloseMenu();

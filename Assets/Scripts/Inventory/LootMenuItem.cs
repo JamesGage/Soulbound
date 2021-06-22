@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using RPG.Combat;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +13,7 @@ namespace RPG.Inventories
         [SerializeField] private TextMeshProUGUI _amountText;
 
         private Button _itemButton;
-        private Inventory _playerInventory;
+        private WeaponStore _weaponStore;
         private InventoryItem _item;
         private int _amount;
 
@@ -23,8 +24,8 @@ namespace RPG.Inventories
 
         private void Start()
         {
-            _playerInventory = Inventory.GetPlayerInventory();
-            _itemButton.onClick.AddListener(AddItemToInventory);
+            _weaponStore = WeaponStore.GetPlayerWeaponStore();
+            _itemButton.onClick.AddListener(PickupItem);
         }
 
         public InventoryItem GetItem()
@@ -36,7 +37,7 @@ namespace RPG.Inventories
         {
             _item = item;
             _amount = amount;
-            
+
             _icon.sprite = item.GetIcon();
             _nameText.text = item.GetDisplayName();
             _descriptionText.text = item.GetDescription();
@@ -47,16 +48,26 @@ namespace RPG.Inventories
             }
         }
 
-        public void AddItemToInventory()
+        public void PickupItem()
         {
-            var canAdd = _playerInventory.AddToFirstEmptySlot(_item, _amount);
-            if (canAdd)
+            var componentInParent = GetComponentInParent<LootMenu>();
+
+            if (_item.GetItemType() == ItemType.Currency)
             {
-                GetComponentInParent<LootMenu>().RemoveItemFromList(_item);
+                Purse.GetPlayerPurse().UpdateCurrency(_amount);
+                componentInParent.RemoveItemFromList(_item);
                 Destroy(gameObject);
                 return;
             }
-            print("No room in Inventory");
+            
+            if (_weaponStore.HasOpenSlot())
+            {
+                _weaponStore.AddWeapon(_item as WeaponConfig);
+                componentInParent.RemoveItemFromList(_item);
+                Destroy(gameObject);
+                return;
+            }
+            print("No room in Weapon Store");
         }
     }
 }

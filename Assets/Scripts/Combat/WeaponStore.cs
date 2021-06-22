@@ -42,7 +42,13 @@ namespace RPG.Combat
             return _slots;
         }
 
-        private bool HasOpenSlot()
+        public static WeaponStore GetPlayerWeaponStore()
+        {
+            var player = GameObject.FindWithTag("Player");
+            return player.GetComponent<WeaponStore>();
+        }
+
+        public bool HasOpenSlot()
         {
             if (_weapons.Count == _slots) return false;
 
