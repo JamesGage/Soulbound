@@ -8,8 +8,9 @@ namespace RPG.Combat
 {
     public class WeaponStore : MonoBehaviour, ISaveable
     {
+        [SerializeField] private int _slots = 3;
+        
         private List<WeaponConfig> _weapons = new List<WeaponConfig>();
-        private const int _slots = 3;
 
         public Action OnWeaponChanged;
 
@@ -34,6 +35,11 @@ namespace RPG.Combat
         public List<WeaponConfig> GetWeapons()
         {
             return _weapons;
+        }
+
+        public int GetWeaponSlots()
+        {
+            return _slots;
         }
 
         private bool HasOpenSlot()

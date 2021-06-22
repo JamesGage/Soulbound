@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="" />
+    <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,8 +46,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PickupMenuItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Save Menu/SaveUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceType.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceBarUI.cs" />
@@ -77,7 +83,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/AbilityData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
@@ -89,6 +94,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -185,6 +193,7 @@
       <workItem from="1624033131758" duration="5193000" />
       <workItem from="1624067904752" duration="1533000" />
       <workItem from="1624240841409" duration="3645000" />
+      <workItem from="1624304330432" duration="3356000" />
     </task>
     <servers />
   </component>
