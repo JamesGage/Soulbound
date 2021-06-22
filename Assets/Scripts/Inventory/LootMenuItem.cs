@@ -1,4 +1,5 @@
 ﻿using RPG.Combat;
+using RPG.Resource_System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -63,6 +64,15 @@ namespace RPG.Inventories
             if (_item.GetItemType() == ItemType.Potion)
             {
                 PotionStore.GetPlayerPotionStore().AddPotion();
+                componentInParent.RemoveItemFromList(_item);
+                Destroy(gameObject);
+                return;
+            }
+
+            if (_item.GetItemType() == ItemType.Resource)
+            {
+                var resource = _item as Resource;
+                ResourceStore.GetPlayerResourceStore().AddResource(resource._resourceType, _amount);
                 componentInParent.RemoveItemFromList(_item);
                 Destroy(gameObject);
                 return;
