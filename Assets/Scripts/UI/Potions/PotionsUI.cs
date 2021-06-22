@@ -8,7 +8,7 @@ namespace RPG.UI.Potions
 {
     public class PotionsUI : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _potionAmount;
+        [SerializeField] private TextMeshProUGUI _potionAmountText;
         [SerializeField] private Image _cooldownFill;
 
         private PotionStore _potionStore;
@@ -34,11 +34,16 @@ namespace RPG.UI.Potions
         private void Update()
         {
             _cooldownFill.fillAmount = _cooldownStore.GetFractionRemaining(_potionStore.GetPotion());
+
+            if (_potionStore.GetPotionCount() == 0)
+            {
+                _cooldownFill.fillAmount = 1;
+            }
         }
 
         private void UpdatePotionStore()
         {
-            _potionAmount.text = $"{_potionStore.GetPotionCount():N0}";
+            _potionAmountText.text = $"{_potionStore.GetPotionCount():N0}";
         }
     }
 }

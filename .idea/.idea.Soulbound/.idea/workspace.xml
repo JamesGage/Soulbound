@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Potion.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Potions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Potion/PotionUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Potion/PotionUI.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Fireball.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Fireball.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Firebolt.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Firebolt.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Ice Spike AoE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Ice Spike AoE.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Item/Item Potion Healing Small.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Item/Item Potion Healing Small.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +193,7 @@
       <workItem from="1624067904752" duration="1533000" />
       <workItem from="1624240841409" duration="3645000" />
       <workItem from="1624304330432" duration="3411000" />
-      <workItem from="1624380031732" duration="10452000" />
+      <workItem from="1624380031732" duration="10713000" />
     </task>
     <servers />
   </component>

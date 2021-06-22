@@ -1,10 +1,11 @@
 ﻿using System;
 using RPG.Abilities;
+using RPG.Saving;
 using UnityEngine;
 
 namespace RPG.Inventories
 {
-    public class PotionStore : MonoBehaviour
+    public class PotionStore : MonoBehaviour, ISaveable
     {
         [SerializeField] private Ability _potion;
         [SerializeField] private int _potionMax = 10;
@@ -66,6 +67,17 @@ namespace RPG.Inventories
         public Ability GetPotion()
         {
             return _potion;
+        }
+
+        public object CaptureState()
+        {
+            return _currentPotionAmount;
+        }
+
+        public void RestoreState(object state)
+        {
+            _currentPotionAmount = (int) state;
+            OnPotionChange?.Invoke();
         }
     }
 }
