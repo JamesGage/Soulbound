@@ -2051,22 +2051,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 224285457996228904}
     m_Modifications:
-    - target: {fileID: 998044074890348478, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 998044074890348478, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2483094261497601523, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2483094261497601523, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2601215245622802731, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2115,22 +2099,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2919453005811481464, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2919453005811481464, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2966043637361750729, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2966043637361750729, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3229887003655185622, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2179,14 +2147,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3954319104595856687, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 3954319104595856687, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4775129242144574782, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2275,10 +2235,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue
       objectReference: {fileID: 0}
-    - target: {fileID: 4981299056434066819, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5669605149526304471, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2399,14 +2355,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7292917716068577845, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 7292917716068577845, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7495530776235604439, guid: 632ddef5230b2064f92b79399cfb83dc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

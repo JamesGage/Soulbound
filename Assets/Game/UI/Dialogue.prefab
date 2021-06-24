@@ -654,8 +654,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Player
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -816,6 +816,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Choice Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3937030395598750186, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3937030395598750186, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4036421842979846351, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -950,6 +958,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Choice Button (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3937030395598750186, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3937030395598750186, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4036421842979846351, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1190,6 +1206,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4775129242144574782}
     m_Modifications:
+    - target: {fileID: 719258024563987776, guid: 485b89db519501442983052eface50a4, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 719258024563987776, guid: 485b89db519501442983052eface50a4, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 2462985462651056992, guid: 485b89db519501442983052eface50a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1391,6 +1415,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI Text
       objectReference: {fileID: 0}
+    - target: {fileID: 7027548037500281542, guid: 900327762f5be70458d1da7b7ece389b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 7027548037500281542, guid: 900327762f5be70458d1da7b7ece389b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 900327762f5be70458d1da7b7ece389b, type: 3}
 --- !u!114 &2919453005811481464 stripped
@@ -1420,6 +1452,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Choice Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3937030395598750186, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3937030395598750186, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 4036421842979846351, guid: b0c4778be6efbe8468667a92d4935022, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
