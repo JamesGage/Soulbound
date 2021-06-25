@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/NewGameUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/NewGameUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +45,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/CraftingUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/Tag.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/Tags.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/TagStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" />
@@ -93,6 +94,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/NewGameUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -191,7 +194,7 @@
       <workItem from="1624240841409" duration="3645000" />
       <workItem from="1624304330432" duration="3411000" />
       <workItem from="1624380031732" duration="12760000" />
-      <workItem from="1624567172381" duration="9326000" />
+      <workItem from="1624567172381" duration="10927000" />
     </task>
     <servers />
   </component>
