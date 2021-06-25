@@ -17,13 +17,6 @@ namespace RPG.UI
         private WeaponStore _weaponStore;
         private List<WeaponConfig> _weapons = new List<WeaponConfig>();
 
-        private void Awake()
-        {
-            _previousWeaponIcon.enabled = false;
-            _currentWeaponIcon.enabled = false;
-            _nextWeaponIcon.enabled = false;
-        }
-
         private void OnEnable()
         {
             if(_equipment == null)
@@ -32,6 +25,8 @@ namespace RPG.UI
                 _weaponStore = WeaponStore.GetPlayerWeaponStore();
             
             _equipment.onEquipmentUpdated += SetupUI;
+            
+            SetupUI();
         }
 
         private void OnDisable()

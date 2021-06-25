@@ -2269,7 +2269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b6a7fac6e2d604a8e529f6dddf65b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggleKey: 27
+  toggleKey: 9
   uiContainer: {fileID: 8999843235753882762}
   UIOpenSFX: event:/SFX/UI/Bag/Bag_Open
   UICloseSFX: event:/SFX/UI/Bag/Bag_Closed
