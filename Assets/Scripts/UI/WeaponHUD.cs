@@ -17,6 +17,11 @@ namespace RPG.UI
         private WeaponStore _weaponStore;
         private List<WeaponConfig> _weapons = new List<WeaponConfig>();
 
+        private void Start()
+        {
+            SetupUI();
+        }
+
         private void OnEnable()
         {
             if(_equipment == null)

@@ -203,6 +203,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1839030545, guid: 02b3ce5c3ce36064f8dcd15d9d17abd0, type: 3}
+      propertyPath: _speed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839030545, guid: 02b3ce5c3ce36064f8dcd15d9d17abd0, type: 3}
       propertyPath: _hitEffect
       value: 
       objectReference: {fileID: 1384676760634654, guid: 549fedce12257b8478ccf990f6ecf53c, type: 3}
@@ -212,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1839030545, guid: 02b3ce5c3ce36064f8dcd15d9d17abd0, type: 3}
       propertyPath: _isHomingProjectile
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 460413217133426410, guid: 02b3ce5c3ce36064f8dcd15d9d17abd0, type: 3}
       propertyPath: m_RootOrder
