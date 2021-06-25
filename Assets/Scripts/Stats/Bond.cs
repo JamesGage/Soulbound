@@ -41,6 +41,11 @@ namespace RPG.Stats
         {
             return _bond.value;
         }
+        
+        public float GetFraction()
+        {
+            return _bond.value / GetMaxBond();
+        }
 
         public float GetMaxBond()
         {

@@ -1,26 +1,26 @@
-﻿using RPG.Inventories;
+﻿using System.Collections;
+using RPG.Inventories;
 using RPG.Stats;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace RPG.UI
 {
     public class HealthDisplay : MonoBehaviour
     {
         [SerializeField] TMP_Text _healthText;
+        [SerializeField] private RectTransform _healthFill;
         
         private Health _health;
-        private Image _healthFill;
         private GameObject _player;
         private Equipment _equipment;
         private TraitStore _traitStore;
+        private float _oldHealth = 1f;
 
         private void Awake()
         {
             _player = GameObject.FindWithTag("Player");
             _health = _player.GetComponent<Health>();
-            _healthFill = GetComponent<Image>();
             _equipment = _player.GetComponent<Equipment>();
             _traitStore = _player.GetComponent<TraitStore>();
         }
@@ -46,8 +46,20 @@ namespace RPG.UI
 
         private void UpdateHealth()
         {
-            _healthFill.fillAmount = _health.GetHealth() / _health.GetMaxHealth();
             _healthText.text = $"{_health.GetHealth():N0}";
+            StartCoroutine(LerpHealth());
+        }
+        
+        private IEnumerator LerpHealth()
+        {
+            var elapsedTime = 0f;
+            while (elapsedTime < 0.5f)
+            {
+                _oldHealth = Mathf.Lerp(_oldHealth, _health.GetFraction(), Time.deltaTime * 5f);
+                _healthFill.localScale = new Vector3(_oldHealth, 1f, 1f);
+                elapsedTime += Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
         }
     }
 }
