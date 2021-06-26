@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using RPG.Combat;
 using RPG.Inventories;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +9,11 @@ namespace RPG.UI
 {
     public class WeaponHUD : MonoBehaviour
     {
-        [SerializeField] private Image _previousWeaponIcon;
-        [SerializeField] private Image _currentWeaponIcon;
-        [SerializeField] private Image _nextWeaponIcon;
+        [SerializeField] private TextMeshProUGUI _currentWeaponName;
+        [SerializeField] private WeaponIcon[] _weaponIcons;
 
         private Equipment _equipment;
         private WeaponStore _weaponStore;
-        private List<WeaponConfig> _weapons = new List<WeaponConfig>();
 
         private void Start()
         {
@@ -41,55 +39,32 @@ namespace RPG.UI
 
         private void SetupUI()
         {
-            SetWeaponsPosition();
-            
-            if (_weapons[0] != null)
+            var i = 0;
+            foreach (var weapon in _weaponStore.GetWeapons())
             {
-                _currentWeaponIcon.enabled = true;
-                _currentWeaponIcon.sprite = _weapons[0].GetIcon();
-            }
-            else
-            {
-                _currentWeaponIcon.enabled = false;
-            }
-            
-            if (_weapons[1] != null)
-            {
-                _nextWeaponIcon.enabled = true;
-                _nextWeaponIcon.sprite = _weapons[1].GetIcon();
-            }
-            else
-            {
-                _nextWeaponIcon.enabled = false;
-            }
-            
-            if (_weapons[2] != null)
-            {
-                _previousWeaponIcon.enabled = true;
-                _previousWeaponIcon.sprite = _weapons[2].GetIcon();
-            }
-            else
-            {
-                _previousWeaponIcon.enabled = false;
+                _weaponIcons[i]._weaponIcon.sprite = weapon.GetIcon();
+                if (weapon == _equipment.GetEquippedWeapon())
+                {
+                    _weaponIcons[i]._weaponGlow.enabled = true;
+                    _currentWeaponName.text = weapon.GetDisplayName();
+                    i++;
+                    continue;
+                }
+
+                if (_equipment.GetEquippedWeapon() == null)
+                {
+                    _currentWeaponName.text = "";
+                }
+                _weaponIcons[i]._weaponGlow.enabled = false;
+                i++;
             }
         }
 
-        private void SetWeaponsPosition()
+        [Serializable]
+        public struct WeaponIcon
         {
-            _weapons.Clear();
-            
-            foreach (var weapon in _weaponStore.GetWeapons())
-            {
-                if(weapon == _equipment.GetEquippedWeapon())
-                    _weapons.Add(weapon);
-            }
-
-            foreach (var weapon in _weaponStore.GetWeapons())
-            {
-                if(weapon == _equipment.GetEquippedWeapon()) continue;
-                
-                _weapons.Add(weapon);
-            }
+            public Image _weaponIcon;
+            public Image _weaponGlow;
         }
     }
 }

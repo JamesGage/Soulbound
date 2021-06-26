@@ -9,7 +9,7 @@ namespace RPG.Inventories
     {
         [SerializeField] private Ability _potion;
         [SerializeField] private int _potionMax = 10;
-        [SerializeField] private KeyCode _useKey = KeyCode.Q;
+        [SerializeField] private KeyCode _useKey = KeyCode.Alpha4;
 
         private int _currentPotionAmount;
         private CooldownStore _cooldownStore;
@@ -26,11 +26,6 @@ namespace RPG.Inventories
             if (Input.GetKeyDown(_useKey) && _cooldownStore.GetTimeRemaining(_potion) <= 0)
             {
                 UsePotion();
-            }
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                AddPotion();
             }
         }
 

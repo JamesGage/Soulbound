@@ -4,8 +4,10 @@
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Player HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Player HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Weapon Icon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Weapon Icon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Potions/PotionsUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/Resource.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Resource System/ResourceStore.cs" />
@@ -85,7 +86,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/NewGameUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/SkillStore.cs" />
@@ -97,6 +97,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -196,7 +198,7 @@
       <workItem from="1624304330432" duration="3411000" />
       <workItem from="1624380031732" duration="12760000" />
       <workItem from="1624567172381" duration="11177000" />
-      <workItem from="1624739737403" duration="2719000" />
+      <workItem from="1624739737403" duration="4390000" />
     </task>
     <servers />
   </component>
