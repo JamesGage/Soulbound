@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using RPG.Combat;
 using UnityEngine;
 using RPG.Saving;
@@ -19,6 +18,8 @@ namespace RPG.Inventories
         
         public void SetEquippedWeapon(WeaponConfig weapon)
         {
+            if(weapon == null) return;
+            
             _currentWeapon = weapon;
             onEquipmentUpdated?.Invoke();
         }

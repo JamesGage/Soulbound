@@ -9,7 +9,6 @@ namespace RPG.Combat
     public class WeaponStore : MonoBehaviour, ISaveable
     {
         [SerializeField] private int _slots = 3;
-        
         [SerializeField] private List<WeaponConfig> _weapons = new List<WeaponConfig>();
 
         public Action OnWeaponChanged;
@@ -35,6 +34,13 @@ namespace RPG.Combat
         public List<WeaponConfig> GetWeapons()
         {
             return _weapons;
+        }
+
+        public WeaponConfig GetWeaponByIndex(int index)
+        {
+            if (index > _weapons.Count - 1) return null;
+            
+            return _weapons[index];
         }
 
         public int GetWeaponSlots()
