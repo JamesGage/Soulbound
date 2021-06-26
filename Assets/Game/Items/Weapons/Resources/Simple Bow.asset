@@ -20,12 +20,22 @@ MonoBehaviour:
   _currencyValue: 10
   _equippedPrefab: {fileID: 1281007043042331088, guid: d7450984d4260d24ab9c0c299732dba8, type: 3}
   _animOverride: {fileID: 22100000, guid: 2615ed0e9d17233409e9b6c37d9b9473, type: 2}
-  _damageAddative: 2
-  _damagePercentage: 100
   _weaponRange: 10
   _isRightHanded: 0
   _projectile: {fileID: 6206652454154147562, guid: 37124f0bf6679db45a50e43173dab8fb, type: 3}
-  _weaponAbilities:
-  - {fileID: 11400000, guid: 2df103e1856514448acb2ea59706ecfd, type: 2}
-  - {fileID: 11400000, guid: cd8b81324b8c31a4480051fd27fc03a4, type: 2}
-  _weaponQuests: []
+  _weaponProgression:
+  - level: 1
+    experienceRequired: 0
+    bondMax: 100
+    ability: {fileID: 11400000, guid: e6e793ec64b4bda48a82dc9370e9cf25, type: 2}
+    quest: {fileID: 0}
+  - level: 2
+    experienceRequired: 100
+    bondMax: 150
+    ability: {fileID: 11400000, guid: cd8b81324b8c31a4480051fd27fc03a4, type: 2}
+    quest: {fileID: 0}
+  - level: 3
+    experienceRequired: 200
+    bondMax: 200
+    ability: {fileID: 11400000, guid: 1ab75383590473640bb8f3157d862312, type: 2}
+    quest: {fileID: 0}

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using RPG.Inventories;
+﻿using RPG.Inventories;
 using RPG.UI.Inventories;
 using UnityEngine;
 
@@ -32,7 +31,7 @@ namespace RPG.UI.Ability_Menu
             if(currentWeapon == null) return;
 
             int abilityCount = 0;
-            foreach (var ability in currentWeapon.GetAbilities())
+            foreach (var ability in currentWeapon.GetAbilitiesAtLevel(1))
             {
                 var abilityRow = Instantiate(_abilityRowPrefab, _contents.transform);
                 abilityRow.SetAbility(ability);

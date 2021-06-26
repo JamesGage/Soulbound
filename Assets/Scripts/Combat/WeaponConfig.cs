@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using RPG.Abilities;
 using RPG.Inventories;
 using RPG.Questing;
@@ -18,10 +19,8 @@ namespace RPG.Combat
         [SerializeField] bool _isRightHanded = true;
         [SerializeField] Projectile _projectile = null;
         [Space]
-        [SerializeField] private List<Ability> _weaponAbilities = new List<Ability>();
-        [Space]
-        [SerializeField] private List<Quest> _weaponQuests = new List<Quest>();
-
+        [SerializeField] private List<ProgressionTable> _weaponProgression = new List<ProgressionTable>();
+        
         private const string _weaponName = "Weapon";
 
         #endregion
@@ -65,9 +64,65 @@ namespace RPG.Combat
             return _projectile != null;
         }
 
-        public List<Ability> GetAbilities()
+        public List<ProgressionTable> GetProgression()
         {
-            return _weaponAbilities;
+            return _weaponProgression;
+        }
+
+        public IEnumerable<Ability> GetAbilitiesAtLevel(int playerLevel)
+        {
+            foreach (var level in _weaponProgression)
+            {
+                if (level.level <= playerLevel)
+                {
+                    yield return level.ability;
+                }
+            }
+        }
+        
+        public IEnumerable<Quest> GetQuestsAtLevel(int playerLevel)
+        {
+            foreach (var level in _weaponProgression)
+            {
+                if (level.level <= playerLevel)
+                {
+                    yield return level.quest;
+                }
+            }
+        }
+        
+        public float GetBondMaxAtLevel(int playerLevel)
+        {
+            var bondMax = 0f;
+            
+            foreach (var level in _weaponProgression)
+            {
+                if(level.level > playerLevel)
+                    break;
+                if (level.level == playerLevel)
+                {
+                    bondMax = level.bondMax;
+                }
+            }
+
+            return bondMax;
+        }
+        
+        public float GetWeaponLevel(float bond)
+        {
+            var weaponLevel = 0;
+            
+            foreach (var level in _weaponProgression)
+            {
+                if(level.experienceRequired > bond)
+                    break;
+                if (level.experienceRequired <= bond)
+                {
+                    weaponLevel = level.level;
+                }
+            }
+
+            return weaponLevel;
         }
 
         public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, 
@@ -113,6 +168,17 @@ namespace RPG.Combat
             if (_isRightHanded) handTransform = rightHand;
             else handTransform = leftHand;
             return handTransform;
+        }
+
+        [Serializable]
+        public struct ProgressionTable
+        {
+            public int level;
+            [Tooltip("This is the amount of experience needed to be at this level")]
+            public float experienceRequired;
+            public float bondMax;
+            public Ability ability;
+            public Quest quest;
         }
     }
 }
