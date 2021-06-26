@@ -2,12 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/NewGameUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/NewGameUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Skills.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Skills/Skill Row.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Skills/Skill Row.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Weapon Icon.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/UI/Weapon Icon.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Skill.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Skill.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/SkillStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SkillRowUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Main Menu/Main Menu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Elements/Weapon Slot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Elements/Weapon Slot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/PlayerMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Traits.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Traits/Trait Row.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Traits/Trait Row.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Trait.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Trait.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/TraitStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/TraitStore.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/BondDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/BondDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TraitRowUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TraitRowUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TraitUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TraitUI.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +59,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipableItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.4/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurseUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/SkillStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E81851A0-DC73-4A79-AFA9-F5B7273162BE/c3/04713f13/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/48827A05-C015-4B4B-ADA3-2EAF5C10D8B0/41/f67ef837/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SkillRowUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/ff/fd158713/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,10 +73,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/Tags.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Tag System/TagStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponPickup.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/ShopItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityTooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
@@ -76,8 +100,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Purse.cs" />
@@ -89,13 +111,19 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Resource System/ResourceUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/LootMenuItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement/SavingWrapper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BondDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/ShowHideUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Main Menu/NewGameUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/SkillStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillRowUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/BondDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/HealthDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Skill.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -194,7 +222,8 @@
       <workItem from="1624240841409" duration="3645000" />
       <workItem from="1624304330432" duration="3411000" />
       <workItem from="1624380031732" duration="12760000" />
-      <workItem from="1624567172381" duration="10927000" />
+      <workItem from="1624567172381" duration="11177000" />
+      <workItem from="1624739737403" duration="1633000" />
     </task>
     <servers />
   </component>

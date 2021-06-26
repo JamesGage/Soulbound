@@ -379,9 +379,9 @@
             <e p="Health.cs" t="Include" />
             <e p="IModifierProvider.cs" t="Include" />
             <e p="Progression.cs" t="Include" />
+            <e p="Skill.cs" t="Include" />
+            <e p="SkillStore.cs" t="Include" />
             <e p="Stat.cs" t="Include" />
-            <e p="Trait.cs" t="Include" />
-            <e p="TraitStore.cs" t="Include" />
           </e>
           <e p="Tag System" t="Include">
             <e p="Tags.cs" t="Include" />
@@ -464,12 +464,12 @@
               <e p="ShopUIOpen.cs" t="Include" />
             </e>
             <e p="ShowHideUI.cs" t="Include" />
+            <e p="SkillRowUI.cs" t="Include" />
+            <e p="SkillUI.cs" t="Include" />
             <e p="TakeDamageEvent.cs" t="Include" />
             <e p="TargetHealthDisplay.cs" t="Include" />
             <e p="TextSpawner.cs" t="Include" />
             <e p="ToolbarUI.cs" t="Include" />
-            <e p="TraitRowUI.cs" t="Include" />
-            <e p="TraitUI.cs" t="Include" />
             <e p="UISwitcher.cs" t="Include" />
             <e p="WeaponHUD.cs" t="Include" />
           </e>

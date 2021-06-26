@@ -5,74 +5,74 @@ using UnityEngine;
 
 namespace RPG.Stats
 {
-    public class TraitStore : MonoBehaviour, IModifierProvider, ISaveable
+    public class SkillStore : MonoBehaviour, IModifierProvider, ISaveable
     {
         [SerializeField] private TraitBonus[] bonusConfig;
 
         [Serializable]
         class TraitBonus
         {
-            public Trait trait;
+            public Skill skill;
             public Stat stat;
             public float additiveBonusPerPoint;
             public float percentageBonusPerPoint;
         }
         public Action OnTraitModified;
         
-        private Dictionary<Trait, int> assignedPoints = new Dictionary<Trait, int>();
-        private Dictionary<Trait, int> stagedPoints = new Dictionary<Trait, int>();
+        private Dictionary<Skill, int> assignedPoints = new Dictionary<Skill, int>();
+        private Dictionary<Skill, int> stagedPoints = new Dictionary<Skill, int>();
 
-        private Dictionary<Stat, Dictionary<Trait, float>> additiveBonusCache;
-        private Dictionary<Stat, Dictionary<Trait, float>> percentageBonusCache;
+        private Dictionary<Stat, Dictionary<Skill, float>> additiveBonusCache;
+        private Dictionary<Stat, Dictionary<Skill, float>> percentageBonusCache;
 
         private void Awake()
         {
-            additiveBonusCache = new Dictionary<Stat, Dictionary<Trait, float>>();
-            percentageBonusCache = new Dictionary<Stat, Dictionary<Trait, float>>();
+            additiveBonusCache = new Dictionary<Stat, Dictionary<Skill, float>>();
+            percentageBonusCache = new Dictionary<Stat, Dictionary<Skill, float>>();
             
             foreach (var bonus in bonusConfig)
             {
                 if (!additiveBonusCache.ContainsKey(bonus.stat))
                 {
-                    additiveBonusCache[bonus.stat] = new Dictionary<Trait, float>();
+                    additiveBonusCache[bonus.stat] = new Dictionary<Skill, float>();
                 }
                 if (!percentageBonusCache.ContainsKey(bonus.stat))
                 {
-                    percentageBonusCache[bonus.stat] = new Dictionary<Trait, float>();
+                    percentageBonusCache[bonus.stat] = new Dictionary<Skill, float>();
                 }
 
-                additiveBonusCache[bonus.stat][bonus.trait] = bonus.additiveBonusPerPoint;
-                percentageBonusCache[bonus.stat][bonus.trait] = bonus.percentageBonusPerPoint;
+                additiveBonusCache[bonus.stat][bonus.skill] = bonus.additiveBonusPerPoint;
+                percentageBonusCache[bonus.stat][bonus.skill] = bonus.percentageBonusPerPoint;
             }
         }
 
-        public int GetProposedPoints(Trait trait)
+        public int GetProposedPoints(Skill skill)
         {
-            return GetPoints(trait) + GetStagedPoints(trait);
+            return GetPoints(skill) + GetStagedPoints(skill);
         }
         
-        public int GetPoints(Trait trait)
+        public int GetPoints(Skill skill)
         {
-            return assignedPoints.ContainsKey(trait) ? assignedPoints[trait] : 0;
+            return assignedPoints.ContainsKey(skill) ? assignedPoints[skill] : 0;
         }
 
-        public int GetStagedPoints(Trait trait)
+        public int GetStagedPoints(Skill skill)
         {
-            return stagedPoints.ContainsKey(trait) ? stagedPoints[trait] : 0;
+            return stagedPoints.ContainsKey(skill) ? stagedPoints[skill] : 0;
         }
 
-        public void AssignPoints(Trait trait, int points)
+        public void AssignPoints(Skill skill, int points)
         {
-            if(!CanAssignPointsToTrait(trait, points)) return;
+            if(!CanAssignPointsToTrait(skill, points)) return;
             
-            stagedPoints[trait] = GetStagedPoints(trait) + points;
+            stagedPoints[skill] = GetStagedPoints(skill) + points;
 
             OnTraitModified?.Invoke();
         }
 
-        public bool CanAssignPointsToTrait(Trait trait, int points)
+        public bool CanAssignPointsToTrait(Skill skill, int points)
         {
-            if (GetStagedPoints(trait) + points < 0) return false;
+            if (GetStagedPoints(skill) + points < 0) return false;
             if (GetUnassignedPoints() < points) return false;
             
             return true;
@@ -100,9 +100,9 @@ namespace RPG.Stats
 
         public void Confirm()
         {
-            foreach (Trait trait in stagedPoints.Keys)
+            foreach (Skill skill in stagedPoints.Keys)
             {
-                assignedPoints[trait] = GetProposedPoints(trait);
+                assignedPoints[skill] = GetProposedPoints(skill);
             }
             stagedPoints.Clear();
             
@@ -143,7 +143,7 @@ namespace RPG.Stats
 
         public void RestoreState(object state)
         {
-            assignedPoints = new Dictionary<Trait, int>((IDictionary<Trait, int>) state);
+            assignedPoints = new Dictionary<Skill, int>((IDictionary<Skill, int>) state);
         }
     }
 }

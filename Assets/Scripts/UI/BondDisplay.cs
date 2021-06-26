@@ -14,7 +14,7 @@ namespace RPG.UI
         private Bond _bond;
         private GameObject _player;
         private Equipment _equipment;
-        private TraitStore _traitStore;
+        private SkillStore _skillStore;
         private float _oldBond = 1f;
 
         private void Awake()
@@ -22,21 +22,21 @@ namespace RPG.UI
             _player = GameObject.FindWithTag("Player");
             _bond = _player.GetComponent<Bond>();
             _equipment = _player.GetComponent<Equipment>();
-            _traitStore = _player.GetComponent<TraitStore>();
+            _skillStore = _player.GetComponent<SkillStore>();
         }
         
         private void OnEnable()
         {
             _bond.OnBondChanged += UpdateBond;
             _equipment.onEquipmentUpdated += UpdateBond;
-            _traitStore.OnTraitModified += UpdateBond;
+            _skillStore.OnTraitModified += UpdateBond;
         }
         
         private void OnDisable()
         {
             _bond.OnBondChanged -= UpdateBond;
             _equipment.onEquipmentUpdated -= UpdateBond;
-            _traitStore.OnTraitModified -= UpdateBond;
+            _skillStore.OnTraitModified -= UpdateBond;
         }
 
         private void Start()

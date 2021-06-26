@@ -14,7 +14,7 @@ namespace RPG.UI
         private Health _health;
         private GameObject _player;
         private Equipment _equipment;
-        private TraitStore _traitStore;
+        private SkillStore _skillStore;
         private float _oldHealth = 1f;
 
         private void Awake()
@@ -22,21 +22,21 @@ namespace RPG.UI
             _player = GameObject.FindWithTag("Player");
             _health = _player.GetComponent<Health>();
             _equipment = _player.GetComponent<Equipment>();
-            _traitStore = _player.GetComponent<TraitStore>();
+            _skillStore = _player.GetComponent<SkillStore>();
         }
         
         private void OnEnable()
         {
             _health.OnHealthChanged += UpdateHealth;
             _equipment.onEquipmentUpdated += UpdateHealth;
-            _traitStore.OnTraitModified += UpdateHealth;
+            _skillStore.OnTraitModified += UpdateHealth;
         }
         
         private void OnDisable()
         {
             _health.OnHealthChanged -= UpdateHealth;
             _equipment.onEquipmentUpdated -= UpdateHealth;
-            _traitStore.OnTraitModified -= UpdateHealth;
+            _skillStore.OnTraitModified -= UpdateHealth;
         }
 
         private void Start()

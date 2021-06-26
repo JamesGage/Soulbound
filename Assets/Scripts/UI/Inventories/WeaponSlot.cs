@@ -8,7 +8,6 @@ namespace UI.Inventories
     public class WeaponSlot : MonoBehaviour
     {
         [SerializeField] private Image _icon;
-        [SerializeField] private Button _removeWeapon;
 
         private Button _button;
         private WeaponConfig _weapon;
@@ -19,8 +18,6 @@ namespace UI.Inventories
         {
             _button = GetComponent<Button>();
             _button.onClick.AddListener(SetCurrentWeapon);
-            
-            _removeWeapon.onClick.AddListener(RemoveWeapon);
         }
 
         public void SetupWeaponSlot(WeaponConfig weapon, Equipment equipment, WeaponStore weaponStore)
