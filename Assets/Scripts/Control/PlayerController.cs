@@ -18,7 +18,7 @@ namespace RPG.Control
         [SerializeField] float _navMeshProjectionTolerance = 1f;
         [SerializeField] float _raycastRadius = 0.5f;
         [SerializeField] CursorMapping[] cursorMappings = null;
-        [SerializeField] int numberOfAbilities = 6;
+        [SerializeField] KeyCode[] abilityKeys;
 
         private ActionStore _actionStore;
         private bool _movementStarted;
@@ -71,9 +71,9 @@ namespace RPG.Control
 
         private void CheckSpecialAbilityKeys()
         {
-            for (int i = 0; i < numberOfAbilities; i++)
+            for (int i = 0; i < abilityKeys.Length; i++)
             {
-                if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+                if (Input.GetKeyDown(abilityKeys[i]))
                     _actionStore.Use(i, gameObject);
             }
         }

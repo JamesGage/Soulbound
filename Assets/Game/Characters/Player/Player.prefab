@@ -88,6 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _potion: {fileID: 11400000, guid: bdbbf3558589f514089e1c91db433738, type: 2}
   _potionMax: 10
+  _useKey: 113
 --- !u!114 &402525830550980345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,31 +102,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bonusConfig:
-  - trait: 0
+  - skill: 0
     stat: 0
     additiveBonusPerPoint: 5
     percentageBonusPerPoint: 0
-  - trait: 1
+  - skill: 0
     stat: 1
     additiveBonusPerPoint: 5
     percentageBonusPerPoint: 0
-  - trait: 2
+  - skill: 0
     stat: 1
     additiveBonusPerPoint: 0
     percentageBonusPerPoint: 5
-  - trait: 3
+  - skill: 0
     stat: 2
     additiveBonusPerPoint: 0.1
     percentageBonusPerPoint: 0
-  - trait: 4
+  - skill: 0
     stat: 4
     additiveBonusPerPoint: 10
     percentageBonusPerPoint: 0
-  - trait: 5
+  - skill: 0
     stat: 5
     additiveBonusPerPoint: 0
     percentageBonusPerPoint: 2.5
-  - trait: 7
+  - skill: 0
     stat: 7
     additiveBonusPerPoint: 5
     percentageBonusPerPoint: 0
@@ -363,7 +364,7 @@ MonoBehaviour:
   - type: 7
     texture: {fileID: 2800000, guid: 0b33dddc53e18b94da2ecdfc515574aa, type: 3}
     hotspot: {x: 0, y: 0}
-  numberOfAbilities: 6
+  abilityKeys: 710000007700000065000000
 --- !u!114 &8342997807208913869
 MonoBehaviour:
   m_ObjectHideFlags: 0
