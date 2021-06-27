@@ -1,5 +1,4 @@
-﻿using System;
-using RPG.Combat;
+﻿using RPG.Combat;
 using RPG.Inventories;
 using UI.Inventories;
 using UnityEngine;

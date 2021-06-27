@@ -22,6 +22,11 @@ namespace RPG.Inventories
                     SetEquippedWeapon(_weaponStore.GetWeaponByIndex(i));
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _weaponStore.AddWeaponBond(_currentWeapon, 50);
+            }
         }
     }
 }

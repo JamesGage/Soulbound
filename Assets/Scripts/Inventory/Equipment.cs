@@ -7,7 +7,7 @@ namespace RPG.Inventories
 {
     public class Equipment : MonoBehaviour, ISaveable
     {
-        private WeaponConfig _currentWeapon;
+        protected WeaponConfig _currentWeapon;
         private WeaponStore _weaponStore;
 
         public event Action onEquipmentUpdated;

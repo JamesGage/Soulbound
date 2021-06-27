@@ -11,16 +11,20 @@ namespace RPG.UI.Ability_Menu
         [SerializeField] private GameObject _actionBar;
 
         private Equipment _playerEquipment;
+        private WeaponStore _weaponstore;
 
         private void Awake()
         {
             _playerEquipment = Equipment.GetPlayerEquipment();
+            _weaponstore = WeaponStore.GetPlayerWeaponStore();
         }
 
         private void OnEnable()
         {
             if(_playerEquipment == null) return;
             _playerEquipment.onEquipmentUpdated += SetAbilityUI;
+            _weaponstore.OnWeaponChanged += SetAbilityUI;
+            
             SetAbilityUI();
         }
 
