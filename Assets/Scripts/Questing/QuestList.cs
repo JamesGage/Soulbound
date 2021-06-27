@@ -30,12 +30,12 @@ namespace RPG.Questing
 
         private void OnEnable()
         {
-            //_weaponStore.OnWeaponAdded += AddWeaponQuests;
+            _weaponStore.OnWeaponAdded += AddWeaponQuests;
         }
         
         private void OnDisable()
         {
-            //_weaponStore.OnWeaponAdded -= AddWeaponQuests;
+            _weaponStore.OnWeaponAdded -= AddWeaponQuests;
         }
 
         public void AddQuest(Quest quest)
@@ -83,6 +83,8 @@ namespace RPG.Questing
         {
             foreach (var quest in weapon.GetQuestsAtLevel(weapon.GetWeaponLevel(_weaponStore.GetWeaponBond(weapon))))
             {
+                if(quest == null) continue;
+                
                 AddQuest(quest);
             }
         }
