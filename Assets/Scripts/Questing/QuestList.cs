@@ -15,10 +15,6 @@ namespace RPG.Questing
         private ItemDropper _itemDropper;
         private WeaponStore _weaponStore;
 
-        [FMODUnity.EventRef] public string addQuestSFX;
-        [FMODUnity.EventRef] public string objectiveCompleteSFX;
-        [FMODUnity.EventRef] public string questCompleteSFX;
-
         public event Action OnQuestUpdated;
 
         private void Awake()
@@ -43,8 +39,6 @@ namespace RPG.Questing
             if (HasQuest(quest)) return;
             var newStatus = new QuestStatus(quest);
             _statuses.Add(newStatus);
-            
-            FMODUnity.RuntimeManager.PlayOneShot(addQuestSFX);
 
             OnQuestUpdated?.Invoke();
         }
@@ -63,12 +57,10 @@ namespace RPG.Questing
         {
             var status = GetQuestStatus(quest);
             status.CompleteObjective(objective);
-            FMODUnity.RuntimeManager.PlayOneShot(objectiveCompleteSFX);
 
             if (status.IsComplete())
             {
                 GiveReward(quest);
-                FMODUnity.RuntimeManager.PlayOneShot(questCompleteSFX);
             }
 
             OnQuestUpdated?.Invoke();
@@ -84,7 +76,7 @@ namespace RPG.Questing
             foreach (var quest in weapon.GetQuestsAtLevel(weapon.GetWeaponLevel(_weaponStore.GetWeaponBond(weapon))))
             {
                 if(quest == null) continue;
-                
+
                 AddQuest(quest);
             }
         }

@@ -84,7 +84,7 @@ namespace RPG.Combat
         {
             foreach (var level in _weaponProgression)
             {
-                if (level.level <= weaponLevel)
+                if (level.level == weaponLevel)
                 {
                     yield return level.quest;
                 }

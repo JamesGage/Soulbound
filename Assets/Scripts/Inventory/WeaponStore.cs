@@ -71,7 +71,7 @@ namespace RPG.Inventories
                 }
                 _weaponHistory[weapon] += value;
             }
-            
+            OnWeaponAdded?.Invoke(weapon);
             OnWeaponChanged?.Invoke();
         }
         
