@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Resources/Kill 10 Bandits.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Resources/Kill 10 Bandits.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Resources/Kill 100 Bandits.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Resources/Kill 100 Bandits.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Resources/Kill 20 Bandits.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Quests/Resources/Kill 20 Bandits.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Player HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Player HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Weapon Icon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Weapon Icon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Epic Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Epic Sword.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestListUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestListUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +58,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/FilterButtonUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
@@ -95,13 +99,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestOnScreenUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Quests/QuestListUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -201,7 +208,8 @@
       <workItem from="1624304330432" duration="3411000" />
       <workItem from="1624380031732" duration="12760000" />
       <workItem from="1624567172381" duration="11177000" />
-      <workItem from="1624739737403" duration="17648000" />
+      <workItem from="1624739737403" duration="18313000" />
+      <workItem from="1624817008428" duration="4431000" />
     </task>
     <servers />
   </component>

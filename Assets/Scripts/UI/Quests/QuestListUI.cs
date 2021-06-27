@@ -1,8 +1,8 @@
 ﻿using RPG.Questing;
-using RPG.UI;
+using UI.Quests;
 using UnityEngine;
 
-namespace UI.Quests
+namespace RPG.UI.Quests
 {
     public class QuestListUI : MonoBehaviour
     {
@@ -16,10 +16,15 @@ namespace UI.Quests
             _questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
         }
 
-        private void Start()
+        private void OnEnable()
         {
-            _questList.onUpdate += Redraw;
+            _questList.OnQuestUpdated += Redraw;
             Redraw();
+        }
+
+        private void OnDisable()
+        {
+            _questList.OnQuestUpdated -= Redraw;
         }
 
         private void Redraw()
@@ -28,14 +33,13 @@ namespace UI.Quests
             {
                 Destroy(item.gameObject);
             }
-            
+
             foreach (var status in _questList.GetStatuses())
             {
                 var uiInstance = Instantiate(_questPrefab, transform);
                 uiInstance.Setup(status, _questInfoMenu);
                 uiInstance.gameObject.GetComponent<QuestTooltipSpawner>().enabled = false;
             }
-            
         }
     }
 }

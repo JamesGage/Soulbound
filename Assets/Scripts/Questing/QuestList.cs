@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RPG.Combat;
 using RPG.Core;
 using RPG.Inventories;
 using RPG.Saving;
@@ -12,17 +13,29 @@ namespace RPG.Questing
         private List<QuestStatus> _statuses = new List<QuestStatus>();
         private Inventory _inventory;
         private ItemDropper _itemDropper;
+        private WeaponStore _weaponStore;
 
         [FMODUnity.EventRef] public string addQuestSFX;
         [FMODUnity.EventRef] public string objectiveCompleteSFX;
         [FMODUnity.EventRef] public string questCompleteSFX;
 
-        public event Action onUpdate;
+        public event Action OnQuestUpdated;
 
         private void Awake()
         {
             _inventory = GetComponent<Inventory>();
             _itemDropper = GetComponent<ItemDropper>();
+            _weaponStore = GetComponent<WeaponStore>();
+        }
+
+        private void OnEnable()
+        {
+            //_weaponStore.OnWeaponAdded += AddWeaponQuests;
+        }
+        
+        private void OnDisable()
+        {
+            //_weaponStore.OnWeaponAdded -= AddWeaponQuests;
         }
 
         public void AddQuest(Quest quest)
@@ -32,9 +45,8 @@ namespace RPG.Questing
             _statuses.Add(newStatus);
             
             FMODUnity.RuntimeManager.PlayOneShot(addQuestSFX);
-            
-            if(onUpdate != null)
-                onUpdate();
+
+            OnQuestUpdated?.Invoke();
         }
 
         public bool HasQuest(Quest quest)
@@ -58,14 +70,21 @@ namespace RPG.Questing
                 GiveReward(quest);
                 FMODUnity.RuntimeManager.PlayOneShot(questCompleteSFX);
             }
-            
-            if(onUpdate != null)
-                onUpdate();
+
+            OnQuestUpdated?.Invoke();
         }
 
         public int GetQuestCount()
         {
             return _statuses.Count;
+        }
+
+        private void AddWeaponQuests(WeaponConfig weapon)
+        {
+            foreach (var quest in weapon.GetQuestsAtLevel(weapon.GetWeaponLevel(_weaponStore.GetWeaponBond(weapon))))
+            {
+                AddQuest(quest);
+            }
         }
 
         private QuestStatus GetQuestStatus(Quest quest)

@@ -69,45 +69,28 @@ namespace RPG.Combat
             return _weaponProgression;
         }
 
-        public IEnumerable<Ability> GetAbilitiesAtLevel(int playerLevel)
+        public IEnumerable<Ability> GetAbilitiesAtLevel(int weaponLevel)
         {
             foreach (var level in _weaponProgression)
             {
-                if (level.level <= playerLevel)
+                if (level.level <= weaponLevel)
                 {
                     yield return level.ability;
                 }
             }
         }
         
-        public IEnumerable<Quest> GetQuestsAtLevel(int playerLevel)
+        public IEnumerable<Quest> GetQuestsAtLevel(int weaponLevel)
         {
             foreach (var level in _weaponProgression)
             {
-                if (level.level <= playerLevel)
+                if (level.level <= weaponLevel)
                 {
                     yield return level.quest;
                 }
             }
         }
-        
-        public float GetBondMaxAtLevel(int playerLevel)
-        {
-            var bondMax = 0f;
-            
-            foreach (var level in _weaponProgression)
-            {
-                if(level.level > playerLevel)
-                    break;
-                if (level.level == playerLevel)
-                {
-                    bondMax = level.bondMax;
-                }
-            }
 
-            return bondMax;
-        }
-        
         public int GetWeaponLevel(float bond)
         {
             var weaponLevel = 0;
@@ -176,7 +159,6 @@ namespace RPG.Combat
             public int level;
             [Tooltip("This is the amount of experience needed to be at this level")]
             public float experienceRequired;
-            public float bondMax;
             public Ability ability;
             public Quest quest;
         }

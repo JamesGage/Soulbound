@@ -20,7 +20,7 @@ namespace UI.Quests
 
         private void Start()
         {
-            _questList.onUpdate += Redraw;
+            _questList.OnQuestUpdated += Redraw;
             Redraw();
         }
 

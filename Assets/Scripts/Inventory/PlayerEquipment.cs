@@ -23,7 +23,7 @@ namespace RPG.Inventories
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                _weaponStore.AddWeaponBond(_currentWeapon, 50);
+                _weaponStore.AddWeaponExperience(_currentWeapon, 50);
             }
         }
     }

@@ -14,6 +14,7 @@ namespace RPG.Inventories
         private Dictionary<WeaponConfig, float> _weaponHistory = new Dictionary<WeaponConfig, float>();
 
         public Action OnWeaponChanged;
+        public Action<WeaponConfig> OnWeaponAdded;
 
         private void Start()
         {
@@ -25,6 +26,7 @@ namespace RPG.Inventories
                 if(_currentWeapons.ContainsKey(weapon)) continue;
                 
                 _currentWeapons.Add(weapon, weaponBond);
+                OnWeaponAdded?.Invoke(weapon);
             }
         }
 
@@ -38,6 +40,7 @@ namespace RPG.Inventories
             if (_weaponHistory.ContainsKey(weapon)) weaponBond = _weaponHistory[weapon];
             
             _currentWeapons.Add(weapon, weaponBond);
+            OnWeaponAdded?.Invoke(weapon);
             OnWeaponChanged?.Invoke();
         }
 
@@ -56,7 +59,7 @@ namespace RPG.Inventories
             return _weaponHistory[weapon];
         }
 
-        public void AddWeaponBond(WeaponConfig weapon, float value)
+        public void AddWeaponExperience(WeaponConfig weapon, float value)
         {
             if (_currentWeapons.ContainsKey(weapon))
             {
