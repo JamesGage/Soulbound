@@ -50,6 +50,28 @@ namespace RPG.Inventories
                 OnWeaponChanged?.Invoke();
             }
         }
+
+        public float GetWeaponBond(WeaponConfig weapon)
+        {
+            return _weaponHistory[weapon];
+        }
+
+        public void AddWeaponBond(WeaponConfig weapon, float value)
+        {
+            if (!_weaponHistory.ContainsKey(weapon))
+            {
+                _weaponHistory.Add(weapon, value);
+                return;
+            }
+
+            if (_currentWeapons.ContainsKey(weapon))
+            {
+                _currentWeapons[weapon] += value;
+                _weaponHistory[weapon] += value;
+            }
+            
+            OnWeaponChanged?.Invoke();
+        }
         
         public Dictionary<WeaponConfig, float> GetWeapons()
         {
