@@ -273,7 +273,6 @@
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponConfig.cs" t="Include" />
             <e p="WeaponPickup.cs" t="Include" />
-            <e p="WeaponStore.cs" t="Include" />
           </e>
           <e p="Control" t="Include">
             <e p="AIController.cs" t="Include" />
@@ -333,6 +332,7 @@
             <e p="Purse.cs" t="Include" />
             <e p="RandomDropperFromLibrary.cs" t="Include" />
             <e p="StatsEquipableItem.cs" t="Include" />
+            <e p="WeaponStore.cs" t="Include" />
           </e>
           <e p="Movement" t="Include">
             <e p="Ground.cs" t="Include" />

@@ -2,72 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Arrows.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Arrows/Simple Arrows.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Arrows/Simple Arrows/Arrow Simple.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Arrows/Simple Arrows/Arrow Simple.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Arrows/Simple Arrows/Projectile Arrow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Arrows/Simple Arrows/Projectile Arrow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Bows.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Bows/Bow Override Controller.overrideController" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Bows/Bow Override Controller.overrideController.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Bows/Simple Bow Equip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Bows/Simple Bow Equip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Fireball.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Fireball/Book Fire.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Fireball/Book Fire.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Fireball/Fireball Equip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Fireball/Fireball Equip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Fireball/Projectile Fireball.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Fireball/Projectile Fireball.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Spell Override Controller.overrideController" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Spells/Spell Override Controller.overrideController.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Epic Sword Equip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Epic Sword Equip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Simple Sword Equip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Simple Sword Equip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Sword Override Controller.overrideController" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Sword Override Controller.overrideController.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Unarmed.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Arrow Simple.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Arrow Simple.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Arrows/Simple Arrows/Projectile Arrow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Bow Override Controller.overrideController" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Bow Override Controller.overrideController.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Simple Bow Equip.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Bows/Simple Bow Equip.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Epic Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Epic Sword.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Bow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Bow.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Spell Fireball.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Spell Fireball.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Book Fire.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Book Fire.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Fireball Equip.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Fireball Equip.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Projectile Fireball.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Fireball/Projectile Fireball.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Spell Override Controller.overrideController" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Spells/Spell Override Controller.overrideController.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Epic Sword Equip.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Epic Sword Equip.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Simple Sword Equip.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Simple Sword Equip.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Sword Override Controller.overrideController" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Swords/Sword Override Controller.overrideController.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Unarmed.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,10 +48,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/CharacterRace.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Abilities/EffectStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ItemTooltip.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/ShopItemUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Shops/Shop.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Shops/FilterButtonUI.cs" />
@@ -150,16 +92,17 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/SkillUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Skill.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PotionStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/StatsEquipment.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/WeaponUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -259,7 +202,7 @@
       <workItem from="1624304330432" duration="3411000" />
       <workItem from="1624380031732" duration="12760000" />
       <workItem from="1624567172381" duration="11177000" />
-      <workItem from="1624739737403" duration="10051000" />
+      <workItem from="1624739737403" duration="13910000" />
     </task>
     <servers />
   </component>

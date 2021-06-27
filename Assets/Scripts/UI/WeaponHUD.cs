@@ -42,11 +42,11 @@ namespace RPG.UI
             var i = 0;
             foreach (var weapon in _weaponStore.GetWeapons())
             {
-                _weaponIcons[i]._weaponIcon.sprite = weapon.GetIcon();
-                if (weapon == _equipment.GetEquippedWeapon())
+                _weaponIcons[i]._weaponIcon.sprite = weapon.Key.GetIcon();
+                if (weapon.Key == _equipment.GetEquippedWeapon())
                 {
                     _weaponIcons[i]._weaponGlow.enabled = true;
-                    _currentWeaponName.text = weapon.GetDisplayName();
+                    _currentWeaponName.text = weapon.Key.GetDisplayName();
                     i++;
                     continue;
                 }

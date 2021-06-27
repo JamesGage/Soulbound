@@ -1,5 +1,4 @@
-﻿using RPG.Combat;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RPG.Inventories
 {

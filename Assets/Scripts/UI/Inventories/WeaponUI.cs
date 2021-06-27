@@ -57,7 +57,7 @@ namespace RPG.UI.Inventories
 
             foreach (var weapon in _weaponStore.GetWeapons())
             {
-                AddWeapon(weapon, _equipment);
+                AddWeapon(weapon.Key, _equipment);
             }
         }
 
