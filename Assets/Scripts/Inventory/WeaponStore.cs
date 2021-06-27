@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using RPG.Combat;
-using RPG.Inventories;
 using RPG.Saving;
 using UnityEngine;
 
@@ -16,14 +15,14 @@ namespace RPG.Inventories
 
         public Action OnWeaponChanged;
 
-        private void Awake()
+        private void Start()
         {
-            _currentWeapons.Clear();
             foreach (var weapon in _weapons)
             {
                 var weaponBond = 0f;
                 if (_weaponHistory.ContainsKey(weapon)) weaponBond = _weaponHistory[weapon];
                 if(!_weaponHistory.ContainsKey(weapon)) _weaponHistory.Add(weapon, 0);
+                if(_currentWeapons.ContainsKey(weapon)) continue;
                 
                 _currentWeapons.Add(weapon, weaponBond);
             }
@@ -59,15 +58,14 @@ namespace RPG.Inventories
 
         public void AddWeaponBond(WeaponConfig weapon, float value)
         {
-            if (!_weaponHistory.ContainsKey(weapon))
-            {
-                _weaponHistory.Add(weapon, value);
-                return;
-            }
-
             if (_currentWeapons.ContainsKey(weapon))
             {
                 _currentWeapons[weapon] += value;
+                
+                if (!_weaponHistory.ContainsKey(weapon))
+                {
+                    _weaponHistory.Add(weapon, 0);
+                }
                 _weaponHistory[weapon] += value;
             }
             
@@ -133,14 +131,14 @@ namespace RPG.Inventories
             var weaponConfigs = new List<SaveableWeapon>();
             foreach (var weapon in _currentWeapons)
             {
-                weaponConfigs.Add(NewSaveableWeapon(true, weapon.Key.GetItemID(), 10));
+                weaponConfigs.Add(NewSaveableWeapon(true, weapon.Key.GetItemID(), weapon.Value));
             }
 
             foreach (var weapon in _weaponHistory)
             {
                 if(_currentWeapons.ContainsKey(weapon.Key)) continue;
                 
-                weaponConfigs.Add(NewSaveableWeapon(false, weapon.Key.GetItemID(), 10));
+                weaponConfigs.Add(NewSaveableWeapon(false, weapon.Key.GetItemID(), weapon.Value));
             }
 
             return weaponConfigs;
@@ -151,13 +149,11 @@ namespace RPG.Inventories
             foreach (var weapon in (List<SaveableWeapon>) state)
             {
                 if(_currentWeapons.ContainsKey(InventoryItem.GetFromID(weapon.weaponID) as WeaponConfig)) continue;
-                if (weapon.isEquipped == false)
-                {
-                    _weaponHistory.Add(InventoryItem.GetFromID(weapon.weaponID) as WeaponConfig, weapon.bondValue);
-                    continue;
-                }
-                
-                _currentWeapons.Add(InventoryItem.GetFromID(weapon.weaponID) as WeaponConfig, weapon.bondValue);
+  
+                _weaponHistory.Add(InventoryItem.GetFromID(weapon.weaponID) as WeaponConfig, weapon.bondValue);
+
+                if(weapon.isEquipped)
+                    _currentWeapons.Add(InventoryItem.GetFromID(weapon.weaponID) as WeaponConfig, weapon.bondValue);
             }
         }
     }

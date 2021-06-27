@@ -1,5 +1,4 @@
 ﻿using System;
-using RPG.Combat;
 using RPG.Inventories;
 using TMPro;
 using UnityEngine;
@@ -43,6 +42,8 @@ namespace RPG.UI
             foreach (var weapon in _weaponStore.GetWeapons())
             {
                 _weaponIcons[i]._weaponIcon.sprite = weapon.Key.GetIcon();
+                if(weapon.Key != null)
+                    _weaponIcons[i]._weaponIcon.enabled = true;
                 if (weapon.Key == _equipment.GetEquippedWeapon())
                 {
                     _weaponIcons[i]._weaponGlow.enabled = true;
@@ -54,6 +55,7 @@ namespace RPG.UI
                 if (_equipment.GetEquippedWeapon() == null)
                 {
                     _currentWeaponName.text = "";
+                    _weaponIcons[i]._weaponIcon.enabled = false;
                 }
                 _weaponIcons[i]._weaponGlow.enabled = false;
                 i++;

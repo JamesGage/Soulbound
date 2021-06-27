@@ -2534,6 +2534,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5560298058750934001, guid: be0b5651a59d47b4aaa83be026e207d9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5629375625992818383, guid: be0b5651a59d47b4aaa83be026e207d9, type: 3}
       propertyPath: m_Name
       value: Weapon Icon
@@ -2562,7 +2566,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 4813794566741111488}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

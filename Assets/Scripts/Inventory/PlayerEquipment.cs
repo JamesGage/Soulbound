@@ -6,8 +6,6 @@ namespace RPG.Inventories
     {
         [SerializeField] private KeyCode[] _weaponHotKeys;
 
-        private WeaponStore _weaponStore;
-
         private void Start()
         {
             _weaponStore = WeaponStore.GetPlayerWeaponStore();
