@@ -23,6 +23,7 @@ namespace RPG.Inventories
             {
                 var weaponBond = 0f;
                 if (_weaponHistory.ContainsKey(weapon)) weaponBond = _weaponHistory[weapon];
+                if(!_weaponHistory.ContainsKey(weapon)) _weaponHistory.Add(weapon, 0);
                 
                 _currentWeapons.Add(weapon, weaponBond);
             }

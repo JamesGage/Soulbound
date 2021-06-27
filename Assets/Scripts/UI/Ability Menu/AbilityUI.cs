@@ -31,7 +31,7 @@ namespace RPG.UI.Ability_Menu
             if(currentWeapon == null) return;
 
             int abilityCount = 0;
-            foreach (var ability in currentWeapon.GetAbilitiesAtLevel(1))
+            foreach (var ability in currentWeapon.GetAbilitiesAtLevel(_playerEquipment.GetCurrentWeaponLevel()))
             {
                 var abilityRow = Instantiate(_abilityRowPrefab, _contents.transform);
                 abilityRow.SetAbility(ability);

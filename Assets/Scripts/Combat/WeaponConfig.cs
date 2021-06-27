@@ -108,7 +108,7 @@ namespace RPG.Combat
             return bondMax;
         }
         
-        public float GetWeaponLevel(float bond)
+        public int GetWeaponLevel(float bond)
         {
             var weaponLevel = 0;
             
