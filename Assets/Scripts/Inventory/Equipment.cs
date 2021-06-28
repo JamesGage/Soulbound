@@ -2,6 +2,7 @@
 using RPG.Combat;
 using UnityEngine;
 using RPG.Saving;
+using RPG.Utils;
 
 namespace RPG.Inventories
 {
@@ -12,6 +13,32 @@ namespace RPG.Inventories
 
         public event Action onEquipmentUpdated;
 
+        private void Start()
+        {
+            _weaponStore = WeaponStore.GetPlayerWeaponStore();
+        }
+        
+        private void Update()
+        {
+            if (Input.GetKeyDown(InputManager.inputManager.weapon1))
+            {
+                SetEquippedWeapon(_weaponStore.GetWeaponByIndex(0));
+            }
+            if (Input.GetKeyDown(InputManager.inputManager.weapon2))
+            {
+                SetEquippedWeapon(_weaponStore.GetWeaponByIndex(1));
+            }
+            if (Input.GetKeyDown(InputManager.inputManager.weapon3))
+            {
+                SetEquippedWeapon(_weaponStore.GetWeaponByIndex(2));
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _weaponStore.AddWeaponExperience(_currentWeapon, 50);
+            }
+        }
+        
         public WeaponConfig GetEquippedWeapon()
         {
             return _currentWeapon;

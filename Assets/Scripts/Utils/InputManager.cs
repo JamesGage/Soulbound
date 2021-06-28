@@ -11,6 +11,8 @@ namespace RPG.Utils
         [SerializeField] private KeyCode _playerMenu;
         [SerializeField] private KeyCode _pauseMenu;
         [Space]
+        [SerializeField] private KeyCode _cancel;
+        [Space]
         [SerializeField] private KeyCode _weapon1;
         [SerializeField] private KeyCode _weapon2;
         [SerializeField] private KeyCode _weapon3;
@@ -23,6 +25,8 @@ namespace RPG.Utils
         public KeyCode interact {get; set;}
         public KeyCode playerMenu {get; set;}
         public KeyCode pauseMenu {get; set;}
+        
+        public KeyCode cancel {get; set;}
         
         public KeyCode weapon1 {get; set;}
         public KeyCode weapon2 {get; set;}
@@ -52,6 +56,9 @@ namespace RPG.Utils
                 PlayerPrefs.GetString("playerMenu", _playerMenu.ToString()));
             pauseMenu = (KeyCode) System.Enum.Parse(typeof(KeyCode), 
                 PlayerPrefs.GetString("pauseMenu", _pauseMenu.ToString()));
+            
+            cancel = (KeyCode) System.Enum.Parse(typeof(KeyCode), 
+                PlayerPrefs.GetString("cancel", _cancel.ToString()));
             
             weapon1 = (KeyCode) System.Enum.Parse(typeof(KeyCode), 
                 PlayerPrefs.GetString("weapon1", _weapon1.ToString()));

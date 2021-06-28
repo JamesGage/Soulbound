@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using RPG.Control;
+using RPG.Utils;
 using UnityEngine;
 
 namespace RPG.Abilities.Targeting
@@ -48,17 +49,17 @@ namespace RPG.Abilities.Targeting
                     targetingPrefabInstance.position = raycastHit.point;
                     meshRenderer.enabled = !data.IsInRange(raycastHit.point, maxDistance);
 
-                    if (Input.GetMouseButtonDown(0) && data.IsInRange(raycastHit.point, maxDistance))
+                    if (Input.GetKeyDown(InputManager.inputManager.interact) && data.IsInRange(raycastHit.point, maxDistance))
                     {
                         //Absorb whole mouse click
-                        yield return new WaitWhile(() => Input.GetMouseButton(0));
+                        yield return new WaitWhile(() => Input.GetKeyDown(InputManager.inputManager.interact));
                         
                         data.SetTargetedPoint(raycastHit.point);
                         data.SetTargets(GetGameObjectsInRadius(raycastHit.point));
                         break;
                     }
 
-                    if (Input.GetMouseButtonDown(1))
+                    if (Input.GetKeyDown(InputManager.inputManager.cancel))
                     {
                         data.Cancel();
                         break;

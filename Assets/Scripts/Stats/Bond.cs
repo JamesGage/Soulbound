@@ -27,6 +27,11 @@ namespace RPG.Stats
 
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                AddBond(100);
+            }
+            
             if (_bond.value > 0 && !_isPaused)
             {
                 _bond.value -= Time.deltaTime;
