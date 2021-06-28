@@ -9,14 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca75f8a5c5be4f5eb1e732ca5031074c, type: 3}
-  m_Name: Targeting Surrounding
+  m_Script: {fileID: 11500000, guid: 3a2fa54c2ce346d594a92c1d3e30b0ca, type: 3}
+  m_Name: Effect Trigger Bash
   m_EditorClassIdentifier: 
-  _radius: 2
-  _viewAngle: 180
-  _targetMask:
-    serializedVersion: 2
-    m_Bits: 512
-  _obstacleMask:
-    serializedVersion: 2
-    m_Bits: 128
+  animationTrigger: bash

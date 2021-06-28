@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4347a0d3f71541f88dcc4cecc4285fb4, type: 3}
-  m_Name: Ability Slash
+  m_Name: Ability Bash
   m_EditorClassIdentifier: 
-  itemID: 4c01e817-0c3a-4066-b504-6ca578d125ce
-  displayName: Slash
-  description: A wide slash that deals 10 damage to each enemy in the arc.
-  icon: {fileID: 21300000, guid: a3422219b684ac0409b77d8646fbd114, type: 3}
+  itemID: 4c9f8c57-8206-4be7-b42e-a5ac32efa38f
+  displayName: Bash
+  description: A ground bash that deals 10 damage to each enemy around the player.
+  icon: {fileID: 21300000, guid: 34bcda609bb9b404398e9c0bc91dd48c, type: 3}
   _itemType: 4
   _currencyValue: 0
-  targetingStrategy: {fileID: 11400000, guid: 374be181dd2a5b64faa225e53e356f5c, type: 2}
+  targetingStrategy: {fileID: 11400000, guid: ce48d2afa9e29d9429e5308869598341, type: 2}
   filterStrategies:
   - {fileID: 11400000, guid: 70f313f2804902a4aafbc40134027eb4, type: 2}
   effectStrategies:
-  - {fileID: 11400000, guid: f24f7e204117e0c419bb83065dbbd653, type: 2}
-  - {fileID: 11400000, guid: b4cf54ec0fc27d0438195911ce98e23b, type: 2}
+  - {fileID: 11400000, guid: 33703c1a3d6ac6a47bc10751274da66c, type: 2}
+  - {fileID: 11400000, guid: 8bbdb0aa4ee553341bb452f991adcaeb, type: 2}
   bondCost: 0
   cooldownTime: 1
