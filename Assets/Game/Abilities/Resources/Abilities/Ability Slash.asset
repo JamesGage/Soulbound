@@ -24,5 +24,5 @@ MonoBehaviour:
   effectStrategies:
   - {fileID: 11400000, guid: f24f7e204117e0c419bb83065dbbd653, type: 2}
   - {fileID: 11400000, guid: b4cf54ec0fc27d0438195911ce98e23b, type: 2}
-  bondCost: 15
-  cooldownTime: 5
+  bondCost: 0
+  cooldownTime: 1
