@@ -3,6 +3,7 @@ using UnityEngine;
 using RPG.Movement;
 using RPG.Inventories;
 using RPG.Stats;
+using RPG.Utils;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
@@ -18,7 +19,6 @@ namespace RPG.Control
         [SerializeField] float _navMeshProjectionTolerance = 1f;
         [SerializeField] float _raycastRadius = 0.5f;
         [SerializeField] CursorMapping[] cursorMappings = null;
-        [SerializeField] KeyCode[] abilityKeys;
 
         private ActionStore _actionStore;
         private bool _movementStarted;
@@ -43,7 +43,7 @@ namespace RPG.Control
                 return;
             }
             CheckSpecialAbilityKeys();
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetKeyUp(InputManager.inputManager.clickToMove))
             {
                 _movementStarted = false;
             }
@@ -71,11 +71,12 @@ namespace RPG.Control
 
         private void CheckSpecialAbilityKeys()
         {
-            for (int i = 0; i < abilityKeys.Length; i++)
-            {
-                if (Input.GetKeyDown(abilityKeys[i]))
-                    _actionStore.Use(i, gameObject);
-            }
+            if (Input.GetKeyDown(InputManager.inputManager.ability1))
+                _actionStore.Use(1, gameObject);
+            if (Input.GetKeyDown(InputManager.inputManager.ability2))
+                _actionStore.Use(2, gameObject);
+            if (Input.GetKeyDown(InputManager.inputManager.ability3))
+                _actionStore.Use(3, gameObject);
         }
 
         public Mover GetMover()
@@ -125,11 +126,11 @@ namespace RPG.Control
 
         private bool InteractWithUI()
         {
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetKeyDown(InputManager.inputManager.interact))
                 _isDragging = false;
             if (EventSystem.current.IsPointerOverGameObject())
             {
-                if(Input.GetMouseButtonDown(0))
+                if(Input.GetKeyDown(InputManager.inputManager.interact))
                     _isDragging = true;
                 SetCursor(CursorType.UI);
                 return true;
@@ -149,7 +150,7 @@ namespace RPG.Control
             if (hasHit)
             {
                 if (!_mover.CanMoveTo(target)) return false;
-                if (Input.GetMouseButton(0))
+                if (Input.GetKey(InputManager.inputManager.clickToMove))
                 {
                     _mover.StartMoveAction(target, 1f);
                 }
