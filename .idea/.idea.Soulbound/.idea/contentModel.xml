@@ -474,6 +474,7 @@
             <e p="WeaponHUD.cs" t="Include" />
           </e>
           <e p="Utils" t="Include">
+            <e p="InputManager.cs" t="Include" />
             <e p="LazyValue.cs" t="Include" />
             <e p="Outline.cs" t="Include" />
             <e p="UI" t="Include">
