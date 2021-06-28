@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using RPG.Saving;
 using RPG.Utils;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace RPG.Stats
         
         LazyValue<float> _bond;
         private BaseStats _baseStats;
+        private bool _isPaused;
 
         private void Awake()
         {
@@ -25,13 +27,13 @@ namespace RPG.Stats
 
         private void Update()
         {
-            if (_bond.value < GetMaxBond())
+            if (_bond.value > 0 && !_isPaused)
             {
-                _bond.value += Time.deltaTime * GetRegenRate();
+                _bond.value -= Time.deltaTime;
                 OnBondChanged?.Invoke();
-                if (_bond.value > GetMaxBond())
+                if (_bond.value < 0)
                 {
-                    _bond.value = GetMaxBond();
+                    _bond.value = 0;
                     OnBondChanged?.Invoke();
                 }
             }
@@ -40,6 +42,23 @@ namespace RPG.Stats
         public float GetBond()
         {
             return _bond.value;
+        }
+
+        public void AddBond(float amount)
+        {
+            _bond.value += amount * GetRegenRate();
+            if (_bond.value > GetMaxBond())
+            {
+                _bond.value = GetMaxBond();
+            }
+            OnBondChanged?.Invoke();
+        }
+
+        public IEnumerator PauseBondDegrade()
+        {
+            _isPaused = true;
+            yield return new WaitForSeconds(GetRegenRate());
+            _isPaused = false;
         }
         
         public float GetFraction()
@@ -54,7 +73,7 @@ namespace RPG.Stats
 
         public float GetRegenRate()
         {
-            return _baseStats.GetStat(Stat.BondRegenRate);
+            return _baseStats.GetStat(Stat.BondRegen);
         }
 
         public bool UseBond(int bondToUse)
