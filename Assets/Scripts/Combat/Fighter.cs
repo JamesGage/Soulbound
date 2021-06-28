@@ -64,13 +64,7 @@ namespace RPG.Combat
         private void Update()
         {
             _timeSinceLastAttack += Time.deltaTime;
-            
-            if (_timeSinceLastAttack > 5f && !_canTrigger)
-            {
-                SceneMusicManager.SetThreat(0);
-                _canTrigger = true;
-            }
-            
+
             if (_target == null) return;
             if (_target.IsDead()) return;
 
@@ -93,7 +87,6 @@ namespace RPG.Combat
             {
                 TriggerAttack();
                 _timeSinceLastAttack = 0f;
-                TriggerCombat();
             }
         }
 
@@ -196,14 +189,6 @@ namespace RPG.Combat
             return weapon.Spawn(_rightHandTransform, _leftHandTransform, _anim);
         }
         
-        private void TriggerCombat()
-        {
-            if (_canTrigger)
-            {
-                SceneMusicManager.SetThreat(1);
-                _canTrigger = false;
-            }
-        }
 
         public Health GetTarget()
         {
