@@ -2,6 +2,7 @@
 using RPG.Control;
 using RPG.Saving;
 using RPG.Stats;
+using RPG.Utils;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -176,7 +177,7 @@ namespace RPG.Inventories
         {
             if (_health != null && !_health.IsDead()) return false;
 
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(InputManager.inputManager.interact))
             {
                 if (_canPickUp)
                 {

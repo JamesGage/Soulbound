@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Stalled.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Stalled.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Queue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Queue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Bash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Bash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Heal Small.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Core/Core.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/InputManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Crafting/RecipeStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/AbilityData.cs" />
@@ -94,18 +88,19 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/WeaponStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Questing/QuestList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/InputManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/DelayedClickTargeting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerEquipment.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/Equipment.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/MovementEffect.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/InputManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDropper.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -210,7 +205,7 @@
       <workItem from="1624848480089" duration="4993000" />
       <workItem from="1624897408095" duration="11331000" />
       <workItem from="1624973524719" duration="5646000" />
-      <workItem from="1624995036499" duration="3517000" />
+      <workItem from="1624995036499" duration="5565000" />
     </task>
     <servers />
   </component>

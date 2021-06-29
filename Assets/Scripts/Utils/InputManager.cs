@@ -17,6 +17,7 @@ namespace RPG.Utils
         [SerializeField] private KeyCode _weapon2;
         [SerializeField] private KeyCode _weapon3;
         [Space]
+        [SerializeField] private KeyCode _baseAttack;
         [SerializeField] private KeyCode _ability1;
         [SerializeField] private KeyCode _ability2;
         [SerializeField] private KeyCode _ability3;
@@ -32,6 +33,7 @@ namespace RPG.Utils
         public KeyCode weapon2 {get; set;}
         public KeyCode weapon3 {get; set;}
         
+        public KeyCode baseAttack {get; set;}
         public KeyCode ability1 {get; set;}
         public KeyCode ability2 {get; set;}
         public KeyCode ability3 {get; set;}
@@ -67,6 +69,8 @@ namespace RPG.Utils
             weapon3 = (KeyCode) System.Enum.Parse(typeof(KeyCode), 
                 PlayerPrefs.GetString("weapon3", _weapon3.ToString()));
             
+            baseAttack = (KeyCode) System.Enum.Parse(typeof(KeyCode), 
+                PlayerPrefs.GetString("baseAttack", _baseAttack.ToString()));
             ability1 = (KeyCode) System.Enum.Parse(typeof(KeyCode), 
                 PlayerPrefs.GetString("ability1", _ability1.ToString()));
             ability2 = (KeyCode) System.Enum.Parse(typeof(KeyCode), 

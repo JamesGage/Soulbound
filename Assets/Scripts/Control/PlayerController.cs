@@ -72,12 +72,14 @@ namespace RPG.Control
 
         private void CheckSpecialAbilityKeys()
         {
-            if (Input.GetKeyDown(InputManager.inputManager.ability1))
+            if (Input.GetKeyDown(InputManager.inputManager.baseAttack))
                 StartCoroutine(_actionStore.Use(0, gameObject));
-            if (Input.GetKeyDown(InputManager.inputManager.ability2))
+            if (Input.GetKeyDown(InputManager.inputManager.ability1))
                 StartCoroutine(_actionStore.Use(1, gameObject));
-            if (Input.GetKeyDown(InputManager.inputManager.ability3))
+            if (Input.GetKeyDown(InputManager.inputManager.ability2))
                 StartCoroutine(_actionStore.Use(2, gameObject));
+            if (Input.GetKeyDown(InputManager.inputManager.ability3))
+                StartCoroutine(_actionStore.Use(3, gameObject));
         }
 
         public Mover GetMover()
@@ -127,11 +129,11 @@ namespace RPG.Control
 
         private bool InteractWithUI()
         {
-            if (Input.GetKeyDown(InputManager.inputManager.interact))
+            if (Input.GetKeyUp(InputManager.inputManager.interact))
                 _isDragging = false;
             if (EventSystem.current.IsPointerOverGameObject())
             {
-                if(Input.GetKeyDown(InputManager.inputManager.interact))
+                if(Input.GetKey(InputManager.inputManager.interact))
                     _isDragging = true;
                 SetCursor(CursorType.UI);
                 return true;

@@ -101,7 +101,11 @@ namespace RPG.Combat
         void Hit()
         {
             if (_target == null) return;
-            if (_target.IsDead()) return;
+            if (_target.IsDead())
+            {
+                _anim.ResetTrigger("stopAttack");
+                return;
+            }
 
             if (_currentWeaponConfig.HasProjectile())
             {
