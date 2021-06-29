@@ -13,8 +13,13 @@ namespace RPG.Abilities
         [SerializeField] private EffectStrategy[] effectStrategies;
         [SerializeField] private int bondCost;
         [SerializeField] private float cooldownTime;
+        [SerializeField] private bool hasQueue;
+        [Tooltip("Time before the queue is opened")]
         [SerializeField] private float queueReadyTime;
+        [Tooltip("Time the queue is opened")]
         [SerializeField] private float queueOpenTime;
+        [Tooltip("Time after the queue is closed and the ability is still active")]
+        [SerializeField] private float abilityFinishTime;
 
         private AbilityData _data;
         
@@ -39,6 +44,11 @@ namespace RPG.Abilities
             return _data;
         }
 
+        public bool GetHasQueue()
+        {
+            return hasQueue;
+        }
+
         public float GetQueueReadyTime()
         {
             return queueReadyTime;
@@ -47,6 +57,11 @@ namespace RPG.Abilities
         public float GetQueueOpenTime()
         {
             return queueOpenTime;
+        }
+        
+        public float GetFinishTime()
+        {
+            return abilityFinishTime;
         }
 
         private void TargetAquired(AbilityData data)

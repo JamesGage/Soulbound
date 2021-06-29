@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _queueOpenPrefab: {fileID: 4428908044626120, guid: 4d1ab84cebc7e5b4f8fcc8c809cdc89b, type: 3}
+  _stalledPrefab: {fileID: 5514677093495528003, guid: 3f71eae930140524ab5b20573ae86171, type: 3}
 --- !u!114 &3243260723790236210
 MonoBehaviour:
   m_ObjectHideFlags: 0

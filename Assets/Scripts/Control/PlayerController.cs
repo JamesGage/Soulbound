@@ -36,13 +36,14 @@ namespace RPG.Control
 
         private void Update()
         {
+            CheckSpecialAbilityKeys();
+            
             if (_stopMovement)
             {
                 _mover.Cancel();
                 SetCursor(CursorType.UI);
                 return;
             }
-            CheckSpecialAbilityKeys();
             if (Input.GetKeyUp(InputManager.inputManager.clickToMove))
             {
                 _movementStarted = false;

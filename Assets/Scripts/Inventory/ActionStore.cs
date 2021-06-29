@@ -11,13 +11,22 @@ namespace RPG.Inventories
     public class ActionStore : MonoBehaviour, ISaveable
     {
         [SerializeField] private Transform _queueOpenPrefab;
+        [SerializeField] private Transform _stalledPrefab;
         
         Dictionary<int, Ability> dockedItems = new Dictionary<int, Ability>();
         private GameObject _user;
         private Ability _ability;
         private CooldownStore _cooldownStore;
-        private bool _inUse;
-        private bool _isOpen;
+        private Transform _stalledTempTransform;
+        private AbilityState _abilityState = AbilityState.Idle;
+        
+        enum AbilityState
+        {
+            Idle,
+            Started,
+            QueueOpen,
+            Stall
+        }
 
         public event Action storeUpdated;
         
@@ -48,13 +57,25 @@ namespace RPG.Inventories
         
         public IEnumerator Use(int index, GameObject user)
         {
-            if (_isOpen)
-            {
-                ActivateAbility(index, user);
-            }
-            if(_inUse) yield break;
+            _ability = dockedItems[index];
             
-            ActivateAbility(index, user);
+            switch (_abilityState)
+            {
+                case AbilityState.Idle:
+                    ActivateAbility(index, user);
+                    break;
+                case AbilityState.Started:
+                    print(_abilityState);
+                    break;
+                case AbilityState.QueueOpen:
+                    StopCoroutine(AbilityInUse());
+                    ActivateAbility(index, user);
+                    break;
+                case AbilityState.Stall:
+                    Stalled();
+                    break;
+            }
+            yield break;
         }
 
         private void ActivateAbility(int index, GameObject user)
@@ -65,24 +86,28 @@ namespace RPG.Inventories
             if (!dockedItems.ContainsKey(index)) return;
             if(health.IsDead()) return;
 
-            _ability = dockedItems[index];
             _cooldownStore = user.GetComponent<CooldownStore>();
             if (_cooldownStore.GetTimeRemaining(_ability) > 0) return;
-            
-            StartCoroutine(InUse());
 
+            StartCoroutine(AbilityInUse());
             _ability.Use(user);
         }
 
-        private IEnumerator InUse()
+        private IEnumerator AbilityInUse()
         {
-            _inUse = true;
-            yield return new WaitForSeconds(_ability.GetQueueReadyTime());
-            _isOpen = true;
-            OpenQueue(_ability.GetQueueOpenTime());
-            yield return new WaitForSeconds(_ability.GetQueueOpenTime());
-            _isOpen = false;
-            _inUse = false;
+            _abilityState = AbilityState.Started;
+            
+            if (_ability.GetHasQueue())
+            {
+                _abilityState = AbilityState.Stall;
+                yield return new WaitForSeconds(_ability.GetQueueReadyTime());
+                _abilityState = AbilityState.QueueOpen;
+                OpenQueue(_ability.GetQueueOpenTime());
+                yield return new WaitForSeconds(_ability.GetQueueOpenTime());
+                _abilityState = AbilityState.Stall;   
+            }
+            yield return new WaitForSeconds(_ability.GetFinishTime());
+            _abilityState = AbilityState.Idle;
         }
 
         private void OpenQueue(float time)
@@ -102,6 +127,15 @@ namespace RPG.Inventories
                 yield return null;
             }
             Destroy(queue.gameObject);
+        }
+
+        private void Stalled()
+        {
+            if (_stalledTempTransform == null)
+            {
+                _stalledTempTransform = Instantiate(_stalledPrefab, _user.transform);
+                Destroy(_stalledTempTransform.gameObject, 1);
+            }
         }
 
         object ISaveable.CaptureState()
