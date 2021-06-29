@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac24764c84cc4a4bb4b88750e9245c1a, type: 3}
   m_Name: Effect Bash Delay
   m_EditorClassIdentifier: 
-  delay: 0.5
+  delay: 0.6
   delayedEffects:
   - {fileID: 11400000, guid: e06ad1139a95e37448d6c16d0e96a7cb, type: 2}
   - {fileID: 11400000, guid: f33b00df593c38349907c49d5697b923, type: 2}

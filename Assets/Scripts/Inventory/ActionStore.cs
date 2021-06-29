@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using RPG.Abilities;
 using UnityEngine;
@@ -10,6 +11,9 @@ namespace RPG.Inventories
     public class ActionStore : MonoBehaviour, ISaveable
     {
         Dictionary<int, Ability> dockedItems = new Dictionary<int, Ability>();
+        private Ability _ability;
+        private CooldownStore _cooldownStore;
+        private bool inUse;
 
         public event Action storeUpdated;
         
@@ -29,17 +33,6 @@ namespace RPG.Inventories
             storeUpdated?.Invoke();
         }
         
-        public void Use(int index, GameObject user)
-        {
-            if (dockedItems.ContainsKey(index))
-            {
-                var ability = dockedItems[index];
-                if (user.GetComponent<CooldownStore>().GetTimeRemaining(ability) > 0) return;
-                if(user.GetComponent<Health>().IsDead()) return;
-                
-                ability.Use(user);
-            }
-        }
         public void RemoveItems(int index, int number)
         {
             if (dockedItems.ContainsKey(index))
@@ -47,13 +40,29 @@ namespace RPG.Inventories
                 dockedItems.Remove(index);
                 storeUpdated?.Invoke();
             }
+        }
+        
+        public IEnumerator Use(int index, GameObject user)
+        {
+            if(inUse) yield break;
+            if (!dockedItems.ContainsKey(index)) yield break;
+            var health = user.GetComponent<Health>();
+            if(health.IsDead()) yield break;
+
+            _ability = dockedItems[index];
+            _cooldownStore = user.GetComponent<CooldownStore>();
+            if (_cooldownStore.GetTimeRemaining(_ability) > 0) yield break;
             
+            StartCoroutine(InUse());
+
+            _ability.Use(user);
         }
 
-        [Serializable]
-        private struct DockedItemRecord
+        private IEnumerator InUse()
         {
-            public string abilityID;
+            inUse = true;
+            yield return new WaitForSeconds(_ability.GetQueueReadyTime() + _ability.GetQueueReadyTime());
+            inUse = false;
         }
 
         object ISaveable.CaptureState()

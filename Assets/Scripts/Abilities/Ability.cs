@@ -13,6 +13,10 @@ namespace RPG.Abilities
         [SerializeField] private EffectStrategy[] effectStrategies;
         [SerializeField] private int bondCost;
         [SerializeField] private float cooldownTime;
+        [SerializeField] private float queueReadyTime;
+        [SerializeField] private float queueOpenTime;
+
+        private AbilityData _data;
         
         public void Use(GameObject user)
         {
@@ -22,12 +26,27 @@ namespace RPG.Abilities
             var cooldownStore = user.GetComponent<CooldownStore>();
             if (cooldownStore.GetTimeRemaining(this) > 0) return;
             
-            AbilityData data = new AbilityData(user);
+            _data = new AbilityData(user);
 
             var actionScheduler = user.GetComponent<ActionScheduler>();
-            actionScheduler.StartAction(data);
+            actionScheduler.StartAction(_data);
 
-            targetingStrategy.StartTargeting(data, () => TargetAquired(data));
+            targetingStrategy.StartTargeting(_data, () => TargetAquired(_data));
+        }
+
+        public AbilityData GetAbilityData()
+        {
+            return _data;
+        }
+
+        public float GetQueueReadyTime()
+        {
+            return queueReadyTime;
+        }
+        
+        public float GetQueueOpenTime()
+        {
+            return queueOpenTime;
         }
 
         private void TargetAquired(AbilityData data)

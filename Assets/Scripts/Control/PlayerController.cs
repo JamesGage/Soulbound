@@ -72,11 +72,11 @@ namespace RPG.Control
         private void CheckSpecialAbilityKeys()
         {
             if (Input.GetKeyDown(InputManager.inputManager.ability1))
-                _actionStore.Use(0, gameObject);
+                StartCoroutine(_actionStore.Use(0, gameObject));
             if (Input.GetKeyDown(InputManager.inputManager.ability2))
-                _actionStore.Use(1, gameObject);
+                StartCoroutine(_actionStore.Use(1, gameObject));
             if (Input.GetKeyDown(InputManager.inputManager.ability3))
-                _actionStore.Use(2, gameObject);
+                StartCoroutine(_actionStore.Use(2, gameObject));
         }
 
         public Mover GetMover()

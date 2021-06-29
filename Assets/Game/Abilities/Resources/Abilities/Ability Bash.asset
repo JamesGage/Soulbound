@@ -26,3 +26,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8bbdb0aa4ee553341bb452f991adcaeb, type: 2}
   bondCost: 0
   cooldownTime: 1
+  queueReadyTime: 0.85
+  queueOpenTime: 0.5
