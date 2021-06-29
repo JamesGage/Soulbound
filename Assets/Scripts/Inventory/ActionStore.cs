@@ -80,6 +80,7 @@ namespace RPG.Inventories
             _inUse = true;
             yield return new WaitForSeconds(_ability.GetQueueReadyTime());
             _isOpen = true;
+            //Activate feedback
             yield return new WaitForSeconds(_ability.GetQueueOpenTime());
             _isOpen = false;
             _inUse = false;

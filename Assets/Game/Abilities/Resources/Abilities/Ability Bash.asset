@@ -22,8 +22,10 @@ MonoBehaviour:
   filterStrategies:
   - {fileID: 11400000, guid: 70f313f2804902a4aafbc40134027eb4, type: 2}
   effectStrategies:
+  - {fileID: 11400000, guid: b668ad798dca92544b75d3734dae2d9c, type: 2}
   - {fileID: 11400000, guid: 33703c1a3d6ac6a47bc10751274da66c, type: 2}
   - {fileID: 11400000, guid: 8bbdb0aa4ee553341bb452f991adcaeb, type: 2}
+  - {fileID: 11400000, guid: f88a9ebe39396e240a6f8450d1456ab8, type: 2}
   bondCost: 0
   cooldownTime: 1
   queueReadyTime: 0.85
