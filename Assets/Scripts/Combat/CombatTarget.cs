@@ -1,5 +1,7 @@
 ﻿using RPG.Control;
+using RPG.Inventories;
 using RPG.Stats;
+using RPG.Utils;
 using UnityEngine;
 
 namespace RPG.Combat
@@ -20,9 +22,12 @@ namespace RPG.Combat
                 return false;
             }
             
-            if (Input.GetMouseButton(0))
+            if (Input.GetKeyDown(InputManager.inputManager.baseAttack))
             {
-                callingController.GetComponent<Fighter>().Attack(gameObject);
+                if (callingController.GetComponent<Fighter>().IsInRange(transform))
+                {
+                    StartCoroutine(callingController.GetComponent<ActionStore>().Use(0, callingController.gameObject));
+                }
             }
             return true;
         }

@@ -1,5 +1,4 @@
-﻿using RPG.Audio;
-using RPG.Core;
+﻿using RPG.Core;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Saving;
@@ -50,12 +49,7 @@ namespace RPG.Combat
             _currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
             _equipment = GetComponent<Equipment>();
         }
-
-        private Weapon SetupDefaultWeapon()
-        {
-            return AttachWeapon(_defaultWeapon);
-        }
-
+        
         private void Start()
         {
             _currentWeapon.ForceInit();
@@ -77,6 +71,67 @@ namespace RPG.Combat
                 _mover.Cancel();
                 AttackBehavior();
             }
+        }
+        
+        public void Attack(GameObject combatTarget)
+        {
+            _actionScheduler.StartAction(this);
+            _target = combatTarget.GetComponent<Health>();
+        }
+
+        public bool CanAttack(GameObject combatTarget)
+        {
+            if (combatTarget == null) return false;
+            if (!_mover.CanMoveTo(combatTarget.transform.position) && 
+                !IsInRange(combatTarget.transform)) return false;
+            
+            Health targetToTest = combatTarget.GetComponent<Health>();
+            return targetToTest != null && !targetToTest.IsDead();
+        }
+
+        public void Cancel()
+        {
+            StopAttack();
+            _target = null;
+            _mover.Cancel();
+        }
+        
+        public void EquipWeapon(WeaponConfig weapon)
+        {
+            _currentWeaponConfig = weapon;
+            _currentWeapon.value = AttachWeapon(weapon);
+        }
+
+        public WeaponConfig GetCurrentWeapon()
+        {
+            return _currentWeaponConfig;
+        }
+        
+        public Health GetTarget()
+        {
+            return _target;
+        }
+
+        public Transform GetHandTransform(bool isRightHand)
+        {
+            if (isRightHand)
+            {
+                return _rightHandTransform;
+            }
+            else
+            {
+                return _leftHandTransform;
+            }
+        }
+        
+        public bool IsInRange(Transform targetTransform)
+        {
+            return Vector3.Distance(transform.position, targetTransform.position) < _currentWeaponConfig.Range();
+        }
+
+        private Weapon SetupDefaultWeapon()
+        {
+            return AttachWeapon(_defaultWeapon);
         }
 
         private void AttackBehavior()
@@ -130,51 +185,12 @@ namespace RPG.Combat
             return damage;
         }
 
-        private bool IsInRange(Transform targetTransform)
-        {
-            return Vector3.Distance(transform.position, targetTransform.position) < _currentWeaponConfig.Range();
-        }
-
-        public void Attack(GameObject combatTarget)
-        {
-            _actionScheduler.StartAction(this);
-            _target = combatTarget.GetComponent<Health>();
-        }
-
-        public bool CanAttack(GameObject combatTarget)
-        {
-            if (combatTarget == null) return false;
-            if (!_mover.CanMoveTo(combatTarget.transform.position) && 
-                !IsInRange(combatTarget.transform)) return false;
-            
-            Health targetToTest = combatTarget.GetComponent<Health>();
-            return targetToTest != null && !targetToTest.IsDead();
-        }
-
-        public void Cancel()
-        {
-            StopAttack();
-            _target = null;
-            _mover.Cancel();
-        }
-
         private void StopAttack()
         {
             _anim.ResetTrigger("attack");
             _anim.SetTrigger("stopAttack");
         }
-        
-        public void EquipWeapon(WeaponConfig weapon)
-        {
-            _currentWeaponConfig = weapon;
-            _currentWeapon.value = AttachWeapon(weapon);
-        }
 
-        public WeaponConfig GetCurrentWeapon()
-        {
-            return _currentWeaponConfig;
-        }
-        
         private void UpdateWeapon()
         {
             var weapon = _equipment.GetEquippedWeapon();
@@ -191,24 +207,6 @@ namespace RPG.Combat
         private Weapon AttachWeapon(WeaponConfig weapon)
         {
             return weapon.Spawn(_rightHandTransform, _leftHandTransform, _anim);
-        }
-        
-
-        public Health GetTarget()
-        {
-            return _target;
-        }
-
-        public Transform GetHandTransform(bool isRightHand)
-        {
-            if (isRightHand)
-            {
-                return _rightHandTransform;
-            }
-            else
-            {
-                return _leftHandTransform;
-            }
         }
 
         public object CaptureState()

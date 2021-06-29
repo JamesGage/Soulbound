@@ -58,7 +58,7 @@ namespace RPG.Inventories
         public IEnumerator Use(int index, GameObject user)
         {
             _ability = dockedItems[index];
-            
+
             switch (_abilityState)
             {
                 case AbilityState.Idle:

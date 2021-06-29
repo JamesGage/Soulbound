@@ -72,8 +72,6 @@ namespace RPG.Control
 
         private void CheckSpecialAbilityKeys()
         {
-            if (Input.GetKeyDown(InputManager.inputManager.baseAttack))
-                StartCoroutine(_actionStore.Use(0, gameObject));
             if (Input.GetKeyDown(InputManager.inputManager.ability1))
                 StartCoroutine(_actionStore.Use(1, gameObject));
             if (Input.GetKeyDown(InputManager.inputManager.ability2))
