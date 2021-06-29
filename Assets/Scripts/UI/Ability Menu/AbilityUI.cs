@@ -55,7 +55,7 @@ namespace RPG.UI.Ability_Menu
             foreach (var actionSlot in _actionBar.GetComponentsInChildren<ActionSlotUI>())
             {
                 if(actionSlot.GetStore() == null) break;
-                actionSlot.RemoveItems(1);
+                actionSlot.RemoveItems();
             }
         }
     }

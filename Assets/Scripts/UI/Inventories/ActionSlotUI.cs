@@ -37,9 +37,9 @@ namespace RPG.UI.Inventories
             return store.GetAction(index);
         }
 
-        public void RemoveItems(int number)
+        public void RemoveItems()
         {
-            store.RemoveItems(index, number);
+            store.RemoveItems(index);
         }
 
         public ActionStore GetStore()

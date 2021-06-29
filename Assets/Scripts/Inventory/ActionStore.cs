@@ -33,7 +33,7 @@ namespace RPG.Inventories
             storeUpdated?.Invoke();
         }
         
-        public void RemoveItems(int index, int number)
+        public void RemoveItems(int index)
         {
             if (dockedItems.ContainsKey(index))
             {
