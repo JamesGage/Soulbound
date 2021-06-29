@@ -180,9 +180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15a25cf94bd439ea394810e48f1a621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addQuestSFX: event:/SFX/Ambient/Quest/Quest_Recieved
-  objectiveCompleteSFX: event:/SFX/Ambient/Quest/Objective_Complete
-  questCompleteSFX: event:/SFX/Ambient/Quest/Quest_Complete
 --- !u!114 &1548908883313604644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a19ff972ec6859b48870488d7b1e81b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _queueOpenPrefab: {fileID: 4428908044626120, guid: 4d1ab84cebc7e5b4f8fcc8c809cdc89b, type: 3}
 --- !u!114 &3243260723790236210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1fd2340fd2a4857b1292dd2598ee028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponHotKeys: 310000003200000033000000
 --- !u!114 &5248387878309714748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +362,6 @@ MonoBehaviour:
   - type: 7
     texture: {fileID: 2800000, guid: 0b33dddc53e18b94da2ecdfc515574aa, type: 3}
     hotspot: {x: 0, y: 0}
-  abilityKeys: 710000007700000065000000
 --- !u!114 &8342997807208913869
 MonoBehaviour:
   m_ObjectHideFlags: 0

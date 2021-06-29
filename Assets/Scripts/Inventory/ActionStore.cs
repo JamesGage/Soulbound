@@ -10,7 +10,10 @@ namespace RPG.Inventories
 {
     public class ActionStore : MonoBehaviour, ISaveable
     {
+        [SerializeField] private Transform _queueOpenPrefab;
+        
         Dictionary<int, Ability> dockedItems = new Dictionary<int, Ability>();
+        private GameObject _user;
         private Ability _ability;
         private CooldownStore _cooldownStore;
         private bool _inUse;
@@ -54,14 +57,10 @@ namespace RPG.Inventories
             ActivateAbility(index, user);
         }
 
-        public bool QueueOpen()
-        {
-            return _isOpen;
-        }
-
         private void ActivateAbility(int index, GameObject user)
         {
-            var health = user.GetComponent<Health>();
+            _user = user;
+            var health = _user.GetComponent<Health>();
             
             if (!dockedItems.ContainsKey(index)) return;
             if(health.IsDead()) return;
@@ -80,10 +79,29 @@ namespace RPG.Inventories
             _inUse = true;
             yield return new WaitForSeconds(_ability.GetQueueReadyTime());
             _isOpen = true;
-            //Activate feedback
+            OpenQueue(_ability.GetQueueOpenTime());
             yield return new WaitForSeconds(_ability.GetQueueOpenTime());
             _isOpen = false;
             _inUse = false;
+        }
+
+        private void OpenQueue(float time)
+        {
+            var queue = Instantiate(_queueOpenPrefab, _user.transform);
+            StartCoroutine(QueueScale(time, queue));
+        }
+
+        private IEnumerator QueueScale(float time, Transform queue)
+        {
+            queue.localScale = new Vector3(10, 10, 10);
+            var elapsedTime = 0f;
+            while (elapsedTime < time)
+            {
+                queue.localScale = Vector3.Lerp (queue.localScale, Vector3.up, elapsedTime/time);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            Destroy(queue.gameObject);
         }
 
         object ISaveable.CaptureState()
