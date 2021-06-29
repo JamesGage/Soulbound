@@ -13,7 +13,8 @@ namespace RPG.Inventories
         Dictionary<int, Ability> dockedItems = new Dictionary<int, Ability>();
         private Ability _ability;
         private CooldownStore _cooldownStore;
-        private bool inUse;
+        private bool _inUse;
+        private bool _isOpen;
 
         public event Action storeUpdated;
         
@@ -44,14 +45,30 @@ namespace RPG.Inventories
         
         public IEnumerator Use(int index, GameObject user)
         {
-            if(inUse) yield break;
-            if (!dockedItems.ContainsKey(index)) yield break;
+            if (_isOpen)
+            {
+                ActivateAbility(index, user);
+            }
+            if(_inUse) yield break;
+            
+            ActivateAbility(index, user);
+        }
+
+        public bool QueueOpen()
+        {
+            return _isOpen;
+        }
+
+        private void ActivateAbility(int index, GameObject user)
+        {
             var health = user.GetComponent<Health>();
-            if(health.IsDead()) yield break;
+            
+            if (!dockedItems.ContainsKey(index)) return;
+            if(health.IsDead()) return;
 
             _ability = dockedItems[index];
             _cooldownStore = user.GetComponent<CooldownStore>();
-            if (_cooldownStore.GetTimeRemaining(_ability) > 0) yield break;
+            if (_cooldownStore.GetTimeRemaining(_ability) > 0) return;
             
             StartCoroutine(InUse());
 
@@ -60,9 +77,12 @@ namespace RPG.Inventories
 
         private IEnumerator InUse()
         {
-            inUse = true;
-            yield return new WaitForSeconds(_ability.GetQueueReadyTime() + _ability.GetQueueReadyTime());
-            inUse = false;
+            _inUse = true;
+            yield return new WaitForSeconds(_ability.GetQueueReadyTime());
+            _isOpen = true;
+            yield return new WaitForSeconds(_ability.GetQueueOpenTime());
+            _isOpen = false;
+            _inUse = false;
         }
 
         object ISaveable.CaptureState()
