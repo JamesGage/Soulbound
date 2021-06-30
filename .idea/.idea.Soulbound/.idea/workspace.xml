@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Bond 10.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Bond 10.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Bond 5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Bond 5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/BondEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/BondEffect.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Bash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Bash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Cut Delay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Cut Delay.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Progression/Enemy Progression.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Progression/Enemy Progression.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Progression/Player Progression.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Progression/Player Progression.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/Fighter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Combat/WeaponConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Bond.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +81,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/ActionSlotUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Ability Menu/AbilityUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/MovementEffect.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utils/InputManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Control/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/CombatTarget.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SurroundingTargeting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
@@ -114,6 +96,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/BondEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/TriggerAnimationEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Ability.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory/ActionStore.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -218,7 +202,7 @@
       <workItem from="1624848480089" duration="4993000" />
       <workItem from="1624897408095" duration="11331000" />
       <workItem from="1624973524719" duration="5646000" />
-      <workItem from="1624995036499" duration="19892000" />
+      <workItem from="1624995036499" duration="20136000" />
     </task>
     <servers />
   </component>

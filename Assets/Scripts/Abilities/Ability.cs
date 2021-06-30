@@ -64,6 +64,11 @@ namespace RPG.Abilities
             return abilityFinishTime;
         }
 
+        public int GetBondCost()
+        {
+            return bondCost;
+        }
+
         private void TargetAquired(AbilityData data)
         {
             if(data.IsCancelled()) return;

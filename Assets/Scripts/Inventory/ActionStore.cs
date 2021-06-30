@@ -58,6 +58,8 @@ namespace RPG.Inventories
         public IEnumerator Use(int index, GameObject user)
         {
             _ability = dockedItems[index];
+            var bond = user.GetComponent<Bond>().GetBond();
+            if(bond < _ability.GetBondCost()) yield break;
 
             switch (_abilityState)
             {
