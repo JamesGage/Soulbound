@@ -52,7 +52,7 @@ namespace RPG.Inventories
 
         public void CloseMenu()
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 
         private void ClearItems()
