@@ -10,6 +10,7 @@ namespace RPG.Abilities.Filters
         
         public override IEnumerable<GameObject> Filter(IEnumerable<GameObject> objectsToFilter)
         {
+            if (objectsToFilter == null) yield break;
             foreach (var gameObject in objectsToFilter)
             {
                 if (gameObject.CompareTag(tagToFilter))

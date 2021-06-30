@@ -2,51 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7572eb-ee80-4546-b40e-5cc089d3ea2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01_Left.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01_Left.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01_Right.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01_Right.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Cut.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Cut.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Attack.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Attack.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Cut Delay.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Delay/Effect Cut Delay.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Damage Health 5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Modifiers/Effect Damage Health 5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Target Select 2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Target Select 2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Surrounding 90.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Targeting/Targeting Surrounding 90.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Ability 01.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Ability 01.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Ability 02.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Ability 02.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Ability 03.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Ability 03.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Animations/Defaults/Attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/_Sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/_Sprites/mouse-left-click-icon-256.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/_Sprites/mouse-left-click-icon-256.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SelectTargeting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SelectTargeting.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Soulbound/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Prefabs/Effects/Slash_Effect_01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Bash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Bash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Abilities/Ability Slash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Bash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Bash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Slash.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Animations/Effect Trigger Slash.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Abilities/Resources/Effects/Spawn/Effect Spawn Slash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Characters/_Shared/Animations/Humanoid/Controllers/Character.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/Resources/Simple Sword.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Sword Override Controller.overrideController" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Items/Weapons/_Swords/Sword Override Controller.overrideController" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Player HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/UI/Player HUD/Player HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +46,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Stats/Health.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Effects/SpawnTargetPrefabEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Combat/AnimationCombatEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventories/EquipmentSlotUI.cs" />
@@ -140,6 +96,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SurroundingTargeting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/WeaponHUD.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Targeting/SelectTargeting.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Abilities/Filters/TagFilter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pgdjWSdWOgShUuBgEaEMMLd5k7" />
@@ -244,7 +201,7 @@
       <workItem from="1624848480089" duration="4993000" />
       <workItem from="1624897408095" duration="11331000" />
       <workItem from="1624973524719" duration="5646000" />
-      <workItem from="1624995036499" duration="13675000" />
+      <workItem from="1624995036499" duration="13860000" />
     </task>
     <servers />
   </component>
