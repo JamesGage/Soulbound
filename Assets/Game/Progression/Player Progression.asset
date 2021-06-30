@@ -17,10 +17,14 @@ MonoBehaviour:
     stats:
     - stat: 0
       levels:
+      - 50
       - 100
+      - 150
     - stat: 1
       levels:
       - 5
+      - 10
+      - 15
     - stat: 2
       levels:
       - 1
@@ -34,9 +38,9 @@ MonoBehaviour:
       - 150
     - stat: 5
       levels:
-      - 5
-      - 10
-      - 15
+      - 2
+      - 4
+      - 6
     - stat: 6
       levels:
       - 5

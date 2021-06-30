@@ -170,12 +170,6 @@ namespace RPG.Combat
             else
             {
                 _target.TakeDamage(CalculateAttack());
-                if (GetComponent<Bond>() != null)
-                {
-                    var bond = GetComponent<Bond>();
-                    bond.AddBond(CalculateAttack());
-                    StartCoroutine(bond.PauseBondDegrade());
-                }
             }
         }
 

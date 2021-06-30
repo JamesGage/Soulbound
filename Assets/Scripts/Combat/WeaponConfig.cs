@@ -91,15 +91,15 @@ namespace RPG.Combat
             }
         }
 
-        public int GetWeaponLevel(float bond)
+        public int GetWeaponLevel(float experience)
         {
             var weaponLevel = 0;
             
             foreach (var level in _weaponProgression)
             {
-                if(level.experienceRequired > bond)
+                if(level.experienceRequired > experience)
                     break;
-                if (level.experienceRequired <= bond)
+                if (level.experienceRequired <= experience)
                 {
                     weaponLevel = level.level;
                 }

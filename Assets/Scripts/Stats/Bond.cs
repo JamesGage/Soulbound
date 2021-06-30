@@ -51,7 +51,7 @@ namespace RPG.Stats
 
         public void AddBond(float amount)
         {
-            _bond.value += amount * GetRegenRate();
+            _bond.value += amount * GetRegenModifier();
             if (_bond.value > GetMaxBond())
             {
                 _bond.value = GetMaxBond();
@@ -62,7 +62,7 @@ namespace RPG.Stats
         public IEnumerator PauseBondDegrade()
         {
             _isPaused = true;
-            yield return new WaitForSeconds(GetRegenRate());
+            yield return new WaitForSeconds(GetRegenModifier());
             _isPaused = false;
         }
         
@@ -76,9 +76,9 @@ namespace RPG.Stats
             return _baseStats.GetStat(Stat.BondMax);
         }
 
-        public float GetRegenRate()
+        public float GetRegenModifier()
         {
-            return _baseStats.GetStat(Stat.BondRegen);
+            return _baseStats.GetStat(Stat.BondRegenModifier);
         }
 
         public bool UseBond(int bondToUse)

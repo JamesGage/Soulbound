@@ -7,8 +7,9 @@
         Speed,
         Accuracy,
         BondMax,
-        BondRegen,
+        BondRegenModifier,
         TotalTraitPoints,
-        BuyingDiscountPercentage
+        BuyingDiscountPercentage,
+        ExperienceRewarded
     }
 }

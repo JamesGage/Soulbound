@@ -233,6 +233,7 @@
             <e p="AbilityData.cs" t="Include" />
             <e p="CooldownStore.cs" t="Include" />
             <e p="Effects" t="Include">
+              <e p="BondEffect.cs" t="Include" />
               <e p="DelayCompositeEffect.cs" t="Include" />
               <e p="HealthEffect.cs" t="Include" />
               <e p="LookAtTargetEffect.cs" t="Include" />
