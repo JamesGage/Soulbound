@@ -26,16 +26,13 @@ MonoBehaviour:
   _weaponProgression:
   - level: 1
     experienceRequired: 0
-    bondMax: 100
-    ability: {fileID: 11400000, guid: d2857b9af6eb4634a9650354dbf94a14, type: 2}
+    ability: {fileID: 11400000, guid: 61559c63e0ecaa444b70303e7f992ece, type: 2}
     quest: {fileID: 0}
   - level: 2
-    experienceRequired: 100
-    bondMax: 150
-    ability: {fileID: 11400000, guid: 2df103e1856514448acb2ea59706ecfd, type: 2}
+    experienceRequired: 0
+    ability: {fileID: 11400000, guid: d2857b9af6eb4634a9650354dbf94a14, type: 2}
     quest: {fileID: 0}
   - level: 3
-    experienceRequired: 200
-    bondMax: 200
-    ability: {fileID: 0}
+    experienceRequired: 100
+    ability: {fileID: 11400000, guid: d7ef23cb1c431404d8631b1166661ae0, type: 2}
     quest: {fileID: 0}

@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b879b3a04f478a83fb170e8c0259fd, type: 3}
-  m_Name: Effect Spawn Slash
+  m_Script: {fileID: 11500000, guid: ac24764c84cc4a4bb4b88750e9245c1a, type: 3}
+  m_Name: Effect Cut Delay
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 8348756767061023491, guid: bd47aa409776d354cb9563325f5af068, type: 3}
-  spawnOffset: {x: 0, y: 1, z: 0}
-  effectScale: 3
-  destroyDelay: 1
+  delay: 0.25
+  delayedEffects:
+  - {fileID: 11400000, guid: 82840e416da8b804eae5e3e12b104060, type: 2}
+  abortIfCancelled: 0

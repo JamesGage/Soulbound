@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2b879b3a04f478a83fb170e8c0259fd, type: 3}
-  m_Name: Effect Spawn Slash
+  m_Script: {fileID: 11500000, guid: 3a2fa54c2ce346d594a92c1d3e30b0ca, type: 3}
+  m_Name: Effect Trigger Attack
   m_EditorClassIdentifier: 
-  effectPrefab: {fileID: 8348756767061023491, guid: bd47aa409776d354cb9563325f5af068, type: 3}
-  spawnOffset: {x: 0, y: 1, z: 0}
-  effectScale: 3
-  destroyDelay: 1
+  animationTrigger: attack

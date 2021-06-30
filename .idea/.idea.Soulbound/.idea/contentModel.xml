@@ -250,6 +250,7 @@
             <e p="Targeting" t="Include">
               <e p="DelayedClickTargeting.cs" t="Include" />
               <e p="DirectionalTargeting.cs" t="Include" />
+              <e p="SelectTargeting.cs" t="Include" />
               <e p="SelfTargeting.cs" t="Include" />
               <e p="SurroundingTargeting.cs" t="Include" />
             </e>
